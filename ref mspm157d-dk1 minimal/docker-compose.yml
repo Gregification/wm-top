@@ -1,0 +1,21 @@
+services:
+  yocoto-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # target: pull-resources-only
+      target: full-build
+    container_name: yocto_build_container
+    
+    # Required for full host USB hardware access. linux or wsl host 
+    privileged: true
+    
+    volumes:
+      # Mount host's USB device bus into the container. Linux or wsl host
+      - /dev/:/dev/
+      - ./shared/:/home/dev/shared/
+      # a bunch of the bitbake commands start failing silentely if a mount is used, instead just use `docker cp`
+
+    # Keeps the container alive so you can attach to it
+    tty: true
+    stdin_open: true
