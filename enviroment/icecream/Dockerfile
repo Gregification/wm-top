@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
     icecc \
     icecream \
     icecream-sundae \ 
+    icecc \
     net-tools \
+    iputils-ping \
     build-essential \
     ncurses-term \
     && rm -rf /var/lib/apt/lists/*
@@ -17,8 +19,6 @@ ENV ICECC_SCHEDULER_HOST="192.168.1.100" \
     ICECC_NETNAME="icecream" \
     ICECC_MAX_JOBS=""
 
-EXPOSE 10245/tcp
-
 # Run iceccd daemon directly as the main process
-#CMD ["sh", "-c", "exec iceccd -d -s \"${ICECC_SCHEDULER_HOST}\" -n \"${ICECC_NETNAME}\" ${ICECC_MAX_JOBS:+-m \"${ICECC_MAX_JOBS}\"} -v"]
-CMD ["bash"]
+CMD ["sh", "-c", "exec iceccd -s \"${ICECC_SCHEDULER_HOST}\" -n \"${ICECC_NETNAME}\" ${ICECC_MAX_JOBS:+-m \"${ICECC_MAX_JOBS}\"} -v"]
+# CMD ["bash"]

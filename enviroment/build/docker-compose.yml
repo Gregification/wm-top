@@ -1,15 +1,28 @@
 ###  Linux/WSL hosts only
 
 services:
-  yocoto-env:
+  icecream-scheduler:
+    container_name: icecream_scheduler
+    image: ubuntu:24.04
+    restart: unless-stopped
+    command: sh -c "apt-get update && apt-get install -y icecc && icecc-scheduler -n icecream -v"
+    networks:
+      yocto_net:
+        ipv4_address: 172.20.0.10
+    ports: # external workers should connect using host ip (eg lan: 192.168.1.123:8765)
+      - "8765:8765/tcp"
+      - "8765:8765/udp"
+        
+  yocto-env:
+    container_name: yocto_workspace
     build:
       context: .
       dockerfile: Dockerfile
       # target: pull-resources-only
       target: full-build
-    container_name: yocto_workspace
-    network_mode: "host"
-
+    networks:
+          yocto_net:
+            ipv4_address: 172.20.0.20
     deploy:
       resources:
           reservations:
@@ -19,11 +32,16 @@ services:
     # Required for full host USB hardware access. linux or wsl host 
     #   we care to add USB to access USB<->SDCard readers
     privileged: true
-    
     volumes:
       - /dev/:/dev/
       - ./shared/:/home/dev/shared/
-      # a bunch of the bitbake commands start failing silentely if a mount is used, instead just use `docker cp`
-
     tty: true
     stdin_open: true
+
+networks:
+  yocto_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1

@@ -11,8 +11,8 @@ ARG BUILD_DIR=build-wm
 ARG ICECREAM_yippie=true
 # must manually specify max jobs since yocto only checks local machine and will limit accordingly
 ARG ICECREAM_maxThreads=50
-# auto-discovery is a thing but it sometimes fails, uncomment to set scheduler server ip
-#RUN export ICECC_SCHEDULER_HOST="192.168.1.100"
+# use the local docker network, see compose file for static ip setting
+ARG ICECREAM_schedulerIP="172.20.0.10"
 
 
 ###################################################################################################
@@ -58,6 +58,8 @@ RUN apt-get update && apt-get install -y \
     icecc \
     icecream-sundae \
     net-tools \
+    iputils-ping \ 
+    icecc \
     && locale-gen en_US.UTF-8 \
     && rm -rf /var/lib/apt/lists/*
 
@@ -178,14 +180,14 @@ RUN echo 'INHERIT += "rm_work"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/lo
 RUN echo 'RM_WORK_EXCLUDE += "virtual/kernel"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 RUN if [ "$ICECREAM_yippie" = "true" ]; then \
-        echo "sudo service iceccd start" >> /home/${USERNAME}/.bashrc \
-        echo 'INHERIT += "icecc"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf \
-        echo 'ICECC_DISABLED = "0"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf \
-        echo 'PARALLEL_MAKE = "-j ${ICECREAM_maxThreads}"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf \
-        echo 'ICECC_PARALLEL_MAKE = "-j ${ICECREAM_maxThreads}"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf \
-        echo 'ICECC_SCHEDULER_HOST="localhost"' >> /etc/icecc/icecc.conf \
+        echo "sudo service iceccd start" >> /home/${USERNAME}/.bashrc && \
+        echo 'INHERIT += "icecc"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo 'ICECC_DISABLED = "0"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "ICECC_PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "ICECC_SCHEDULER_HOST = \"${ICECREAM_schedulerIP}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
     else \
-        echo 'ICECC_DISABLED = "1"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf \
+        echo 'ICECC_DISABLED = "1"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
     fi
 
 # to reduce max memory required,
