@@ -1,0 +1,15 @@
+services:
+  icecream-worker:
+    build: .
+    container_name: icecream_worker_node
+    restart: unless-stopped
+    network_mode: "host"
+    
+    tty: true
+    stdin_open: true
+    
+    environment:
+      - TERM=xterm-256color
+      - ICECC_SCHEDULER_HOST=192.168.1.100
+      - ICECC_NETNAME=icecream
+      - ICECC_MAX_JOBS=
