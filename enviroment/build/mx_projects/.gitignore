@@ -1,0 +1,5 @@
+# ignore all
+/*/*
+
+# un-igore the ico, the rest can be regenerated using CubeMX, unless its a actual project, just update this gitignore when that happens
+!/*/*.ioc

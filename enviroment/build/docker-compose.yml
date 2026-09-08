@@ -1,0 +1,59 @@
+###  Linux/WSL hosts only
+
+services:
+
+  # cant get it working on yoctos end. the network is properly setup but its just error after error from yocto
+  icecream-scheduler:
+    profiles:
+        - donotstart
+    container_name: icecream_scheduler
+    image: ubuntu:24.04
+    restart: unless-stopped
+    command: sh -c "apt-get update && apt-get install -y icecc && icecc-scheduler -n icecream -v"
+    networks:
+      yocto_net:
+        ipv4_address: 172.20.0.10
+    ports: # external workers should connect using host ip (eg lan: 192.168.1.123:8765)
+      - "8765:8765/tcp"
+      - "8765:8765/udp"
+        
+  yocto-env:
+    container_name: yocto_workspace
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # target: pull-resources-only
+      target: full-build
+      args:
+        BOARD_NAME: ${BOARD_NAME}
+        USER: ${USER}
+    networks:
+          yocto_net:
+            ipv4_address: 172.20.0.20
+    deploy:
+      resources:
+          reservations:
+            # BitBake has a BB_PRESSURE_MAX_MEM variable to throttle for low memory. if something fails check dmesg for oom killings
+            #   cpu throttling >%60 build on - 32GiB 4800MHz DDR4; i9-12900k (24 logical cores, 4ghz) - . mem peaks ~24GiB 
+            memory: 25G
+    # Required for full host USB hardware access. linux or wsl host 
+    #   we care to add USB to access USB<->SDCard readers
+    privileged: true
+
+    # - update what CubeMX project is used from here
+    # - the /dev/:/dev/ is for host usb forwarding support
+    # manual steps shown in https://wiki.st.com/stm32mpu/wiki/How_to_create_your_own_machine
+    volumes:
+      - /dev/:/dev/
+      - ./mx_projects/${BOARD_NAME}:/home/${USER}/projects/yocto/meta-st-stm32mp-addons/mx/${BOARD_NAME}
+      - ./mx_projects/machine-${BOARD_NAME}.conf:/home/${USER}/projects/yocto/meta-st-stm32mp-addons/conf/machine/stm32mp15-mx-${BOARD_NAME}.conf
+    tty: true
+    stdin_open: true
+
+networks:
+  yocto_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1
