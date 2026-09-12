@@ -1,6 +1,6 @@
 FROM ubuntu:24.04 AS base
 
-ARG ACCO=dev
+ARG USER=dev
 
 # enable if contianer has <~8gig memory, does what it can to reduce concurrent memory usage; slows build dramatically.
 ARG LOW_MEMORY_BUILD=false
@@ -27,7 +27,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TERM=xterm-256color
 
 # force clean build dir incase its a shared volume or something bonkers
-RUN rm -rf /home/${ACCO}/projects/yocto/${BUILD_DIR}
+RUN rm -rf /home/${USER}/projects/yocto/${BUILD_DIR}
 
 # core yocto toolchain
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -70,16 +70,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Create user, assign groups, and enable passwordless sudo
-RUN useradd -m -s /bin/bash -G dialout,plugdev ${ACCO} && \
-    echo "${ACCO} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+RUN useradd -m -s /bin/bash -G dialout,plugdev ${USER} && \
+    echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Create the ~/projects/yocto directory structure with proper permissions
-RUN mkdir -p /home/${ACCO}/projects/yocto && \
-    chown -R ${ACCO}:${ACCO} /home/${ACCO}
+RUN mkdir -p /home/${USER}/projects/yocto && \
+    chown -R ${USER}:${USER} /home/${USER}
 
 # Switch to non-root user to perform git operations
-USER ${ACCO}
-WORKDIR /home/${ACCO}/projects/yocto
+USER ${USER}
+WORKDIR /home/${USER}/projects/yocto
 
 
 ###################################################################################################
@@ -113,29 +113,29 @@ RUN git clone -b scarthgap https://github.com/STMicroelectronics/meta-st-openstl
 #   F: support layer for CubeMX generated DT's
 RUN git clone -b scarthgap https://github.com/STMicroelectronics/meta-st-stm32mp-addons.git
 # the openstlinux layer seems to want version systemd 255.21 but oecore only has 255.22 , change notice says its minor bug fixes so should be fine
-RUN mv /home/${ACCO}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_255.21.bbappend \
-       /home/${ACCO}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_%.bbappend
+RUN mv /home/${USER}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_255.21.bbappend \
+       /home/${USER}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_%.bbappend
 #:  G: yap
 RUN git clone -b scarthgap https://github.com/Gregification/meta-wm-bsp.git
 
 
 # Symlink bitbake inside openembedded-core so oe-init-build-env finds it automatically
-RUN ln -s /home/${ACCO}/projects/yocto/bitbake /home/${ACCO}/projects/yocto/openembedded-core/bitbake
+RUN ln -s /home/${USER}/projects/yocto/bitbake /home/${USER}/projects/yocto/openembedded-core/bitbake
 # Set environment variables natively in Docker (persists across all steps and sessions)
-ENV PATH="/home/${ACCO}/projects/yocto/bitbake/bin:${PATH}"
+ENV PATH="/home/${USER}/projects/yocto/bitbake/bin:${PATH}"
 
 #######
 
-WORKDIR /home/${ACCO}/projects/yocto/openembedded-core/
+WORKDIR /home/${USER}/projects/yocto/openembedded-core/
 
 RUN ./oe-init-build-env ../${BUILD_DIR}
 # Auto-source the Yocto environment whenever you attach or exec into the container
-RUN echo "source /home/${ACCO}/projects/yocto/openembedded-core/oe-init-build-env /home/${ACCO}/projects/yocto/${BUILD_DIR}" >> /home/${ACCO}/.bashrc
+RUN echo "source /home/${USER}/projects/yocto/openembedded-core/oe-init-build-env /home/${USER}/projects/yocto/${BUILD_DIR}" >> /home/${USER}/.bashrc
 
 # tells BitBake to spawn the terminal command in the active shell directly
-RUN echo 'OE_TERMINAL = "tmux"' >> /home/${ACCO}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'OE_TERMINAL = "tmux"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
-RUN echo 'DISTRO="openstlinux-weston"' >> /home/${ACCO}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'DISTRO="openstlinux-weston"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 FROM base AS pull-resources-only
 CMD ["bash"]
@@ -156,12 +156,12 @@ FROM pull-resources-only AS full-build
 #    meta-toolchain
 #    meta-ide-support
 
-WORKDIR /home/${ACCO}/projects/yocto/${BUILD_DIR}
+WORKDIR /home/${USER}/projects/yocto/${BUILD_DIR}
 
 # update the file pats to match the username, cant figure out how to get docker to evaluate instead of as a literal
-RUN [ "${ACCO}" = "dev" ] || { exit 1; }
+RUN [ "${USER}" = "dev" ] || { exit 1; }
 # add layers to build, doing it using bitbake-layers add-layer dosent add everything
-RUN cat << 'EOF' > /home/${ACCO}/projects/yocto/${BUILD_DIR}/conf/bblayers.conf
+RUN cat << 'EOF' > /home/${USER}/projects/yocto/${BUILD_DIR}/conf/bblayers.conf
 LCONF_VERSION = "7"
 BBPATH = "${TOPDIR}"
 BBFILES ?= ""
@@ -195,7 +195,7 @@ RUN echo 'INHERIT += "rm_work"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/lo
 RUN echo 'RM_WORK_EXCLUDE += "virtual/kernel"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 RUN if [ "$ICECREAM_yippie" = "true" ]; then \
-        echo "sudo service iceccd start" >> /home/${ACCO}/.bashrc && \
+        echo "sudo service iceccd start" >> /home/${USER}/.bashrc && \
         echo 'INHERIT += "icecc"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
         echo 'ICECC_DISABLED = "0"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
         echo 'ICECC_RECIPE_DISABLE += "target-sdk-provides-dummy dummy-sdk-package"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
@@ -242,10 +242,10 @@ RUN chmod 777 build_simple.sh
 
 # IMPORTANT, THE **** VENDOR SCRIPT IS funky. will silentely fail to make a working .raw image for the sdcard >:( . 
 #   SOLUTION: use the script anyways so it sets up the partitions. BUT you have to manually dd over the binaries for each partition
-#RUN echo 'IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"' >> /home/${ACCO}/projects/yocto/${BUILD_DIR}/conf/local.conf
+#RUN echo 'IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 # set entrypoint
-COPY --chmod=777 entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+# COPY --chmod=777 entrypoint.sh /entrypoint.sh
+# ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["bash"]
