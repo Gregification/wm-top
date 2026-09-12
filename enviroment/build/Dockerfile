@@ -1,6 +1,6 @@
 FROM ubuntu:24.04 AS base
 
-ARG USER=dev
+ARG USER_NAME=dev
 
 # enable if contianer has <~8gig memory, does what it can to reduce concurrent memory usage; slows build dramatically.
 ARG LOW_MEMORY_BUILD=false
@@ -27,7 +27,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TERM=xterm-256color
 
 # force clean build dir incase its a shared volume or something bonkers
-RUN rm -rf /home/${USER}/projects/yocto/${BUILD_DIR}
+RUN rm -rf /home/${USER_NAME}/projects/yocto/${BUILD_DIR}
 
 # core yocto toolchain
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -70,16 +70,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Create user, assign groups, and enable passwordless sudo
-RUN useradd -m -s /bin/bash -G dialout,plugdev ${USER} && \
-    echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+RUN useradd -m -s /bin/bash -G dialout,plugdev ${USER_NAME} && \
+    echo "${USER_NAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Create the ~/projects/yocto directory structure with proper permissions
-RUN mkdir -p /home/${USER}/projects/yocto && \
-    chown -R ${USER}:${USER} /home/${USER}
+RUN mkdir -p /home/${USER_NAME}/projects/yocto && \
+    chown -R ${USER_NAME}:${USER_NAME} /home/${USER_NAME}
 
 # Switch to non-root user to perform git operations
-USER ${USER}
-WORKDIR /home/${USER}/projects/yocto
+USER ${USER_NAME}
+WORKDIR /home/${USER_NAME}/projects/yocto
 
 
 ###################################################################################################
@@ -113,29 +113,29 @@ RUN git clone -b scarthgap https://github.com/STMicroelectronics/meta-st-openstl
 #   F: support layer for CubeMX generated DT's
 RUN git clone -b scarthgap https://github.com/STMicroelectronics/meta-st-stm32mp-addons.git
 # the openstlinux layer seems to want version systemd 255.21 but oecore only has 255.22 , change notice says its minor bug fixes so should be fine
-RUN mv /home/${USER}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_255.21.bbappend \
-       /home/${USER}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_%.bbappend
+RUN mv /home/${USER_NAME}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_255.21.bbappend \
+       /home/${USER_NAME}/projects/yocto/meta-st-openstlinux/oe-core/recipes-core/systemd/systemd_%.bbappend
 #:  G: yap
 RUN git clone -b scarthgap https://github.com/Gregification/meta-wm-bsp.git
 
 
 # Symlink bitbake inside openembedded-core so oe-init-build-env finds it automatically
-RUN ln -s /home/${USER}/projects/yocto/bitbake /home/${USER}/projects/yocto/openembedded-core/bitbake
+RUN ln -s /home/${USER_NAME}/projects/yocto/bitbake /home/${USER_NAME}/projects/yocto/openembedded-core/bitbake
 # Set environment variables natively in Docker (persists across all steps and sessions)
-ENV PATH="/home/${USER}/projects/yocto/bitbake/bin:${PATH}"
+ENV PATH="/home/${USER_NAME}/projects/yocto/bitbake/bin:${PATH}"
 
 #######
 
-WORKDIR /home/${USER}/projects/yocto/openembedded-core/
+WORKDIR /home/${USER_NAME}/projects/yocto/openembedded-core/
 
 RUN ./oe-init-build-env ../${BUILD_DIR}
 # Auto-source the Yocto environment whenever you attach or exec into the container
-RUN echo "source /home/${USER}/projects/yocto/openembedded-core/oe-init-build-env /home/${USER}/projects/yocto/${BUILD_DIR}" >> /home/${USER}/.bashrc
+RUN echo "source /home/${USER_NAME}/projects/yocto/openembedded-core/oe-init-build-env /home/${USER_NAME}/projects/yocto/${BUILD_DIR}" >> /home/${USER_NAME}/.bashrc
 
 # tells BitBake to spawn the terminal command in the active shell directly
-RUN echo 'OE_TERMINAL = "tmux"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'OE_TERMINAL = "tmux"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
-RUN echo 'DISTRO="openstlinux-weston"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'DISTRO="openstlinux-weston"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 FROM base AS pull-resources-only
 CMD ["bash"]
@@ -156,28 +156,28 @@ FROM pull-resources-only AS full-build
 #    meta-toolchain
 #    meta-ide-support
 
-WORKDIR /home/${USER}/projects/yocto/${BUILD_DIR}
+WORKDIR /home/${USER_NAME}/projects/yocto/${BUILD_DIR}
 
 # update the file pats to match the username, cant figure out how to get docker to evaluate instead of as a literal
-RUN [ "${USER}" = "dev" ] || { exit 1; }
+# RUN [ "${USER_NAME}" = "bob" ] || { exit 1; }
 # add layers to build, doing it using bitbake-layers add-layer dosent add everything
-RUN cat << 'EOF' > /home/${USER}/projects/yocto/${BUILD_DIR}/conf/bblayers.conf
+RUN cat << EOF > /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/bblayers.conf
 LCONF_VERSION = "7"
-BBPATH = "${TOPDIR}"
+BBPATH = "\${TOPDIR}"
 BBFILES ?= ""
 
-BBLAYERS ?= " \
-  /home/dev/projects/yocto/openembedded-core/meta \
-  /home/dev/projects/yocto/meta-openembedded/meta-oe \
-  /home/dev/projects/yocto/meta-openembedded/meta-python \
-  /home/dev/projects/yocto/meta-st-stm32mp \
-  /home/dev/projects/yocto/meta-st-openstlinux \
-  /home/dev/projects/yocto/meta-openembedded/meta-multimedia \
-  /home/dev/projects/yocto/meta-openembedded/meta-gnome \
-  /home/dev/projects/yocto/meta-openembedded/meta-webserver \
-  /home/dev/projects/yocto/meta-openembedded/meta-networking \
-  /home/dev/projects/yocto/meta-st-stm32mp-addons \
-  /home/dev/projects/yocto/meta-wm-bsp \
+BBLAYERS ?= " \\
+  /home/${USER_NAME}/projects/yocto/openembedded-core/meta \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-oe \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-python \\
+  /home/${USER_NAME}/projects/yocto/meta-st-stm32mp \\
+  /home/${USER_NAME}/projects/yocto/meta-st-openstlinux \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-multimedia \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-gnome \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-webserver \\
+  /home/${USER_NAME}/projects/yocto/meta-openembedded/meta-networking \\
+  /home/${USER_NAME}/projects/yocto/meta-st-stm32mp-addons \\
+  /home/${USER_NAME}/projects/yocto/meta-wm-bsp \\
   "
 EOF
 
@@ -186,38 +186,38 @@ EOF
 #       found the bsp configs here: 'meta-st-stm32mp/conf/machine'
 #       !!! check the file supports the exact bord model !!!
 #   Update MACHINE in local.conf using sed (in-place replacement)
-RUN sed -i "s/^MACHINE ??=.*/MACHINE = \"stm32mp15-mx-${BOARD_NAME}\"/" /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN sed -i "s/^MACHINE ??=.*/MACHINE = \"stm32mp15-mx-${BOARD_NAME}\"/" /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 # to save space when using WSL
 #   Automatically delete build intermediate files after packaging
-RUN echo 'INHERIT += "rm_work"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'INHERIT += "rm_work"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 #   Exclude specific heavy targets from rm_work if you need to debug them
-RUN echo 'RM_WORK_EXCLUDE += "virtual/kernel"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo 'RM_WORK_EXCLUDE += "virtual/kernel"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 RUN if [ "$ICECREAM_yippie" = "true" ]; then \
-        echo "sudo service iceccd start" >> /home/${USER}/.bashrc && \
-        echo 'INHERIT += "icecc"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
-        echo 'ICECC_DISABLED = "0"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
-        echo 'ICECC_RECIPE_DISABLE += "target-sdk-provides-dummy dummy-sdk-package"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
-        echo "PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
-        echo "ICECC_PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf && \
-        echo "ICECC_SCHEDULER_HOST = \"${ICECREAM_schedulerIP}\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "BBMASK += \".*/target-sdk-provides-dummy\.(bb|bbappend)\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "ICECC_DEBUG = \"debug\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "ICECC_ENV_EXEC = \"/usr/bin/icecc-create-env\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "ICECC_DISABLED:class-native = \"0\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "ICECC_DISABLED:class-cross = \"0\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "BASEDEPENDS:append = \" patchelf-native\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "BBMASK += \".*/target-sdk-provides-dummy_[^/]+\.(bb|bbappend)$\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
-        echo "BBMASK += \".*/target-sdk-provides-dummy\.(bb|bbappend)$\"" >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "sudo service iceccd start" >> /home/${USER_NAME}/.bashrc && \
+        echo 'INHERIT += "icecc"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo 'ICECC_DISABLED = "0"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo 'ICECC_RECIPE_DISABLE += "target-sdk-provides-dummy dummy-sdk-package"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "ICECC_PARALLEL_MAKE = \"-j ${ICECREAM_maxThreads}\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf && \
+        echo "ICECC_SCHEDULER_HOST = \"${ICECREAM_schedulerIP}\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "BBMASK += \".*/target-sdk-provides-dummy\.(bb|bbappend)\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "ICECC_DEBUG = \"debug\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "ICECC_ENV_EXEC = \"/usr/bin/icecc-create-env\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "ICECC_DISABLED:class-native = \"0\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "ICECC_DISABLED:class-cross = \"0\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "BASEDEPENDS:append = \" patchelf-native\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "BBMASK += \".*/target-sdk-provides-dummy_[^/]+\.(bb|bbappend)$\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo "BBMASK += \".*/target-sdk-provides-dummy\.(bb|bbappend)$\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
     else \
-        echo 'ICECC_DISABLED = "1"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
+        echo 'ICECC_DISABLED = "1"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf ; \
     fi
 
 # to reduce max memory required,
 #   page sizes used by xz. will silentely fail even if swap is available sometimes. only needed on very dinky systems.
 RUN if [ "$LOW_MEMORY_BUILD" = "true" ]; then \
-        echo 'XZ_DEFAULTS = "--memlimit=1024M"' >> /home/dev/projects/yocto/${BUILD_DIR}/conf/local.conf; \
+        echo 'XZ_DEFAULTS = "--memlimit=1024M"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf; \
     fi
 
 # build
@@ -235,14 +235,14 @@ RUN echo "bitbake core-image-minimal" >> build_simple.sh
 RUN chmod 777 build_simple.sh
 
 # build output in resulting path something like: tmp/deploy/images
-# can copy to host using as admin: docker cp yocto_build_container:/home/dev/projects/yocto/build-test/tmp-glibc/deploy/images/stm32mp15-disco ./
+# can copy to host using as admin: docker cp yocto_build_container:/home/${USER_NAME}/projects/yocto/build-test/tmp-glibc/deploy/images/stm32mp15-disco ./
 # the rest cna be done though WSL using the copied files
 # theres a scropt to greate the build output inside the image dir, under a folder called scripts. make sure to edit the script values to use 
 #   the correct storage device!
 
 # IMPORTANT, THE **** VENDOR SCRIPT IS funky. will silentely fail to make a working .raw image for the sdcard >:( . 
 #   SOLUTION: use the script anyways so it sets up the partitions. BUT you have to manually dd over the binaries for each partition
-#RUN echo 'IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"' >> /home/${USER}/projects/yocto/${BUILD_DIR}/conf/local.conf
+#RUN echo 'IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 # set entrypoint
 # COPY --chmod=777 entrypoint.sh /entrypoint.sh

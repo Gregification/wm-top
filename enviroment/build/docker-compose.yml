@@ -26,7 +26,7 @@ services:
       target: full-build
       args:
         BOARD_NAME: ${BOARD_NAME}
-        USER: ${USER}
+        USER_NAME: ${USER_NAME}
     networks:
           yocto_net:
             ipv4_address: 172.20.0.20
@@ -45,8 +45,8 @@ services:
     # manual steps shown in https://wiki.st.com/stm32mpu/wiki/How_to_create_your_own_machine
     volumes:
       - /dev/:/dev/
-      - ./mx_projects/${BOARD_NAME}:/home/${USER}/projects/yocto/meta-st-stm32mp-addons/mx/${BOARD_NAME}
-      - ./mx_projects/machine-${BOARD_NAME}.conf:/home/${USER}/projects/yocto/meta-st-stm32mp-addons/conf/machine/stm32mp15-mx-${BOARD_NAME}.conf
+      - ./mx_projects/${BOARD_NAME}:/home/${USER_NAME}/projects/yocto/meta-st-stm32mp-addons/mx/${BOARD_NAME}
+      - ./mx_projects/machine-${BOARD_NAME}.conf:/home/${USER_NAME}/projects/yocto/meta-st-stm32mp-addons/conf/machine/stm32mp15-mx-${BOARD_NAME}.conf
     tty: true
     stdin_open: true
 
