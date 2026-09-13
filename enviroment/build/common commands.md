@@ -13,6 +13,13 @@
     1. bind usb in question `usbipd bind --busid 10-1 --force`
     1. share for wsl access `usbipd attach --wsl --busid 10-1`
         - set `/dev/` as a shared volume between wsl and the container
+1. if linux host - tested on ubuntu 24 - you need to disable apparmor for bitbake. BB uses kernel namespaces to get around sudo requirements and apparmor stops that even in the container.
+    - for the current session: `sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0`
+    - to enable on all sessions
+    ```bash
+    echo "kernel.apparmor_restrict_unprivileged_userns = 0" | sudo tee /etc/sysctl.d/60-apparmor-userns.conf
+    sudo sysctl --system
+    ```
 
 ## enviroment: yocto tools
 

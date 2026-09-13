@@ -186,13 +186,17 @@ EOF
 #       found the bsp configs here: 'meta-st-stm32mp/conf/machine'
 #       !!! check the file supports the exact bord model !!!
 #   Update MACHINE in local.conf using sed (in-place replacement)
-RUN sed -i "s/^MACHINE ??=.*/MACHINE = \"stm32mp15-mx-${BOARD_NAME}\"/" /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN sed -i "s/^MACHINE ??=.*/MACHINE = \"${BOARD_NAME}\"/" /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 # to save space when using WSL
 #   Automatically delete build intermediate files after packaging
 RUN echo 'INHERIT += "rm_work"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 #   Exclude specific heavy targets from rm_work if you need to debug them
 RUN echo 'RM_WORK_EXCLUDE += "virtual/kernel"' >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
+
+# put download and sstate dirs as shared volumes to reduce build times
+RUN echo "DL_DIR = \"/home/${USER_NAME}/yocto_cache/downloads\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
+RUN echo "SSTATE_DIR = \"/home/${USER_NAME}/yocto_cache/sstate-cache\"" >> /home/${USER_NAME}/projects/yocto/${BUILD_DIR}/conf/local.conf
 
 RUN if [ "$ICECREAM_yippie" = "true" ]; then \
         echo "sudo service iceccd start" >> /home/${USER_NAME}/.bashrc && \
