@@ -15,10 +15,7 @@
 *.su
 
 # --- Build Directories ---
-[Dd]ebug/
-[Rr]elease/
-Build/
-build/
+shared/
 
 # --- STM32CubeIDE / Eclipse Metadata & Settings ---
 .metadata/

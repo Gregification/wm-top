@@ -32,6 +32,8 @@ services:
             ipv4_address: 172.20.0.20
     deploy:
       resources:
+          limits:
+            cpus: '22.0'
           reservations:
             # BitBake has a BB_PRESSURE_MAX_MEM variable to throttle for low memory. if something fails check dmesg for oom killings
             #   cpu throttling >%60 build on - 32GiB 4800MHz DDR4; i9-12900k (24 logical cores, 4ghz) - . mem peaks ~24GiB 
