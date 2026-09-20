@@ -499,7 +499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5c53ce2-3353-4875-9f7a-260472ba4cc1")
-		(property "Reference" "J2"
+		(property "Reference" "J501"
 			(at 116.4433 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -620,7 +620,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "J2")
+					(reference "J501")
 					(unit 1)
 				)
 			)

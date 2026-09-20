@@ -1,4 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "__WM_Local") (type "KiCad") (uri "D:/repos/wm-top/cad/kicad/common_libraries/footprints/__WM_Local.pretty") (options "") (descr ""))
+	(lib (name "__wm_local") (type "KiCad") (uri "D:/repos/wm-top/cad/kicad/common_libraries/__WM_Local.pretty/__wm_local.pretty") (options "") (descr ""))
 )
