@@ -622,7 +622,16 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "mpu_power": [
+        "V_{dd_core}",
+        "V_{dd_DDR}",
+        "V_{dd_IO}",
+        "3v3",
+        "V_{ddA}",
+        "V_{dd_SD}"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -684,7 +693,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "U1-2,U201,IC1,IC301,IC401,J1-2,J501,H1-4,H101-104",
+    "used_designators": "U1-2,U201,R301-302,R901,R99901,IC1,IC301,IC401,J1-2,J501,NT301-304,H1-4,H101-104,C301-314,C901-903,C99901-99902,L301-304,L901,L99901",
     "variants": []
   },
   "sheets": [
@@ -721,8 +730,8 @@
       "USB host"
     ],
     [
-      "394d3380-296e-4f71-92e8-d9e838c686e3",
-      "reference_parts"
+      "157228c5-c462-4e2c-89a8-acc0a1fe94b2",
+      "reference parts"
     ]
   ],
   "text_variables": {},

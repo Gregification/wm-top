@@ -414,7 +414,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 63.5)
+		(at 190.5 76.2)
 		(size 34.29 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -430,7 +430,7 @@
 		)
 		(uuid "06ad9cc8-e1a1-474d-84d3-806ac75aa67c")
 		(property "Sheetname" "Power MPU"
-			(at 190.5 62.7884 0)
+			(at 190.5 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -441,7 +441,7 @@
 			)
 		)
 		(property "Sheetfile" "Power MPU.kicad_sch"
-			(at 190.5 95.8346 0)
+			(at 190.5 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -449,6 +449,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GND" input
+			(at 224.79 83.82 0)
+			(uuid "1b577a7e-8986-401f-8fa1-fb997390f181")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PROC_PMIC_IO" bidirectional
+			(at 224.79 86.36 0)
+			(uuid "c66db293-305d-4130-9052-a02791aaa146")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PROC_PWR" output
+			(at 224.79 88.9 0)
+			(uuid "819ae1bd-2dae-4e2d-b666-a8048dd02e51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vin_prim" input
+			(at 224.79 91.44 0)
+			(uuid "94cc4269-f2e9-48e2-bc63-7ac131ce13ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -460,8 +500,8 @@
 		)
 	)
 	(sheet
-		(at 142.24 181.61)
-		(size 20.32 7.62)
+		(at 309.88 215.9)
+		(size 12.7 12.7)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
@@ -474,9 +514,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "394d3380-296e-4f71-92e8-d9e838c686e3")
-		(property "Sheetname" "reference_parts"
-			(at 142.24 180.8984 0)
+		(uuid "157228c5-c462-4e2c-89a8-acc0a1fe94b2")
+		(property "Sheetname" "reference parts"
+			(at 309.88 215.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -487,7 +527,7 @@
 			)
 		)
 		(property "Sheetfile" "reference_parts.kicad_sch"
-			(at 142.24 189.8146 0)
+			(at 309.88 229.1846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -500,13 +540,13 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "999")
+					(page "9")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 127 63.5)
+		(at 127 76.2)
 		(size 38.1 69.85)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -522,7 +562,7 @@
 		)
 		(uuid "4528db64-a2fa-4a5e-a759-f2845964b2e6")
 		(property "Sheetname" "MPU"
-			(at 127 62.7884 0)
+			(at 127 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -533,7 +573,7 @@
 			)
 		)
 		(property "Sheetfile" "STM32MP153CAC.kicad_sch"
-			(at 127 133.9346 0)
+			(at 127 146.6346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -541,46 +581,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "VDD" input
-			(at 165.1 66.04 0)
-			(uuid "4f2f5f8f-35f5-4dd8-92af-d7b875b67787")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VDD_CORE_1.20v" input
-			(at 165.1 68.58 0)
-			(uuid "0f4ba159-3f6a-4b41-9950-93a96dbfd4f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VDD_DDR" input
-			(at 165.1 72.39 0)
-			(uuid "e0c5f089-037e-4c02-a3f9-6bfe25b82c99")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VDD_USB" input
-			(at 165.1 74.93 0)
-			(uuid "6440835a-5c12-4e2b-befa-9509ed702fdc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
@@ -592,7 +592,7 @@
 		)
 	)
 	(sheet
-		(at 68.58 128.27)
+		(at 68.58 140.97)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -608,7 +608,7 @@
 		)
 		(uuid "996f6555-ca68-4e04-b150-7bd19df70858")
 		(property "Sheetname" "ST Link"
-			(at 68.58 127.5584 0)
+			(at 68.58 140.2584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -619,7 +619,7 @@
 			)
 		)
 		(property "Sheetfile" "ST Link off-board.kicad_sch"
-			(at 68.58 141.5546 0)
+			(at 68.58 154.2546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -638,7 +638,7 @@
 		)
 	)
 	(sheet
-		(at 68.58 109.22)
+		(at 68.58 121.92)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -654,7 +654,7 @@
 		)
 		(uuid "9bbfbe68-2804-40ed-9d5f-0570a6a580b2")
 		(property "Sheetname" "SPF"
-			(at 68.58 108.5084 0)
+			(at 68.58 121.2084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -665,7 +665,7 @@
 			)
 		)
 		(property "Sheetfile" "SPF.kicad_sch"
-			(at 68.58 122.5046 0)
+			(at 68.58 135.2046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -684,7 +684,7 @@
 		)
 	)
 	(sheet
-		(at 68.58 90.17)
+		(at 68.58 102.87)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -700,7 +700,7 @@
 		)
 		(uuid "c8478d41-8ee5-4c8a-a48d-a17f4988cf95")
 		(property "Sheetname" "USB host"
-			(at 68.58 89.4584 0)
+			(at 68.58 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -711,7 +711,7 @@
 			)
 		)
 		(property "Sheetfile" "USB Host.kicad_sch"
-			(at 68.58 103.4546 0)
+			(at 68.58 116.1546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -730,7 +730,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 101.6)
+		(at 190.5 114.3)
 		(size 34.29 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -746,7 +746,7 @@
 		)
 		(uuid "dfab2919-31d5-4d51-9ea2-7132696568f9")
 		(property "Sheetname" "IBC"
-			(at 190.5 100.8884 0)
+			(at 190.5 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -757,7 +757,7 @@
 			)
 		)
 		(property "Sheetfile" "Inter-Board Connect.kicad_sch"
-			(at 190.5 133.9346 0)
+			(at 190.5 146.6346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -776,7 +776,7 @@
 		)
 	)
 	(sheet
-		(at 68.58 63.5)
+		(at 68.58 76.2)
 		(size 33.02 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -792,7 +792,7 @@
 		)
 		(uuid "fb747675-6d29-4589-92ae-6726c227ffd0")
 		(property "Sheetname" "LPDDR2 16b"
-			(at 68.58 62.7884 0)
+			(at 68.58 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -803,7 +803,7 @@
 			)
 		)
 		(property "Sheetfile" "LPDDR3 16b.kicad_sch"
-			(at 68.58 84.4046 0)
+			(at 68.58 97.1046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -811,26 +811,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "VDD1_1.8Vcore" input
-			(at 101.6 67.31 0)
-			(uuid "b380fffd-e18b-4a13-bb82-5faba3ea6964")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VDD2_1.2Vcore" input
-			(at 101.6 69.85 0)
-			(uuid "b52878af-469b-408c-9200-26d0696bc446")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances

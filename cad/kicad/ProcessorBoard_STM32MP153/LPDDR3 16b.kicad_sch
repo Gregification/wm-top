@@ -2584,17 +2584,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "typical current for speed grade -25:\n	> VDD1 	[1.70-1.95]v:	97.55	mA\n	> VDD2	[1.14-1.30]v:	517.35	mA\n	> VDDCA	[1.14-1.30]v \n	 + VDDQ	[1.14-1.30]v:	68.46	mA	"
-		(exclude_from_sim no)
-		(at 230.124 79.502 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "26606b69-9725-4ec2-aa08-452106fcaf40")
-	)
 	(image
 		(at 255.27 33.02)
 		(uuid "20268388-e019-419d-84cf-993aec439a1e")
@@ -4317,20 +4306,9 @@
 			"yv8HpUzK2Rwfe/IAAAAASUVORK5CYII="
 		)
 	)
-	(hierarchical_label "VDDQCA_1v2"
+	(hierarchical_label "VDD2_1.2Vcore"
 		(shape input)
-		(at 184.15 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "26072713-870c-4ee2-8b37-056d53bc5314")
-	)
-	(hierarchical_label "VDD2_1v2core"
-		(shape input)
-		(at 184.15 27.94 0)
+		(at 22.86 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4339,9 +4317,9 @@
 		)
 		(uuid "2bb1fed9-0af6-48ff-8294-f6b8e2ee8761")
 	)
-	(hierarchical_label "VDD1_1v8core"
+	(hierarchical_label "VDD1_1.8Vcore"
 		(shape input)
-		(at 184.15 25.4 0)
+		(at 22.86 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)

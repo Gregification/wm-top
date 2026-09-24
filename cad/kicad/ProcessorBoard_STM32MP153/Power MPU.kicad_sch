@@ -5,6 +5,638 @@
 	(uuid "ffea5c9f-b04d-49ea-afef-4c6bb21acf45")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0.762 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "L_Small"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_Small_0_1"
+				(arc
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "__WM_Local:STPMIC1BPQR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -990,6 +1622,46 @@
 		)
 		(uuid "5c7657bf-d0d3-408a-bc26-54e372bbdb07")
 	)
+	(text "unused. programmable out:\n[1v8,3v3], %2, 100mV steps"
+		(exclude_from_sim no)
+		(at 174.244 141.986 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b61655e9-42b2-41ab-b693-22fb1d0bc743")
+	)
+	(text "unused. programmable out:\n[0v9,3v3], %2, 100mV steps"
+		(exclude_from_sim no)
+		(at 174.244 114.046 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dd429d05-d85d-4f0a-95d7-de478d8c8c15")
+	)
+	(text_box "LDO 2/unused:2v9, 5/V_{dd_SD}:2v9"
+		(exclude_from_sim no)
+		(at 97.79 127 0)
+		(size 91.44 27.94)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "43c9699f-da62-4651-bdf9-b30bb6eb7bb7")
+	)
 	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby DDR and MPU"
 		(exclude_from_sim no)
 		(at 215.9 107.95 0)
@@ -1010,7 +1682,7 @@
 		)
 		(uuid "53692559-e2bb-46a7-91e4-ca3fe34ee023")
 	)
-	(text_box "design notes:\n	- ST maintains the STPMIC1 drivers & integration across the whole boot chain. price competitive so no need to replce it\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n"
+	(text_box "design notes:\n	- STPMIC1 drivers actively maintinaed as of 2026\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings"
 		(exclude_from_sim no)
 		(at 215.9 63.5 0)
 		(size 67.31 43.18)
@@ -1029,6 +1701,106 @@
 			(justify left top)
 		)
 		(uuid "5f973e36-5f94-4ff5-8366-78f1d9747b9f")
+	)
+	(text_box "Buck1, Vdd Core : 1.2V 1.5A"
+		(exclude_from_sim no)
+		(at 97.79 22.86 0)
+		(size 91.44 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7d151db6-c34a-4493-80e0-8c905aae8413")
+	)
+	(text_box "Buck3, Vdd IO : 1.8V 0.5A\ndefault Vout is determined by PMIC varient"
+		(exclude_from_sim no)
+		(at 97.79 60.96 0)
+		(size 91.44 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "83ce77a5-9c90-4de4-8759-0af746ec0cbb")
+	)
+	(text_box "Buck2, Vdd DDR : 1.2V 1A"
+		(exclude_from_sim no)
+		(at 97.79 41.91 0)
+		(size 91.44 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9fcc6b15-4814-4c05-a68f-b2ac2c9c2164")
+	)
+	(text_box "LDO 1/V_{ddA}:2v9 , 6/unused:"
+		(exclude_from_sim no)
+		(at 97.79 99.06 0)
+		(size 91.44 27.94)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "bd9b295d-e3be-47c5-9fc1-e9b930d36fc7")
+	)
+	(text_box "Buck4, local 3v3 : 3.3V 2A"
+		(exclude_from_sim no)
+		(at 97.79 80.01 0)
+		(size 91.44 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e709eed6-0fbf-43b7-83a6-184a9af9145c")
 	)
 	(text_box "links"
 		(exclude_from_sim no)
@@ -1050,7 +1822,7 @@
 		)
 		(uuid "f87f8447-cdbf-428c-8732-3ed1aa20b0db")
 	)
-	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	- ~5v in min ampacity \n	 = Vin + VLXBST + buck1 + buck2 + buck3 + buck4\n	 = @{1.2 + 2000 + 1600 + 1000 + 3000}mA\n	- ~3v in min ampacity\n	 = sum(LDO[1,2,6,5])\n	 = @{800 + 800 + 350 + 800}mA"
+	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	- ~5v max current, non-failure worst case\n	 = Vin + VLXBST + buck1 + buck2 + buck3 + buck4\n	 = @{1.2 + 2000 + 1600 + 1000 + 3000}mA\n	- ~5v for Vin_prim for ~10% more effeciency in sw regs\n	- ~3v3 max current, non-failure worst case\n	 = sum(LDO[1,2,6,5])\n	 = @{800 + 800 + 350 + 800}mA\n	- ~3v3 for Vin_sec for reduced ldo losses. <300mV_{do}"
 		(exclude_from_sim no)
 		(at 215.9 19.05 0)
 		(size 67.31 43.18)
@@ -1070,45 +1842,1802 @@
 		)
 		(uuid "fb8f8fd4-76f1-44c5-b0e6-9db790ee0a23")
 	)
+	(junction
+		(at 170.18 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02b314de-6ddf-4397-b129-d8445246b147")
+	)
+	(junction
+		(at 118.11 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04497910-45c0-4e6f-bc1c-545ddc3ef7ed")
+	)
+	(junction
+		(at 154.94 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2144bea7-c9b0-4718-8b1c-9be6cfa5a3c9")
+	)
+	(junction
+		(at 154.94 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28ec8235-14b0-4ce9-be1a-95536be91ac9")
+	)
+	(junction
+		(at 157.48 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a9fb4da-c214-4269-83b8-cd7f4c665b21")
+	)
+	(junction
+		(at 52.07 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "313a0c20-76f5-484b-8d0e-ef1f58fa2582")
+	)
+	(junction
+		(at 118.11 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33084c03-377e-44cb-a850-b6381cdec124")
+	)
+	(junction
+		(at 118.11 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b55d60e-23e8-47b0-a3b4-430e7bba3ff5")
+	)
+	(junction
+		(at 139.7 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e3d4811-d240-41eb-8e7f-37b199b2e903")
+	)
+	(junction
+		(at 157.48 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56552959-ac9a-43eb-acb8-3718bfe94d28")
+	)
+	(junction
+		(at 46.99 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "752712b4-5af0-4107-b172-7c38f09dd3db")
+	)
+	(junction
+		(at 157.48 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b87fcff-c4cf-4df4-8d68-a13e6c229dca")
+	)
+	(junction
+		(at 157.48 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87f8916d-23d1-4797-a747-0cd3b9ec35f1")
+	)
+	(junction
+		(at 118.11 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c72d85d-583f-4460-ab29-206efcc2f46c")
+	)
+	(junction
+		(at 170.18 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f848499-cb94-46cc-aceb-9e2380868763")
+	)
+	(junction
+		(at 118.11 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2440c87-e2e2-4d08-b88b-2e96eb69e90b")
+	)
+	(junction
+		(at 154.94 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b064c5a9-be15-4543-a1c3-c27dba3cb3c3")
+	)
+	(junction
+		(at 154.94 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba167eee-17c9-4acf-bab1-1d239ecd198d")
+	)
+	(junction
+		(at 118.11 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf965ada-b10a-44ac-8c10-15b58e74270d")
+	)
+	(junction
+		(at 118.11 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1ce708f-b5c8-4c27-ba63-a9ad93b2c78e")
+	)
+	(junction
+		(at 139.7 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2a40ec7-a82e-4768-ad01-d43ff7b1dfd5")
+	)
+	(junction
+		(at 170.18 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c721c9f4-5db5-4c4b-9121-1b1e883f3f01")
+	)
+	(junction
+		(at 52.07 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2db3738-a5f9-411f-a650-166581bf4058")
+	)
+	(junction
+		(at 170.18 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e50247b2-2ef2-46b8-a6ef-93641f1d78b8")
+	)
+	(junction
+		(at 118.11 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea6bb993-3eeb-4805-a0af-5dffd8bbbc96")
+	)
+	(no_connect
+		(at 177.8 116.84)
+		(uuid "5d166c2e-53a1-4782-a8f8-0fd1f7a2dfb4")
+	)
+	(no_connect
+		(at 177.8 144.78)
+		(uuid "721c8abe-71eb-45c3-ac39-8e60dcfb4904")
+	)
+	(bus_entry
+		(at 194.31 130.81)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112a3fda-ce36-4dc5-8d6a-8f10fe7e7752")
+	)
+	(bus_entry
+		(at 34.29 27.94)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ebfc764-5e30-476f-888f-a160df54c5a0")
+	)
+	(bus_entry
+		(at 34.29 30.48)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2815a32f-13ff-4853-8a14-a7c2f567b254")
+	)
+	(bus_entry
+		(at 191.77 69.85)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30db6ca2-96d2-4b08-aa8c-ae184b8713a3")
+	)
+	(bus_entry
+		(at 34.29 38.1)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a23295d-6fb7-491b-8258-744e16b5f15f")
+	)
+	(bus_entry
+		(at 194.31 29.21)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d1cf5a9-483d-4ff1-a0b9-6ff95d38f29c")
+	)
+	(bus_entry
+		(at 34.29 40.64)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73cb1a64-0925-4064-9373-a7f590bfb3c6")
+	)
+	(bus_entry
+		(at 191.77 50.8)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b1f7c4-9d43-461a-8cf0-74fa553d7fa6")
+	)
+	(bus_entry
+		(at 34.29 33.02)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "864b5b16-866c-47c7-9589-b41d0ee9df1b")
+	)
+	(bus_entry
+		(at 34.29 35.56)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "962a248a-82a3-4438-b886-29c9d7b47c74")
+	)
+	(bus_entry
+		(at 191.77 88.9)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bbe0140-89c0-4127-bb2f-0969422f0df5")
+	)
+	(bus_entry
+		(at 194.31 102.87)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e75d1bec-9e74-4dd4-abe7-eb1d18ddba4c")
+	)
 	(wire
 		(pts
-			(xy 33.02 74.93) (xy 33.02 91.44)
+			(xy 118.11 77.47) (xy 118.11 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "065d21b6-a17a-47ac-8e84-d2694df18b08")
+		(uuid "00394b01-0434-412f-b28a-82cc7ca5d78e")
 	)
 	(wire
 		(pts
-			(xy 31.75 66.04) (xy 48.26 66.04)
+			(xy 170.18 90.17) (xy 170.18 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08253a32-c00f-4fb4-9c52-d56553c69ded")
+		(uuid "00cc7612-5703-4c82-abf9-8f4c8529aeb2")
 	)
 	(wire
 		(pts
-			(xy 31.75 74.93) (xy 33.02 74.93)
+			(xy 36.83 40.64) (xy 38.1 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ad9bdd3-35cb-43b9-b273-45dbc0f94e2e")
+		(uuid "01256375-2b40-4b09-8c9b-1a8dd685e1b2")
 	)
 	(wire
 		(pts
-			(xy 48.26 91.44) (xy 48.26 66.04)
+			(xy 118.11 88.9) (xy 127 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03dc4f44-bb00-41a5-aa9f-45d23f9ad4e3")
+	)
+	(wire
+		(pts
+			(xy 170.18 69.85) (xy 191.77 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "072d82ef-b201-4355-a534-1be8a863378f")
+	)
+	(wire
+		(pts
+			(xy 52.07 22.86) (xy 52.07 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0748bb73-a4b1-4dcb-bba8-7c1de2ac7556")
+	)
+	(wire
+		(pts
+			(xy 154.94 113.03) (xy 154.94 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "075cd8ce-1579-4727-b94d-09440ef718d7")
+	)
+	(wire
+		(pts
+			(xy 114.3 105.41) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07cd0112-8462-4363-bb37-1d447e0bc7a3")
+	)
+	(wire
+		(pts
+			(xy 149.86 69.85) (xy 147.32 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dcad607-142b-4646-82c2-e2952b669852")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e3067d1-ec98-40d2-a679-32ec054a6aff")
+	)
+	(bus
+		(pts
+			(xy 194.31 20.32) (xy 196.85 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1229a7cf-d21f-4174-8b35-55ca114b36cd")
+	)
+	(wire
+		(pts
+			(xy 147.32 39.37) (xy 149.86 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16df9433-fd85-4132-9324-e9b1822fa572")
+	)
+	(wire
+		(pts
+			(xy 118.11 58.42) (xy 118.11 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a1e243f-e860-4e91-b188-409f9f7bfcd3")
+	)
+	(wire
+		(pts
+			(xy 118.11 113.03) (xy 118.11 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c62641f-2ef2-4c5e-8cd6-e12aaee17221")
+	)
+	(wire
+		(pts
+			(xy 157.48 31.75) (xy 154.94 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8d8aaf-ffe4-49d1-82ae-69f8d32258df")
+	)
+	(wire
+		(pts
+			(xy 29.21 82.55) (xy 31.75 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24feda98-c7ab-4f8c-b8e3-87abcb9f58e4")
+	)
+	(wire
+		(pts
+			(xy 147.32 58.42) (xy 149.86 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2514ff84-5505-426b-8170-4b56ca53efeb")
+	)
+	(wire
+		(pts
+			(xy 170.18 50.8) (xy 191.77 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2583d146-2a27-4d74-bc6b-d6f354d15f3d")
+	)
+	(wire
+		(pts
+			(xy 170.18 88.9) (xy 157.48 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a7a405-199e-46cd-ad8a-d8f22cf740f8")
+	)
+	(wire
+		(pts
+			(xy 170.18 77.47) (xy 170.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27c5fa06-5575-4526-8446-430957b36fd0")
+	)
+	(wire
+		(pts
+			(xy 52.07 30.48) (xy 59.69 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27f466be-9912-44b5-a223-3550ac3fa36a")
+	)
+	(wire
+		(pts
+			(xy 118.11 133.35) (xy 127 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28bd3129-a4f9-4e02-bdb2-4b8961ae81b5")
+	)
+	(wire
+		(pts
+			(xy 36.83 38.1) (xy 38.1 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c9677e-a026-422d-bdcc-625663c9c030")
+	)
+	(wire
+		(pts
+			(xy 46.99 33.02) (xy 59.69 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2975f8ab-03ec-451c-8c23-b721cf54a394")
+	)
+	(wire
+		(pts
+			(xy 114.3 31.75) (xy 118.11 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b856191-2f32-4dd0-8bcb-528bc1d0d210")
+	)
+	(wire
+		(pts
+			(xy 167.64 39.37) (xy 170.18 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d7387ae-85ca-4ca6-b590-e844a2d6a088")
+	)
+	(wire
+		(pts
+			(xy 139.7 152.4) (xy 154.94 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec50247-1808-4fd5-b018-f3e9168f1bda")
+	)
+	(wire
+		(pts
+			(xy 170.18 58.42) (xy 170.18 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "302b2c8a-9590-4cdb-90f4-125978cb67f3")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 118.11 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b4effb-1db0-4103-98e0-106d1cbadc38")
+	)
+	(wire
+		(pts
+			(xy 154.94 116.84) (xy 149.86 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "333203b3-a3b4-4650-bc28-4d32c07da99c")
+	)
+	(wire
+		(pts
+			(xy 114.3 133.35) (xy 118.11 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "376ce171-e9c1-4fb6-a4fa-5fc6d0ab1169")
+	)
+	(wire
+		(pts
+			(xy 154.94 134.62) (xy 154.94 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b43eeef-c8a4-4c30-81d9-7e26a0813cd3")
+	)
+	(wire
+		(pts
+			(xy 170.18 88.9) (xy 191.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2ec2e7-4767-4211-b8b4-d85dd74f29e5")
+	)
+	(wire
+		(pts
+			(xy 29.21 76.2) (xy 31.75 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "439cc31c-d8bd-4423-9e61-a8f782e49981")
+	)
+	(wire
+		(pts
+			(xy 154.94 118.11) (xy 154.94 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43d5770e-ccc4-4421-b6d7-c47f691f38b2")
+	)
+	(wire
+		(pts
+			(xy 157.48 58.42) (xy 157.48 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e977cd-02f8-496c-ace7-a773295c03aa")
+	)
+	(wire
+		(pts
+			(xy 118.11 31.75) (xy 127 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44571874-c32f-413d-b356-8ad80c003ab9")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 170.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b349012-1490-4bb6-a657-ddf706b67fff")
+	)
+	(wire
+		(pts
+			(xy 139.7 140.97) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c89a2be-0ee3-41ba-b0f9-ec33e4ee091d")
+	)
+	(wire
+		(pts
+			(xy 118.11 96.52) (xy 118.11 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed83285-827c-48b2-8610-af1bafd2b854")
+	)
+	(wire
+		(pts
+			(xy 154.94 133.35) (xy 149.86 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51317e53-c1f5-45f7-b425-103ba8c8a658")
+	)
+	(wire
+		(pts
+			(xy 118.11 69.85) (xy 127 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b87216-a194-4c33-9cff-e0469e7bc294")
+	)
+	(wire
+		(pts
+			(xy 154.94 140.97) (xy 154.94 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52adbedb-7e38-43dd-9230-df85158f8de4")
+	)
+	(wire
+		(pts
+			(xy 154.94 96.52) (xy 157.48 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55afa198-700f-445f-9caa-410392852025")
+	)
+	(wire
+		(pts
+			(xy 170.18 52.07) (xy 170.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "562af73d-ad40-4ad7-8975-3512a81616c5")
+	)
+	(wire
+		(pts
+			(xy 139.7 113.03) (xy 139.7 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587a1f89-5361-49a5-9414-a9ab265fcb5a")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 127 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587a5e97-f7c2-4552-b94d-29f21b637583")
+	)
+	(wire
+		(pts
+			(xy 154.94 144.78) (xy 177.8 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ebad50-f1d1-4bce-b8bf-27afe4e9e7f4")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 127 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b778233-d395-4b51-89fc-3b09cc55ad9d")
+	)
+	(wire
+		(pts
+			(xy 154.94 106.68) (xy 154.94 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d08512a-8ef8-4162-8502-70e2cfb9d80a")
+	)
+	(wire
+		(pts
+			(xy 167.64 96.52) (xy 170.18 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ef98f9d-f81d-4f9e-9e3e-47b53beccd5e")
+	)
+	(wire
+		(pts
+			(xy 114.3 39.37) (xy 118.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fac4e59-10fa-4f59-a87f-9cc7a7a27d73")
+	)
+	(wire
+		(pts
+			(xy 157.48 50.8) (xy 154.94 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a6f2ca-7745-4d31-948b-41aee972e79c")
+	)
+	(wire
+		(pts
+			(xy 157.48 69.85) (xy 154.94 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e28c8a-ed18-4839-a70b-631ac86adb8b")
+	)
+	(wire
+		(pts
+			(xy 36.83 30.48) (xy 52.07 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc77313-c328-415b-8aa1-1fe37cc09e05")
+	)
+	(wire
+		(pts
+			(xy 29.21 68.58) (xy 46.99 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742b5dc7-a846-45ea-8383-746cd0ece782")
+	)
+	(wire
+		(pts
+			(xy 29.21 88.9) (xy 30.48 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74ccfacb-bf7f-4eb2-a81f-02b61e625d24")
+	)
+	(wire
+		(pts
+			(xy 167.64 58.42) (xy 170.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae76957-d543-491e-8ded-9043faef4d0f")
+	)
+	(wire
+		(pts
+			(xy 52.07 30.48) (xy 52.07 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b7bc84-abc9-4176-8fac-93a18e69589d")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52) (xy 157.48 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82d40471-cb0d-41a9-9726-d76f6d3a8f66")
+	)
+	(wire
+		(pts
+			(xy 154.94 124.46) (xy 154.94 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83095a65-ac52-4e7f-8521-0694c1b293f9")
+	)
+	(wire
+		(pts
+			(xy 170.18 33.02) (xy 170.18 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85636798-6952-4754-8259-741bc23c1e3d")
+	)
+	(wire
+		(pts
+			(xy 154.94 116.84) (xy 177.8 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8590aef3-85cf-4ae8-b986-5103b9bbee9d")
+	)
+	(wire
+		(pts
+			(xy 139.7 140.97) (xy 154.94 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89bc7d21-fdb2-40e2-aea5-cedff4b294b0")
+	)
+	(wire
+		(pts
+			(xy 114.3 88.9) (xy 118.11 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a081d7c-4305-48e1-b6bd-264355914a19")
+	)
+	(wire
+		(pts
+			(xy 147.32 77.47) (xy 149.86 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8beffb58-f73e-4ecf-9441-2381adba7a0b")
+	)
+	(wire
+		(pts
+			(xy 170.18 39.37) (xy 170.18 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c16ec54-1bfc-4603-a66c-1c1d416d4f3b")
+	)
+	(wire
+		(pts
+			(xy 149.86 50.8) (xy 147.32 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c1ef8a7-4f30-428e-9d0b-1ff4afd4632d")
+	)
+	(wire
+		(pts
+			(xy 170.18 71.12) (xy 170.18 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c566335-1018-4703-9a7c-64c4f3d7c5a0")
+	)
+	(wire
+		(pts
+			(xy 46.99 27.94) (xy 46.99 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8caadbed-0a6b-41f9-98fd-2202a18e1909")
+	)
+	(wire
+		(pts
+			(xy 147.32 96.52) (xy 149.86 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e3bf252-dc35-4baa-878d-a7a39b9805db")
+	)
+	(wire
+		(pts
+			(xy 30.48 88.9) (xy 30.48 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe323d7-9241-451d-b6a4-2776685228a0")
+	)
+	(wire
+		(pts
+			(xy 154.94 105.41) (xy 149.86 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9166a897-1fda-4b13-b457-fd917becfcfb")
+	)
+	(wire
+		(pts
+			(xy 118.11 140.97) (xy 118.11 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9248ef78-e856-445c-aeb5-85d166ee7335")
+	)
+	(wire
+		(pts
+			(xy 36.83 35.56) (xy 38.1 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95965bbf-a554-4e99-9237-dc022421e207")
+	)
+	(wire
+		(pts
+			(xy 170.18 96.52) (xy 170.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c92853-2c9e-4dd8-acd9-efbaed2e017c")
+	)
+	(wire
+		(pts
+			(xy 149.86 88.9) (xy 147.32 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ff1110-8075-42f4-b77f-7f07982bc343")
+	)
+	(wire
+		(pts
+			(xy 114.3 77.47) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b5ad48c-d39f-4c8b-b227-64a6635676ba")
+	)
+	(wire
+		(pts
+			(xy 139.7 113.03) (xy 154.94 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a227d6e2-3f99-4de0-8a02-3cbba402ff7f")
+	)
+	(wire
+		(pts
+			(xy 59.69 21.59) (xy 52.07 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a620ccb5-3065-4f4b-abfb-9d7b75397595")
+	)
+	(wire
+		(pts
+			(xy 157.48 88.9) (xy 154.94 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a92348ee-d037-4aee-960c-d8fce226fac2")
+	)
+	(wire
+		(pts
+			(xy 154.94 146.05) (xy 154.94 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaeda792-28ae-4912-8bad-b6fd75fa6f79")
+	)
+	(bus
+		(pts
+			(xy 194.31 20.32) (xy 194.31 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac47677d-0ab0-41c6-8084-6824e5820b5a")
+	)
+	(wire
+		(pts
+			(xy 154.94 39.37) (xy 157.48 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ddf646-a679-4c3c-88ef-4f594dee1b68")
+	)
+	(wire
+		(pts
+			(xy 118.11 140.97) (xy 139.7 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b58a2638-61b4-450e-a9ab-e1ba31793f38")
+	)
+	(wire
+		(pts
+			(xy 170.18 31.75) (xy 191.77 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a050d8-0ecc-40c1-80e7-5f10a3e1a6f6")
+	)
+	(wire
+		(pts
+			(xy 149.86 31.75) (xy 147.32 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baa97c68-8f99-4eab-aeda-2c9ac7db10c3")
+	)
+	(wire
+		(pts
+			(xy 118.11 69.85) (xy 118.11 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbdb5c79-ae16-494f-af5d-8601a6c78f77")
+	)
+	(wire
+		(pts
+			(xy 114.3 50.8) (xy 118.11 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c062c9a7-f0ec-452c-957c-1c621bc66a0a")
+	)
+	(wire
+		(pts
+			(xy 154.94 58.42) (xy 157.48 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c15243c1-1a64-411a-b0cf-f6810a24f3f3")
+	)
+	(wire
+		(pts
+			(xy 46.99 21.59) (xy 46.99 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e59535-88a3-43f4-85e1-aa2de7dcca49")
+	)
+	(wire
+		(pts
+			(xy 36.83 33.02) (xy 46.99 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c258b12b-157a-4903-a2c5-f60930acd84e")
+	)
+	(wire
+		(pts
+			(xy 114.3 58.42) (xy 118.11 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c38f3dbf-3164-4dfe-99c2-77e886014b11")
+	)
+	(wire
+		(pts
+			(xy 170.18 31.75) (xy 157.48 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8e425cf-1ea6-4804-ab85-8a7eb2a234d3")
+	)
+	(wire
+		(pts
+			(xy 114.3 140.97) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c967b36b-e9c0-42b2-9cd4-6c35fa9879af")
+	)
+	(bus
+		(pts
+			(xy 30.48 26.67) (xy 34.29 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c4ff68-28b8-49aa-9b5a-96cd4153b686")
+	)
+	(wire
+		(pts
+			(xy 170.18 69.85) (xy 157.48 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccabb29d-baf8-4446-9593-1dfeb65c7124")
+	)
+	(wire
+		(pts
+			(xy 154.94 105.41) (xy 191.77 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6c176a-85cd-4760-aadb-45d9d9dcefc5")
+	)
+	(wire
+		(pts
+			(xy 114.3 96.52) (xy 118.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d37caa34-ce36-4791-a989-ff3b301c5e52")
+	)
+	(wire
+		(pts
+			(xy 154.94 152.4) (xy 154.94 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d42292-463d-4a2b-a8d9-f1d548523169")
+	)
+	(wire
+		(pts
+			(xy 114.3 69.85) (xy 118.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5400d21-4372-44c7-acf5-7154e4eba20c")
+	)
+	(wire
+		(pts
+			(xy 157.48 39.37) (xy 157.48 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d701f58b-6520-42c5-a7c3-2123f44c9ad3")
+	)
+	(wire
+		(pts
+			(xy 118.11 31.75) (xy 118.11 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3639c0-d432-4b56-a453-e36f189711a4")
+	)
+	(wire
+		(pts
+			(xy 118.11 106.68) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbfc9655-b6a4-4030-9013-ccc29e6384cb")
+	)
+	(wire
+		(pts
+			(xy 118.11 113.03) (xy 139.7 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce22f9b-87e8-4f10-bdce-847e2d3da00b")
+	)
+	(wire
+		(pts
+			(xy 46.99 93.98) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e12b7e34-a989-47f3-80e8-b8ae975e1ffe")
+	)
+	(wire
+		(pts
+			(xy 170.18 50.8) (xy 157.48 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e202bb65-709b-492c-bf26-045c486aa6b8")
+	)
+	(wire
+		(pts
+			(xy 114.3 113.03) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb077565-6852-4a45-ab4c-a307aed7d215")
+	)
+	(wire
+		(pts
+			(xy 118.11 88.9) (xy 118.11 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec29176e-379c-4d17-bd55-92e3f79a5b1c")
+	)
+	(bus
+		(pts
+			(xy 34.29 26.67) (xy 34.29 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec55e114-f8b7-45d6-87be-74b4609f6a70")
+	)
+	(wire
+		(pts
+			(xy 154.94 77.47) (xy 157.48 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1f04cb-338c-43cb-8b2e-e3a26e8ea705")
+	)
+	(wire
+		(pts
+			(xy 154.94 144.78) (xy 149.86 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2afa48e-b7bd-473f-8008-db9f6cf2212b")
+	)
+	(wire
+		(pts
+			(xy 36.83 43.18) (xy 38.1 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c3ef3f-99db-475a-8c9d-accbddddb085")
+	)
+	(wire
+		(pts
+			(xy 139.7 124.46) (xy 154.94 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f72f5af5-7719-47f3-826b-3b391ea8621a")
+	)
+	(wire
+		(pts
+			(xy 154.94 133.35) (xy 191.77 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9bd83ad-c3fb-4a31-ad36-24f88facba5c")
+	)
+	(wire
+		(pts
+			(xy 118.11 134.62) (xy 118.11 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8b5426-43fd-420e-9a29-74a2939a862b")
+	)
+	(wire
+		(pts
+			(xy 52.07 21.59) (xy 46.99 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed53b9a-940b-4d08-85fc-15718190175a")
+	)
+	(wire
+		(pts
+			(xy 157.48 77.47) (xy 157.48 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd5cc35-5416-4351-8ce6-89e89eee5b56")
+	)
+	(image
+		(at 250.19 96.52)
+		(uuid "d9c7c5a5-8789-40f1-ba7e-5a51ca44d370")
+		(data "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"
+		)
 	)
 	(label "ExposedPadGnd"
 		(at 34.29 113.03 90)
@@ -1140,6 +3669,16 @@
 		)
 		(uuid "070a12f8-b7c0-48e1-b906-9dcd31394d0c")
 	)
+	(label "VLX4"
+		(at 147.32 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0aadc1b5-ac58-4aee-9b03-fdd8074a7106")
+	)
 	(label "PwrGndBuck4"
 		(at 67.31 153.67 0)
 		(effects
@@ -1149,6 +3688,26 @@
 			(justify left bottom)
 		)
 		(uuid "0b8dafdd-cf6e-4922-803b-d3960ca76565")
+	)
+	(label "GndLDO"
+		(at 114.3 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0cbaec94-1502-4f88-8e56-4e5b232ddc54")
+	)
+	(label "V_{dd_core}"
+		(at 177.8 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "106bdbc6-0a1d-4b65-abed-5a9366126f06")
 	)
 	(label "Vout4FB"
 		(at 67.31 151.13 0)
@@ -1160,6 +3719,16 @@
 		)
 		(uuid "1500dea3-cabe-4b23-aef2-d173c35ce0ad")
 	)
+	(label "PwrCtrl"
+		(at 38.1 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b0525c1-7420-4765-9cc2-ab8f6e4474cb")
+	)
 	(label "Buck4in"
 		(at 67.31 158.75 0)
 		(effects
@@ -1170,8 +3739,38 @@
 		)
 		(uuid "1cbfdc7b-955f-4aef-91e1-4288b3e25b1d")
 	)
+	(label "Vout2FB"
+		(at 147.32 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1f3bbaee-8a42-4527-926b-86b91b4b2639")
+	)
+	(label "3v3"
+		(at 114.3 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20321f5b-77a2-4356-a82a-f0204bc3defe")
+	)
+	(label "SCL"
+		(at 59.69 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21a2f08d-d473-475c-9321-3a18e4bae29a")
+	)
 	(label "PwrGndBuck4"
-		(at 48.26 87.63 0)
+		(at 46.99 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1179,6 +3778,16 @@
 			(justify left bottom)
 		)
 		(uuid "28052db4-4298-489c-8318-3e279b91e447")
+	)
+	(label "WakeUp"
+		(at 38.1 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f635617-fce4-47cb-a4fb-2e492126bf85")
 	)
 	(label "SWout"
 		(at 52.07 113.03 90)
@@ -1190,6 +3799,16 @@
 		)
 		(uuid "3176bf14-4b20-43d9-af0e-b0d7a674ad1e")
 	)
+	(label "VddIO"
+		(at 29.21 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3237ef1c-dde8-4ed0-93ac-0cf1429b388e")
+	)
 	(label "PwrGndBuck3"
 		(at 67.31 143.51 0)
 		(effects
@@ -1200,17 +3819,17 @@
 		)
 		(uuid "32d65c5f-efbe-4e90-a30b-1da9282037dd")
 	)
-	(label "Vin"
-		(at 33.02 76.2 0)
+	(label "PwrGndBuck2"
+		(at 114.3 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "342f90f9-fc8e-4ce1-9c6d-4c0ecb3b9e3d")
+		(uuid "34bd248c-d0c7-4a8c-953c-f8fa35b466b8")
 	)
-	(label "VLXBuck4"
+	(label "VLX4"
 		(at 67.31 156.21 0)
 		(effects
 			(font
@@ -1230,7 +3849,7 @@
 		)
 		(uuid "3c363837-a2de-4be4-8d01-a2158e2f8755")
 	)
-	(label "Vout2"
+	(label "Vout2FB"
 		(at 26.67 153.67 180)
 		(effects
 			(font
@@ -1240,8 +3859,18 @@
 		)
 		(uuid "3e329e54-848e-4551-a71b-35579fb909e7")
 	)
+	(label "BoostOut"
+		(at 29.21 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f8f5ae6-8c89-4541-a79d-9c29d47adc55")
+	)
 	(label "PwrGndBoost5"
-		(at 48.26 91.44 0)
+		(at 46.99 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1249,6 +3878,26 @@
 			(justify left bottom)
 		)
 		(uuid "40297a29-da33-418d-bd32-bda9a7307eb9")
+	)
+	(label "INTn"
+		(at 38.1 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "439fe51b-4ecd-45e7-bddb-371defdd49ea")
+	)
+	(label "GndLDO"
+		(at 114.3 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "44302b94-cdf6-4da8-9cab-fe4578b0ac56")
 	)
 	(label "LDO1and6in"
 		(at 57.15 181.61 270)
@@ -1270,8 +3919,18 @@
 		)
 		(uuid "4e9989de-5bd0-40cf-9645-d039a1871dc6")
 	)
+	(label "Buck1in"
+		(at 127 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f40785c-50f9-4f02-bac3-03f297374630")
+	)
 	(label "PwrGndBuck3"
-		(at 48.26 83.82 0)
+		(at 46.99 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1279,6 +3938,16 @@
 			(justify left bottom)
 		)
 		(uuid "50bbfdbf-997b-4363-b94d-c60819f9d84e")
+	)
+	(label "{mpu_power}"
+		(at 196.85 20.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50f2100b-fb69-44cc-bfec-43fb2c191106")
 	)
 	(label "RSTn"
 		(at 26.67 133.35 180)
@@ -1300,6 +3969,16 @@
 		)
 		(uuid "51f1b4f0-9b27-4196-928c-75ffe7d75c3e")
 	)
+	(label "LDO1and6in"
+		(at 127 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52522760-2aaa-4d90-9a4c-4370332a91e9")
+	)
 	(label "LDO3out"
 		(at 36.83 181.61 270)
 		(effects
@@ -1310,8 +3989,18 @@
 		)
 		(uuid "52660497-e07a-4f85-b819-1cad51f6f91e")
 	)
+	(label "V_{ddA}"
+		(at 177.8 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52e0ea31-cd99-4a5b-80dd-67df183586f8")
+	)
 	(label "GndLDO"
-		(at 48.26 72.39 0)
+		(at 46.99 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1319,6 +4008,56 @@
 			(justify left bottom)
 		)
 		(uuid "596dc0b5-7ec2-4fb3-a658-edac24aad8c3")
+	)
+	(label "Buck4in"
+		(at 127 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a228752-7af4-4614-a964-0ea362e49017")
+	)
+	(label "3v3"
+		(at 177.8 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5afc7536-5774-43b0-ac35-5707d9d9ca9e")
+	)
+	(label "VLX1"
+		(at 147.32 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c9ed334-038e-4f50-bff9-71cf94f65d7e")
+	)
+	(label "SWin"
+		(at 31.75 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cebb0ff-9b05-4d88-98ca-aa50e294fc85")
+	)
+	(label "Vout4FB"
+		(at 147.32 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "603ce3d2-42e7-4449-bb92-006c1e534c89")
 	)
 	(label "Vio"
 		(at 41.91 113.03 90)
@@ -1330,7 +4069,7 @@
 		)
 		(uuid "6047dcbd-f0cb-462d-bfd0-78f26070a914")
 	)
-	(label "Vout1"
+	(label "Vout1FB"
 		(at 26.67 143.51 180)
 		(effects
 			(font
@@ -1349,6 +4088,26 @@
 			(justify right bottom)
 		)
 		(uuid "6970466f-469c-41b8-895d-32353bd82d16")
+	)
+	(label "Vout3FB"
+		(at 147.32 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69ad9828-766c-45e0-9032-97b58754848b")
+	)
+	(label "Vio"
+		(at 59.69 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70ee83fb-1316-4af0-bf25-5d8ce07b26ca")
 	)
 	(label "AGnd"
 		(at 44.45 113.03 90)
@@ -1380,6 +4139,16 @@
 		)
 		(uuid "76aa8ae8-88fc-4a67-94c2-8c3a8cd54fef")
 	)
+	(label "VLX2"
+		(at 147.32 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79bd9c78-7cd6-4c4e-a734-04283f4e0f52")
+	)
 	(label "PonkeyN"
 		(at 44.45 181.61 270)
 		(effects
@@ -1390,8 +4159,18 @@
 		)
 		(uuid "7d5b31f7-6066-4bad-93ce-6d4e0ebac340")
 	)
+	(label "LDO5out"
+		(at 149.86 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7dff74e8-937b-4212-81b4-12aaf65bd44d")
+	)
 	(label "PwrGndBuck2"
-		(at 48.26 80.01 0)
+		(at 46.99 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1399,6 +4178,16 @@
 			(justify left bottom)
 		)
 		(uuid "7eba4621-44ba-4d9e-9047-39d8d2dc9102")
+	)
+	(label "LDO2in"
+		(at 30.48 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84a1143e-5476-4aca-b93f-1a601713b00a")
 	)
 	(label "Buck1in"
 		(at 26.67 151.13 180)
@@ -1410,16 +4199,6 @@
 		)
 		(uuid "84f4e913-abc7-4f65-bc97-b8c24c46f80a")
 	)
-	(label "Buck3in"
-		(at 33.02 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "857f73f7-7bdc-4b84-a5a1-81b9763eac2e")
-	)
 	(label "InternalLDO"
 		(at 46.99 113.03 90)
 		(effects
@@ -1429,6 +4208,16 @@
 			(justify left bottom)
 		)
 		(uuid "895474af-fd04-43e7-ad22-304c4508e6d1")
+	)
+	(label "LDO6out"
+		(at 149.86 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91e96431-86ea-4a44-b7f8-3203e537627c")
 	)
 	(label "BoostOut"
 		(at 67.31 133.35 0)
@@ -1441,14 +4230,14 @@
 		(uuid "94774c5a-f643-4f7e-bceb-e7f4acb3689d")
 	)
 	(label "Buck2in"
-		(at 33.02 83.82 0)
+		(at 127 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "9a558195-1947-4719-b702-8896cb2b5cb6")
+		(uuid "9c10a935-d6f7-4e6a-9d56-ce8cdacf2d9e")
 	)
 	(label "SCL"
 		(at 26.67 140.97 180)
@@ -1460,25 +4249,35 @@
 		)
 		(uuid "9dc3c9bb-8b33-4e26-937b-fdc2b4107b13")
 	)
-	(label "Buck1in"
-		(at 33.02 80.01 0)
+	(label "PwrGndBuck1"
+		(at 114.3 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "a3f36718-2525-4445-a0e3-cdac59850fee")
+		(uuid "a41b39aa-5478-4504-b864-32385a7d8dd0")
 	)
-	(label "Vin"
-		(at 57.15 113.03 90)
+	(label "SDA"
+		(at 59.69 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "a3f4df8b-602d-43d1-86e0-0b9468eb8146")
+		(uuid "a514a961-0084-4972-9fba-a81bca8739cb")
+	)
+	(label "RSTn"
+		(at 38.1 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9b42b93-3fed-4c76-a345-b95ef76fcd14")
 	)
 	(label "VLXBoost"
 		(at 67.31 135.89 0)
@@ -1510,7 +4309,7 @@
 		)
 		(uuid "b6a4ab8a-b7b3-4004-96d9-0be33f12ff01")
 	)
-	(label "VLXBuck3"
+	(label "VLX3"
 		(at 67.31 146.05 0)
 		(effects
 			(font
@@ -1519,16 +4318,6 @@
 			(justify left bottom)
 		)
 		(uuid "b8cb8474-1988-4af9-95bc-9698b0b21f94")
-	)
-	(label "Buck4in"
-		(at 33.02 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfbb3a3d-80c0-478f-8344-a4c87b5c8f9f")
 	)
 	(label "VLX2"
 		(at 26.67 158.75 180)
@@ -1560,6 +4349,16 @@
 		)
 		(uuid "c2b4689b-bdfc-4887-b064-b3563979a32f")
 	)
+	(label "V_{dd_DDR}"
+		(at 177.8 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4e484b0-027c-447b-9ce4-fb34501991b7")
+	)
 	(label "LDO2out"
 		(at 46.99 181.61 270)
 		(effects
@@ -1570,8 +4369,18 @@
 		)
 		(uuid "c61e58ae-96eb-4a78-9b34-e463ad974580")
 	)
+	(label "3v3"
+		(at 114.3 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c630c60d-b0a3-41e5-b720-4ba4155c54de")
+	)
 	(label "PwrGndBuck1"
-		(at 48.26 76.2 0)
+		(at 46.99 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1579,6 +4388,46 @@
 			(justify left bottom)
 		)
 		(uuid "c72269c4-a3c8-4f89-a407-7bada112df39")
+	)
+	(label "VLX3"
+		(at 147.32 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c85a71e1-2592-4f7f-a130-c35c5a5260dc")
+	)
+	(label "LDO2out"
+		(at 149.86 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ca6be50e-34d9-420e-afde-3dc73ccb4125")
+	)
+	(label "V_{dd_SD}"
+		(at 177.8 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb8e5af9-b533-45e2-9a4a-6b4537351007")
+	)
+	(label "PwrGndBuck4"
+		(at 114.3 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd59c7d8-4695-4a36-b996-1d582cdd13e9")
 	)
 	(label "SDA"
 		(at 26.67 138.43 180)
@@ -1600,7 +4449,7 @@
 		)
 		(uuid "d58624dd-7e5d-4228-8ab3-28114a59d758")
 	)
-	(label "vin[3v , 5v5]"
+	(label "vin[3v , 5v5]. 5v suggested"
 		(at 246.38 27.94 0)
 		(effects
 			(font
@@ -1620,7 +4469,27 @@
 		)
 		(uuid "d68c8bb6-8c2a-44c5-8c45-e4073c32ef63")
 	)
-	(label "LSO1out"
+	(label "LDO1and6in"
+		(at 30.48 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7be3e38-9f17-4ee1-8647-cef75da82a83")
+	)
+	(label "V_{dd_IO}"
+		(at 177.8 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd439efd-778a-4e6c-a471-51007c1bd3ab")
+	)
+	(label "LDO1out"
 		(at 67.31 161.29 0)
 		(effects
 			(font
@@ -1630,8 +4499,38 @@
 		)
 		(uuid "de17ab9e-a14c-41fc-ac76-9ccda6295a5f")
 	)
+	(label "Vio"
+		(at 31.75 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e34ef27e-1d56-4922-b2f3-e446bb4eb03c")
+	)
+	(label "LDO1out"
+		(at 149.86 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e82f9b4b-b68e-4c3b-89a7-21bc97398249")
+	)
+	(label "Buck3in"
+		(at 127 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8552f23-cb9c-4862-a988-612f0cee6645")
+	)
 	(label "ExposedPadGnd"
-		(at 48.26 68.58 0)
+		(at 46.99 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1639,6 +4538,16 @@
 			(justify left bottom)
 		)
 		(uuid "eb290025-9d71-4163-a71c-d62af067849f")
+	)
+	(label "Vout1FB"
+		(at 147.32 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "efee91ca-95ee-4886-a64e-1a0a9a58f6d9")
 	)
 	(label "PwrGndBuck1"
 		(at 26.67 146.05 180)
@@ -1656,7 +4565,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left top)
 		)
 		(uuid "f2785bdc-82f4-4b38-8891-5c00bf7383a7")
 	)
@@ -1690,16 +4599,58 @@
 		)
 		(uuid "fa7f4a3e-21a6-4deb-a50f-e89bd86eba9e")
 	)
+	(label "PwrGndBuck3"
+		(at 114.3 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fc2dfe58-e408-4d81-9a85-f9d669a6f9d4")
+	)
+	(label "3v3"
+		(at 29.21 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fdc1fa99-37fc-44c8-b1bc-5d59ccc9d8ff")
+	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
-		(at 31.75 74.93 180)
+		(at 114.3 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3f6a6d46-b98f-43e9-9da4-f0fa9748db0d")
+		(uuid "240cbac3-02b0-4435-90fc-876a6b25a2bd")
+	)
+	(hierarchical_label "PROC_PWR"
+		(shape output)
+		(at 246.38 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39793289-123f-40f9-8808-7f49ffd2e3bc")
+	)
+	(hierarchical_label "PROC_PMIC_IO"
+		(shape bidirectional)
+		(at 246.38 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4309bfa4-93f7-4be3-b34a-e330a89491b0")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1714,6 +4665,72 @@
 	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
+		(at 114.3 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d98666b-f158-46e2-a363-d57b7b040180")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 167.64 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bb3da23-b49b-419d-a8ea-e26dbb2be5fe")
+	)
+	(hierarchical_label "Vin_prim"
+		(shape input)
+		(at 57.15 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ce4a240-09f8-46cd-98af-63da03368fd2")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 167.64 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8dcf3313-f283-47e7-89cb-b522aa5b2480")
+	)
+	(hierarchical_label "Vin_prim"
+		(shape input)
+		(at 114.3 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a89cb86a-b451-49de-b96a-6113258a5b57")
+	)
+	(hierarchical_label "Vin_prim"
+		(shape input)
+		(at 114.3 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "baaf82fb-ae77-40b4-9114-fa121e6d1e75")
+	)
+	(hierarchical_label "Vin_prim"
+		(shape input)
 		(at 246.38 27.94 180)
 		(effects
 			(font
@@ -1723,9 +4740,53 @@
 		)
 		(uuid "be8fa3de-749d-40e4-a367-e78f78a57b8c")
 	)
+	(hierarchical_label "PROC_PWR"
+		(shape output)
+		(at 196.85 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c10985dd-83eb-4e4a-b2d0-ed0a883d7f77")
+	)
+	(hierarchical_label "PROC_PMIC_IO"
+		(shape bidirectional)
+		(at 30.48 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cca90e90-5e37-4062-991c-b0a8694fcfeb")
+	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 31.75 66.04 180)
+		(at 167.64 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7d3d9cd-f7dc-4184-97ca-768d0df35ee9")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 167.64 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de99e71c-88b1-4248-8ab3-6a8b098b9208")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 29.21 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1733,6 +4794,2542 @@
 			(justify right)
 		)
 		(uuid "ee29295b-364a-4dbf-80e2-2ed006a37fbc")
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 152.4 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04725a18-ef22-48b7-bc95-d642b5083fdf")
+		(property "Reference" "NT303"
+			(at 152.4 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 152.4 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1f4d906-3c7b-42e4-9b39-ad0c3b5c5b73")
+		)
+		(pin "2"
+			(uuid "6e73e353-9431-446f-9c10-79cbcaa39ceb")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "NT303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 152.4 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0eb5abec-3dd7-4a69-a68a-20c45eb7ccc9")
+		(property "Reference" "L303"
+			(at 152.4 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.4 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uH, 20%, 42mR, 3.2A"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.22"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.182"
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "03b81958-f4d0-4645-b860-efc4ecd089bc")
+		)
+		(pin "1"
+			(uuid "8272383d-8747-4307-8102-50ef88c1a65d")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "L303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "143e9c92-d13d-4990-b897-f95ca896a036")
+		(property "Reference" "C309"
+			(at 120.65 107.9562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 120.65 110.4962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 118.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e185af2a-e4f7-42bd-a344-f7f9e236ce98")
+		)
+		(pin "2"
+			(uuid "8ffa1a6b-b7d9-4486-8af4-5a535641f37d")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C309")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16167dba-fa46-401b-8e25-233f48887984")
+		(property "Reference" "C313"
+			(at 157.48 135.8962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 157.48 138.4362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 154.94 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00be12c4-3502-4ac8-adc6-2df9ba7a6def")
+		)
+		(pin "2"
+			(uuid "8d6008bc-7f92-431a-a395-b4ea010d3d1c")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C313")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 152.4 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b76c21f-df18-4b31-ada0-9f446f628649")
+		(property "Reference" "NT301"
+			(at 152.4 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 152.4 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 152.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 152.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c5842e5-7ff3-454b-b4f5-fc7dec646b53")
+		)
+		(pin "2"
+			(uuid "c8eadbff-ee55-4a47-a2e7-f702ce8c05a0")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "NT301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f21cfb4-726b-4dee-a71d-88108d76b1b9")
+		(property "Reference" "C301"
+			(at 120.65 34.2962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 120.65 36.8362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.17"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.069"
+			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92004244-389c-4f7b-ab9b-cf3510a87030")
+		)
+		(pin "2"
+			(uuid "be4f1174-803a-4809-a16d-6de3f41e9475")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ba632c4-06f7-4cc6-a46b-b7d5be640e90")
+		(property "Reference" "C312"
+			(at 120.65 135.8962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 120.65 138.4362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 118.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efad4cae-3aa2-4989-a85d-5ad921feac3f")
+		)
+		(pin "2"
+			(uuid "f9e4aa63-56ab-42a1-b874-a4d322709517")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 52.07 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d0e231c-142a-4275-b73d-91a97868730a")
+		(property "Reference" "R301"
+			(at 54.61 24.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3090"
+			(at 54.61 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.08"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.60"
+			(at 52.07 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "61a7b783-0515-4db3-bb29-41e830dc089c")
+		)
+		(pin "1"
+			(uuid "665ea892-f5b3-4aa1-9ce2-20e32a2f31bb")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "R301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 152.4 31.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64c233a4-1b8c-4936-81cd-b58f45f101fc")
+		(property "Reference" "L301"
+			(at 152.4 26.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.4 29.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uH, 20%, 42mR, 3.2A"
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.22"
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.182"
+			(at 152.4 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b8d744a1-ce74-4348-9488-1e70bb531074")
+		)
+		(pin "1"
+			(uuid "c048d372-0487-4097-8223-25ad8cb5aa7f")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "L301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bd336db-3ab3-419a-a9db-9b60fa3b43c5")
+		(property "Reference" "C308"
+			(at 172.72 34.2962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 172.72 36.8362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.112"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.27"
+			(at 170.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53ac5409-9332-49fa-a48f-361c909ee17e")
+		)
+		(pin "2"
+			(uuid "d225dd5f-029c-4e43-8713-9498d9c183be")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C308")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74b0ab21-f7c9-4f0e-8630-3daeba2a1645")
+		(property "Reference" "C310"
+			(at 157.48 107.9562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 157.48 110.4962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ab5cf22-ce04-4e56-b7c9-38f1b15822b4")
+		)
+		(pin "2"
+			(uuid "413506ea-28da-4ef9-921e-a0dea12b1e43")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C310")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b731979-2db4-4ee2-a89c-0b476ed3ab98")
+		(property "Reference" "C304"
+			(at 172.72 72.3962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 172.72 74.9362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.112"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.27"
+			(at 170.18 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c985925-46e4-41dc-a2ed-61d3bc4ceb5f")
+		)
+		(pin "2"
+			(uuid "e2ee1d69-d6ba-4134-81de-f1cd96c9e4bc")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cce2d37-d7c4-4978-84b6-61e52384bd05")
+		(property "Reference" "C307"
+			(at 120.65 91.4462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 120.65 93.9862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.17"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.069"
+			(at 118.11 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78906caa-3311-4ca5-bd28-afc1402e609b")
+		)
+		(pin "2"
+			(uuid "42ec1aee-c643-420d-b81c-b1552bd504c5")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 148.59 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9262c2e9-084d-4d9b-a6f7-e9573cb15f72")
+		(property "Reference" "C314"
+			(at 157.48 147.3135 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 157.48 149.8535 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 154.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c59fc0d-ecc0-4fc2-bf05-abefc63618fa")
+		)
+		(pin "2"
+			(uuid "a140c942-11cc-41cc-bd6d-4f226f90c7fd")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C314")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 152.4 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a93e3b83-8714-4260-91ee-07ecaf45d299")
+		(property "Reference" "NT304"
+			(at 152.4 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 152.4 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 152.4 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 152.4 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d16a497c-9f6c-472a-8e0a-ff206c5f9c66")
+		)
+		(pin "2"
+			(uuid "cc99c19b-7f10-4ae3-b3eb-1215c3d72e2c")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "NT304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 120.65 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3b91d26-bd03-4d56-9d0c-2b6abd7d989a")
+		(property "Reference" "C311"
+			(at 157.48 119.3735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 157.48 121.9135 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 16V, 10%, 8.6MHz"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.168"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.29"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
+			(at 154.94 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41777db6-9c1b-4834-9168-f6f1bfaffe60")
+		)
+		(pin "2"
+			(uuid "a05e3d22-22e0-4677-9046-b9168db02dc9")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C311")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b864a024-db04-434a-bd02-d2ac2dc5f642")
+		(property "Reference" "C305"
+			(at 120.65 72.3962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 120.65 74.9362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.17"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.069"
+			(at 118.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b26a48d7-78a2-430e-a206-8b431511aa61")
+		)
+		(pin "2"
+			(uuid "d81b8f74-0b9a-4c53-92a0-a73a4611116e")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 152.4 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfc88d78-1acf-48d3-852d-6ef0329352cf")
+		(property "Reference" "NT302"
+			(at 152.4 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 152.4 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 152.4 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 152.4 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11af30a3-2d37-4efd-a455-83594c163465")
+		)
+		(pin "2"
+			(uuid "cf0d6a50-7caa-473a-b241-631188c83678")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "NT302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 152.4 88.9 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb2b3b5d-68d0-4681-b426-73703714bedb")
+		(property "Reference" "L304"
+			(at 152.4 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.4 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uH, 20%, 42mR, 3.2A"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.22"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.182"
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "90284a63-789d-4580-b691-3d372fb041c4")
+		)
+		(pin "1"
+			(uuid "3aa8e711-7720-4a59-80c7-0341504ff59a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "L304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 152.4 50.8 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3156df3-e295-4b1e-83e3-649c2ddcfa9f")
+		(property "Reference" "L302"
+			(at 152.4 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.4 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uH, 20%, 42mR, 3.2A"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.22"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.182"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fab71221-725d-416c-b7a0-d1387a99bbd7")
+		)
+		(pin "1"
+			(uuid "141a7f1e-8255-4196-8f04-67d163506e57")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "L302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 46.99 25.4 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8306bbe-6d60-475b-a6e8-cfad3bd77da2")
+		(property "Reference" "R302"
+			(at 44.45 24.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3090"
+			(at 44.45 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.08"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.60"
+			(at 46.99 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "056262ff-522e-460a-bd75-d4c4f5937348")
+		)
+		(pin "1"
+			(uuid "aba02f3c-39f2-4746-8067-0216c3aa9b56")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "R302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edda6dd2-942d-46a9-87c4-a98005f3fa96")
+		(property "Reference" "C302"
+			(at 172.72 91.4462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 172.72 93.9862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.112"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.27"
+			(at 170.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1abfbd9-d518-4379-af64-19caced543c6")
+		)
+		(pin "2"
+			(uuid "a535fc2a-aa3c-4b45-bcdb-6348d44faecf")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C302")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "__WM_Local:STPMIC1BPQR")
@@ -2002,6 +7599,258 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "IC301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fac1bc14-21fb-41ac-9023-d50d03cae0b6")
+		(property "Reference" "C303"
+			(at 120.65 53.3462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 120.65 55.8862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.17"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.069"
+			(at 118.11 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0d48223-d1fa-451c-ac8d-19c0593677bd")
+		)
+		(pin "2"
+			(uuid "b32d0f57-a24b-4878-81e0-62f3dda575e2")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe6c3514-1b91-4de5-9ada-272ffc97b361")
+		(property "Reference" "C306"
+			(at 172.72 53.3462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 172.72 55.8862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.112"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.27"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97e33d5a-52fc-4c40-bb70-c3cd89ba3259")
+		)
+		(pin "2"
+			(uuid "7186cc85-e959-4035-98b0-9166775ebe2b")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C306")
 					(unit 1)
 				)
 			)
