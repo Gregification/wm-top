@@ -1750,6 +1750,18 @@
 		)
 		(uuid "178005f3-7dca-489a-8bea-1f0f48be5207")
 	)
+	(text "TODO\n- double check ddr current requirements and LDO3. ldo3 has a bypass mode tahts super low current, make sure that and its supply is ok for the memory"
+		(exclude_from_sim no)
+		(at 182.372 170.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 2 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "30e4a61a-44a7-47de-98fb-911f515746cb")
+	)
 	(text "product page"
 		(exclude_from_sim no)
 		(at 220.472 157.734 0)
@@ -1776,7 +1788,7 @@
 	)
 	(text "unused. programmable out:\n[1v8,3v3], %2, 100mV steps"
 		(exclude_from_sim no)
-		(at 188.214 101.346 0)
+		(at 188.214 63.246 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1786,7 +1798,7 @@
 	)
 	(text "unused. programmable out:\n[0v9,3v3], %2, 100mV steps"
 		(exclude_from_sim no)
-		(at 188.214 129.286 0)
+		(at 188.214 35.306 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1796,7 +1808,7 @@
 	)
 	(text_box "Boost1, usb stuff ; V_{bst} : 5v2 1.1A"
 		(exclude_from_sim no)
-		(at 111.76 20.32 0)
+		(at 111.76 123.19 0)
 		(size 91.44 19.05)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1816,7 +1828,7 @@
 	)
 	(text_box "LDO 2/unused:2v9, 5/V_{dd_SD}:2v9"
 		(exclude_from_sim no)
-		(at 111.76 86.36 0)
+		(at 111.76 48.26 0)
 		(size 91.44 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1834,7 +1846,7 @@
 		)
 		(uuid "43c9699f-da62-4651-bdf9-b30bb6eb7bb7")
 	)
-	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby DDR and MPU"
+	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby memory and MPU"
 		(exclude_from_sim no)
 		(at 215.9 107.95 0)
 		(size 67.31 43.18)
@@ -1854,7 +1866,7 @@
 		)
 		(uuid "53692559-e2bb-46a7-91e4-ca3fe34ee023")
 	)
-	(text_box "design notes:\n	- STPMIC1 drivers actively maintinaed as of 2026\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component"
+	(text_box "design notes:\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component"
 		(exclude_from_sim no)
 		(at 215.9 63.5 0)
 		(size 67.31 43.18)
@@ -1876,7 +1888,7 @@
 	)
 	(text_box "LDO4, V_{dd_USB} : 3.3V 50mA"
 		(exclude_from_sim no)
-		(at 111.76 39.37 0)
+		(at 111.76 104.14 0)
 		(size 91.44 19.05)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1894,7 +1906,7 @@
 		)
 		(uuid "7630cc3c-5721-415f-9046-78dd9a75ec6c")
 	)
-	(text_box "Buck1, Vdd Core : 1.2V 1.5A"
+	(text_box "Buck1, Vdd Core : 1.8V 1.5A"
 		(exclude_from_sim no)
 		(at 15.24 20.32 0)
 		(size 88.9 19.05)
@@ -1956,7 +1968,7 @@
 	)
 	(text_box "LDO 1/V_{ddA}:2v9 , 6/unused:"
 		(exclude_from_sim no)
-		(at 111.76 114.3 0)
+		(at 111.76 20.32 0)
 		(size 91.44 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1994,9 +2006,9 @@
 		)
 		(uuid "e709eed6-0fbf-43b7-83a6-184a9af9145c")
 	)
-	(text_box "LDO3, V_{dd1_DDR} : 1.8V 100mA"
+	(text_box "LDO3, V_{dd1_DDR} : 1.8V ~50mA bypass-mode"
 		(exclude_from_sim no)
-		(at 111.76 58.42 0)
+		(at 111.76 76.2 0)
 		(size 91.44 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2034,7 +2046,7 @@
 		)
 		(uuid "f87f8447-cdbf-428c-8732-3ed1aa20b0db")
 	)
-	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	- ~5v max current, non-failure worst case\n	 = Vin + VLXBST + buck1 + buck2 + buck3 + buck4\n	 = @{1.2 + 2000 + 1600 + 1000 + 3000}mA\n	- ~5v for Vin_prim for ~10% more effeciency in sw regs\n	- ~3v3 max current, non-failure worst case\n	 = sum(LDO[1,2,6,5])\n	 = @{800 + 800 + 350 + 800}mA\n	- ~3v3 for Vin_sec for reduced ldo losses. <300mV_{do}"
+	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	- ~5v max current, non-failure worst case\n	 = Vin + VLXBST + buck1 + buck2 + buck3 + buck4\n	 = @{1.2 + 2000 + 1600 + 1000 + 3000}mA\n	- ~5v for Vin_prim for ~10% more effeciency in sw regs\n	- ~3v3 max current, non-failure worst case\n	 = sum(LDO[1,2,6,5])\n	 = @{800 + 800 + 350 + 800}mA"
 		(exclude_from_sim no)
 		(at 215.9 19.05 0)
 		(size 67.31 43.18)
@@ -2061,19 +2073,19 @@
 		(uuid "00c9a7ff-90db-451c-8c5f-bf7f41a137ea")
 	)
 	(junction
-		(at 132.08 100.33)
+		(at 132.08 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04497910-45c0-4e6f-bc1c-545ddc3ef7ed")
 	)
 	(junction
-		(at 179.07 36.83)
+		(at 179.07 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0da4429f-8c86-46c8-8e17-b057e11d77ae")
 	)
 	(junction
-		(at 134.62 36.83)
+		(at 134.62 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "156b4ce6-33f7-4cb0-9b75-ebf648baa356")
@@ -2085,13 +2097,13 @@
 		(uuid "20c39c54-874b-4305-b618-b4da4348a5e4")
 	)
 	(junction
-		(at 161.29 83.82)
+		(at 161.29 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21b41e9a-1de1-4a0c-b6b5-813fec88acf6")
 	)
 	(junction
-		(at 168.91 132.08)
+		(at 168.91 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28ec8235-14b0-4ce9-be1a-95536be91ac9")
@@ -2103,7 +2115,7 @@
 		(uuid "2a9fb4da-c214-4269-83b8-cd7f4c665b21")
 	)
 	(junction
-		(at 134.62 83.82)
+		(at 134.62 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2aaf5b78-d201-405a-950c-82c15989a882")
@@ -2115,7 +2127,7 @@
 		(uuid "313a0c20-76f5-484b-8d0e-ef1f58fa2582")
 	)
 	(junction
-		(at 134.62 46.99)
+		(at 134.62 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "323afaac-9a05-4528-968f-1d634fbc8a41")
@@ -2127,13 +2139,13 @@
 		(uuid "33084c03-377e-44cb-a850-b6381cdec124")
 	)
 	(junction
-		(at 179.07 46.99)
+		(at 179.07 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37cb31b7-7ed3-4cb0-bfa4-44cdc167eb72")
 	)
 	(junction
-		(at 179.07 63.5)
+		(at 179.07 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cc6ad7b-71f0-43f4-9406-c316e1cbce4f")
@@ -2145,13 +2157,13 @@
 		(uuid "410b78c7-ad39-4ade-8a68-139fd94c8573")
 	)
 	(junction
-		(at 132.08 120.65)
+		(at 132.08 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b55d60e-23e8-47b0-a3b4-430e7bba3ff5")
 	)
 	(junction
-		(at 153.67 100.33)
+		(at 153.67 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e3d4811-d240-41eb-8e7f-37b199b2e903")
@@ -2163,7 +2175,7 @@
 		(uuid "5ffe3017-11e8-4d67-8381-500ce3a60ce5")
 	)
 	(junction
-		(at 179.07 76.2)
+		(at 179.07 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b5f34b9-20e9-45ce-a27e-13cc448c3c65")
@@ -2175,7 +2187,7 @@
 		(uuid "752712b4-5af0-4107-b172-7c38f09dd3db")
 	)
 	(junction
-		(at 134.62 29.21)
+		(at 134.62 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7999e841-8f0a-48fb-9064-24203ad0e641")
@@ -2205,7 +2217,7 @@
 		(uuid "8c72d85d-583f-4460-ab29-206efcc2f46c")
 	)
 	(junction
-		(at 179.07 29.21)
+		(at 179.07 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "975f38dc-8a58-4a19-9499-9143b6448999")
@@ -2223,13 +2235,13 @@
 		(uuid "aa65310b-d833-46f5-97cc-f29975969be8")
 	)
 	(junction
-		(at 168.91 92.71)
+		(at 168.91 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad4699f3-f6a7-419f-8f37-13aceef5a2e1")
 	)
 	(junction
-		(at 168.91 104.14)
+		(at 168.91 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba167eee-17c9-4acf-bab1-1d239ecd198d")
@@ -2241,25 +2253,25 @@
 		(uuid "bf965ada-b10a-44ac-8c10-15b58e74270d")
 	)
 	(junction
-		(at 132.08 92.71)
+		(at 132.08 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1ce708f-b5c8-4c27-ba63-a9ad93b2c78e")
 	)
 	(junction
-		(at 153.67 128.27)
+		(at 153.67 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2a40ec7-a82e-4768-ad01-d43ff7b1dfd5")
 	)
 	(junction
-		(at 168.91 120.65)
+		(at 168.91 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c372e44a-0f0a-49a7-9143-ba9f1a45a9b9")
 	)
 	(junction
-		(at 134.62 54.61)
+		(at 134.62 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9397bd7-5ff9-46e5-beed-812915388670")
@@ -2289,7 +2301,7 @@
 		(uuid "dd10dbb9-e802-44d3-a35a-0fe0d47183b6")
 	)
 	(junction
-		(at 132.08 128.27)
+		(at 132.08 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea6bb993-3eeb-4805-a0af-5dffd8bbbc96")
@@ -2301,13 +2313,13 @@
 		(uuid "f00d798d-0827-4f60-a532-008a464ae058")
 	)
 	(junction
-		(at 134.62 67.31)
+		(at 134.62 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2453898-37fd-48eb-9164-6e8e32b34eb5")
 	)
 	(junction
-		(at 190.5 29.21)
+		(at 190.5 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff242dfd-ead4-410b-b974-0e32ca10e2cd")
@@ -2325,15 +2337,23 @@
 		(uuid "260f0c94-3cf8-47d2-ab30-bd09e01bcf6e")
 	)
 	(no_connect
-		(at 191.77 132.08)
+		(at 246.38 25.4)
+		(uuid "53821b21-861b-46af-a8fa-727e6f66e3af")
+	)
+	(no_connect
+		(at 191.77 38.1)
 		(uuid "5d166c2e-53a1-4782-a8f8-0fd1f7a2dfb4")
 	)
 	(no_connect
-		(at 191.77 104.14)
+		(at 191.77 66.04)
 		(uuid "721c8abe-71eb-45c3-ac39-8e60dcfb4904")
 	)
+	(no_connect
+		(at 246.38 33.02)
+		(uuid "87d74401-6fd0-4865-ad7b-58bf0ae0d6b2")
+	)
 	(bus_entry
-		(at 207.01 90.17)
+		(at 207.01 52.07)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2369,7 +2389,7 @@
 		(uuid "2815a32f-13ff-4853-8a14-a7c2f567b254")
 	)
 	(bus_entry
-		(at 207.01 60.96)
+		(at 207.01 78.74)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2403,6 +2423,15 @@
 			(type default)
 		)
 		(uuid "6d1cf5a9-483d-4ff1-a0b9-6ff95d38f29c")
+	)
+	(bus_entry
+		(at 107.95 52.07)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fedcb95-2f57-41a6-82ea-ba6ad618a3da")
 	)
 	(bus_entry
 		(at 143.51 185.42)
@@ -2441,7 +2470,7 @@
 		(uuid "9bbe0140-89c0-4127-bb2f-0969422f0df5")
 	)
 	(bus_entry
-		(at 207.01 44.45)
+		(at 207.01 109.22)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2450,7 +2479,7 @@
 		(uuid "afded223-e10a-4d21-ad73-40d7fb98dd42")
 	)
 	(bus_entry
-		(at 207.01 26.67)
+		(at 207.01 129.54)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2459,7 +2488,16 @@
 		(uuid "bb7ad5d7-267c-42df-985c-2398cea2085f")
 	)
 	(bus_entry
-		(at 107.95 64.77)
+		(at 107.95 24.13)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c657c6e1-fe02-4a33-9b85-cb530db8cf4b")
+	)
+	(bus_entry
+		(at 107.95 82.55)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2468,7 +2506,7 @@
 		(uuid "c682c777-9f9b-4b88-9712-f29cb7bac31b")
 	)
 	(bus_entry
-		(at 207.01 73.66)
+		(at 207.01 91.44)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2477,7 +2515,7 @@
 		(uuid "d5133945-1f29-41a5-8220-a4bf26e4e034")
 	)
 	(bus_entry
-		(at 207.01 118.11)
+		(at 207.01 24.13)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2534,9 +2572,19 @@
 		)
 		(uuid "03dc4f44-bb00-41a5-aa9f-45d23f9ad4e3")
 	)
+	(wire
+		(pts
+			(xy 110.49 26.67) (xy 132.08 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03f558e2-bb7e-4b17-8099-a4364dbe6a1c")
+	)
 	(bus
 		(pts
-			(xy 207.01 16.51) (xy 207.01 60.96)
+			(xy 207.01 16.51) (xy 207.01 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2556,7 +2604,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 30.48) (xy 190.5 29.21)
+			(xy 190.5 133.35) (xy 190.5 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2576,23 +2624,13 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 128.27) (xy 168.91 127)
+			(xy 168.91 34.29) (xy 168.91 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "075cd8ce-1579-4727-b94d-09440ef718d7")
-	)
-	(wire
-		(pts
-			(xy 128.27 120.65) (xy 132.08 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07cd0112-8462-4363-bb37-1d447e0bc7a3")
 	)
 	(bus
 		(pts
@@ -2636,7 +2674,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 54.61) (xy 179.07 54.61)
+			(xy 134.62 119.38) (xy 179.07 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2666,23 +2704,13 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 128.27) (xy 132.08 127)
+			(xy 132.08 34.29) (xy 132.08 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1c62641f-2ef2-4c5e-8cd6-e12aaee17221")
-	)
-	(bus
-		(pts
-			(xy 207.01 90.17) (xy 207.01 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f5ce545-bd29-4b4c-85ec-f89af466d8f8")
 	)
 	(wire
 		(pts
@@ -2726,7 +2754,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 92.71) (xy 140.97 92.71)
+			(xy 132.08 54.61) (xy 140.97 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2746,7 +2774,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 29.21) (xy 179.07 29.21)
+			(xy 173.99 132.08) (xy 179.07 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2766,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 73.66) (xy 134.62 67.31)
+			(xy 134.62 91.44) (xy 134.62 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2776,7 +2804,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 46.99) (xy 179.07 46.99)
+			(xy 173.99 111.76) (xy 179.07 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2796,7 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 76.2) (xy 179.07 77.47)
+			(xy 179.07 93.98) (xy 179.07 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2806,7 +2834,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 111.76) (xy 168.91 111.76)
+			(xy 153.67 73.66) (xy 168.91 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2836,7 +2864,17 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 132.08) (xy 163.83 132.08)
+			(xy 110.49 54.61) (xy 132.08 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c32000-9146-4713-ac1b-bf7ab4773c36")
+	)
+	(wire
+		(pts
+			(xy 168.91 38.1) (xy 163.83 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2846,7 +2884,7 @@
 	)
 	(bus
 		(pts
-			(xy 107.95 16.51) (xy 107.95 82.55)
+			(xy 107.95 16.51) (xy 107.95 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2856,17 +2894,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 92.71) (xy 132.08 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "376ce171-e9c1-4fb6-a4fa-5fc6d0ab1169")
-	)
-	(wire
-		(pts
-			(xy 168.91 93.98) (xy 168.91 92.71)
+			(xy 168.91 55.88) (xy 168.91 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2886,7 +2914,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 36.83) (xy 179.07 36.83)
+			(xy 134.62 139.7) (xy 179.07 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2896,7 +2924,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 133.35) (xy 168.91 132.08)
+			(xy 168.91 39.37) (xy 168.91 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2916,7 +2944,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 36.83) (xy 179.07 35.56)
+			(xy 179.07 139.7) (xy 179.07 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2926,7 +2954,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 29.21) (xy 204.47 29.21)
+			(xy 190.5 132.08) (xy 204.47 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2936,7 +2964,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 100.33) (xy 153.67 111.76)
+			(xy 153.67 62.23) (xy 153.67 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2946,7 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 63.5) (xy 204.47 63.5)
+			(xy 179.07 81.28) (xy 204.47 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2956,7 +2984,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 29.21) (xy 134.62 29.21)
+			(xy 130.81 132.08) (xy 134.62 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2966,7 +2994,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 92.71) (xy 163.83 92.71)
+			(xy 168.91 54.61) (xy 163.83 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2986,7 +3014,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 100.33) (xy 168.91 99.06)
+			(xy 168.91 62.23) (xy 168.91 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3016,7 +3044,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 128.27) (xy 153.67 139.7)
+			(xy 153.67 34.29) (xy 153.67 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3036,7 +3064,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 191.77 104.14)
+			(xy 168.91 66.04) (xy 191.77 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3046,7 +3074,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 29.21) (xy 151.13 29.21)
+			(xy 146.05 132.08) (xy 151.13 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3066,7 +3094,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 120.65) (xy 140.97 120.65)
+			(xy 132.08 26.67) (xy 140.97 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3076,7 +3104,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 121.92) (xy 168.91 120.65)
+			(xy 168.91 27.94) (xy 168.91 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3086,7 +3114,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 46.99) (xy 134.62 46.99)
+			(xy 129.54 111.76) (xy 134.62 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3106,7 +3134,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 36.83) (xy 190.5 36.83)
+			(xy 179.07 139.7) (xy 190.5 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3126,7 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 71.12) (xy 179.07 69.85)
+			(xy 179.07 88.9) (xy 179.07 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3176,7 +3204,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 83.82) (xy 161.29 71.12)
+			(xy 161.29 101.6) (xy 161.29 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3196,7 +3224,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 64.77) (xy 179.07 63.5)
+			(xy 179.07 82.55) (xy 179.07 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3226,7 +3254,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 36.83) (xy 134.62 35.56)
+			(xy 134.62 139.7) (xy 134.62 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3246,7 +3274,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 67.31) (xy 139.7 67.31)
+			(xy 134.62 85.09) (xy 139.7 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3266,7 +3294,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 83.82) (xy 161.29 83.82)
+			(xy 134.62 101.6) (xy 161.29 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3286,7 +3314,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 139.7) (xy 168.91 138.43)
+			(xy 168.91 45.72) (xy 168.91 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3296,7 +3324,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 54.61) (xy 134.62 54.61)
+			(xy 129.54 119.38) (xy 134.62 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3316,7 +3344,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 132.08) (xy 191.77 132.08)
+			(xy 168.91 38.1) (xy 191.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3326,7 +3354,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 100.33) (xy 168.91 100.33)
+			(xy 153.67 62.23) (xy 168.91 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3426,7 +3454,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 120.65) (xy 163.83 120.65)
+			(xy 168.91 26.67) (xy 163.83 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3446,7 +3474,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 100.33) (xy 132.08 99.06)
+			(xy 132.08 62.23) (xy 132.08 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3456,7 +3484,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 63.5) (xy 179.07 63.5)
+			(xy 173.99 81.28) (xy 179.07 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3466,7 +3494,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 83.82) (xy 179.07 83.82)
+			(xy 161.29 101.6) (xy 179.07 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3544,6 +3572,16 @@
 		)
 		(uuid "9d1a3b87-d27a-49bb-a07e-67bce16a09e2")
 	)
+	(bus
+		(pts
+			(xy 207.01 52.07) (xy 207.01 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d9a9e25-d85a-42fb-939a-e49633adc500")
+	)
 	(wire
 		(pts
 			(xy 35.56 55.88) (xy 87.63 55.88)
@@ -3556,7 +3594,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 128.27) (xy 168.91 128.27)
+			(xy 153.67 34.29) (xy 168.91 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3566,7 +3604,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 30.48) (xy 179.07 29.21)
+			(xy 179.07 133.35) (xy 179.07 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3576,7 +3614,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 36.83) (xy 134.62 36.83)
+			(xy 130.81 139.7) (xy 134.62 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3596,7 +3634,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 82.55) (xy 179.07 83.82)
+			(xy 179.07 100.33) (xy 179.07 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3626,7 +3664,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 105.41) (xy 168.91 104.14)
+			(xy 168.91 67.31) (xy 168.91 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3636,7 +3674,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 76.2) (xy 204.47 76.2)
+			(xy 179.07 93.98) (xy 204.47 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3656,7 +3694,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 29.21) (xy 190.5 29.21)
+			(xy 179.07 132.08) (xy 190.5 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3666,7 +3704,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 76.2) (xy 179.07 76.2)
+			(xy 172.72 93.98) (xy 179.07 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3676,7 +3714,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 100.33) (xy 153.67 100.33)
+			(xy 132.08 62.23) (xy 153.67 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3746,7 +3784,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 67.31) (xy 134.62 67.31)
+			(xy 110.49 85.09) (xy 134.62 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3786,7 +3824,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 46.99) (xy 204.47 46.99)
+			(xy 179.07 111.76) (xy 204.47 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3796,7 +3834,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 54.61) (xy 179.07 53.34)
+			(xy 179.07 119.38) (xy 179.07 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3806,7 +3844,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 71.12) (xy 179.07 71.12)
+			(xy 161.29 88.9) (xy 179.07 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3826,7 +3864,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 100.33) (xy 132.08 100.33)
+			(xy 128.27 62.23) (xy 132.08 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3846,7 +3884,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 83.82) (xy 134.62 78.74)
+			(xy 134.62 101.6) (xy 134.62 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3876,7 +3914,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 120.65) (xy 204.47 120.65)
+			(xy 168.91 26.67) (xy 204.47 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3886,7 +3924,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 83.82) (xy 134.62 83.82)
+			(xy 128.27 101.6) (xy 134.62 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3894,9 +3932,19 @@
 		)
 		(uuid "cfb00150-2852-4ad5-9fe2-68a100c9287b")
 	)
+	(bus
+		(pts
+			(xy 107.95 64.77) (xy 107.95 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d07bed9e-8b5d-4a17-bd94-dc974642ac96")
+	)
 	(wire
 		(pts
-			(xy 168.91 111.76) (xy 168.91 110.49)
+			(xy 168.91 73.66) (xy 168.91 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3916,7 +3964,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 46.99) (xy 139.7 46.99)
+			(xy 134.62 111.76) (xy 139.7 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3926,7 +3974,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 29.21) (xy 140.97 29.21)
+			(xy 134.62 132.08) (xy 140.97 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3946,7 +3994,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 121.92) (xy 132.08 120.65)
+			(xy 132.08 27.94) (xy 132.08 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3956,23 +4004,13 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 128.27) (xy 153.67 128.27)
+			(xy 132.08 34.29) (xy 153.67 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dce22f9b-87e8-4f10-bdce-847e2d3da00b")
-	)
-	(bus
-		(pts
-			(xy 207.01 60.96) (xy 207.01 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dee01d7c-d640-4132-ad06-1eac92910a99")
 	)
 	(wire
 		(pts
@@ -4006,7 +4044,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 29.21) (xy 134.62 30.48)
+			(xy 134.62 132.08) (xy 134.62 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4026,7 +4064,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 128.27) (xy 132.08 128.27)
+			(xy 128.27 34.29) (xy 132.08 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4066,7 +4104,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 48.26) (xy 179.07 46.99)
+			(xy 179.07 113.03) (xy 179.07 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4076,7 +4114,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 46.99) (xy 134.62 48.26)
+			(xy 134.62 111.76) (xy 134.62 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4096,7 +4134,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 163.83 104.14)
+			(xy 168.91 66.04) (xy 163.83 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4126,7 +4164,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 36.83) (xy 190.5 35.56)
+			(xy 190.5 139.7) (xy 190.5 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4136,7 +4174,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 139.7) (xy 168.91 139.7)
+			(xy 153.67 45.72) (xy 168.91 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4156,7 +4194,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 92.71) (xy 204.47 92.71)
+			(xy 168.91 54.61) (xy 204.47 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4176,7 +4214,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 93.98) (xy 132.08 92.71)
+			(xy 132.08 55.88) (xy 132.08 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4196,7 +4234,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 53.34) (xy 134.62 54.61)
+			(xy 134.62 118.11) (xy 134.62 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4566,7 +4604,7 @@
 		)
 	)
 	(label "V_{dd_core}"
-		(at 128.27 67.31 180)
+		(at 128.27 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4605,8 +4643,18 @@
 		)
 		(uuid "0b8dafdd-cf6e-4922-803b-d3960ca76565")
 	)
+	(label "3v3"
+		(at 128.27 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c3fa9b7-47a9-4f7a-866a-7a494823bb11")
+	)
 	(label "GndLDO"
-		(at 128.27 128.27 180)
+		(at 128.27 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4685,16 +4733,6 @@
 		)
 		(uuid "1f3bbaee-8a42-4527-926b-86b91b4b2639")
 	)
-	(label "3v3"
-		(at 128.27 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "20321f5b-77a2-4356-a82a-f0204bc3defe")
-	)
 	(label "SCL"
 		(at 168.91 175.26 0)
 		(effects
@@ -4736,7 +4774,7 @@
 		(uuid "28ce2784-199e-405d-91f2-fc9f1f9e43e2")
 	)
 	(label "V_{dd_USB}"
-		(at 186.69 46.99 0)
+		(at 186.69 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4826,7 +4864,7 @@
 		(uuid "439fe51b-4ecd-45e7-bddb-371defdd49ea")
 	)
 	(label "GndLDO"
-		(at 128.27 100.33 180)
+		(at 128.27 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4834,6 +4872,16 @@
 			(justify right bottom)
 		)
 		(uuid "44302b94-cdf6-4da8-9cab-fe4578b0ac56")
+	)
+	(label "{mpu_power}"
+		(at 246.38 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4dc97a24-abe9-47af-ad94-c9ab0e6ff56d")
 	)
 	(label "LDO1and6in"
 		(at 57.15 184.15 270)
@@ -4875,16 +4923,6 @@
 		)
 		(uuid "50bbfdbf-997b-4363-b94d-c60819f9d84e")
 	)
-	(label "{mpu_power}"
-		(at 90.17 16.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50f2100b-fb69-44cc-bfec-43fb2c191106")
-	)
 	(label "RSTn"
 		(at 26.67 135.89 180)
 		(effects
@@ -4906,7 +4944,7 @@
 		(uuid "51f1b4f0-9b27-4196-928c-75ffe7d75c3e")
 	)
 	(label "LDO1and6in"
-		(at 140.97 120.65 0)
+		(at 140.97 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4926,7 +4964,7 @@
 		(uuid "52660497-e07a-4f85-b819-1cad51f6f91e")
 	)
 	(label "V_{ddA}"
-		(at 190.5 120.65 0)
+		(at 190.5 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5046,7 +5084,7 @@
 		(uuid "69ad9828-766c-45e0-9032-97b58754848b")
 	)
 	(label "LDO2and5in"
-		(at 140.97 92.71 0)
+		(at 140.97 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5056,7 +5094,7 @@
 		(uuid "6a5813a7-1f67-4470-b76d-847b6d5c396e")
 	)
 	(label "GndLDO"
-		(at 128.27 83.82 180)
+		(at 128.27 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5066,7 +5104,7 @@
 		(uuid "6b9f27bd-f25b-41df-b6fb-ab8d3389ff7f")
 	)
 	(label "LDO4out"
-		(at 173.99 46.99 180)
+		(at 173.99 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5086,7 +5124,7 @@
 		(uuid "70ee83fb-1316-4af0-bf25-5d8ce07b26ca")
 	)
 	(label "LDO3out"
-		(at 173.99 63.5 180)
+		(at 173.99 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5146,7 +5184,7 @@
 		(uuid "7d5b31f7-6066-4bad-93ce-6d4e0ebac340")
 	)
 	(label "LDO5out"
-		(at 163.83 92.71 180)
+		(at 163.83 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5186,7 +5224,7 @@
 		(uuid "895474af-fd04-43e7-ad22-304c4508e6d1")
 	)
 	(label "V_{dd_DDR2}"
-		(at 186.69 63.5 0)
+		(at 186.69 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5196,7 +5234,7 @@
 		(uuid "8bdb56ef-27a0-4148-b276-a9e86e1b8af2")
 	)
 	(label "LDO6out"
-		(at 163.83 132.08 180)
+		(at 163.83 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5226,7 +5264,7 @@
 		(uuid "9dc3c9bb-8b33-4e26-937b-fdc2b4107b13")
 	)
 	(label "GndLDO"
-		(at 129.54 54.61 180)
+		(at 129.54 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5255,8 +5293,18 @@
 		)
 		(uuid "a514a961-0084-4972-9fba-a81bca8739cb")
 	)
+	(label "3v3"
+		(at 128.27 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8aa7aa8-da70-4316-8a73-fd27bca44746")
+	)
 	(label "VBusOTG"
-		(at 173.99 29.21 180)
+		(at 173.99 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5316,7 +5364,7 @@
 		(uuid "b6a4ab8a-b7b3-4004-96d9-0be33f12ff01")
 	)
 	(label "PwrGndBoost5"
-		(at 130.81 36.83 180)
+		(at 130.81 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5366,7 +5414,7 @@
 		(uuid "c2b4689b-bdfc-4887-b064-b3563979a32f")
 	)
 	(label "VrefDDR"
-		(at 172.72 76.2 180)
+		(at 172.72 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5384,16 +5432,6 @@
 			(justify right bottom)
 		)
 		(uuid "c61e58ae-96eb-4a78-9b34-e463ad974580")
-	)
-	(label "3v3"
-		(at 128.27 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c630c60d-b0a3-41e5-b720-4ba4155c54de")
 	)
 	(label "PwrGndBuck1"
 		(at 121.92 172.72 0)
@@ -5416,7 +5454,7 @@
 		(uuid "c85a71e1-2592-4f7f-a130-c35c5a5260dc")
 	)
 	(label "LDO2out"
-		(at 163.83 104.14 180)
+		(at 163.83 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5426,7 +5464,7 @@
 		(uuid "ca6be50e-34d9-420e-afde-3dc73ccb4125")
 	)
 	(label "V_{dd_SD}"
-		(at 190.5 92.71 0)
+		(at 190.5 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5516,7 +5554,7 @@
 		(uuid "de17ab9e-a14c-41fc-ac76-9ccda6295a5f")
 	)
 	(label "Vin"
-		(at 139.7 46.99 0)
+		(at 139.7 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5536,7 +5574,7 @@
 		(uuid "e70e3f6b-37ae-4bbf-a7be-952efdf28109")
 	)
 	(label "LDO1out"
-		(at 163.83 120.65 180)
+		(at 163.83 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5556,7 +5594,7 @@
 		(uuid "e8552f23-cb9c-4862-a988-612f0cee6645")
 	)
 	(label "LDO3in"
-		(at 139.7 67.31 0)
+		(at 139.7 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5606,7 +5644,7 @@
 		(uuid "f0244007-6c98-464b-bb3c-855bf6d001c9")
 	)
 	(label "VLXBoost"
-		(at 151.13 29.21 0)
+		(at 151.13 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5666,7 +5704,7 @@
 		(uuid "fa7f4a3e-21a6-4deb-a50f-e89bd86eba9e")
 	)
 	(label "V_{DDR_ref}"
-		(at 186.69 76.2 0)
+		(at 186.69 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5686,7 +5724,7 @@
 		(uuid "fc2dfe58-e408-4d81-9a85-f9d669a6f9d4")
 	)
 	(label "V_{BST_OTG}"
-		(at 186.69 29.21 0)
+		(at 186.69 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5774,7 +5812,7 @@
 	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
-		(at 130.81 29.21 180)
+		(at 130.81 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5785,7 +5823,7 @@
 	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
-		(at 129.54 46.99 180)
+		(at 129.54 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6044,7 +6082,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 134.62 76.2 0)
+		(at 134.62 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6055,7 +6093,7 @@
 		(fields_autoplaced yes)
 		(uuid "11209ee6-5e31-4045-aead-ca1da765825e")
 		(property "Reference" "C319"
-			(at 137.16 74.9362 0)
+			(at 137.16 92.7162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6066,7 +6104,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 137.16 77.4762 0)
+			(at 137.16 95.2562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6077,7 +6115,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6088,7 +6126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6099,7 +6137,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6110,7 +6148,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6121,7 +6159,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6132,7 +6170,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6143,7 +6181,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 134.62 76.2 0)
+			(at 134.62 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6327,7 +6365,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 179.07 80.01 0)
+		(at 179.07 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6338,7 +6376,7 @@
 		(fields_autoplaced yes)
 		(uuid "258dfaa3-751c-45c6-abb6-0332fdde5b1a")
 		(property "Reference" "C321"
-			(at 181.61 78.7462 0)
+			(at 181.61 96.5262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6349,7 +6387,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 181.61 81.2862 0)
+			(at 181.61 99.0662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6360,7 +6398,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +6409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6382,7 +6420,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6393,7 +6431,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6404,7 +6442,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6415,7 +6453,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,7 +6464,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 179.07 80.01 0)
+			(at 179.07 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6453,7 +6491,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 179.07 50.8 0)
+		(at 179.07 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6464,7 +6502,7 @@
 		(fields_autoplaced yes)
 		(uuid "29f0649e-66a3-4bcf-931d-f06b2bd155a8")
 		(property "Reference" "C318"
-			(at 181.61 49.5362 0)
+			(at 181.61 114.3062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6475,7 +6513,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 181.61 52.0762 0)
+			(at 181.61 116.8462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6486,7 +6524,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6497,7 +6535,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6508,7 +6546,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6519,7 +6557,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6530,7 +6568,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6541,7 +6579,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6552,7 +6590,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 179.07 50.8 0)
+			(at 179.07 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6579,7 +6617,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 179.07 67.31 0)
+		(at 179.07 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6590,7 +6628,7 @@
 		(fields_autoplaced yes)
 		(uuid "3611ad1a-5bf5-4937-9c70-7134deb3676b")
 		(property "Reference" "C320"
-			(at 181.61 66.0462 0)
+			(at 181.61 83.8262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6601,7 +6639,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 181.61 68.5862 0)
+			(at 181.61 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6612,7 +6650,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6623,7 +6661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6634,7 +6672,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6645,7 +6683,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6656,7 +6694,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6667,7 +6705,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6678,7 +6716,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 179.07 67.31 0)
+			(at 179.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7654,7 +7692,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 168.91 124.46 0)
+		(at 168.91 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7665,7 +7703,7 @@
 		(fields_autoplaced yes)
 		(uuid "83bffadf-78e7-4ffb-9276-f70a1691481a")
 		(property "Reference" "C310"
-			(at 171.45 123.1962 0)
+			(at 171.45 29.2162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7676,7 +7714,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 171.45 125.7362 0)
+			(at 171.45 31.7562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7687,7 +7725,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7698,7 +7736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7709,7 +7747,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7720,7 +7758,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7731,7 +7769,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7742,7 +7780,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7753,7 +7791,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 168.91 124.46 0)
+			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7780,7 +7818,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 179.07 33.02 0)
+		(at 179.07 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7791,7 +7829,7 @@
 		(fields_autoplaced yes)
 		(uuid "93e35dcd-81d6-4be8-9be3-e9b0b21919de")
 		(property "Reference" "C316"
-			(at 181.61 31.7562 0)
+			(at 181.61 134.6262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7802,7 +7840,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 181.61 34.2962 0)
+			(at 181.61 137.1662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7813,7 +7851,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7824,7 +7862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7835,7 +7873,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7846,7 +7884,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,7 +7895,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7868,7 +7906,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7879,7 +7917,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 179.07 33.02 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7906,7 +7944,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 134.62 33.02 0)
+		(at 134.62 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7917,7 +7955,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ee496d0-0518-48bb-aa03-b3da53126d1f")
 		(property "Reference" "C315"
-			(at 137.16 31.7562 0)
+			(at 137.16 134.6262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7928,7 +7966,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 137.16 34.2962 0)
+			(at 137.16 137.1662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7939,7 +7977,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7950,7 +7988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7961,7 +7999,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7972,7 +8010,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7983,7 +8021,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7994,7 +8032,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8005,7 +8043,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 134.62 33.02 0)
+			(at 134.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8032,7 +8070,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 124.46 0)
+		(at 132.08 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8043,7 +8081,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4076997-b828-4528-8b9e-89a445d316cc")
 		(property "Reference" "C312"
-			(at 134.62 123.1962 0)
+			(at 134.62 29.2162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8054,7 +8092,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 134.62 125.7362 0)
+			(at 134.62 31.7562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8065,7 +8103,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8076,7 +8114,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8087,7 +8125,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8098,7 +8136,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8109,7 +8147,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8120,7 +8158,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8131,7 +8169,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 132.08 124.46 0)
+			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8238,7 +8276,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 168.91 96.52 0)
+		(at 168.91 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8249,7 +8287,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa9bbe55-c8f7-4b02-875a-6a24aa80d093")
 		(property "Reference" "C313"
-			(at 171.45 95.2562 0)
+			(at 171.45 57.1562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8260,7 +8298,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 171.45 97.7962 0)
+			(at 171.45 59.6962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8271,7 +8309,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8282,7 +8320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8293,7 +8331,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8304,7 +8342,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8315,7 +8353,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8326,7 +8364,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8337,7 +8375,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 168.91 96.52 0)
+			(at 168.91 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8616,7 +8654,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 190.5 33.02 0)
+		(at 190.5 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8627,7 +8665,7 @@
 		(fields_autoplaced yes)
 		(uuid "bceb2f5b-5bd7-4531-8abc-3275c3f57334")
 		(property "Reference" "C324"
-			(at 193.04 31.7562 0)
+			(at 193.04 134.6262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8638,7 +8676,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 193.04 34.2962 0)
+			(at 193.04 137.1662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8649,7 +8687,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8660,7 +8698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8671,7 +8709,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8682,7 +8720,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8693,7 +8731,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8704,7 +8742,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8715,7 +8753,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 190.5 33.02 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8742,7 +8780,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 168.91 135.89 0)
+		(at 168.91 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8753,7 +8791,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9c121a1-102a-4cf7-b295-78f8102b5abc")
 		(property "Reference" "C311"
-			(at 171.45 134.6262 0)
+			(at 171.45 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8764,7 +8802,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 171.45 137.1662 0)
+			(at 171.45 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8775,7 +8813,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8786,7 +8824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8797,7 +8835,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8808,7 +8846,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8819,7 +8857,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8830,7 +8868,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8841,7 +8879,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 168.91 135.89 0)
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9094,7 +9132,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 168.91 107.95 0)
+		(at 168.91 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9105,7 +9143,7 @@
 		(fields_autoplaced yes)
 		(uuid "e40fabe2-7a36-45ea-b249-203a061e3947")
 		(property "Reference" "C314"
-			(at 171.45 106.6862 0)
+			(at 171.45 68.5862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9116,7 +9154,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 171.45 109.2262 0)
+			(at 171.45 71.1262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9127,7 +9165,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9138,7 +9176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9149,7 +9187,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9160,7 +9198,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9171,7 +9209,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9182,7 +9220,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9193,7 +9231,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 168.91 107.95 0)
+			(at 168.91 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9220,7 +9258,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 96.52 0)
+		(at 132.08 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9231,7 +9269,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7720573-2473-4f59-bcb9-82af3e6d1573")
 		(property "Reference" "C309"
-			(at 134.62 95.2562 0)
+			(at 134.62 57.1562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9242,7 +9280,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 134.62 97.7962 0)
+			(at 134.62 59.6962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9253,7 +9291,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9264,7 +9302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9275,7 +9313,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9286,7 +9324,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9297,7 +9335,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9308,7 +9346,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9319,7 +9357,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 132.08 96.52 0)
+			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9871,7 +9909,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 134.62 50.8 0)
+		(at 134.62 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9882,7 +9920,7 @@
 		(fields_autoplaced yes)
 		(uuid "f88084a7-d2ae-47b8-871e-436fbe1b8970")
 		(property "Reference" "C317"
-			(at 137.16 49.5362 0)
+			(at 137.16 114.3062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9893,7 +9931,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 137.16 52.0762 0)
+			(at 137.16 116.8462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9904,7 +9942,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9915,7 +9953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9926,7 +9964,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9937,7 +9975,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9948,7 +9986,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9959,7 +9997,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9970,7 +10008,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 134.62 50.8 0)
+			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9997,7 +10035,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 143.51 29.21 270)
+		(at 143.51 132.08 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10008,7 +10046,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa1cb88f-fa45-4e35-8e49-c3c8c9dee4a9")
 		(property "Reference" "L305"
-			(at 143.51 24.13 90)
+			(at 143.51 127 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10018,7 +10056,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 143.51 26.67 90)
+			(at 143.51 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10028,7 +10066,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10039,7 +10077,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10050,7 +10088,7 @@
 			)
 		)
 		(property "Description" "1uH, 20%, 42mR, 3.2A"
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10061,7 +10099,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10072,7 +10110,7 @@
 			)
 		)
 		(property "unit x1" "0.22"
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10083,7 +10121,7 @@
 			)
 		)
 		(property "unit x10" "0.182"
-			(at 143.51 29.21 0)
+			(at 143.51 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

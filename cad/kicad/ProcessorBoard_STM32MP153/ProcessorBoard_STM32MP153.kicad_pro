@@ -51,7 +51,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": true,
-          "min_clearance": 0.508
+          "min_clearance": 0.13
         }
       },
       "diff_pair_dimensions": [
@@ -135,7 +135,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 2.0,
         "min_groove_width": 0.0,
@@ -148,7 +148,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.12,
         "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.1,
+        "min_track_width": 0.09,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
@@ -200,7 +200,7 @@
       ],
       "track_widths": [
         0.0,
-        0.1,
+        0.09,
         0.25,
         0.6,
         1.0,
@@ -241,6 +241,10 @@
         {
           "diameter": 0.3,
           "drill": 0.2
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
         },
         {
           "diameter": 0.6,
@@ -518,7 +522,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1,
+        "clearance": 0.09,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -529,7 +533,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
+        "track_width": 0.09,
         "tuning_profile": "",
         "via_diameter": 0.6858,
         "via_drill": 0.3302,
@@ -548,7 +552,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/turtl/Downloads/price test/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -698,7 +702,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "U1-2,U201,R301-302,R901,R99901,IC1,IC301,IC401,J1-2,J301,J501,NT301-305,H1-4,H101-104,C301-324,C901-904,C99901-99902,L301-305,L901,L99901,TP301-307",
+    "used_designators": "U1-2,U201-202,R301-302,R901,R99901,IC1,IC301,IC401,J1-2,J301,J501,NT301-305,H1-4,H101-104,C301-324,C901-904,C99901-99902,L301-305,L901,L99901,TP301-307,#PWR101-103",
     "variants": []
   },
   "sheets": [

@@ -4306,27 +4306,37 @@
 			"yv8HpUzK2Rwfe/IAAAAASUVORK5CYII="
 		)
 	)
-	(hierarchical_label "VDD2_1.2Vcore"
-		(shape input)
-		(at 22.86 25.4 0)
+	(label "{mpu_power}"
+		(at 238.76 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2bb1fed9-0af6-48ff-8294-f6b8e2ee8761")
+		(uuid "7ea1f65f-6cf4-4538-bdc9-08bad4ad3779")
 	)
-	(hierarchical_label "VDD1_1.8Vcore"
+	(hierarchical_label "PROC_PWR"
 		(shape input)
-		(at 22.86 27.94 0)
+		(at 238.76 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "d46f3047-94f4-418c-ad77-5b54b1e0dcdb")
+		(uuid "451be65c-1c55-438c-8b7c-12278540707d")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 238.76 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "580b70f8-9a88-4d73-98df-e287c34f6e9f")
 	)
 	(symbol
 		(lib_id "__WM_Local:IS43LD16320A-25BLI")
