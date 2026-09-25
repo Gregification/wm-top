@@ -691,6 +691,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 80.01 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b1011e6-8062-45dc-a913-94cacbb32a7d")
+		(property "Reference" "C904"
+			(at 82.55 88.9062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 82.55 91.4462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.04"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.11"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60ba2807-0e27-4571-802d-8c56d5d72434")
+		)
+		(pin "2"
+			(uuid "8c7f76c4-994e-4250-85fc-6dba2dc4eda2")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "C904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Small")
 		(at 19.05 148.59 0)
 		(unit 1)
@@ -807,7 +933,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 80.01 90.17 0)
+		(at 31.75 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -818,7 +944,7 @@
 		(fields_autoplaced yes)
 		(uuid "87bdfe1a-5da2-4101-8b1c-70d3482f6567")
 		(property "Reference" "C903"
-			(at 82.55 88.9062 0)
+			(at 34.29 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -828,8 +954,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
-			(at 82.55 91.4462 0)
+		(property "Value" "4.7u"
+			(at 34.29 90.1762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -839,8 +965,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 80.01 90.17 0)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -851,7 +977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 90.17 0)
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -861,8 +987,8 @@
 				)
 			)
 		)
-		(property "Description" "1uF, 16V, 10%, 8.6MHz"
-			(at 80.01 90.17 0)
+		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -872,8 +998,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Samsung-Electro-Mechanics/CL10A106MA8NRWC?qs=ST9lo4GX8V1EuSEdq9MnFw%3D%3D"
-			(at 80.01 90.17 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -883,8 +1009,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.168"
-			(at 80.01 90.17 0)
+		(property "unit x10" "0.11"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -894,8 +1020,8 @@
 				)
 			)
 		)
-		(property "unit x1" "0.29"
-			(at 80.01 90.17 0)
+		(property "unit x1" "0.047"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -905,8 +1031,8 @@
 				)
 			)
 		)
-		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE168SB7105KTNA01&u=M"
-			(at 80.01 90.17 0)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -933,7 +1059,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 22.86 91.44 0)
+		(at 19.05 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -944,7 +1070,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8337f37-281d-4de3-941f-ff61d47008d2")
 		(property "Reference" "C901"
-			(at 25.4 90.1762 0)
+			(at 21.59 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -955,7 +1081,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 25.4 92.7162 0)
+			(at 21.59 90.1762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -966,7 +1092,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -977,7 +1103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -988,7 +1114,7 @@
 			)
 		)
 		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -999,7 +1125,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1010,7 +1136,7 @@
 			)
 		)
 		(property "unit x10" "0.112"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1021,7 +1147,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1032,7 +1158,7 @@
 			)
 		)
 		(property "unit x1" "0.27"
-			(at 22.86 91.44 0)
+			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
