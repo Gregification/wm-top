@@ -489,7 +489,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -625,11 +625,16 @@
     "bus_aliases": {
       "mpu_power": [
         "V_{dd_core}",
-        "V_{dd_DDR}",
+        "V_{dd_DDRQ}",
         "V_{dd_IO}",
         "3v3",
         "V_{ddA}",
-        "V_{dd_SD}"
+        "V_{dd_SD}",
+        "V_{BST_OTG}",
+        "V_{BUS_ST}",
+        "V_{dd_USB}",
+        "V_{dd_DDR2}",
+        "V_{DDR_ref}"
       ]
     },
     "connection_grid_size": 50.0,
@@ -693,7 +698,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "U1-2,U201,R301-302,R901,R99901,IC1,IC301,IC401,J1-2,J501,NT301-304,H1-4,H101-104,C301-314,C901-903,C99901-99902,L301-304,L901,L99901",
+    "used_designators": "U1-2,U201,R301-302,R901,R99901,IC1,IC301,IC401,J1-2,J301,J501,NT301-305,H1-4,H101-104,C301-321,C901-903,C99901-99902,L301-305,L901,L99901,TP301-307",
     "variants": []
   },
   "sheets": [
