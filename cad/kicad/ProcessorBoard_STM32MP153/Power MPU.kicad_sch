@@ -1725,6 +1725,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "stm32mp15x integration on battery power"
 		(exclude_from_sim no)
@@ -1866,7 +1981,7 @@
 		)
 		(uuid "53692559-e2bb-46a7-91e4-ca3fe34ee023")
 	)
-	(text_box "design notes:\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component"
+	(text_box "design notes:\n	- 1v8 logic. simpiler. higher voltage logic has a hord of extra requirements\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component"
 		(exclude_from_sim no)
 		(at 215.9 63.5 0)
 		(size 67.31 43.18)
@@ -2335,10 +2450,6 @@
 	(no_connect
 		(at 52.07 115.57)
 		(uuid "260f0c94-3cf8-47d2-ab30-bd09e01bcf6e")
-	)
-	(no_connect
-		(at 246.38 25.4)
-		(uuid "53821b21-861b-46af-a8fa-727e6f66e3af")
 	)
 	(no_connect
 		(at 191.77 38.1)
@@ -2882,6 +2993,16 @@
 		)
 		(uuid "333203b3-a3b4-4650-bc28-4d32c07da99c")
 	)
+	(wire
+		(pts
+			(xy 121.92 160.02) (xy 121.92 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35242bf9-b8c6-4cee-ad23-9df2f65bc24a")
+	)
 	(bus
 		(pts
 			(xy 107.95 16.51) (xy 107.95 64.77)
@@ -3241,16 +3362,6 @@
 			(type default)
 		)
 		(uuid "73c86637-8970-4bdc-aacc-1c3cb7a155a8")
-	)
-	(wire
-		(pts
-			(xy 123.19 160.02) (xy 121.92 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "742b5dc7-a846-45ea-8383-746cd0ece782")
 	)
 	(wire
 		(pts
@@ -4014,16 +4125,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 160.02) (xy 121.92 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e08a75b7-5e3f-422f-bceb-5140519a5983")
-	)
-	(wire
-		(pts
 			(xy 74.93 48.26) (xy 74.93 54.61)
 		)
 		(stroke
@@ -4754,7 +4855,7 @@
 		(uuid "22217e7d-0bc8-407e-8747-a79dc9641e2b")
 	)
 	(label "PwrGndBuck4"
-		(at 121.92 184.15 0)
+		(at 121.92 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4844,7 +4945,7 @@
 		(uuid "3e329e54-848e-4551-a71b-35579fb909e7")
 	)
 	(label "PwrGndBoost5"
-		(at 121.92 187.96 0)
+		(at 121.92 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4914,7 +5015,7 @@
 		(uuid "4f40785c-50f9-4f02-bac3-03f297374630")
 	)
 	(label "PwrGndBuck3"
-		(at 121.92 180.34 0)
+		(at 121.92 175.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4974,7 +5075,7 @@
 		(uuid "52e0ea31-cd99-4a5b-80dd-67df183586f8")
 	)
 	(label "GndLDO"
-		(at 121.92 168.91 0)
+		(at 121.92 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5194,7 +5295,7 @@
 		(uuid "7dff74e8-937b-4212-81b4-12aaf65bd44d")
 	)
 	(label "PwrGndBuck2"
-		(at 121.92 176.53 0)
+		(at 121.92 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5434,7 +5535,7 @@
 		(uuid "c61e58ae-96eb-4a78-9b34-e463ad974580")
 	)
 	(label "PwrGndBuck1"
-		(at 121.92 172.72 0)
+		(at 121.92 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5494,7 +5595,7 @@
 		(uuid "cd7a3b7c-63cb-41cd-b8f0-9de8aecd15d1")
 	)
 	(label "AGnd"
-		(at 121.92 191.77 0)
+		(at 121.92 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5604,7 +5705,7 @@
 		(uuid "ea6bae57-e7f0-4304-819d-d4d57be755e6")
 	)
 	(label "ExPadGnd"
-		(at 121.92 165.1 0)
+		(at 121.92 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5788,17 +5889,6 @@
 		)
 		(uuid "4309bfa4-93f7-4be3-b34a-e330a89491b0")
 	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 246.38 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "49a8e17c-e7f7-4816-9a09-18beeefb8c30")
-	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
 		(at 31.75 29.21 180)
@@ -5875,17 +5965,6 @@
 			(justify left)
 		)
 		(uuid "cca90e90-5e37-4062-991c-b0a8694fcfeb")
-	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 123.19 160.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ee29295b-364a-4dbf-80e2-2ed006a37fbc")
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
@@ -8189,6 +8268,84 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4f4d7aa-d866-415b-9711-468897582d39")
+		(property "Reference" "#PWR0301"
+			(at 121.92 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf4e11c9-7071-4b4f-8aaa-8072b3e70dc9")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)

@@ -4327,17 +4327,6 @@
 		)
 		(uuid "451be65c-1c55-438c-8b7c-12278540707d")
 	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 238.76 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "580b70f8-9a88-4d73-98df-e287c34f6e9f")
-	)
 	(symbol
 		(lib_id "__WM_Local:IS43LD16320A-25BLI")
 		(at 73.66 21.59 0)
