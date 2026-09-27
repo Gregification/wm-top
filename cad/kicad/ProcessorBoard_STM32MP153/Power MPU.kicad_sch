@@ -1911,7 +1911,7 @@
 		)
 		(uuid "b61655e9-42b2-41ab-b693-22fb1d0bc743")
 	)
-	(text "programmable out as : 0v6\n[0v9,3v3], %2, 100mV steps"
+	(text "programmable out as :\n[0v9,3v3], %2, 100mV steps"
 		(exclude_from_sim no)
 		(at 189.484 43.688 0)
 		(effects
@@ -2284,12 +2284,6 @@
 		(uuid "5ffe3017-11e8-4d67-8381-500ce3a60ce5")
 	)
 	(junction
-		(at 168.91 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6abb560d-a55e-4861-941e-7696460f4095")
-	)
-	(junction
 		(at 179.07 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2342,6 +2336,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2440c87-e2e2-4d08-b88b-2e96eb69e90b")
+	)
+	(junction
+		(at 168.91 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7fbd808-3720-4dc2-b688-dc773bde6a76")
 	)
 	(junction
 		(at 87.63 85.09)
@@ -2454,6 +2454,10 @@
 	(no_connect
 		(at 191.77 66.04)
 		(uuid "721c8abe-71eb-45c3-ac39-8e60dcfb4904")
+	)
+	(no_connect
+		(at 190.5 38.1)
+		(uuid "d07aed63-162b-4c8a-8dda-995596ee8573")
 	)
 	(bus_entry
 		(at 207.01 52.07)
@@ -2598,15 +2602,6 @@
 			(type default)
 		)
 		(uuid "c682c777-9f9b-4b88-9712-f29cb7bac31b")
-	)
-	(bus_entry
-		(at 207.01 35.56)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4485d15-27e3-4dd9-9e93-6e0c582ac213")
 	)
 	(bus_entry
 		(at 207.01 91.44)
@@ -3226,6 +3221,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 38.1) (xy 190.5 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb15e5f-d98f-4cd3-a39b-17e9f8c64dfe")
+	)
+	(wire
+		(pts
 			(xy 168.91 27.94) (xy 168.91 26.67)
 		)
 		(stroke
@@ -3833,16 +3838,6 @@
 			(type default)
 		)
 		(uuid "b5a050d8-0ecc-40c1-80e7-5f10a3e1a6f6")
-	)
-	(wire
-		(pts
-			(xy 168.91 38.1) (xy 204.47 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7463f61-e1ac-4e3f-afde-06471ed01b0e")
 	)
 	(bus
 		(pts
@@ -5145,16 +5140,6 @@
 		)
 		(uuid "6047dcbd-f0cb-462d-bfd0-78f26070a914")
 	)
-	(label "V_{ddr_TT}"
-		(at 190.5 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "617a419d-f391-4f05-98ee-8b222bf70cac")
-	)
 	(label "AGnd"
 		(at 85.09 123.19 180)
 		(effects
@@ -6073,10 +6058,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0bda1fa1-3232-4547-a3c0-3a14407984f6")
 		(property "Reference" "C311"
