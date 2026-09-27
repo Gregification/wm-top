@@ -2021,7 +2021,7 @@
 		)
 		(uuid "7630cc3c-5721-415f-9046-78dd9a75ec6c")
 	)
-	(text_box "Buck1, Vdd Core : 1.8V 1.5A"
+	(text_box "Buck1, Vdd Core : 1.2V 1.5A"
 		(exclude_from_sim no)
 		(at 15.24 20.32 0)
 		(size 88.9 19.05)
@@ -2121,7 +2121,7 @@
 		)
 		(uuid "e709eed6-0fbf-43b7-83a6-184a9af9145c")
 	)
-	(text_box "LDO3, V_{dd1_DDR} : 1.8V ~50mA bypass-mode"
+	(text_box "LDO3, V_{dd_DDR1} : 1.8V ~50mA bypass-mode"
 		(exclude_from_sim no)
 		(at 111.76 76.2 0)
 		(size 91.44 27.94)
@@ -2459,10 +2459,6 @@
 		(at 191.77 66.04)
 		(uuid "721c8abe-71eb-45c3-ac39-8e60dcfb4904")
 	)
-	(no_connect
-		(at 246.38 33.02)
-		(uuid "87d74401-6fd0-4865-ad7b-58bf0ae0d6b2")
-	)
 	(bus_entry
 		(at 207.01 52.07)
 		(size -2.54 2.54)
@@ -2498,15 +2494,6 @@
 			(type default)
 		)
 		(uuid "2815a32f-13ff-4853-8a14-a7c2f567b254")
-	)
-	(bus_entry
-		(at 207.01 78.74)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2a76dd-eca9-4db5-9346-2d41d3aee82a")
 	)
 	(bus_entry
 		(at 105.41 67.31)
@@ -2633,6 +2620,15 @@
 			(type default)
 		)
 		(uuid "e75d1bec-9e74-4dd4-abe7-eb1d18ddba4c")
+	)
+	(bus_entry
+		(at 207.01 78.74)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef585843-db01-4813-a80a-e7f3271f2d9a")
 	)
 	(bus_entry
 		(at 107.95 45.72)
@@ -4704,16 +4700,6 @@
 			"hDVVfsENsXQgJZ0gCIIgCIIgagzy7kIQBEEQBEEQNcb/B5WmfY2E1sGEAAAAAElFTkSuQmCC"
 		)
 	)
-	(label "V_{dd_core}"
-		(at 128.27 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "03d42976-99a8-4d8a-9b17-c6a24c5f8d3a")
-	)
 	(label "WakeUp"
 		(at 26.67 138.43 180)
 		(effects
@@ -4875,7 +4861,7 @@
 		(uuid "28ce2784-199e-405d-91f2-fc9f1f9e43e2")
 	)
 	(label "V_{dd_USB}"
-		(at 186.69 111.76 0)
+		(at 190.5 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4953,6 +4939,16 @@
 			(justify left bottom)
 		)
 		(uuid "40297a29-da33-418d-bd32-bda9a7307eb9")
+	)
+	(label "{mpu_pmic}"
+		(at 246.38 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "436dd88b-a7af-4278-aadb-1a4e1c621e31")
 	)
 	(label "INTn"
 		(at 147.32 180.34 0)
@@ -5324,16 +5320,6 @@
 		)
 		(uuid "895474af-fd04-43e7-ad22-304c4508e6d1")
 	)
-	(label "V_{dd_DDR2}"
-		(at 186.69 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bdb56ef-27a0-4148-b276-a9e86e1b8af2")
-	)
 	(label "LDO6out"
 		(at 163.83 38.1 180)
 		(effects
@@ -5353,6 +5339,16 @@
 			(justify left bottom)
 		)
 		(uuid "9c10a935-d6f7-4e6a-9d56-ce8cdacf2d9e")
+	)
+	(label "V_{dd_IO}"
+		(at 128.27 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d3386fb-b04e-4d3e-84f7-971972a03248")
 	)
 	(label "SCL"
 		(at 26.67 143.51 180)
@@ -5654,6 +5650,16 @@
 		)
 		(uuid "de17ab9e-a14c-41fc-ac76-9ccda6295a5f")
 	)
+	(label "V_{dd_DDR1}"
+		(at 190.5 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e08777c9-2abe-4b01-95db-c1212fa6a137")
+	)
 	(label "Vin"
 		(at 139.7 111.76 0)
 		(effects
@@ -5805,7 +5811,7 @@
 		(uuid "fa7f4a3e-21a6-4deb-a50f-e89bd86eba9e")
 	)
 	(label "V_{DDR_ref}"
-		(at 186.69 93.98 0)
+		(at 190.5 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5825,7 +5831,7 @@
 		(uuid "fc2dfe58-e408-4d81-9a85-f9d669a6f9d4")
 	)
 	(label "V_{BST_OTG}"
-		(at 186.69 132.08 0)
+		(at 190.5 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6947,132 +6953,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 161.29 170.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d0e231c-142a-4275-b73d-91a97868730a")
-		(property "Reference" "R301"
-			(at 163.83 168.9099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3090"
-			(at 163.83 171.4499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 161.29 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "61a7b783-0515-4db3-bb29-41e830dc089c")
-		)
-		(pin "1"
-			(uuid "665ea892-f5b3-4aa1-9ce2-20e32a2f31bb")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
-					(reference "R301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Small")
 		(at 69.85 29.21 270)
 		(unit 1)
@@ -7890,6 +7770,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C310")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 161.29 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "902d116a-db8c-4be6-9ec3-b9cb463d1a59")
+		(property "Reference" "R301"
+			(at 163.83 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.2k"
+			(at 163.83 171.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.017"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "88dfcf5e-94a5-45f1-ad1d-a972e6cb3dc8")
+		)
+		(pin "1"
+			(uuid "c2f4b1c2-9aa1-4a8a-82ed-da73c079ab11")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -9175,6 +9181,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 156.21 170.18 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dfd3c784-a696-45ee-8cb6-2b26cba0cd17")
+		(property "Reference" "R302"
+			(at 153.67 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.2k"
+			(at 153.67 171.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.017"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "861dbdd9-3482-4f3f-8388-76c3cfcc772d")
+		)
+		(pin "1"
+			(uuid "38988997-ebe9-4d6d-8120-df9b50aa22d5")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "R302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Small")
 		(at 69.85 48.26 270)
 		(unit 1)
@@ -9534,132 +9666,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C309")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 156.21 170.18 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e8306bbe-6d60-475b-a6e8-cfad3bd77da2")
-		(property "Reference" "R302"
-			(at 153.67 168.9099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3090"
-			(at 153.67 171.4499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 156.21 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "056262ff-522e-460a-bd75-d4c4f5937348")
-		)
-		(pin "1"
-			(uuid "aba02f3c-39f2-4746-8067-0216c3aa9b56")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
-					(reference "R302")
 					(unit 1)
 				)
 			)

@@ -113,7 +113,7 @@
 		(at 166.37 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f9ad7fd7-bd10-45be-980e-bf200d2350fe")
+		(uuid "081ec5bc-2e2c-4c2b-a0d2-e032e905e38d")
 	)
 	(bus
 		(pts
@@ -134,6 +134,26 @@
 			(type default)
 		)
 		(uuid "4448341d-affb-4d7a-b61c-36b59e827cd3")
+	)
+	(bus
+		(pts
+			(xy 154.94 66.04) (xy 177.8 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7588a90e-e939-453c-b67c-3b7a26ac18f8")
+	)
+	(bus
+		(pts
+			(xy 154.94 88.9) (xy 177.8 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4eb099-39cb-4aee-861f-487c75bd1636")
 	)
 	(bus
 		(pts
@@ -164,6 +184,26 @@
 			(justify bottom)
 		)
 		(uuid "761c830c-1a7f-48a6-924d-41c190d00eb6")
+	)
+	(label "{mem_d_a_c}"
+		(at 166.37 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "77ec996e-e9ac-4840-b7ff-a45df583f323")
+	)
+	(label "{mpu_pmic}"
+		(at 166.37 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "e78c6255-28fd-430f-b8df-6ff82f708572")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -592,8 +632,8 @@
 		)
 	)
 	(sheet
-		(at 116.84 54.61)
-		(size 38.1 69.85)
+		(at 116.84 63.5)
+		(size 38.1 60.96)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -608,7 +648,7 @@
 		)
 		(uuid "4528db64-a2fa-4a5e-a759-f2845964b2e6")
 		(property "Sheetname" "MPU"
-			(at 116.84 53.8984 0)
+			(at 116.84 62.7884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -639,6 +679,26 @@
 				(justify right)
 			)
 		)
+		(pin "PROC_PMIC_IO" bidirectional
+			(at 154.94 88.9 0)
+			(uuid "3612429c-975f-4642-8b68-e156a909b92f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MEM_D_A_C" bidirectional
+			(at 154.94 66.04 0)
+			(uuid "bc3ec81a-cb5f-40b7-8bb1-8e0eed78a2fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -648,7 +708,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 54.61)
+		(at 59.69 63.5)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -664,7 +724,7 @@
 		)
 		(uuid "996f6555-ca68-4e04-b150-7bd19df70858")
 		(property "Sheetname" "ST Link"
-			(at 59.69 53.8984 0)
+			(at 59.69 62.7884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -675,7 +735,7 @@
 			)
 		)
 		(property "Sheetfile" "ST Link off-board.kicad_sch"
-			(at 59.69 67.8946 0)
+			(at 59.69 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -694,7 +754,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 73.66)
+		(at 59.69 82.55)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -710,7 +770,7 @@
 		)
 		(uuid "9bbfbe68-2804-40ed-9d5f-0570a6a580b2")
 		(property "Sheetname" "SPF"
-			(at 59.69 72.9484 0)
+			(at 59.69 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -721,7 +781,7 @@
 			)
 		)
 		(property "Sheetfile" "SPF.kicad_sch"
-			(at 59.69 86.9446 0)
+			(at 59.69 95.8346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -740,7 +800,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 92.71)
+		(at 59.69 101.6)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -756,7 +816,7 @@
 		)
 		(uuid "c8478d41-8ee5-4c8a-a48d-a17f4988cf95")
 		(property "Sheetname" "USB host"
-			(at 59.69 91.9984 0)
+			(at 59.69 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -767,7 +827,7 @@
 			)
 		)
 		(property "Sheetfile" "USB Host.kicad_sch"
-			(at 59.69 105.9946 0)
+			(at 59.69 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -872,6 +932,16 @@
 		(pin "PROC_PWR" input
 			(at 177.8 72.39 180)
 			(uuid "a5b5bd53-9e18-48f0-b387-f2e6d1eb22c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D_A_C" bidirectional
+			(at 177.8 66.04 180)
+			(uuid "98003fda-8be7-4350-8527-a38163a71ad2")
 			(effects
 				(font
 					(size 1.27 1.27)
