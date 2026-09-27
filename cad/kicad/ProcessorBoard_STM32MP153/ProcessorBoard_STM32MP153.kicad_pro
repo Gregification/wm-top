@@ -665,7 +665,8 @@
         "V_{BUS_ST}",
         "V_{dd_USB}",
         "V_{DDR_ref}",
-        "V_{dd_DDR1}"
+        "V_{dd_DDR1}",
+        "V_{ddr_TT}"
       ]
     },
     "connection_grid_size": 50.0,
@@ -729,7 +730,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "C227-228,C401",
+    "used_designators": "C227-228,C311,C401",
     "variants": []
   },
   "sheets": [

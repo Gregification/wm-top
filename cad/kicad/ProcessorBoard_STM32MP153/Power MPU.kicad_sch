@@ -1911,9 +1911,9 @@
 		)
 		(uuid "b61655e9-42b2-41ab-b693-22fb1d0bc743")
 	)
-	(text "unused. programmable out:\n[0v9,3v3], %2, 100mV steps"
+	(text "programmable out as : 0v6\n[0v9,3v3], %2, 100mV steps"
 		(exclude_from_sim no)
-		(at 188.214 35.306 0)
+		(at 189.484 43.688 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2081,7 +2081,7 @@
 		)
 		(uuid "9fcc6b15-4814-4c05-a68f-b2ac2c9c2164")
 	)
-	(text_box "LDO 1/V_{ddA}:2v9 , 6/unused:"
+	(text_box "LDO 1/V_{ddA}:2v9 , 6/V_{tt}:V_{DDRQ}/2 = 0v6"
 		(exclude_from_sim no)
 		(at 111.76 20.32 0)
 		(size 91.44 27.94)
@@ -2121,7 +2121,7 @@
 		)
 		(uuid "e709eed6-0fbf-43b7-83a6-184a9af9145c")
 	)
-	(text_box "LDO3, V_{dd_DDR1} : 1.8V ~50mA bypass-mode"
+	(text_box "LDO3, V_{dd_DDR1} : 1.8V ~50mA bypass-mode, V_{ref}=Buck2_{out}/2"
 		(exclude_from_sim no)
 		(at 111.76 76.2 0)
 		(size 91.44 27.94)
@@ -2218,12 +2218,6 @@
 		(uuid "21b41e9a-1de1-4a0c-b6b5-813fec88acf6")
 	)
 	(junction
-		(at 168.91 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28ec8235-14b0-4ce9-be1a-95536be91ac9")
-	)
-	(junction
 		(at 74.93 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2288,6 +2282,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ffe3017-11e8-4d67-8381-500ce3a60ce5")
+	)
+	(junction
+		(at 168.91 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6abb560d-a55e-4861-941e-7696460f4095")
 	)
 	(junction
 		(at 179.07 93.98)
@@ -2452,10 +2452,6 @@
 		(uuid "260f0c94-3cf8-47d2-ab30-bd09e01bcf6e")
 	)
 	(no_connect
-		(at 191.77 38.1)
-		(uuid "5d166c2e-53a1-4782-a8f8-0fd1f7a2dfb4")
-	)
-	(no_connect
 		(at 191.77 66.04)
 		(uuid "721c8abe-71eb-45c3-ac39-8e60dcfb4904")
 	)
@@ -2602,6 +2598,15 @@
 			(type default)
 		)
 		(uuid "c682c777-9f9b-4b88-9712-f29cb7bac31b")
+	)
+	(bus_entry
+		(at 207.01 35.56)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4485d15-27e3-4dd9-9e93-6e0c582ac213")
 	)
 	(bus_entry
 		(at 207.01 91.44)
@@ -3451,16 +3456,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 38.1) (xy 191.77 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8590aef3-85cf-4ae8-b986-5103b9bbee9d")
-	)
-	(wire
-		(pts
 			(xy 153.67 62.23) (xy 168.91 62.23)
 		)
 		(stroke
@@ -3838,6 +3833,16 @@
 			(type default)
 		)
 		(uuid "b5a050d8-0ecc-40c1-80e7-5f10a3e1a6f6")
+	)
+	(wire
+		(pts
+			(xy 168.91 38.1) (xy 204.47 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7463f61-e1ac-4e3f-afde-06471ed01b0e")
 	)
 	(bus
 		(pts
@@ -5140,6 +5145,16 @@
 		)
 		(uuid "6047dcbd-f0cb-462d-bfd0-78f26070a914")
 	)
+	(label "V_{ddr_TT}"
+		(at 190.5 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "617a419d-f391-4f05-98ee-8b222bf70cac")
+	)
 	(label "AGnd"
 		(at 85.09 123.19 180)
 		(effects
@@ -6047,6 +6062,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "NT303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 168.91 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bda1fa1-3232-4547-a3c0-3a14407984f6")
+		(property "Reference" "C311"
+			(at 171.45 40.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 171.45 43.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.17"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.069"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d02f343a-5356-4c58-b204-f0b5d5efe5f4")
+		)
+		(pin "2"
+			(uuid "585089b4-4cd5-4f8e-8d70-ecc03c87784b")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
+					(reference "C311")
 					(unit 1)
 				)
 			)
@@ -8936,132 +9077,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C324")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 168.91 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c9c121a1-102a-4cf7-b295-78f8102b5abc")
-		(property "Reference" "C311"
-			(at 171.45 40.6462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 171.45 43.1862 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.11"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.047"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 168.91 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b4fce1e-e4d2-45c7-ab98-7528c6dcf96a")
-		)
-		(pin "2"
-			(uuid "fee85534-8cdf-4657-a466-a694a164cf8d")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
-					(reference "C311")
 					(unit 1)
 				)
 			)
