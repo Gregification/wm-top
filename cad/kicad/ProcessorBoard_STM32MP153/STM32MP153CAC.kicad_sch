@@ -8601,6 +8601,187 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "__WM_Local:ECS-3225MVQ-240-CN-TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ECS-3225MVQ-240-CN-TR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:CDFN-4_2.5x3.2mm_P2.1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "hcmos oscillator, 24MHz, 25ppm, 15pF, 1v71 to 3v6, 10mA, +85c"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "mouser" "https://www.mouser.com/en/ProductDetail/ECS/ECS-3225MVQ-240-CN-TR?qs=GedFDFLaBXELXv0oozPBYA%3D%3D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x1" "1.0"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x10" "0.837"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ECS-3225MVQ-240-CN-TR_0_1"
+				(rectangle
+					(start -8.89 -2.54)
+					(end 8.89 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ECS-3225MVQ-240-CN-TR_1_1"
+				(pin tri_state line
+					(at -11.43 -5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -10.16 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -11.43 -10.16 0)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -5.08 180)
+					(length 2.54)
+					(name "V_{dd}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -8793,6 +8974,26 @@
 		)
 		(uuid "0d29e276-66e0-4c3b-a49a-5b53d442837b")
 	)
+	(text_box "High Speed External oscillator : 24MHz"
+		(exclude_from_sim no)
+		(at 427.99 13.97 0)
+		(size 82.55 36.83)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "59202837-482f-43d5-a9d1-64cb410848b4")
+	)
 	(text_box "Boot selection"
 		(exclude_from_sim no)
 		(at 511.81 13.97 0)
@@ -8932,6 +9133,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fc0a102-fb95-48a5-812c-d0e50b1b0fed")
+	)
+	(junction
+		(at 148.59 276.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "153ac4ea-5f9f-436e-993b-5a925118c017")
 	)
 	(junction
 		(at 307.34 36.83)
@@ -9174,6 +9381,12 @@
 		(uuid "8de8bf6d-b794-4175-82b6-c6032907df0c")
 	)
 	(junction
+		(at 200.66 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90829129-76ad-4d7f-bf35-f6bc8dfbb815")
+	)
+	(junction
 		(at 25.4 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9196,6 +9409,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97340b2e-8d55-4fe4-b081-13bedda841ab")
+	)
+	(junction
+		(at 481.33 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c0c673e-a62f-4b04-b4eb-e10fd99280a3")
 	)
 	(junction
 		(at 66.04 105.41)
@@ -9318,6 +9537,12 @@
 		(uuid "e3e472c0-481e-4ad0-aef3-38651c4a8b60")
 	)
 	(junction
+		(at 481.33 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e67863ef-63d7-4aba-8bd2-e80a6731f29a")
+	)
+	(junction
 		(at 251.46 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9328,6 +9553,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f17079a2-ec30-46de-a3a0-01fb98440bd4")
+	)
+	(junction
+		(at 481.33 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f35c7ce9-087f-4f19-b5dc-766631468198")
 	)
 	(junction
 		(at 205.74 36.83)
@@ -9374,10 +9605,6 @@
 	(no_connect
 		(at 172.72 156.21)
 		(uuid "033b98ba-9f1c-408d-be5f-ca94b7a01636")
-	)
-	(no_connect
-		(at 198.12 36.83)
-		(uuid "06f4d7df-a518-472d-b63a-e335507f3b1d")
 	)
 	(no_connect
 		(at 172.72 113.03)
@@ -9640,6 +9867,15 @@
 		(uuid "20eeb142-eddc-4e2b-b997-6241e758d4ca")
 	)
 	(bus_entry
+		(at 447.04 62.23)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2872104f-843b-4043-9a0e-cb239bee6fc5")
+	)
+	(bus_entry
 		(at 163.83 257.81)
 		(size 2.54 2.54)
 		(stroke
@@ -9667,6 +9903,15 @@
 		(uuid "37a99fde-8593-4371-a4b9-6d87a1129f81")
 	)
 	(bus_entry
+		(at 128.27 69.85)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3abb805b-207e-498f-b717-61280ae429d9")
+	)
+	(bus_entry
 		(at 165.1 176.53)
 		(size 2.54 2.54)
 		(stroke
@@ -9692,6 +9937,15 @@
 			(type default)
 		)
 		(uuid "467397d3-4ef8-4dca-b3f3-d0738b645266")
+	)
+	(bus_entry
+		(at 447.04 59.69)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4832bf34-fd7f-4d69-9e06-328d2ed7ed8b")
 	)
 	(bus_entry
 		(at 165.1 179.07)
@@ -9890,6 +10144,15 @@
 			(type default)
 		)
 		(uuid "b395c72d-bd85-49bb-8a55-bbc90b9184aa")
+	)
+	(bus_entry
+		(at 499.11 39.37)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7f2ed0d-6bb3-41df-9b50-53e1783fb156")
 	)
 	(bus_entry
 		(at 165.1 194.31)
@@ -10339,6 +10602,16 @@
 		)
 		(uuid "1c292d99-ba89-4be8-a22f-66a855c589b5")
 	)
+	(bus
+		(pts
+			(xy 447.04 58.42) (xy 447.04 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d940602-b2af-44ec-8493-47f0e8fba20b")
+	)
 	(wire
 		(pts
 			(xy 167.64 92.71) (xy 172.72 92.71)
@@ -10388,6 +10661,16 @@
 			(type default)
 		)
 		(uuid "2200aca5-154f-4f94-9825-74ccf7611dc6")
+	)
+	(wire
+		(pts
+			(xy 452.12 29.21) (xy 455.93 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23bb3a80-d256-4371-be9b-e8900414ee95")
 	)
 	(wire
 		(pts
@@ -10701,6 +10984,16 @@
 	)
 	(wire
 		(pts
+			(xy 481.33 34.29) (xy 481.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43559f3a-ee92-4d07-97b1-d7ddffabccf4")
+	)
+	(wire
+		(pts
 			(xy 167.64 173.99) (xy 172.72 173.99)
 		)
 		(stroke
@@ -10741,6 +11034,16 @@
 	)
 	(wire
 		(pts
+			(xy 496.57 29.21) (xy 501.65 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f8004ad-1103-4ec6-9bf6-4b5dc8ea2d52")
+	)
+	(wire
+		(pts
 			(xy 557.53 38.1) (xy 557.53 40.64)
 		)
 		(stroke
@@ -10748,6 +11051,16 @@
 			(type default)
 		)
 		(uuid "4f8711ac-8dd5-45e7-9353-9f2823b4678a")
+	)
+	(wire
+		(pts
+			(xy 443.23 29.21) (xy 447.04 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50354a33-bf0f-4b23-8848-b143605bc6b1")
 	)
 	(wire
 		(pts
@@ -10971,6 +11284,16 @@
 	)
 	(bus
 		(pts
+			(xy 127 69.85) (xy 128.27 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b000004-8685-400b-88c3-f64c1b29e1e4")
+	)
+	(bus
+		(pts
 			(xy 20.32 77.47) (xy 20.32 86.36)
 		)
 		(stroke
@@ -10988,6 +11311,16 @@
 			(type default)
 		)
 		(uuid "6c81b092-656f-467f-b54a-e02cfd19d3b5")
+	)
+	(wire
+		(pts
+			(xy 449.58 64.77) (xy 457.2 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d287b72-a60f-43aa-baad-eacab58e3d8a")
 	)
 	(wire
 		(pts
@@ -11018,6 +11351,16 @@
 			(type default)
 		)
 		(uuid "6e63d234-1c81-498e-b7dd-f5a2531abbf9")
+	)
+	(wire
+		(pts
+			(xy 501.65 29.21) (xy 501.65 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "767083fb-1b22-4c34-a839-94453935d151")
 	)
 	(wire
 		(pts
@@ -11121,6 +11464,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 72.39) (xy 172.72 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "835f3319-3193-46b8-aa97-e61c8c51a44d")
+	)
+	(wire
+		(pts
 			(xy 215.9 16.51) (xy 215.9 17.78)
 		)
 		(stroke
@@ -11131,6 +11484,16 @@
 	)
 	(wire
 		(pts
+			(xy 449.58 62.23) (xy 457.2 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87363aaf-8177-45cc-9489-7aee28a108e9")
+	)
+	(wire
+		(pts
 			(xy 532.13 22.86) (xy 544.83 22.86)
 		)
 		(stroke
@@ -11138,6 +11501,16 @@
 			(type default)
 		)
 		(uuid "8a1824c4-9a69-4c0b-9c32-f5a41a438716")
+	)
+	(wire
+		(pts
+			(xy 481.33 29.21) (xy 491.49 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d32e1f4-6f86-4f98-a677-221b3b6929e8")
 	)
 	(bus
 		(pts
@@ -11168,6 +11541,16 @@
 			(type default)
 		)
 		(uuid "9001421d-20e6-47c6-9b63-a4b61cbce381")
+	)
+	(wire
+		(pts
+			(xy 443.23 40.64) (xy 447.04 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90c7a535-7592-4d35-89b4-a7c08d417d8d")
 	)
 	(bus
 		(pts
@@ -11288,6 +11671,16 @@
 			(type default)
 		)
 		(uuid "984ecebe-6138-4089-89d6-a6103aa59abd")
+	)
+	(wire
+		(pts
+			(xy 481.33 41.91) (xy 481.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "986a79e3-d71e-4d57-8e4c-e71f11b40f77")
 	)
 	(bus
 		(pts
@@ -11458,6 +11851,16 @@
 			(type default)
 		)
 		(uuid "a95bf632-afbe-49c7-9c33-b249670fe1fa")
+	)
+	(wire
+		(pts
+			(xy 452.12 40.64) (xy 481.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97dc281-f56c-4b2b-8837-0a2d37eb135a")
 	)
 	(wire
 		(pts
@@ -11759,6 +12162,16 @@
 		)
 		(uuid "c6ad68d2-d2e3-463c-b498-c34a422450d3")
 	)
+	(bus
+		(pts
+			(xy 445.77 58.42) (xy 447.04 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8612d3a-0529-4493-97e1-ae0f1068430a")
+	)
 	(wire
 		(pts
 			(xy 557.53 22.86) (xy 557.53 24.13)
@@ -11891,6 +12304,16 @@
 	)
 	(wire
 		(pts
+			(xy 443.23 34.29) (xy 455.93 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a3264d-ab87-484c-b481-6461a7908e0a")
+	)
+	(wire
+		(pts
 			(xy 231.14 36.83) (xy 231.14 24.13)
 		)
 		(stroke
@@ -11941,6 +12364,16 @@
 	)
 	(wire
 		(pts
+			(xy 478.79 29.21) (xy 481.33 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4700777-d4c8-48ec-ab08-4e892ca22d82")
+	)
+	(wire
+		(pts
 			(xy 167.64 80.01) (xy 172.72 80.01)
 		)
 		(stroke
@@ -11958,6 +12391,16 @@
 			(type default)
 		)
 		(uuid "e5646c4b-5de7-4b37-ad7e-ad8b66ecbc6a")
+	)
+	(wire
+		(pts
+			(xy 478.79 34.29) (xy 481.33 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ff8309-2e54-4d91-af73-beb9cba5f6b0")
 	)
 	(wire
 		(pts
@@ -12149,6 +12592,16 @@
 		)
 		(uuid "f7d6885f-131a-4a96-9d97-4adc59e92ad7")
 	)
+	(bus
+		(pts
+			(xy 497.84 39.37) (xy 499.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f85fa531-ab04-442b-acfd-8494de485ff6")
+	)
 	(wire
 		(pts
 			(xy 167.64 201.93) (xy 172.72 201.93)
@@ -12178,6 +12631,16 @@
 			(type default)
 		)
 		(uuid "fbc236b9-f774-4538-9fb8-be88aa6ddbd1")
+	)
+	(wire
+		(pts
+			(xy 198.12 36.83) (xy 200.66 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc0aa195-1f79-4389-abe1-7167433fffcf")
 	)
 	(wire
 		(pts
@@ -13556,6 +14019,16 @@
 		)
 		(uuid "0d68e6f7-0595-4820-8c22-a9f6d9e4cc87")
 	)
+	(label "V_{dd_IO}"
+		(at 501.65 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "179fe8e4-890c-4ab5-90d2-9bcc72d2586e")
+	)
 	(label "WEN"
 		(at 166.37 280.67 0)
 		(effects
@@ -13615,6 +14088,16 @@
 			(justify left bottom)
 		)
 		(uuid "3015a3f1-6bc8-4e51-a66c-ec03e55dce94")
+	)
+	(label "OSC_HSE_in"
+		(at 340.36 349.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3400f35d-1535-4ee5-b299-9379ca9abd7e")
 	)
 	(label "V_{ddA}"
 		(at 193.04 26.67 0)
@@ -13676,6 +14159,16 @@
 		)
 		(uuid "52080bc0-87fe-437f-ba9f-7e9dbf04c94f")
 	)
+	(label "PWR_ON"
+		(at 443.23 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a7f8fca-21e2-418a-963d-3a5a296e764c")
+	)
 	(label "m1"
 		(at 167.64 135.89 0)
 		(effects
@@ -13705,6 +14198,16 @@
 			(justify left bottom)
 		)
 		(uuid "66a9d77d-83c7-4dce-ab6b-2b37047b2c60")
+	)
+	(label "OSC_HSE_in"
+		(at 443.23 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a064d15-3bf6-4ff2-a52f-bc6e6f0a41fa")
 	)
 	(label "V_{ddA}"
 		(at 151.13 64.77 0)
@@ -13816,6 +14319,16 @@
 		)
 		(uuid "8d36ca0d-72c9-4923-a7ea-55e843c65475")
 	)
+	(label "OSC_HSE_out"
+		(at 340.36 351.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92da2e75-38ea-43b8-8096-5a987f64f457")
+	)
 	(label "b1"
 		(at 167.64 80.01 0)
 		(effects
@@ -13866,6 +14379,16 @@
 		)
 		(uuid "9b35adb1-03a4-4368-9b3d-a0a794ebb4a6")
 	)
+	(label "PWR_ON"
+		(at 165.1 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c555c19-b739-4e32-b8d7-619ee6421b54")
+	)
 	(label "Boot1"
 		(at 532.13 33.02 0)
 		(effects
@@ -13895,6 +14418,16 @@
 			(justify left bottom)
 		)
 		(uuid "a2e26beb-25d9-4a9c-bf69-7b8a245b7e90")
+	)
+	(label "OSC_HSE_out"
+		(at 443.23 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a6b9f330-9c3f-4257-9ea9-652ff238e9ca")
 	)
 	(label "a1"
 		(at 167.64 90.17 0)
@@ -13955,6 +14488,16 @@
 			(justify left bottom)
 		)
 		(uuid "b6d0135a-50dc-482a-b2f9-10b162734036")
+	)
+	(label "PwrCtrl"
+		(at 130.81 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8eb3202-072a-4e3d-b267-5e5a94c37e9b")
 	)
 	(label "V_{dd_IO}"
 		(at 532.13 22.86 0)
@@ -14166,6 +14709,26 @@
 		)
 		(uuid "f02ff66c-3bb4-4195-9989-b00985400315")
 	)
+	(label "SCL"
+		(at 449.58 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f76f378e-91b2-491c-824b-e5549d16fae5")
+	)
+	(label "SDA"
+		(at 449.58 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa0ba55a-3831-40b4-a69f-84205e917ae7")
+	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
 		(at 163.83 143.51 180)
@@ -14176,6 +14739,28 @@
 			(justify right)
 		)
 		(uuid "1398bc45-92ea-459f-a30e-7289529e6e50")
+	)
+	(hierarchical_label "PROC_PMIC_IO"
+		(shape bidirectional)
+		(at 127 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "22f17bf5-832c-4544-8a8f-ae80b56dd648")
+	)
+	(hierarchical_label "PROC_PMIC_IO"
+		(shape bidirectional)
+		(at 445.77 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ea08d2e-34b2-4066-aef9-6ed2c32fb5b8")
 	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
@@ -14276,6 +14861,17 @@
 		)
 		(uuid "a9037965-9db2-44fa-9abb-31b3c0ecbd9f")
 	)
+	(hierarchical_label "PROC_PWR"
+		(shape input)
+		(at 497.84 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afb2045d-a11d-4936-a733-e4ef53f92ec2")
+	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
 		(at 533.4 238.76 180)
@@ -14365,7 +14961,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 66.04 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -14491,7 +15087,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 25.4 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14656,6 +15252,258 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "#PWR0206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 148.59 279.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07b38aec-86ae-4a61-b674-7bbc4d8a435f")
+		(property "Reference" "C227"
+			(at 151.13 278.1362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 151.13 280.6762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 148.59 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0244ff1c-e2a1-44cb-a18d-b13fc56322fc")
+		)
+		(pin "2"
+			(uuid "39423a63-0945-441b-b036-ef6d38213938")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C227")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 264.16 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0eebc051-8d66-4a44-a7b5-37838959bd61")
+		(property "Reference" "C224"
+			(at 266.7 19.0562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 266.7 21.5962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 264.16 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fd69d1c-76fa-467b-881c-60d238061ffd")
+		)
+		(pin "2"
+			(uuid "0a55f621-527f-4e0e-9864-9a4d5e978c94")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C224")
 					(unit 1)
 				)
 			)
@@ -16184,132 +17032,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 154.94 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37683802-a9e6-401f-8390-e144b586f79a")
-		(property "Reference" "C226"
-			(at 157.48 41.9162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 157.48 44.4562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 154.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f9164241-812f-416f-b971-456a2fad8845")
-		)
-		(pin "2"
-			(uuid "790f16e2-5991-4b80-b3fd-79062db73347")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C226")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 55.88 107.95 180)
 		(unit 1)
 		(body_style 1)
@@ -16342,7 +17064,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 55.88 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -16467,7 +17189,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 241.3 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -16766,132 +17488,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 215.9 20.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54b63bed-4c58-4d88-90ac-b8535018e6b2")
-		(property "Reference" "C201"
-			(at 218.44 19.0562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 218.44 21.5962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 215.9 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "33c981cf-0fde-497c-82d9-3ddc9e6be752")
-		)
-		(pin "2"
-			(uuid "3eee2033-ddb4-415f-a05d-6c8c8f8e9f53")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 66.04 107.95 180)
 		(unit 1)
 		(body_style 1)
@@ -16924,7 +17520,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 66.04 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17050,7 +17646,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 96.52 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17176,7 +17772,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 25.4 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -17302,7 +17898,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 45.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17629,7 +18225,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 45.72 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17833,7 +18429,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 55.88 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -18010,8 +18606,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 165.1 43.18 0)
+		(lib_id "power:GND")
+		(at 481.33 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18020,31 +18616,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "850958f9-6d19-4df5-926f-e15420552f9e")
-		(property "Reference" "C225"
-			(at 167.64 41.9162 0)
+		(uuid "84388e26-dc22-4800-9aea-6911657d97b0")
+		(property "Reference" "#PWR0211"
+			(at 481.33 48.26 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 167.64 44.4562 0)
+		(property "Value" "GND"
+			(at 481.33 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 165.1 43.18 0)
+		(property "Footprint" ""
+			(at 481.33 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18055,7 +18650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 43.18 0)
+			(at 481.33 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18065,52 +18660,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 165.1 43.18 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 481.33 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18121,15 +18672,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "354063c2-4ee6-4d9c-9c6a-8b72b2e42998")
-		)
-		(pin "2"
-			(uuid "5637a667-6eaa-47e5-84b4-9ed290b2079d")
+			(uuid "f112ba49-eceb-4c9e-8c3b-6eee990e1e99")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C225")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -18168,7 +18716,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 254 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -18340,258 +18888,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 148.59 279.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9da0a665-9346-439b-be18-a1ebd24e1676")
-		(property "Reference" "C227"
-			(at 151.13 278.1362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 151.13 280.6762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 148.59 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3566159b-3dcd-4b63-bace-c3766c7dddae")
-		)
-		(pin "2"
-			(uuid "b86b7859-c6cc-4188-833b-20562da8ebe6")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C227")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 264.16 20.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aaeb70d4-1107-48d1-ba3e-d4d8747a8b1b")
-		(property "Reference" "C224"
-			(at 266.7 19.0562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 266.7 21.5962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 264.16 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b8bdf13-fa1b-4322-a87e-d6fb0e802e56")
-		)
-		(pin "2"
-			(uuid "1f1f61ff-dd0a-454a-a850-da8564d2dbc4")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C224")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 189.23 16.51 270)
 		(unit 1)
@@ -18704,7 +19000,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 66.04 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -18829,7 +19125,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 228.6 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -19001,6 +19297,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 449.58 29.21 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b84ac09d-74a5-4a65-96f6-60acf7b4a9a1")
+		(property "Reference" "R206"
+			(at 449.58 22.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 449.58 25.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kR, 63.5mW, 50Vdc, 1%, 50ppm, +155c"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0402FRE0710KL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xfPhHYA%2FCigo%3D"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.013"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.012"
+			(at 449.58 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5b56723-de19-43bc-a460-e4f12bf869fb")
+		)
+		(pin "1"
+			(uuid "8e3aa3fb-6f80-4347-8202-bdbf1a51afa0")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "R206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 35.56 107.95 180)
 		(unit 1)
@@ -19034,7 +19454,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 35.56 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -19160,7 +19580,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 35.56 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -19254,6 +19674,132 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 481.33 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcb1c1aa-7115-4cab-ad8b-c633e6512e94")
+		(property "Reference" "C228"
+			(at 483.87 30.4862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 483.87 33.0262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 481.33 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8aa93db-eb3d-4432-aa9d-2bac86303c33")
+		)
+		(pin "2"
+			(uuid "88649027-01d1-45c5-8636-84afac24a925")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C228")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 76.2 91.44 180)
 		(unit 1)
 		(body_style 1)
@@ -19286,7 +19832,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 76.2 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -19380,6 +19926,132 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 215.9 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1c029b4-9995-410e-abcc-dc4ba85fd26e")
+		(property "Reference" "C201"
+			(at 218.44 19.0562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 218.44 21.5962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 215.9 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70b32c41-8b75-4167-9e75-4048dc847c3b")
+		)
+		(pin "2"
+			(uuid "d2c71456-0a0b-4487-b651-b96e23a30109")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 25.4 91.44 180)
 		(unit 1)
 		(body_style 1)
@@ -19412,7 +20084,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 25.4 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -19538,7 +20210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 151.13 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19631,6 +20303,249 @@
 		)
 	)
 	(symbol
+		(lib_id "__WM_Local:ECS-3225MVQ-240-CN-TR")
+		(at 467.36 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc88e2b2-03dd-4dc6-b190-79515a0e951e")
+		(property "Reference" "X201"
+			(at 467.36 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ECS-3225MVQ-240-CN-TR"
+			(at 467.36 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:CDFN-4_2.5x3.2mm_P2.1mm"
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "hcmos oscillator, 24MHz, 25ppm, 15pF, 1v71 to 3v6, 10mA, +85c"
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/ECS/ECS-3225MVQ-240-CN-TR?qs=GedFDFLaBXELXv0oozPBYA%3D%3D"
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "1.0"
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.837"
+			(at 467.36 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "9c2fbd8f-0d56-498f-b0e1-031328f2bca5")
+		)
+		(pin "2"
+			(uuid "bbfc7043-2cee-4dfb-bca7-06250cf21824")
+		)
+		(pin "3"
+			(uuid "497651fa-a594-483f-9072-43491415420b")
+		)
+		(pin "1"
+			(uuid "fd5eab0c-dcd4-402a-8ff0-2bae6886736a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "X201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 494.03 29.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce6f8f63-187c-4701-aebb-c15e69685104")
+		(property "Reference" "R208"
+			(at 494.03 22.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 494.03 25.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10R, 62.5mW, 50V, 1%, 100ppm, +125c"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0402-FX-10R0GLF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RK%2FvyTkAqydw%3D"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.009"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.007"
+			(at 494.03 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "71d819a3-966d-44a7-b071-e937d34439bd")
+		)
+		(pin "1"
+			(uuid "93bcfd76-776c-4ae4-b7c7-9bb7b2c32618")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "R208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 146.05 283.21 270)
 		(unit 1)
@@ -19710,6 +20625,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 449.58 40.64 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d737c362-f46d-415f-839a-853ae14e601d")
+		(property "Reference" "R207"
+			(at 449.58 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 449.58 44.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1kR, 75V, 0.5%, 25ppm, +155c"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-102-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbI6pluMNMZ8s%3D"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.021"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.02"
+			(at 449.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "433784a6-c2e2-4245-ba39-99d3a41a97d8")
+		)
+		(pin "1"
+			(uuid "e1049fbf-21f1-4899-8616-15c2dcc4dc3d")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "R207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 55.88 91.44 180)
 		(unit 1)
@@ -19743,7 +20782,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 55.88 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -19869,7 +20908,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 86.36 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -20247,7 +21286,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -20341,6 +21380,258 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 154.94 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc1523b5-5810-40fb-8ec0-24724e08a2d2")
+		(property "Reference" "C225"
+			(at 157.48 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 157.48 44.4562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5772eb4c-675e-4011-b086-23d631a57913")
+		)
+		(pin "2"
+			(uuid "eb583c2a-702c-497b-84f3-8e6fd80527f6")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C225")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 165.1 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd287ff9-f4f7-432f-8114-1d2946263954")
+		(property "Reference" "C229"
+			(at 167.64 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 167.64 44.4562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58d0127e-6eea-4569-8ae6-edecb600c7bb")
+		)
+		(pin "2"
+			(uuid "33dccaab-4937-4474-b1fc-9e33b7991166")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C229")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 76.2 107.95 180)
 		(unit 1)
 		(body_style 1)
@@ -20373,7 +21664,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 76.2 107.95 0)
 			(hide yes)
 			(show_name no)

@@ -109,6 +109,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "replaced by keepout zone. to increase effective board space"
+		(exclude_from_sim no)
+		(at 44.958 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 229 22 1)
+			)
+			(justify left top)
+		)
+		(uuid "e00aac10-2a04-4749-994b-88fe6e16371c")
+	)
 	(junction
 		(at 166.37 72.39)
 		(diameter 0)
@@ -364,9 +376,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c880434e-57cf-4509-8465-12d7518fc3a3")
 		(property "Reference" "H103"
