@@ -829,7 +829,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "X201,R206-208,R905-907,#PWR211,C201,C224-225,C227-229,C401-404",
+    "used_designators": "X201,X501,R206-208,R905-907,#PWR211,C201,C224-225,C227-229,C401-404",
     "variants": []
   },
   "sheets": [
