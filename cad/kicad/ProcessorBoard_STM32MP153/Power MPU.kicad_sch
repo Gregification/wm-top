@@ -1941,7 +1941,7 @@
 		)
 		(uuid "12791a75-fba5-4353-8392-8c4425b9033f")
 	)
-	(text_box "LDO 2/unused:2v9, 5/V_{dd_SD}:2v9"
+	(text_box "LDO 2/unused:2v9 350mA, 5/V_{dd_SD}:2v9 350mA"
 		(exclude_from_sim no)
 		(at 111.76 48.26 0)
 		(size 91.44 27.94)
@@ -1963,8 +1963,8 @@
 	)
 	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby memory and MPU"
 		(exclude_from_sim no)
-		(at 215.9 107.95 0)
-		(size 67.31 43.18)
+		(at 215.9 128.27 0)
+		(size 67.31 22.86)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -1981,10 +1981,10 @@
 		)
 		(uuid "53692559-e2bb-46a7-91e4-ca3fe34ee023")
 	)
-	(text_box "design notes:\n	- 1v8 logic. simpiler. higher voltage logic has a hord of extra requirements\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component"
+	(text_box "design notes:\n	- 1v8 logic. simpiler. higher voltage logic has a hord of extra requirements\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component\n"
 		(exclude_from_sim no)
 		(at 215.9 63.5 0)
-		(size 67.31 43.18)
+		(size 67.31 63.5)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -2081,7 +2081,7 @@
 		)
 		(uuid "9fcc6b15-4814-4c05-a68f-b2ac2c9c2164")
 	)
-	(text_box "LDO 1/V_{ddA}:2v9 , 6/V_{tt}:V_{DDRQ}/2 = 0v6"
+	(text_box "LDO 1/V_{ddA}:2v9 350mA, 6/V_{tt}:V_{DDRQ}/2 = 0v6 150mA"
 		(exclude_from_sim no)
 		(at 111.76 20.32 0)
 		(size 91.44 27.94)
@@ -4350,7 +4350,7 @@
 		(uuid "ffd5cc35-5416-4351-8ce6-89e89eee5b56")
 	)
 	(image
-		(at 250.19 96.52)
+		(at 248.92 119.38)
 		(uuid "d9c7c5a5-8789-40f1-ba7e-5a51ca44d370")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAukAAACPCAYAAABH9kVlAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJztnX14XFd957/jdycxpMSUGALR1bKhI6RN5JZ40w1QEwLoipQgai+aqVRAadNAX4AZaR0ekw2p"

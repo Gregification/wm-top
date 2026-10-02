@@ -638,7 +638,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "9")
+					(page "999")
 				)
 			)
 		)
@@ -720,6 +720,52 @@
 		)
 	)
 	(sheet
+		(at 59.69 101.6)
+		(size 33.02 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7d60e16f-578c-49ab-b255-51c1eae4d64b")
+		(property "Sheetname" "Power SPF"
+			(at 59.69 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power SPF.kicad_sch"
+			(at 59.69 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 59.69 63.5)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
@@ -760,7 +806,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "6")
+					(page "7")
 				)
 			)
 		)
@@ -812,7 +858,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 101.6)
+		(at 59.69 120.65)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -828,7 +874,7 @@
 		)
 		(uuid "c8478d41-8ee5-4c8a-a48d-a17f4988cf95")
 		(property "Sheetname" "USB host"
-			(at 59.69 100.8884 0)
+			(at 59.69 119.9384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -839,7 +885,7 @@
 			)
 		)
 		(property "Sheetfile" "USB Host.kicad_sch"
-			(at 59.69 114.8846 0)
+			(at 59.69 133.9346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -898,7 +944,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "7")
+					(page "9")
 				)
 			)
 		)

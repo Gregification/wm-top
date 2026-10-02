@@ -692,7 +692,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 20.32 20.32 0)
+		(at 19.05 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -701,9 +701,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "06e7d92a-c16b-49f4-a13f-a302d7ea69c1")
-		(property "Reference" "R902"
-			(at 22.86 19.0499 0)
+		(uuid "19692076-2fca-4fed-8684-74e90e17a14b")
+		(property "Reference" "R99901"
+			(at 21.59 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -713,8 +713,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47k"
-			(at 22.86 21.5899 0)
+		(property "Value" "45.3k"
+			(at 21.59 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -725,7 +725,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 20.32 20.32 0)
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -736,7 +736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 20.32 0)
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -746,8 +746,8 @@
 				)
 			)
 		)
-		(property "Description" "47kR, 150V, 1%, 0.2W, 100ppm, +155C"
-			(at 20.32 20.32 0)
+		(property "Description" "45.3kR, 0.1%, 100mW, 25ppm, 75V, +155C"
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -757,8 +757,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/SG73P1JTTD4702F?qs=sGAEpiMZZMvdGkrng054t%2Fj9PfXFS6zMQ9Jwo5NzY3U%3D"
-			(at 20.32 20.32 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603BRD0745K3L?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4K0WmzVPNprg%3D"
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -768,8 +768,8 @@
 				)
 			)
 		)
-		(property "unit x1" "0.12"
-			(at 20.32 20.32 0)
+		(property "unit x1" "0.10"
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -779,8 +779,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.37"
-			(at 20.32 20.32 0)
+		(property "unit x10" "0.06"
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -790,8 +790,8 @@
 				)
 			)
 		)
-		(property "unit x100" "0.31"
-			(at 20.32 20.32 0)
+		(property "unit x100" "0.056"
+			(at 19.05 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -802,15 +802,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "8b9a4042-c996-45cd-8e3c-d618c869165b")
+			(uuid "d27fc3dd-ea49-485c-a824-ee8d5ee4016d")
 		)
 		(pin "1"
-			(uuid "42f84724-b05a-4fbb-b3b5-09041d152c1d")
+			(uuid "75262979-b173-44c8-ab53-9d5c4bc3f920")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R902")
+					(reference "R99901")
 					(unit 1)
 				)
 			)
@@ -1940,6 +1940,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Small")
+		(at 27.94 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc100dc9-838a-4c80-becb-ed966b4dc035")
+		(property "Reference" "L99901"
+			(at 29.21 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 29.21 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Ferrocore_DLG-0302"
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2uH, %20, 29MHz, 60mR, 3A"
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/ABRACON/AOTA-N252010S-2R2MT?qs=4dK74SdgGtzQq9i9FaXoWg%3D%3D"
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.22"
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.182"
+			(at 27.94 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dfb82751-9753-4c26-ad0d-f41bc3859462")
+		)
+		(pin "1"
+			(uuid "4cf1b73b-e439-4edb-bada-f4da4cafb380")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "L99901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 31.75 20.32 0)
 		(unit 1)
@@ -1973,7 +2088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 31.75 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -1995,7 +2110,7 @@
 				)
 			)
 		)
-		(property "Description" "10kR, 63.5mW, 50Vdc, 1%, 50ppm, +155c"
+		(property "Description" "10kR, 100mW, 75Vdc, 0.1%, 25ppm, +155c"
 			(at 31.75 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -2006,7 +2121,7 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0402FRE0710KL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xfPhHYA%2FCigo%3D"
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/SEI-Stackpole/RNCF0603BTE10K0?qs=sGAEpiMZZMvdGkrng054t2cqbZCzJY7NKyrLU8aYXDErcCrjgif2eA%3D%3D"
 			(at 31.75 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -2028,7 +2143,7 @@
 				)
 			)
 		)
-		(property "unit x10" "0.013"
+		(property "unit x10" "0.071"
 			(at 31.75 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -2039,7 +2154,7 @@
 				)
 			)
 		)
-		(property "unit x100" "0.012"
+		(property "unit x100" "0.067"
 			(at 31.75 20.32 0)
 			(hide yes)
 			(show_name no)
