@@ -169,6 +169,16 @@
 	)
 	(bus
 		(pts
+			(xy 154.94 68.58) (xy 177.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d73a5719-a59e-49e3-a5ee-0230b668b9c4")
+	)
+	(bus
+		(pts
 			(xy 177.8 85.09) (xy 166.37 85.09)
 		)
 		(stroke
@@ -206,6 +216,16 @@
 			(justify bottom)
 		)
 		(uuid "77ec996e-e9ac-4840-b7ff-a45df583f323")
+	)
+	(label "{flash_mem}"
+		(at 166.37 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "a5fea2f6-1152-4ce8-8a60-a99757b2180c")
 	)
 	(label "{mpu_pmic}"
 		(at 166.37 88.9 0)
@@ -711,6 +731,16 @@
 				(justify right)
 			)
 		)
+		(pin "FLASH" bidirectional
+			(at 154.94 68.58 0)
+			(uuid "fdaceeab-809a-4322-9ed7-512394eb5472")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -761,6 +791,52 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 104.14)
+		(size 33.02 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "81050333-713e-43ae-813a-57b604ffaa46")
+		(property "Sheetname" "SD Card"
+			(at 177.8 103.4284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sd card.kicad_sch"
+			(at 177.8 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "10")
 				)
 			)
 		)
@@ -904,8 +980,8 @@
 		)
 	)
 	(sheet
-		(at 177.8 104.14)
-		(size 33.02 31.75)
+		(at 177.8 124.46)
+		(size 33.02 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -920,7 +996,7 @@
 		)
 		(uuid "dfab2919-31d5-4d51-9ea2-7132696568f9")
 		(property "Sheetname" "IBC"
-			(at 177.8 103.4284 0)
+			(at 177.8 123.7484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -931,7 +1007,7 @@
 			)
 		)
 		(property "Sheetfile" "Inter-Board Connect.kicad_sch"
-			(at 177.8 136.4746 0)
+			(at 177.8 151.7146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1000,6 +1076,16 @@
 		(pin "D_A_C" bidirectional
 			(at 177.8 66.04 180)
 			(uuid "98003fda-8be7-4350-8527-a38163a71ad2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FLASH" bidirectional
+			(at 177.8 68.58 180)
+			(uuid "1ed3f043-943e-4edc-a821-97ee666621a7")
 			(effects
 				(font
 					(size 1.27 1.27)

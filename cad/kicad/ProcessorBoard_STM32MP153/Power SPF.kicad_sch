@@ -858,7 +858,7 @@
 		)
 		(uuid "a513efa8-905d-4b5e-a852-9957541e7084")
 	)
-	(text "TODO: figure out the power sequencing between the MPU and rgmii realtek bridge\ni think we can get away with tieing the enable pin to a gpio and piddle it \nTFW"
+	(text "TODO: figure out the power sequencing between the MPU and rgmii realtek bridge\ni think we can get away with tieing the enable pin to a gpio and piddle it in\nTFW"
 		(exclude_from_sim no)
 		(at 151.892 57.404 0)
 		(effects
@@ -872,7 +872,7 @@
 	(text_box "design notes:\n	- uses identical inductor as MPU PMIC bucks\n	- 3v3 3A out"
 		(exclude_from_sim no)
 		(at 203.2 58.42 0)
-		(size 80.01 43.18)
+		(size 80.01 17.78)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
