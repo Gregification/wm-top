@@ -848,9 +848,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "DNP C_{ff} if net total C_{out} < 45uF"
+	(text "C_{ff} needed if C_{out} > 45uF"
 		(exclude_from_sim no)
-		(at 144.272 82.55 0)
+		(at 162.306 97.536 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -860,7 +860,7 @@
 	)
 	(text "TODO: figure out the power sequencing between the MPU and rgmii realtek bridge\ni think we can get away with tieing the enable pin to a gpio and piddle it in\nTFW"
 		(exclude_from_sim no)
-		(at 151.892 57.404 0)
+		(at 125.984 73.406 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -871,8 +871,8 @@
 	)
 	(text_box "design notes:\n	- uses identical inductor as MPU PMIC bucks\n	- 3v3 3A out"
 		(exclude_from_sim no)
-		(at 203.2 58.42 0)
-		(size 80.01 17.78)
+		(at 203.2 130.81 0)
+		(size 80.01 12.7)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -891,7 +891,7 @@
 	)
 	(text_box "links"
 		(exclude_from_sim no)
-		(at 203.2 148.59 0)
+		(at 203.2 153.67 0)
 		(size 80.01 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -911,8 +911,8 @@
 	)
 	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n\n\n- OB_5V (input): 5v from off-board src"
 		(exclude_from_sim no)
-		(at 203.2 13.97 0)
-		(size 80.01 43.18)
+		(at 231.14 96.52 0)
+		(size 52.07 31.75)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -931,7 +931,7 @@
 	)
 	(text_box "Assembly & care notes:\n	- hand solderable"
 		(exclude_from_sim no)
-		(at 203.2 135.89 0)
+		(at 203.2 143.51 0)
 		(size 80.01 10.16)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
@@ -950,62 +950,70 @@
 		(uuid "ca79d1af-8617-4105-9af3-9bf98aa75648")
 	)
 	(junction
-		(at 133.35 91.44)
+		(at 151.13 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a367e9a-d3a0-4928-b8d3-117121bfdecb")
 	)
 	(junction
-		(at 146.05 91.44)
+		(at 163.83 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "700b0149-23af-47ab-ae86-d9943d7f1dc8")
 	)
 	(junction
-		(at 156.21 91.44)
+		(at 173.99 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b681ed7-749d-4abd-94ca-2a83a5c6810a")
 	)
 	(junction
-		(at 121.92 99.06)
+		(at 139.7 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93e18e2e-c78a-4fd9-8639-b471ba18b353")
 	)
 	(junction
-		(at 77.47 101.6)
+		(at 95.25 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "acb89a36-3ce4-4721-92f5-57c8c4c355f0")
 	)
 	(junction
-		(at 121.92 91.44)
+		(at 139.7 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b46df5be-cde2-4f7b-bdb0-04e8f2c08758")
 	)
 	(junction
-		(at 77.47 91.44)
+		(at 95.25 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c043902a-ac57-4084-a20c-f96c3dd37e25")
 	)
 	(junction
-		(at 146.05 106.68)
+		(at 163.83 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb363527-c0a0-4e85-b207-3a917f99bca8")
 	)
 	(junction
-		(at 121.92 106.68)
+		(at 139.7 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d83cc2b6-11e8-484c-b30f-075a4e68f141")
 	)
+	(no_connect
+		(at 151.13 102.87)
+		(uuid "c1ab9c44-ced1-4cbd-b3e7-221122b28e60")
+	)
+	(no_connect
+		(at 151.13 107.95)
+		(uuid "f85f91fc-127b-4f44-befa-1c12968d8e97")
+	)
 	(wire
 		(pts
-			(xy 146.05 101.6) (xy 146.05 106.68)
+			(xy 163.83 111.76) (xy 163.83 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1015,7 +1023,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 91.44) (xy 77.47 91.44)
+			(xy 88.9 101.6) (xy 95.25 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1025,7 +1033,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 91.44) (xy 146.05 96.52)
+			(xy 163.83 101.6) (xy 163.83 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1035,7 +1043,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 91.44) (xy 121.92 92.71)
+			(xy 139.7 101.6) (xy 139.7 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1045,7 +1053,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 91.44) (xy 121.92 91.44)
+			(xy 135.89 101.6) (xy 139.7 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1055,7 +1063,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 101.6) (xy 77.47 99.06)
+			(xy 95.25 111.76) (xy 95.25 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1065,7 +1073,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 105.41) (xy 121.92 106.68)
+			(xy 139.7 115.57) (xy 139.7 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1075,7 +1083,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 101.6) (xy 95.25 101.6)
+			(xy 95.25 111.76) (xy 113.03 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1085,7 +1093,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 91.44) (xy 113.03 91.44)
+			(xy 128.27 101.6) (xy 130.81 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1095,7 +1103,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 91.44) (xy 156.21 96.52)
+			(xy 173.99 101.6) (xy 173.99 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1105,7 +1113,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 99.06) (xy 133.35 97.79)
+			(xy 151.13 109.22) (xy 151.13 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1115,7 +1123,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 99.06) (xy 121.92 99.06)
+			(xy 128.27 109.22) (xy 139.7 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1125,7 +1133,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 91.44) (xy 165.1 91.44)
+			(xy 139.7 101.6) (xy 182.88 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1135,7 +1143,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 91.44) (xy 95.25 91.44)
+			(xy 95.25 101.6) (xy 113.03 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1145,7 +1153,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 156.21 106.68)
+			(xy 139.7 116.84) (xy 173.99 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1155,7 +1163,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 99.06) (xy 133.35 99.06)
+			(xy 139.7 109.22) (xy 151.13 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1165,7 +1173,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 92.71) (xy 133.35 91.44)
+			(xy 151.13 102.87) (xy 151.13 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1175,7 +1183,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 93.98) (xy 77.47 91.44)
+			(xy 95.25 104.14) (xy 95.25 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1185,7 +1193,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 106.68) (xy 156.21 101.6)
+			(xy 173.99 116.84) (xy 173.99 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1195,7 +1203,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 101.6) (xy 77.47 101.6)
+			(xy 90.17 111.76) (xy 95.25 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1205,7 +1213,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 97.79) (xy 121.92 100.33)
+			(xy 139.7 107.95) (xy 139.7 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1214,7 +1222,7 @@
 		(uuid "eade120d-8fec-47ff-a006-96f6216c8dae")
 	)
 	(label "3v3 3A"
-		(at 229.87 25.4 180)
+		(at 256.54 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1224,7 +1232,7 @@
 		(uuid "117476b8-2e33-40da-8db8-037f77962fe8")
 	)
 	(label "enable"
-		(at 229.87 29.21 0)
+		(at 256.54 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1234,7 +1242,7 @@
 		(uuid "1471204f-9b7c-467d-9731-498090ee953a")
 	)
 	(label "enable"
-		(at 95.25 95.25 180)
+		(at 113.03 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1245,7 +1253,7 @@
 	)
 	(hierarchical_label "SPF_PWR_3v3"
 		(shape output)
-		(at 165.1 91.44 0)
+		(at 182.88 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1256,7 +1264,7 @@
 	)
 	(hierarchical_label "SPF_PWR_CTRL"
 		(shape bidirectional)
-		(at 229.87 29.21 180)
+		(at 256.54 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1267,7 +1275,7 @@
 	)
 	(hierarchical_label "OB_5v"
 		(shape input)
-		(at 71.12 91.44 180)
+		(at 88.9 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1278,7 +1286,7 @@
 	)
 	(hierarchical_label "OB_5v"
 		(shape input)
-		(at 229.87 21.59 180)
+		(at 256.54 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1289,7 +1297,7 @@
 	)
 	(hierarchical_label "SPF_PWR_3v3"
 		(shape output)
-		(at 229.87 25.4 0)
+		(at 256.54 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1300,7 +1308,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 77.47 96.52 0)
+		(at 95.25 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1311,7 +1319,7 @@
 		(fields_autoplaced yes)
 		(uuid "001ca8e1-3473-4a59-8faa-958045f05f9b")
 		(property "Reference" "C601"
-			(at 80.01 95.2562 0)
+			(at 97.79 105.4162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1322,7 +1330,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 80.01 97.7962 0)
+			(at 97.79 107.9562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1333,7 +1341,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1344,7 +1352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1355,7 +1363,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1366,7 +1374,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1377,7 +1385,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1388,7 +1396,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1399,7 +1407,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 77.47 96.52 0)
+			(at 95.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1426,7 +1434,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 121.92 106.68 0)
+		(at 139.7 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1437,7 +1445,7 @@
 		(fields_autoplaced yes)
 		(uuid "157a35c2-799e-4f93-b0d5-d4b85016b335")
 		(property "Reference" "#PWR0602"
-			(at 121.92 113.03 0)
+			(at 139.7 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1448,7 +1456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 121.92 111.76 0)
+			(at 139.7 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1458,7 +1466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 106.68 0)
+			(at 139.7 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1469,7 +1477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 106.68 0)
+			(at 139.7 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1480,7 +1488,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 106.68 0)
+			(at 139.7 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1504,7 +1512,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 115.57 91.44 270)
+		(at 133.35 101.6 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1515,7 +1523,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bd65826-e07c-48aa-89b5-2e950fb9b05a")
 		(property "Reference" "L601"
-			(at 115.57 86.36 90)
+			(at 133.35 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1525,7 +1533,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 115.57 88.9 90)
+			(at 133.35 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1535,7 +1543,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1546,7 +1554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1557,7 +1565,7 @@
 			)
 		)
 		(property "Description" "1uH, 20%, 42mR, 3.2A"
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1568,7 +1576,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1579,7 +1587,7 @@
 			)
 		)
 		(property "unit x1" "0.22"
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1590,7 +1598,7 @@
 			)
 		)
 		(property "unit x10" "0.182"
-			(at 115.57 91.44 0)
+			(at 133.35 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1617,7 +1625,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 121.92 95.25 0)
+		(at 139.7 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1628,7 +1636,7 @@
 		(fields_autoplaced yes)
 		(uuid "2495f020-0575-424a-8629-3798d70c12cf")
 		(property "Reference" "R601"
-			(at 124.46 93.9799 0)
+			(at 142.24 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1639,7 +1647,7 @@
 			)
 		)
 		(property "Value" "45.3k"
-			(at 124.46 96.5199 0)
+			(at 142.24 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1650,7 +1658,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1661,7 +1669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1672,7 +1680,7 @@
 			)
 		)
 		(property "Description" "45.3kR, 0.1%, 100mW, 25ppm, 75V, +155C"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1683,7 +1691,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603BRD0745K3L?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4K0WmzVPNprg%3D"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1694,7 +1702,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1705,7 +1713,7 @@
 			)
 		)
 		(property "unit x10" "0.06"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1716,7 +1724,7 @@
 			)
 		)
 		(property "unit x100" "0.056"
-			(at 121.92 95.25 0)
+			(at 139.7 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1743,133 +1751,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 133.35 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "41d29d92-5255-4678-ad10-9fdc2c33c980")
-		(property "Reference" "C604"
-			(at 135.89 93.9862 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1n"
-			(at 135.89 96.5262 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1nF, 5%, 16Vdc, 350MHz"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/CC0402JRX7R7BB102?qs=sGAEpiMZZMsh%252B1woXyUXj8PMfHfoZZHBOqipTWTgRe4%3D"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.035"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://yageogroup.com/products/Capacitors/part/CC0402JRX7R7BB102"
-			(at 133.35 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01c86820-c345-4a69-9136-5eeaa5882272")
-		)
-		(pin "2"
-			(uuid "daf305e0-f0c0-4f3a-bad1-6805ae67e853")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7d60e16f-578c-49ab-b255-51c1eae4d64b"
-					(reference "C604")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 146.05 99.06 0)
+		(at 163.83 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1880,7 +1762,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e4af1b5-b376-4dbb-8492-c2c901e36652")
 		(property "Reference" "C602"
-			(at 148.59 97.7962 0)
+			(at 166.37 107.9562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1891,7 +1773,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 148.59 100.3362 0)
+			(at 166.37 110.4962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1902,7 +1784,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1913,7 +1795,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1924,7 +1806,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1935,7 +1817,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1946,7 +1828,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1957,7 +1839,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1968,7 +1850,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 146.05 99.06 0)
+			(at 163.83 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1995,7 +1877,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 121.92 102.87 0)
+		(at 139.7 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2006,7 +1888,7 @@
 		(fields_autoplaced yes)
 		(uuid "82265f56-f09f-4b3e-bb53-7e498666debc")
 		(property "Reference" "R602"
-			(at 124.46 101.5999 0)
+			(at 142.24 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2017,7 +1899,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 124.46 104.1399 0)
+			(at 142.24 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2028,7 +1910,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2039,7 +1921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2050,7 +1932,7 @@
 			)
 		)
 		(property "Description" "10kR, 100mW, 75Vdc, 0.1%, 25ppm, +155c"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2061,7 +1943,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/SEI-Stackpole/RNCF0603BTE10K0?qs=sGAEpiMZZMvdGkrng054t2cqbZCzJY7NKyrLU8aYXDErcCrjgif2eA%3D%3D"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2072,7 +1954,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2083,7 +1965,7 @@
 			)
 		)
 		(property "unit x10" "0.071"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2094,7 +1976,7 @@
 			)
 		)
 		(property "unit x100" "0.067"
-			(at 121.92 102.87 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2121,7 +2003,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 101.6 270)
+		(at 90.17 111.76 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2132,7 +2014,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2bfc63a-1615-4940-9398-3ddcc815ac89")
 		(property "Reference" "#PWR0601"
-			(at 66.04 101.6 0)
+			(at 83.82 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2143,7 +2025,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 101.5999 90)
+			(at 86.36 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2154,7 +2036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 101.6 0)
+			(at 90.17 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2165,7 +2047,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 101.6 0)
+			(at 90.17 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,7 +2058,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 101.6 0)
+			(at 90.17 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2200,7 +2082,7 @@
 	)
 	(symbol
 		(lib_id "__WM_Local:TLV62585DRLR")
-		(at 102.87 87.63 0)
+		(at 120.65 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2211,7 +2093,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5ed35ac-5379-4be5-a6c9-4e1327b9eaa1")
 		(property "Reference" "U601"
-			(at 102.87 86.36 0)
+			(at 120.65 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2221,7 +2103,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2231,7 +2113,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2242,7 +2124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2253,7 +2135,7 @@
 			)
 		)
 		(property "Description" "2.5V-5.5V input, 3-A buck pol"
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2264,7 +2146,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/TLV62585DRLR?qs=sGAEpiMZZMsMIqGZiACxIY79W%2FZ1FL4F%252BaTzeMdIjvbY4abIYg7AUA%3D%3D"
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2275,7 +2157,7 @@
 			)
 		)
 		(property "unit x1" "0.38"
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2286,7 +2168,7 @@
 			)
 		)
 		(property "unit x10" "0.267"
-			(at 102.87 87.63 0)
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2328,7 +2210,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 156.21 99.06 0)
+		(at 173.99 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2339,7 +2221,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5a794dc-b554-4f73-aa20-7f366637a4ea")
 		(property "Reference" "C603"
-			(at 158.75 97.7962 0)
+			(at 176.53 107.9562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2350,7 +2232,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 158.75 100.3362 0)
+			(at 176.53 110.4962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2361,7 +2243,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2372,7 +2254,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2383,7 +2265,7 @@
 			)
 		)
 		(property "Description" "10uF. 10Vdc, 10%, 2.4MHz"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2394,7 +2276,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjZXCoHRAPYgE%3D"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2405,7 +2287,7 @@
 			)
 		)
 		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASL168BB5106KTNB33&u=M"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2416,7 +2298,7 @@
 			)
 		)
 		(property "unit x1" "0.17"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2427,7 +2309,7 @@
 			)
 		)
 		(property "unit x10" "0.069"
-			(at 156.21 99.06 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

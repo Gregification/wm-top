@@ -1963,8 +1963,8 @@
 	)
 	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby memory and MPU"
 		(exclude_from_sim no)
-		(at 215.9 128.27 0)
-		(size 67.31 22.86)
+		(at 215.9 139.7 0)
+		(size 67.31 13.97)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -1983,8 +1983,8 @@
 	)
 	(text_box "design notes:\n	- 1v8 logic. simpiler. higher voltage logic has a hord of extra requirements\n	- general archetecture based on fig.32 (pg51) of 'getting started' doc from ST.\n	- V_{dd_IO} is what is the datasheet calls V_{DD}\n	- bus nets setup in project settings\n	- probing should be done by soldering tap to low risk SMD component\n"
 		(exclude_from_sim no)
-		(at 215.9 63.5 0)
-		(size 67.31 63.5)
+		(at 215.9 104.14 0)
+		(size 67.31 35.56)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -2163,7 +2163,7 @@
 	)
 	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	- ~5v max current, non-failure worst case\n	 = Vin + VLXBST + buck1 + buck2 + buck3 + buck4\n	 = @{1.2 + 2000 + 1600 + 1000 + 3000}mA\n	- ~5v for Vin_prim for ~10% more effeciency in sw regs\n	- ~3v3 max current, non-failure worst case\n	 = sum(LDO[1,2,6,5])\n	 = @{800 + 800 + 350 + 800}mA"
 		(exclude_from_sim no)
-		(at 215.9 19.05 0)
+		(at 215.9 59.69 0)
 		(size 67.31 43.18)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4350,7 +4350,7 @@
 		(uuid "ffd5cc35-5416-4351-8ce6-89e89eee5b56")
 	)
 	(image
-		(at 248.92 119.38)
+		(at 248.92 132.08)
 		(uuid "d9c7c5a5-8789-40f1-ba7e-5a51ca44d370")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAukAAACPCAYAAABH9kVlAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJztnX14XFd957/jdycxpMSUGALR1bKhI6RN5JZ40w1QEwLoipQgai+aqVRAadNAX4AZaR0ekw2p"
@@ -4941,7 +4941,7 @@
 		(uuid "40297a29-da33-418d-bd32-bda9a7307eb9")
 	)
 	(label "{mpu_pmic}"
-		(at 246.38 34.29 180)
+		(at 246.38 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4971,7 +4971,7 @@
 		(uuid "44302b94-cdf6-4da8-9cab-fe4578b0ac56")
 	)
 	(label "{mpu_power}"
-		(at 246.38 31.75 180)
+		(at 246.38 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5611,7 +5611,7 @@
 		(uuid "d58624dd-7e5d-4228-8ab3-28114a59d758")
 	)
 	(label "vin[3v , 5v5]. 5v suggested"
-		(at 246.38 27.94 0)
+		(at 246.38 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5875,7 +5875,7 @@
 	)
 	(hierarchical_label "PROC_PWR"
 		(shape output)
-		(at 246.38 31.75 0)
+		(at 246.38 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5886,7 +5886,7 @@
 	)
 	(hierarchical_label "PROC_PMIC_IO"
 		(shape bidirectional)
-		(at 246.38 34.29 0)
+		(at 246.38 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5952,7 +5952,7 @@
 	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
-		(at 246.38 27.94 180)
+		(at 246.38 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6047,10 +6047,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "NT303")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "NT1101")
 					(unit 1)
 				)
 			)
@@ -6179,10 +6175,6 @@
 					(reference "C311")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1117")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6294,10 +6286,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "L303")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "L1103")
 					(unit 1)
 				)
 			)
@@ -6426,10 +6414,6 @@
 					(reference "C319")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1113")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6510,10 +6494,6 @@
 					(reference "NT302")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "NT1102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6589,10 +6569,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "J301")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "J1101")
 					(unit 1)
 				)
 			)
@@ -6721,10 +6697,6 @@
 					(reference "C321")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1121")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6849,10 +6821,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C318")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1122")
 					(unit 1)
 				)
 			)
@@ -6981,10 +6949,6 @@
 					(reference "C320")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1120")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7111,10 +7075,6 @@
 					(reference "C301")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7226,10 +7186,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "L301")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "L1101")
 					(unit 1)
 				)
 			)
@@ -7358,10 +7314,6 @@
 					(reference "C308")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1105")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7486,10 +7438,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C323")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1110")
 					(unit 1)
 				)
 			)
@@ -7618,10 +7566,6 @@
 					(reference "C304")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1107")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7748,10 +7692,6 @@
 					(reference "C307")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1104")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7830,10 +7770,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "NT301")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "NT1103")
 					(unit 1)
 				)
 			)
@@ -7962,10 +7898,6 @@
 					(reference "C310")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1116")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -8090,10 +8022,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "R301")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "R1102")
 					(unit 1)
 				)
 			)
@@ -8222,10 +8150,6 @@
 					(reference "C316")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1123")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -8350,10 +8274,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C315")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1115")
 					(unit 1)
 				)
 			)
@@ -8482,10 +8402,6 @@
 					(reference "C312")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1111")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -8562,10 +8478,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "#PWR0301")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "#PWR01101")
 					(unit 1)
 				)
 			)
@@ -8646,10 +8558,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "NT304")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "NT1104")
 					(unit 1)
 				)
 			)
@@ -8778,10 +8686,6 @@
 					(reference "C313")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1118")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -8906,10 +8810,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C305")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1103")
 					(unit 1)
 				)
 			)
@@ -9038,10 +8938,6 @@
 					(reference "C322")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1109")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -9168,10 +9064,6 @@
 					(reference "C324")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1124")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -9283,10 +9175,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "L304")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "L1104")
 					(unit 1)
 				)
 			)
@@ -9415,10 +9303,6 @@
 					(reference "R302")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "R1101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -9530,10 +9414,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "L302")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "L1102")
 					(unit 1)
 				)
 			)
@@ -9662,10 +9542,6 @@
 					(reference "C314")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1119")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -9792,10 +9668,6 @@
 					(reference "C309")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1112")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -9920,10 +9792,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C302")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1108")
 					(unit 1)
 				)
 			)
@@ -10199,10 +10067,6 @@
 					(reference "IC301")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "IC1101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -10329,10 +10193,6 @@
 					(reference "C317")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1114")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -10444,10 +10304,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "L305")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "L1105")
 					(unit 1)
 				)
 			)
@@ -10576,10 +10432,6 @@
 					(reference "C303")
 					(unit 1)
 				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -10704,10 +10556,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/06ad9cc8-e1a1-474d-84d3-806ac75aa67c"
 					(reference "C306")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/81050333-713e-43ae-813a-57b604ffaa46"
-					(reference "C1106")
 					(unit 1)
 				)
 			)
