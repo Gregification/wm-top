@@ -6454,9 +6454,9 @@
 				)
 			)
 			(pin unspecified line
-				(at -13.97 -106.68 0)
+				(at -13.97 -100.33 0)
 				(length 2.54)
-				(name "NC"
+				(name "RFU"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6472,7 +6472,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 13.97 -21.59 180)
+				(at 13.97 -19.05 180)
 				(length 2.54)
 				(name "CA6"
 					(effects
@@ -6490,7 +6490,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 13.97 -19.05 180)
+				(at 13.97 -21.59 180)
 				(length 2.54)
 				(name "CA7"
 					(effects
@@ -6782,9 +6782,9 @@
 				)
 			)
 			(pin unspecified line
-				(at -13.97 -101.6 0)
+				(at -13.97 -102.87 0)
 				(length 2.54)
-				(name "NC"
+				(name "RFU"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6893,7 +6893,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -13.97 -104.14 0)
+				(at -13.97 -109.22 0)
 				(length 2.54)
 				(name "NC"
 					(effects
@@ -7460,9 +7460,9 @@
 				)
 			)
 			(pin unspecified line
-				(at -13.97 -109.22 0)
+				(at -13.97 -105.41 0)
 				(length 2.54)
-				(name "NC"
+				(name "RFU"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7717,9 +7717,9 @@
 				)
 			)
 			(pin unspecified line
-				(at 13.97 -54.61 180)
+				(at 13.97 -52.07 180)
 				(length 2.54)
-				(name "DQS2#"
+				(name "DQS2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7735,9 +7735,9 @@
 				)
 			)
 			(pin unspecified line
-				(at 13.97 -52.07 180)
+				(at 13.97 -54.61 180)
 				(length 2.54)
-				(name "DQS2"
+				(name "DQS2#"
 					(effects
 						(font
 							(size 1.27 1.27)

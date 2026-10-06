@@ -1666,9 +1666,9 @@
 					)
 				)
 				(pin unspecified line
-					(at -13.97 -106.68 0)
+					(at -13.97 -100.33 0)
 					(length 2.54)
-					(name "NC"
+					(name "RFU"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1684,7 +1684,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 13.97 -21.59 180)
+					(at 13.97 -19.05 180)
 					(length 2.54)
 					(name "CA6"
 						(effects
@@ -1702,7 +1702,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 13.97 -19.05 180)
+					(at 13.97 -21.59 180)
 					(length 2.54)
 					(name "CA7"
 						(effects
@@ -1994,9 +1994,9 @@
 					)
 				)
 				(pin unspecified line
-					(at -13.97 -101.6 0)
+					(at -13.97 -102.87 0)
 					(length 2.54)
-					(name "NC"
+					(name "RFU"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2105,7 +2105,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -13.97 -104.14 0)
+					(at -13.97 -109.22 0)
 					(length 2.54)
 					(name "NC"
 						(effects
@@ -2672,9 +2672,9 @@
 					)
 				)
 				(pin unspecified line
-					(at -13.97 -109.22 0)
+					(at -13.97 -105.41 0)
 					(length 2.54)
-					(name "NC"
+					(name "RFU"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2929,9 +2929,9 @@
 					)
 				)
 				(pin unspecified line
-					(at 13.97 -54.61 180)
+					(at 13.97 -52.07 180)
 					(length 2.54)
-					(name "DQS2#"
+					(name "DQS2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2947,9 +2947,9 @@
 					)
 				)
 				(pin unspecified line
-					(at 13.97 -52.07 180)
+					(at 13.97 -54.61 180)
 					(length 2.54)
-					(name "DQS2"
+					(name "DQS2#"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3542,7 +3542,7 @@
 	)
 	(bezier
 		(pts
-			(xy 50.8 162.56) (xy 48.26 163.83) (xy 48.26 120.65) (xy 50.8 121.92)
+			(xy 50.8 162.56) (xy 48.26 163.83) (xy 48.26 128.27) (xy 50.8 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3606,7 +3606,17 @@
 		)
 		(uuid "d57829ef-e22e-4efc-86bb-f05b5d0c1681")
 	)
-	(text_box "design notes:\n	- ~400MHz 512MB . ~$31 USD single 2026/9. \n	- pin layout on the symbol (from vendor btw) is horrendous\n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- the flash/ddr modules are cheaper than just ddr . \n	 and theyre only sold by chinese companies, bruh"
+	(text "NAND for persistent storage only; NOT bootable. \nis not powered on boot."
+		(exclude_from_sim no)
+		(at 68.58 188.214 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f78e033d-c143-481f-ae64-1e0bd8f550a4")
+	)
+	(text_box "design notes:\n	- 400MHz 512MB . ~$31 USD single 2026/9. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- the flash/ddr modules are cheaper than just ddr . \n	 but only chinese companies have them stocked, bruh"
 		(exclude_from_sim no)
 		(at 215.9 111.76 0)
 		(size 67.31 29.21)
@@ -3791,6 +3801,10 @@
 		(uuid "3939503c-5ad5-4048-9ed6-5120fae08bf8")
 	)
 	(no_connect
+		(at 53.34 127)
+		(uuid "3b4a3ba4-b78c-4b58-a019-8153e07f2f81")
+	)
+	(no_connect
 		(at 53.34 109.22)
 		(uuid "4784e229-8960-4af0-9d4f-6d33dca8bf81")
 	)
@@ -3811,14 +3825,6 @@
 		(uuid "737ad5b8-04a8-4146-943a-65b7c5523630")
 	)
 	(no_connect
-		(at 53.34 125.73)
-		(uuid "7eeaec69-b352-4f2f-9396-591528e9cd01")
-	)
-	(no_connect
-		(at 53.34 128.27)
-		(uuid "8104c593-3787-47c0-914c-279931b75ba9")
-	)
-	(no_connect
 		(at 81.28 111.76)
 		(uuid "81e3b433-af40-4ccc-a408-fe5a26626e33")
 	)
@@ -3829,6 +3835,14 @@
 	(no_connect
 		(at 53.34 153.67)
 		(uuid "8e462756-2736-4ff3-b31e-705b6c7c8ede")
+	)
+	(no_connect
+		(at 53.34 121.92)
+		(uuid "91d92130-3c6c-4df5-81ee-8d59581ce2f6")
+	)
+	(no_connect
+		(at 53.34 124.46)
+		(uuid "98fb3946-1a0c-4854-af5c-d861dc1c1bec")
 	)
 	(no_connect
 		(at 53.34 143.51)
@@ -3873,10 +3887,6 @@
 	(no_connect
 		(at 53.34 148.59)
 		(uuid "f5fab65a-be6e-4a62-be5d-b2c5b0bb3df6")
-	)
-	(no_connect
-		(at 53.34 123.19)
-		(uuid "f64a3bd5-623c-46b6-af97-879c44fd5e2a")
 	)
 	(no_connect
 		(at 53.34 138.43)

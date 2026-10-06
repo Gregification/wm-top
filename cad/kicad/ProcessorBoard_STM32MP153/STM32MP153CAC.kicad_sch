@@ -9023,17 +9023,6 @@
 		)
 		(uuid "cc8a8dc3-fdcc-4ad2-8494-55f0a216f7dc")
 	)
-	(text "TODO. reset stuff"
-		(exclude_from_sim no)
-		(at 143.51 44.196 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 3 27 1)
-			)
-		)
-		(uuid "cca72f59-a54a-4c5d-94a6-6d7979c5450a")
-	)
 	(text "V_{dd_1v8}_REG involves internal PLL. do not skimp"
 		(exclude_from_sim no)
 		(at 273.812 20.32 0)
@@ -9126,6 +9115,26 @@
 		)
 		(uuid "bc5104f7-d14f-4dba-9c51-0620d31023cd")
 	)
+	(text_box "Bulk decoupling\nthe 1uF's are cheap so bulk decouplings done with them"
+		(exclude_from_sim no)
+		(at 25.4 127 0)
+		(size 101.6 88.9)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e39354dd-6997-4051-afdc-4246b3024c3c")
+	)
 	(text_box "design notes:\n	- varient specific design. unused pins are not setup to be cross-varient compatiable. see table 11 (pg27) of 'getting started' doc for crosscompatiability set up. the additional parts required make it more difficult fan out without using HDI."
 		(exclude_from_sim no)
 		(at 510.54 271.78 0)
@@ -9167,7 +9176,7 @@
 		(uuid "efec7fae-1131-4e61-bafe-b34ac02863be")
 	)
 	(junction
-		(at 25.4 127)
+		(at 36.83 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0198958d-9d8d-4997-a027-831ef360c1b1")
@@ -9251,7 +9260,7 @@
 		(uuid "15aa1a0d-1e76-4899-8506-472b47205456")
 	)
 	(junction
-		(at 35.56 135.89)
+		(at 46.99 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16e7996d-b18a-4b2c-bb00-a6af953f9462")
@@ -9261,6 +9270,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "186a2676-2879-426c-997b-0a3df3ed131e")
+	)
+	(junction
+		(at 168.91 323.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "194a3754-9971-4e58-bc73-9c15e0047cb1")
 	)
 	(junction
 		(at 228.6 26.67)
@@ -9281,13 +9296,13 @@
 		(uuid "234d7860-d35a-4ec0-b2c7-f7c09c2aa150")
 	)
 	(junction
-		(at 66.04 140.97)
+		(at 77.47 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29958bf8-d048-4465-8374-6a83f405bf21")
 	)
 	(junction
-		(at 25.4 110.49)
+		(at 36.83 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a4f0769-ef61-47f6-90e5-f6fd8b87c41d")
@@ -9305,7 +9320,7 @@
 		(uuid "2ed1637f-e0f8-490f-88a1-a2b0dc8cdc70")
 	)
 	(junction
-		(at 66.04 135.89)
+		(at 77.47 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3064f176-1d91-4db5-91fb-bba68b6a3477")
@@ -9329,7 +9344,7 @@
 		(uuid "3e9246c7-3d70-4263-8d6d-fbb1a59788ea")
 	)
 	(junction
-		(at 76.2 88.9)
+		(at 87.63 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f613fb3-85c6-4f72-8d1f-d6d4bfe6e1c4")
@@ -9347,7 +9362,7 @@
 		(uuid "458729aa-9a9e-4b47-a329-40cba87f3d46")
 	)
 	(junction
-		(at 35.56 105.41)
+		(at 46.99 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46098eb9-d97a-49b8-b0b9-eb538c2a27e0")
@@ -9365,19 +9380,19 @@
 		(uuid "4d2fc8e1-7fb2-409a-8cd4-3af47d6a4fef")
 	)
 	(junction
-		(at 55.88 88.9)
+		(at 67.31 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51f1e8c9-13c2-41d6-91a1-d20807bef6cb")
 	)
 	(junction
-		(at 45.72 135.89)
+		(at 57.15 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52fe272a-b3f9-41bc-8bb3-7c2dca156a6f")
 	)
 	(junction
-		(at 35.56 88.9)
+		(at 46.99 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d8115f7-e5e1-4dd0-a973-97a0ebbbb72f")
@@ -9395,7 +9410,7 @@
 		(uuid "619bacdf-c6a1-4d58-aec4-57f6b270328c")
 	)
 	(junction
-		(at 86.36 93.98)
+		(at 97.79 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63854500-789d-4ba3-8fd6-8c3ad080dabc")
@@ -9437,13 +9452,19 @@
 		(uuid "6c90e0e7-cf43-4202-aa5e-b08a3238a6d4")
 	)
 	(junction
-		(at 25.4 140.97)
+		(at 36.83 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f4655bf-d08e-4b27-ad66-b201b11f39d9")
 	)
 	(junction
-		(at 86.36 88.9)
+		(at 154.94 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70fd46c7-5081-4bea-831f-212a4b19b493")
+	)
+	(junction
+		(at 97.79 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7178d269-861c-44b1-89e3-87bcaff8e908")
@@ -9461,31 +9482,31 @@
 		(uuid "77efbeee-b057-4137-ac07-0323d5353088")
 	)
 	(junction
-		(at 55.88 140.97)
+		(at 67.31 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f6f9416-b1ed-4c6a-95c3-27966cf83c88")
 	)
 	(junction
-		(at 76.2 140.97)
+		(at 87.63 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80a74ec0-cd17-49df-992f-dd47ecc5d0a8")
 	)
 	(junction
-		(at 66.04 93.98)
+		(at 77.47 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87b3cc7c-ed8a-4d98-af9a-0f9afceac789")
 	)
 	(junction
-		(at 35.56 93.98)
+		(at 46.99 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8834be04-9404-4f93-8e73-5a48f681a5f6")
 	)
 	(junction
-		(at 35.56 110.49)
+		(at 46.99 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b24d9e0-0dcc-4a36-a05e-167a1bcac8b2")
@@ -9515,7 +9536,7 @@
 		(uuid "92a247dd-ecda-4063-9f04-3cae9c57a9a4")
 	)
 	(junction
-		(at 45.72 140.97)
+		(at 57.15 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92ab24d6-7c51-4791-bfb6-ee64ac6747fe")
@@ -9545,13 +9566,13 @@
 		(uuid "9c0c673e-a62f-4b04-b4eb-e10fd99280a3")
 	)
 	(junction
-		(at 66.04 105.41)
+		(at 77.47 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ce22fc7-5a87-4381-ac66-aac7809e76b7")
 	)
 	(junction
-		(at 45.72 88.9)
+		(at 57.15 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af0d7ad3-fd94-46c9-a62e-e8178abadef2")
@@ -9563,19 +9584,19 @@
 		(uuid "b2e3e758-3679-4919-b1a2-6ff65b6d0309")
 	)
 	(junction
-		(at 35.56 140.97)
+		(at 46.99 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7213dcc-e63b-4a75-8343-18d06aeffbe2")
 	)
 	(junction
-		(at 45.72 110.49)
+		(at 57.15 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b80ba68b-ce24-4f5d-b87d-2be8f4db7f4f")
 	)
 	(junction
-		(at 76.2 93.98)
+		(at 87.63 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb08f441-e220-4528-9ed4-bcd9005eba7e")
@@ -9593,13 +9614,7 @@
 		(uuid "c285f9e1-09ad-47ab-acb2-58281e23052b")
 	)
 	(junction
-		(at 158.75 323.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c35d3f25-d599-4659-ab2b-4b2e5b8e225a")
-	)
-	(junction
-		(at 66.04 110.49)
+		(at 77.47 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7b2b824-5159-4f30-8c7c-fa4d2b85468b")
@@ -9617,7 +9632,13 @@
 		(uuid "cbae202a-b990-4974-9e24-63a516eb4c64")
 	)
 	(junction
-		(at 55.88 110.49)
+		(at 168.91 321.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc7563dc-8e72-4dfc-a0c4-53f3aa41312f")
+	)
+	(junction
+		(at 67.31 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1489262-a64a-4e54-aca5-73b3877271a8")
@@ -9629,7 +9650,13 @@
 		(uuid "d157d673-ffa4-4953-8e42-455a80d05573")
 	)
 	(junction
-		(at 25.4 93.98)
+		(at 233.68 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d20ebfae-dedd-4d71-8e01-8b3a9ef258ea")
+	)
+	(junction
+		(at 36.83 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d549316b-24de-47d9-b70a-f0a46033a6ce")
@@ -9641,7 +9668,7 @@
 		(uuid "d5ec1693-06f5-4b2d-8d43-32a274f4754c")
 	)
 	(junction
-		(at 76.2 135.89)
+		(at 87.63 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d81701d1-9db9-474e-a11a-e7d9525b8b4a")
@@ -9659,19 +9686,19 @@
 		(uuid "e27270db-26df-4ce2-9bdd-6f68c45cc522")
 	)
 	(junction
-		(at 45.72 105.41)
+		(at 57.15 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2a2f9eb-7bed-4405-920b-85d3aeeb10eb")
 	)
 	(junction
-		(at 66.04 88.9)
+		(at 77.47 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3e472c0-481e-4ad0-aef3-38651c4a8b60")
 	)
 	(junction
-		(at 55.88 135.89)
+		(at 67.31 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5d72376-4a5b-4740-bbaa-c14dd134f8da")
@@ -9701,19 +9728,19 @@
 		(uuid "f3bf3018-b166-40ac-9431-ba0c696ba6f1")
 	)
 	(junction
-		(at 55.88 93.98)
+		(at 67.31 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3dc1c36-bfec-4f33-a348-45738963d519")
 	)
 	(junction
-		(at 55.88 105.41)
+		(at 67.31 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f418f84e-d134-4333-b371-8a5bc9854dee")
 	)
 	(junction
-		(at 45.72 93.98)
+		(at 57.15 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fab9445a-2b0a-41a7-85b5-8f1e997f291c")
@@ -10141,6 +10168,15 @@
 		(uuid "750cb103-4e12-45bd-a8e5-78b20cb0a804")
 	)
 	(bus_entry
+		(at 358.14 44.45)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7720c3e9-b60e-4700-ac20-f36efd6824c0")
+	)
+	(bus_entry
 		(at 525.78 34.29)
 		(size 2.54 2.54)
 		(stroke
@@ -10168,7 +10204,7 @@
 		(uuid "7bd66515-0f1e-45f2-ae13-b8136ea0c70a")
 	)
 	(bus_entry
-		(at 156.21 321.31)
+		(at 156.21 318.77)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -10256,6 +10292,15 @@
 			(type default)
 		)
 		(uuid "987147ac-231f-441a-b2af-020a01cfe361")
+	)
+	(bus_entry
+		(at 128.27 44.45)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5814803-1766-4660-9d8f-e9a674d5e867")
 	)
 	(bus_entry
 		(at 190.5 21.59)
@@ -10595,7 +10640,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 140.97) (xy 55.88 140.97)
+			(xy 57.15 196.85) (xy 67.31 196.85)
 		)
 		(stroke
 			(width 0)
@@ -10625,6 +10670,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 326.39) (xy 168.91 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0657c13d-41fa-4c0f-8fa4-0ef56644467d")
+	)
+	(wire
+		(pts
 			(xy 140.97 39.37) (xy 154.94 39.37)
 		)
 		(stroke
@@ -10642,16 +10697,6 @@
 			(type default)
 		)
 		(uuid "07f043d2-b0ca-4ca7-a3bb-b29f4f9d6569")
-	)
-	(wire
-		(pts
-			(xy 233.68 36.83) (xy 233.68 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "081d9323-c683-47f3-81e8-485396403b4f")
 	)
 	(wire
 		(pts
@@ -10673,9 +10718,19 @@
 		)
 		(uuid "0a2d91f4-d6d2-4476-a9e4-852a29e4b0f5")
 	)
+	(bus
+		(pts
+			(xy 128.27 44.45) (xy 128.27 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba4de8f-96de-4e30-b57c-751b93e73b71")
+	)
 	(wire
 		(pts
-			(xy 66.04 140.97) (xy 76.2 140.97)
+			(xy 77.47 196.85) (xy 87.63 196.85)
 		)
 		(stroke
 			(width 0)
@@ -10705,7 +10760,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 105.41) (xy 66.04 105.41)
+			(xy 67.31 161.29) (xy 77.47 161.29)
 		)
 		(stroke
 			(width 0)
@@ -10785,7 +10840,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 127) (xy 35.56 127)
+			(xy 36.83 182.88) (xy 46.99 182.88)
 		)
 		(stroke
 			(width 0)
@@ -10885,7 +10940,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 110.49) (xy 76.2 110.49)
+			(xy 77.47 166.37) (xy 87.63 166.37)
 		)
 		(stroke
 			(width 0)
@@ -10905,7 +10960,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 135.89) (xy 86.36 135.89)
+			(xy 87.63 191.77) (xy 97.79 191.77)
 		)
 		(stroke
 			(width 0)
@@ -10945,7 +11000,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 105.41) (xy 35.56 105.41)
+			(xy 36.83 161.29) (xy 46.99 161.29)
 		)
 		(stroke
 			(width 0)
@@ -10975,17 +11030,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 326.39) (xy 158.75 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27146c7c-ee88-4e93-a3a9-6c441d9d7e63")
-	)
-	(wire
-		(pts
-			(xy 55.88 140.97) (xy 66.04 140.97)
+			(xy 67.31 196.85) (xy 77.47 196.85)
 		)
 		(stroke
 			(width 0)
@@ -11015,7 +11060,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 110.49) (xy 45.72 110.49)
+			(xy 46.99 166.37) (xy 57.15 166.37)
 		)
 		(stroke
 			(width 0)
@@ -11045,7 +11090,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 105.41) (xy 55.88 105.41)
+			(xy 57.15 161.29) (xy 67.31 161.29)
 		)
 		(stroke
 			(width 0)
@@ -11115,7 +11160,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 110.49) (xy 66.04 110.49)
+			(xy 67.31 166.37) (xy 77.47 166.37)
 		)
 		(stroke
 			(width 0)
@@ -11165,17 +11210,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 326.39) (xy 158.75 323.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37b8dca5-169f-4848-9683-ef2ef2dde97b")
-	)
-	(wire
-		(pts
-			(xy 86.36 88.9) (xy 96.52 88.9)
+			(xy 97.79 144.78) (xy 107.95 144.78)
 		)
 		(stroke
 			(width 0)
@@ -11195,7 +11230,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 135.89) (xy 55.88 135.89)
+			(xy 57.15 191.77) (xy 67.31 191.77)
 		)
 		(stroke
 			(width 0)
@@ -11225,7 +11260,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 135.89) (xy 66.04 135.89)
+			(xy 67.31 191.77) (xy 77.47 191.77)
 		)
 		(stroke
 			(width 0)
@@ -11315,6 +11350,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 29.21) (xy 233.68 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490cc65c-b04e-452c-aca9-3303c8136fd1")
+	)
+	(wire
+		(pts
 			(xy 167.64 146.05) (xy 172.72 146.05)
 		)
 		(stroke
@@ -11365,6 +11410,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 323.85) (xy 172.72 323.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a3d88e-21b6-4db8-b4c8-0ff7eb724332")
+	)
+	(wire
+		(pts
 			(xy 238.76 36.83) (xy 241.3 36.83)
 		)
 		(stroke
@@ -11385,7 +11440,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 93.98) (xy 66.04 93.98)
+			(xy 67.31 149.86) (xy 77.47 149.86)
 		)
 		(stroke
 			(width 0)
@@ -11445,6 +11500,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 26.67) (xy 233.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cca2107-b1f2-4401-a0f8-aeb3d0b9abba")
+	)
+	(wire
+		(pts
 			(xy 154.94 39.37) (xy 165.1 39.37)
 		)
 		(stroke
@@ -11495,6 +11560,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 321.31) (xy 172.72 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60087eb1-01bf-46b8-8c98-3b1108dfda3b")
+	)
+	(wire
+		(pts
 			(xy 560.07 25.4) (xy 560.07 39.37)
 		)
 		(stroke
@@ -11505,7 +11580,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 93.98) (xy 45.72 93.98)
+			(xy 46.99 149.86) (xy 57.15 149.86)
 		)
 		(stroke
 			(width 0)
@@ -11515,7 +11590,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 135.89) (xy 76.2 135.89)
+			(xy 77.47 191.77) (xy 87.63 191.77)
 		)
 		(stroke
 			(width 0)
@@ -11535,7 +11610,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 29.21) (xy 314.96 29.21)
+			(xy 203.2 29.21) (xy 233.68 29.21)
 		)
 		(stroke
 			(width 0)
@@ -11635,7 +11710,7 @@
 	)
 	(bus
 		(pts
-			(xy 127 69.85) (xy 128.27 69.85)
+			(xy 127 44.45) (xy 128.27 44.45)
 		)
 		(stroke
 			(width 0)
@@ -11675,7 +11750,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 88.9) (xy 55.88 88.9)
+			(xy 57.15 144.78) (xy 67.31 144.78)
 		)
 		(stroke
 			(width 0)
@@ -11935,7 +12010,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 140.97) (xy 45.72 140.97)
+			(xy 46.99 196.85) (xy 57.15 196.85)
 		)
 		(stroke
 			(width 0)
@@ -12065,16 +12140,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 323.85) (xy 172.72 323.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96f360b6-0930-479b-89fe-db809bdab40e")
-	)
-	(wire
-		(pts
 			(xy 193.04 26.67) (xy 228.6 26.67)
 		)
 		(stroke
@@ -12092,6 +12157,16 @@
 			(type default)
 		)
 		(uuid "984ecebe-6138-4089-89d6-a6103aa59abd")
+	)
+	(wire
+		(pts
+			(xy 168.91 321.31) (xy 158.75 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98699486-911c-4c9d-b9e6-850bd1a0d37e")
 	)
 	(wire
 		(pts
@@ -12115,7 +12190,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 135.89) (xy 35.56 135.89)
+			(xy 36.83 191.77) (xy 46.99 191.77)
 		)
 		(stroke
 			(width 0)
@@ -12155,7 +12230,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 88.9) (xy 86.36 88.9)
+			(xy 87.63 144.78) (xy 97.79 144.78)
 		)
 		(stroke
 			(width 0)
@@ -12195,7 +12270,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 110.49) (xy 55.88 110.49)
+			(xy 168.91 326.39) (xy 168.91 323.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbfab8e-0dbc-4802-a1c6-bae90cd42148")
+	)
+	(wire
+		(pts
+			(xy 57.15 166.37) (xy 67.31 166.37)
 		)
 		(stroke
 			(width 0)
@@ -12275,7 +12360,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 121.92) (xy 35.56 121.92)
+			(xy 36.83 177.8) (xy 46.99 177.8)
 		)
 		(stroke
 			(width 0)
@@ -12315,7 +12400,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 93.98) (xy 55.88 93.98)
+			(xy 57.15 149.86) (xy 67.31 149.86)
 		)
 		(stroke
 			(width 0)
@@ -12332,6 +12417,16 @@
 			(type default)
 		)
 		(uuid "b09b25bf-f943-4734-b100-861dafae4f56")
+	)
+	(wire
+		(pts
+			(xy 340.36 46.99) (xy 355.6 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22f806a-db81-4eaa-8ccc-d62eb22b1035")
 	)
 	(wire
 		(pts
@@ -12355,7 +12450,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 88.9) (xy 66.04 88.9)
+			(xy 67.31 144.78) (xy 77.47 144.78)
 		)
 		(stroke
 			(width 0)
@@ -12395,7 +12490,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 105.41) (xy 76.2 105.41)
+			(xy 77.47 161.29) (xy 87.63 161.29)
 		)
 		(stroke
 			(width 0)
@@ -12575,7 +12670,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 93.98) (xy 35.56 93.98)
+			(xy 36.83 149.86) (xy 46.99 149.86)
 		)
 		(stroke
 			(width 0)
@@ -12585,7 +12680,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 88.9) (xy 76.2 88.9)
+			(xy 77.47 144.78) (xy 87.63 144.78)
 		)
 		(stroke
 			(width 0)
@@ -12655,7 +12750,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 140.97) (xy 86.36 140.97)
+			(xy 87.63 196.85) (xy 97.79 196.85)
 		)
 		(stroke
 			(width 0)
@@ -12775,7 +12870,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 93.98) (xy 86.36 93.98)
+			(xy 87.63 149.86) (xy 97.79 149.86)
 		)
 		(stroke
 			(width 0)
@@ -12785,7 +12880,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 88.9) (xy 45.72 88.9)
+			(xy 46.99 144.78) (xy 57.15 144.78)
 		)
 		(stroke
 			(width 0)
@@ -12815,6 +12910,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 323.85) (xy 168.91 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da76ce20-7d13-4d9d-8685-264b0ea4fdb5")
+	)
+	(wire
+		(pts
 			(xy 146.05 283.21) (xy 148.59 283.21)
 		)
 		(stroke
@@ -12835,6 +12940,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 29.21) (xy 314.96 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e21002c1-a31a-427b-83dc-c3d07b661035")
+	)
+	(wire
+		(pts
 			(xy 193.04 24.13) (xy 215.9 24.13)
 		)
 		(stroke
@@ -12845,7 +12960,7 @@
 	)
 	(bus
 		(pts
-			(xy 154.94 321.31) (xy 156.21 321.31)
+			(xy 154.94 318.77) (xy 156.21 318.77)
 		)
 		(stroke
 			(width 0)
@@ -12865,7 +12980,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 135.89) (xy 45.72 135.89)
+			(xy 46.99 191.77) (xy 57.15 191.77)
 		)
 		(stroke
 			(width 0)
@@ -12925,7 +13040,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 88.9) (xy 35.56 88.9)
+			(xy 36.83 144.78) (xy 46.99 144.78)
 		)
 		(stroke
 			(width 0)
@@ -12985,7 +13100,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 93.98) (xy 96.52 93.98)
+			(xy 97.79 149.86) (xy 107.95 149.86)
 		)
 		(stroke
 			(width 0)
@@ -13005,7 +13120,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 105.41) (xy 45.72 105.41)
+			(xy 46.99 161.29) (xy 57.15 161.29)
 		)
 		(stroke
 			(width 0)
@@ -13015,7 +13130,17 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 140.97) (xy 35.56 140.97)
+			(xy 130.81 46.99) (xy 154.94 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec4491d2-c952-45cb-ae0f-14042c40fb57")
+	)
+	(wire
+		(pts
+			(xy 36.83 196.85) (xy 46.99 196.85)
 		)
 		(stroke
 			(width 0)
@@ -13093,6 +13218,16 @@
 		)
 		(uuid "f69a53b3-62ea-481c-aab3-76a20fb1dfa5")
 	)
+	(bus
+		(pts
+			(xy 359.41 44.45) (xy 358.14 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f2aef7-a2f6-401e-8355-4ddc54027567")
+	)
 	(wire
 		(pts
 			(xy 167.64 199.39) (xy 172.72 199.39)
@@ -13135,7 +13270,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 110.49) (xy 35.56 110.49)
+			(xy 36.83 166.37) (xy 46.99 166.37)
 		)
 		(stroke
 			(width 0)
@@ -13195,7 +13330,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 93.98) (xy 76.2 93.98)
+			(xy 77.47 149.86) (xy 87.63 149.86)
 		)
 		(stroke
 			(width 0)
@@ -14480,6 +14615,803 @@
 			"EARBEMsWUngIgiAIgiAIgli2/H8w7EbTJFCOpAAAAABJRU5ErkJggg=="
 		)
 	)
+	(image
+		(at 233.68 323.85)
+		(uuid "d75369b9-0f70-4b5b-8227-3600b440c8a4")
+		(data "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"
+		)
+	)
 	(label "d0"
 		(at 167.64 168.91 0)
 		(effects
@@ -14489,6 +15421,16 @@
 			(justify left bottom)
 		)
 		(uuid "02ecf53b-501a-4f97-b628-abfa33646cb7")
+	)
+	(label "INTn"
+		(at 355.6 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04932e0c-f4a1-4e1f-8f86-6427da177948")
 	)
 	(label "d22"
 		(at 167.64 224.79 0)
@@ -14721,7 +15663,7 @@
 		(uuid "52080bc0-87fe-437f-ba9f-7e9dbf04c94f")
 	)
 	(label "V_{dd_DDRQ}"
-		(at 25.4 135.89 180)
+		(at 36.83 191.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15261,7 +16203,7 @@
 		(uuid "c8c3b695-9ce1-49b4-b80a-9413601d8db9")
 	)
 	(label "V_{dd_IO}"
-		(at 25.4 105.41 180)
+		(at 36.83 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15291,7 +16233,7 @@
 		(uuid "cf53156e-e2cd-4031-b6de-0e8620f43dae")
 	)
 	(label "V_{dd_IO}"
-		(at 158.75 323.85 0)
+		(at 158.75 321.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15371,7 +16313,7 @@
 		(uuid "e7f8e175-128b-4fbb-aa33-4d32062a0b62")
 	)
 	(label "V_{dd_DDRQ}"
-		(at 25.4 121.92 180)
+		(at 36.83 177.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15381,7 +16323,7 @@
 		(uuid "e8bdc6a2-4f01-4755-ad69-e433bd45bcee")
 	)
 	(label "V_{dd_core}"
-		(at 25.4 88.9 180)
+		(at 36.83 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15490,6 +16432,16 @@
 		)
 		(uuid "fcef42d0-d986-49b4-bac9-ca591c9b7960")
 	)
+	(label "RSTn"
+		(at 130.81 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe03a11c-1275-4bd6-b448-8c0f97a9300d")
+	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
 		(at 163.83 143.51 180)
@@ -15503,7 +16455,7 @@
 	)
 	(hierarchical_label "PROC_PMIC_IO"
 		(shape bidirectional)
-		(at 127 69.85 180)
+		(at 127 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15567,9 +16519,20 @@
 		)
 		(uuid "79e8893b-b20e-42a3-a401-f1e2c66a76a6")
 	)
+	(hierarchical_label "PROC_PMIC_IO"
+		(shape bidirectional)
+		(at 359.41 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8714565b-d6fd-42e7-813b-8ffdb84c5f93")
+	)
 	(hierarchical_label "PROC_PWR"
 		(shape input)
-		(at 154.94 321.31 180)
+		(at 154.94 318.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15690,7 +16653,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 35.56 124.46 0)
+		(at 46.99 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15701,7 +16664,7 @@
 		(fields_autoplaced yes)
 		(uuid "01bacc21-b97f-4acd-bf77-1c071b621841")
 		(property "Reference" "C220"
-			(at 38.1 123.1962 0)
+			(at 49.53 179.0762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15712,7 +16675,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 38.1 125.7362 0)
+			(at 49.53 181.6162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15723,7 +16686,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15734,7 +16697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15745,7 +16708,7 @@
 			)
 		)
 		(property "Description" "1nF, 5%, 16Vdc, 350MHz"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15756,7 +16719,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/CC0402JRX7R7BB102?qs=sGAEpiMZZMsh%252B1woXyUXj8PMfHfoZZHBOqipTWTgRe4%3D"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15767,7 +16730,7 @@
 			)
 		)
 		(property "unit x10" "0.035"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15778,7 +16741,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15789,7 +16752,7 @@
 			)
 		)
 		(property "character" "https://yageogroup.com/products/Capacitors/part/CC0402JRX7R7BB102"
-			(at 35.56 124.46 0)
+			(at 46.99 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15816,7 +16779,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 107.95 180)
+		(at 36.83 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15827,7 +16790,7 @@
 		(fields_autoplaced yes)
 		(uuid "04fe9e3c-a2e4-4b0c-9417-ecde0bb433e4")
 		(property "Reference" "C212"
-			(at 27.94 106.6735 0)
+			(at 39.37 162.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15838,7 +16801,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 27.94 109.2135 0)
+			(at 39.37 165.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15849,7 +16812,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15860,7 +16823,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15871,7 +16834,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15882,7 +16845,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15893,7 +16856,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15904,7 +16867,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15915,7 +16878,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 25.4 107.95 0)
+			(at 36.83 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15942,7 +16905,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 93.98 0)
+		(at 36.83 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15953,7 +16916,7 @@
 		(fields_autoplaced yes)
 		(uuid "0522ad37-2f0f-432f-ad74-9f11079e39a2")
 		(property "Reference" "#PWR0206"
-			(at 25.4 100.33 0)
+			(at 36.83 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15964,7 +16927,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 27.94 95.2499 0)
+			(at 39.37 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15975,7 +16938,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 93.98 0)
+			(at 36.83 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15986,7 +16949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 93.98 0)
+			(at 36.83 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15997,7 +16960,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 93.98 0)
+			(at 36.83 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16350,6 +17313,7 @@
 		)
 		(pin "AB3"
 			(uuid "bccc29c4-d713-443a-bc4c-d3a31f93b332")
+			(alternate "PWR_WKUP1")
 		)
 		(pin "AB4"
 			(uuid "adcc1011-695d-489c-984b-5e91f81a90d4")
@@ -17433,7 +18397,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 35.56 138.43 180)
+		(at 46.99 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17444,7 +18408,7 @@
 		(fields_autoplaced yes)
 		(uuid "248b503f-5a9b-4ae3-91f8-08ae87463ff9")
 		(property "Reference" "C221"
-			(at 38.1 137.1535 0)
+			(at 49.53 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17455,7 +18419,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 38.1 139.6935 0)
+			(at 49.53 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17466,7 +18430,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17477,7 +18441,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17488,7 +18452,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17499,7 +18463,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17510,7 +18474,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17521,7 +18485,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17532,7 +18496,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 35.56 138.43 0)
+			(at 46.99 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17741,7 +18705,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 55.88 107.95 180)
+		(at 67.31 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17752,7 +18716,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cb0dea9-6e06-4abd-a3d1-d05f6be7de91")
 		(property "Reference" "C215"
-			(at 58.42 106.6735 0)
+			(at 69.85 162.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17763,7 +18727,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 58.42 109.2135 0)
+			(at 69.85 165.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17774,7 +18738,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17785,7 +18749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17796,7 +18760,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17807,7 +18771,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17818,7 +18782,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17829,7 +18793,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17840,7 +18804,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 55.88 107.95 0)
+			(at 67.31 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17991,87 +18955,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 172.72 321.31 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4dba29a5-66f8-4027-bb59-060db21998b1")
-		(property "Reference" "#PWR0207"
-			(at 166.37 321.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 168.91 321.3099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 321.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 321.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 321.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e3c66f5-f147-43e2-afb5-e792c260b460")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "#PWR0207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
-		(at 45.72 138.43 180)
+		(at 57.15 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18082,7 +18967,7 @@
 		(fields_autoplaced yes)
 		(uuid "51cda3c5-6a87-4879-867e-15cbeaa67fe4")
 		(property "Reference" "C226"
-			(at 48.26 137.1535 0)
+			(at 59.69 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18093,7 +18978,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 48.26 139.6935 0)
+			(at 59.69 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18104,7 +18989,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18115,7 +19000,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18126,7 +19011,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18137,7 +19022,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18148,7 +19033,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18159,7 +19044,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18170,7 +19055,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 45.72 138.43 0)
+			(at 57.15 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18197,7 +19082,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 66.04 107.95 180)
+		(at 77.47 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18208,7 +19093,7 @@
 		(fields_autoplaced yes)
 		(uuid "580867f9-7b85-407d-bf63-3319b849e259")
 		(property "Reference" "C216"
-			(at 68.58 106.6735 0)
+			(at 80.01 162.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18219,7 +19104,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 68.58 109.2135 0)
+			(at 80.01 165.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18230,7 +19115,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18241,7 +19126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18252,7 +19137,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18263,7 +19148,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18274,7 +19159,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18285,7 +19170,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18296,7 +19181,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 66.04 107.95 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18323,7 +19208,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 96.52 91.44 180)
+		(at 107.95 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18334,7 +19219,7 @@
 		(fields_autoplaced yes)
 		(uuid "59512b26-2ff5-4128-9b0f-2bd5b7f583b1")
 		(property "Reference" "C204"
-			(at 99.06 90.1635 0)
+			(at 110.49 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18345,7 +19230,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 99.06 92.7035 0)
+			(at 110.49 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18356,7 +19241,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18367,7 +19252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18378,7 +19263,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18389,7 +19274,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18400,7 +19285,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18411,7 +19296,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18422,7 +19307,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 96.52 91.44 0)
+			(at 107.95 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18449,7 +19334,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 45.72 107.95 180)
+		(at 57.15 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18460,7 +19345,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e43a45a-0651-4080-8033-5f8ebe2ffdaa")
 		(property "Reference" "C214"
-			(at 48.26 106.6735 0)
+			(at 59.69 162.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18471,7 +19356,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 48.26 109.2135 0)
+			(at 59.69 165.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18482,7 +19367,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18493,7 +19378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18504,7 +19389,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18515,7 +19400,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18526,7 +19411,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18537,7 +19422,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18548,7 +19433,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 45.72 107.95 0)
+			(at 57.15 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18776,7 +19661,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 45.72 91.44 180)
+		(at 57.15 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18787,7 +19672,7 @@
 		(fields_autoplaced yes)
 		(uuid "696bc9b1-c30e-42c5-87e2-a3ec30492328")
 		(property "Reference" "C210"
-			(at 48.26 90.1635 0)
+			(at 59.69 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18798,7 +19683,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 48.26 92.7035 0)
+			(at 59.69 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18809,7 +19694,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18820,7 +19705,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18831,7 +19716,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18842,7 +19727,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18853,7 +19738,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18864,7 +19749,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18875,7 +19760,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 45.72 91.44 0)
+			(at 57.15 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19104,7 +19989,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 124.46 0)
+		(at 36.83 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19115,7 +20000,7 @@
 		(fields_autoplaced yes)
 		(uuid "8107faf1-fefc-4ee7-8e59-14b09a3f43d6")
 		(property "Reference" "C219"
-			(at 27.94 123.1962 0)
+			(at 39.37 179.0762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19126,7 +20011,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 27.94 125.7362 0)
+			(at 39.37 181.6162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19137,7 +20022,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19148,7 +20033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19159,7 +20044,7 @@
 			)
 		)
 		(property "Description" "1nF, 5%, 16Vdc, 350MHz"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19170,7 +20055,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/CC0402JRX7R7BB102?qs=sGAEpiMZZMsh%252B1woXyUXj8PMfHfoZZHBOqipTWTgRe4%3D"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19181,7 +20066,7 @@
 			)
 		)
 		(property "unit x10" "0.035"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19192,7 +20077,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19203,7 +20088,7 @@
 			)
 		)
 		(property "character" "https://yageogroup.com/products/Capacitors/part/CC0402JRX7R7BB102"
-			(at 25.4 124.46 0)
+			(at 36.83 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19230,7 +20115,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 86.36 138.43 180)
+		(at 97.79 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19241,7 +20126,7 @@
 		(fields_autoplaced yes)
 		(uuid "838f240a-44bd-43ae-bd0a-c1b8a7584d23")
 		(property "Reference" "C233"
-			(at 88.9 137.1535 0)
+			(at 100.33 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19252,7 +20137,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 88.9 139.6935 0)
+			(at 100.33 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19263,7 +20148,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19274,7 +20159,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19285,7 +20170,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19296,7 +20181,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19307,7 +20192,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19318,7 +20203,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19329,7 +20214,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 86.36 138.43 0)
+			(at 97.79 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19433,131 +20318,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 254 20.32 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "89551e8e-e4a1-4b7a-8eb5-4c149cb72d6c")
-		(property "Reference" "C223"
-			(at 256.54 19.0435 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 256.54 21.5835 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.04"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.11"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 254 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "056e2f34-9e2a-4857-b60f-9b9b8e5dc7dc")
-		)
-		(pin "2"
-			(uuid "0a7f9de3-d7f4-48d5-8947-2e1361c9ec1d")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C223")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 250.19 400.05 270)
 		(unit 1)
@@ -19638,7 +20398,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 138.43 180)
+		(at 36.83 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19649,7 +20409,7 @@
 		(fields_autoplaced yes)
 		(uuid "98ad5816-8130-4783-8ef5-2d129a5630bc")
 		(property "Reference" "C218"
-			(at 27.94 137.1535 0)
+			(at 39.37 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19660,7 +20420,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 27.94 139.6935 0)
+			(at 39.37 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19671,7 +20431,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19682,7 +20442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19693,7 +20453,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19704,7 +20464,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19715,7 +20475,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19726,7 +20486,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19737,7 +20497,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 25.4 138.43 0)
+			(at 36.83 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19843,7 +20603,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 66.04 91.44 180)
+		(at 77.47 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19854,7 +20614,7 @@
 		(fields_autoplaced yes)
 		(uuid "b03153a4-658f-47ee-b54e-fcbed89e73ad")
 		(property "Reference" "C207"
-			(at 68.58 90.1635 0)
+			(at 80.01 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19865,7 +20625,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 68.58 92.7035 0)
+			(at 80.01 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19876,7 +20636,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19887,7 +20647,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19898,7 +20658,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19909,7 +20669,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19920,7 +20680,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19931,7 +20691,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19942,7 +20702,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 66.04 91.44 0)
+			(at 77.47 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20299,7 +21059,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 35.56 107.95 180)
+		(at 46.99 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20310,7 +21070,7 @@
 		(fields_autoplaced yes)
 		(uuid "b92c5509-72bf-48eb-a9ad-62acbb67239b")
 		(property "Reference" "C213"
-			(at 38.1 106.6735 0)
+			(at 49.53 162.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20321,7 +21081,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 38.1 109.2135 0)
+			(at 49.53 165.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20332,7 +21092,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20343,7 +21103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20354,7 +21114,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20365,7 +21125,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20376,7 +21136,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20387,7 +21147,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20398,7 +21158,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 35.56 107.95 0)
+			(at 46.99 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20425,7 +21185,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 35.56 91.44 180)
+		(at 46.99 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20436,7 +21196,7 @@
 		(fields_autoplaced yes)
 		(uuid "badb3217-ec6a-47d3-bcf0-0f51cc795e2a")
 		(property "Reference" "C209"
-			(at 38.1 90.1635 0)
+			(at 49.53 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20447,7 +21207,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 38.1 92.7035 0)
+			(at 49.53 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20458,7 +21218,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20469,7 +21229,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20480,7 +21240,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20491,7 +21251,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20502,7 +21262,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20513,7 +21273,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20524,7 +21284,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 35.56 91.44 0)
+			(at 46.99 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20802,7 +21562,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 66.04 138.43 180)
+		(at 77.47 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20813,7 +21573,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0123fd7-9b63-49a1-96ee-0cae8a7cdd9c")
 		(property "Reference" "C231"
-			(at 68.58 137.1535 0)
+			(at 80.01 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20824,7 +21584,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 68.58 139.6935 0)
+			(at 80.01 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20835,7 +21595,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20846,7 +21606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20857,7 +21617,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20868,7 +21628,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20879,7 +21639,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20890,7 +21650,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20901,7 +21661,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 66.04 138.43 0)
+			(at 77.47 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20928,7 +21688,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 76.2 91.44 180)
+		(at 87.63 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20939,7 +21699,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1af4e29-812a-4708-b5cf-310c0e2ecf75")
 		(property "Reference" "C206"
-			(at 78.74 90.1635 0)
+			(at 90.17 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20950,7 +21710,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 78.74 92.7035 0)
+			(at 90.17 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20961,7 +21721,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20972,7 +21732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20983,7 +21743,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20994,7 +21754,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21005,7 +21765,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21016,7 +21776,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21027,7 +21787,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 76.2 91.44 0)
+			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21180,7 +21940,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 91.44 180)
+		(at 36.83 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21191,7 +21951,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1fe18cc-a557-453d-a526-11db2215279f")
 		(property "Reference" "C208"
-			(at 27.94 90.1635 0)
+			(at 39.37 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21202,7 +21962,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 27.94 92.7035 0)
+			(at 39.37 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21213,7 +21973,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21224,7 +21984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21235,7 +21995,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21246,7 +22006,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21257,7 +22017,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21268,7 +22028,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21279,7 +22039,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 25.4 91.44 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21306,7 +22066,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 140.97 0)
+		(at 36.83 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21317,7 +22077,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3aa2676-ea9b-4edb-8ccb-76511c6636dc")
 		(property "Reference" "#PWR0212"
-			(at 25.4 147.32 0)
+			(at 36.83 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21328,7 +22088,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 146.05 0)
+			(at 36.83 201.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21338,7 +22098,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 140.97 0)
+			(at 36.83 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21349,7 +22109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 140.97 0)
+			(at 36.83 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21360,7 +22120,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 140.97 0)
+			(at 36.83 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21510,7 +22270,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 127 0)
+		(at 36.83 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21521,7 +22281,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbb9916b-910f-4513-9daa-a18b50e19604")
 		(property "Reference" "#PWR0205"
-			(at 25.4 133.35 0)
+			(at 36.83 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21532,7 +22292,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 132.08 0)
+			(at 36.83 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21542,7 +22302,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 127 0)
+			(at 36.83 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21553,7 +22313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 127 0)
+			(at 36.83 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21564,7 +22324,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 127 0)
+			(at 36.83 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22160,7 +22920,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 55.88 91.44 180)
+		(at 67.31 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22171,7 +22931,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2a354c2-dbb6-4c78-a135-fa4147220e86")
 		(property "Reference" "C211"
-			(at 58.42 90.1635 0)
+			(at 69.85 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22182,7 +22942,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 58.42 92.7035 0)
+			(at 69.85 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22193,7 +22953,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22204,7 +22964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22215,7 +22975,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22226,7 +22986,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22237,7 +22997,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22248,7 +23008,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22259,7 +23019,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 55.88 91.44 0)
+			(at 67.31 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22279,6 +23039,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "C211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 165.1 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5a14910-dd9e-4c30-80e2-335df969d405")
+		(property "Reference" "C229"
+			(at 167.64 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 167.64 44.4562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1nF, 5%, 16Vdc, 350MHz"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/CC0402JRX7R7BB102?qs=sGAEpiMZZMsh%252B1woXyUXj8PMfHfoZZHBOqipTWTgRe4%3D"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.035"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://yageogroup.com/products/Capacitors/part/CC0402JRX7R7BB102"
+			(at 165.1 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d058457-c7fa-491d-9032-e6695190bab1")
+		)
+		(pin "2"
+			(uuid "1d477830-ac96-417b-923c-78914f81b8de")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C229")
 					(unit 1)
 				)
 			)
@@ -22410,7 +23296,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 86.36 91.44 180)
+		(at 97.79 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22421,7 +23307,7 @@
 		(fields_autoplaced yes)
 		(uuid "eebc23b3-d9c4-4343-9595-fd56618ba494")
 		(property "Reference" "C205"
-			(at 88.9 90.1635 0)
+			(at 100.33 146.0435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22432,7 +23318,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 88.9 92.7035 0)
+			(at 100.33 148.5835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22443,7 +23329,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22454,7 +23340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22465,7 +23351,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22476,7 +23362,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22487,7 +23373,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22498,7 +23384,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22509,7 +23395,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 86.36 91.44 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22661,134 +23547,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 165.1 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd287ff9-f4f7-432f-8114-1d2946263954")
-		(property "Reference" "C229"
-			(at 167.64 41.9162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 167.64 44.4562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58d0127e-6eea-4569-8ae6-edecb600c7bb")
-		)
-		(pin "2"
-			(uuid "33dccaab-4937-4474-b1fc-9e33b7991166")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C229")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 25.4 110.49 0)
+		(at 36.83 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22799,7 +23559,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdae61c4-49c4-4a20-88db-5792a839ed46")
 		(property "Reference" "#PWR0204"
-			(at 25.4 116.84 0)
+			(at 36.83 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22810,7 +23570,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 115.57 0)
+			(at 36.83 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22820,7 +23580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 110.49 0)
+			(at 36.83 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22831,7 +23591,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 110.49 0)
+			(at 36.83 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22842,7 +23602,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 110.49 0)
+			(at 36.83 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22866,7 +23626,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 76.2 107.95 180)
+		(at 254 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22875,31 +23635,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fe5c648b-ee68-43c9-ac50-cf67ce8f4fd2")
-		(property "Reference" "C217"
-			(at 78.74 106.6735 0)
+		(uuid "fe10aed5-27cc-4ab4-9814-94927332bf8f")
+		(property "Reference" "C223"
+			(at 256.54 19.0562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "1u"
-			(at 78.74 109.2135 0)
+		(property "Value" "4.7u"
+			(at 256.54 21.5962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 76.2 107.95 0)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 254 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22910,7 +23670,133 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 107.95 0)
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.11"
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.047"
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 254 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ce65ff7-7166-4f5e-a994-85c019494861")
+		)
+		(pin "2"
+			(uuid "c589aa11-ff87-42b8-8774-87c3c4abffdf")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "C223")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 87.63 163.83 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe5c648b-ee68-43c9-ac50-cf67ce8f4fd2")
+		(property "Reference" "C217"
+			(at 90.17 162.5535 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 90.17 165.0935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 87.63 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22921,7 +23807,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 76.2 107.95 0)
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22932,7 +23818,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 76.2 107.95 0)
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22943,7 +23829,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 76.2 107.95 0)
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22954,7 +23840,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 76.2 107.95 0)
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22965,7 +23851,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 76.2 107.95 0)
+			(at 87.63 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22992,7 +23878,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 76.2 138.43 180)
+		(at 87.63 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23003,7 +23889,7 @@
 		(fields_autoplaced yes)
 		(uuid "fecae5ff-43db-4e51-a2c6-5c1f0815e898")
 		(property "Reference" "C232"
-			(at 78.74 137.1535 0)
+			(at 90.17 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23014,7 +23900,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 78.74 139.6935 0)
+			(at 90.17 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23025,7 +23911,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23036,7 +23922,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23047,7 +23933,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23058,7 +23944,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23069,7 +23955,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23080,7 +23966,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23091,7 +23977,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 76.2 138.43 0)
+			(at 87.63 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23118,7 +24004,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 55.88 138.43 180)
+		(at 67.31 194.31 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23129,7 +24015,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffff697c-2234-4879-95bd-506b79d5ff87")
 		(property "Reference" "C230"
-			(at 58.42 137.1535 0)
+			(at 69.85 193.0335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23140,7 +24026,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 58.42 139.6935 0)
+			(at 69.85 195.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23151,7 +24037,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23162,7 +24048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23173,7 +24059,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23184,7 +24070,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23195,7 +24081,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23206,7 +24092,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23217,7 +24103,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 55.88 138.43 0)
+			(at 67.31 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
