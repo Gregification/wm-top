@@ -362,7 +362,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_KRGB"
+		(symbol "Device:LED_ABGR"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -382,7 +382,7 @@
 					)
 				)
 			)
-			(property "Value" "LED_KRGB"
+			(property "Value" "LED_ABGR"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -414,7 +414,7 @@
 					)
 				)
 			)
-			(property "Description" "RGB LED, cathode/red/green/blue"
+			(property "Description" "RGB LED, anode/blue/green/red"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -447,9 +447,9 @@
 					)
 				)
 			)
-			(symbol "LED_KRGB_0_0"
+			(symbol "LED_ABGR_0_0"
 				(text "R"
-					(at 1.905 3.81 0)
+					(at -1.905 3.81 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -457,7 +457,7 @@
 					)
 				)
 				(text "G"
-					(at 1.905 -1.27 0)
+					(at -1.905 -1.27 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -465,7 +465,7 @@
 					)
 				)
 				(text "B"
-					(at 1.905 -6.35 0)
+					(at -1.905 -6.35 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -473,18 +473,7 @@
 					)
 				)
 			)
-			(symbol "LED_KRGB_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "LED_ABGR_0_1"
 				(polyline
 					(pts
 						(xy -1.27 6.35) (xy -1.27 3.81)
@@ -511,7 +500,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 5.08) (xy 1.27 5.08)
+						(xy -1.27 5.08) (xy -2.54 5.08)
 					)
 					(stroke
 						(width 0)
@@ -523,7 +512,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 5.08) (xy -2.032 5.08) (xy -2.032 -5.08) (xy -1.016 -5.08)
+						(xy -1.27 5.08) (xy 1.27 5.08)
 					)
 					(stroke
 						(width 0)
@@ -575,6 +564,18 @@
 					)
 					(stroke
 						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -688,18 +689,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start 1.27 3.81)
 					(end 1.27 6.35)
@@ -783,7 +772,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -5.08) (xy 2.54 -5.08)
+						(xy 1.27 -5.08) (xy 2.032 -5.08) (xy 2.032 5.08) (xy 1.27 5.08)
 					)
 					(stroke
 						(width 0)
@@ -791,6 +780,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(rectangle
@@ -805,11 +805,11 @@
 					)
 				)
 			)
-			(symbol "LED_KRGB_1_1"
+			(symbol "LED_ABGR_1_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "K"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -825,9 +825,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 5.08 180)
+					(at -5.08 -5.08 0)
 					(length 2.54)
-					(name "RA"
+					(name "BK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -843,9 +843,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "GA"
+					(name "GK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -861,9 +861,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
+					(at -5.08 5.08 0)
 					(length 2.54)
-					(name "BA"
+					(name "RK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3642,6 +3642,125 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_ABGR")
+		(at 194.31 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79c011df-160a-4b55-ae1e-c5c15f4500a8")
+		(property "Reference" "D99904"
+			(at 194.31 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_ABGR"
+			(at 194.31 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVH-FKA.pdf"
+			(at 194.31 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED, com-anode, red/green/blue"
+			(at 194.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Cree-LED/CLMVH-FKA-V3E27C3M2RMG6EB4B3?qs=vcFyY%252BOcAyjw5C6eEBWdHQ%3D%3D"
+			(at 194.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 194.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.007"
+			(at 194.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "20521406-53e0-4400-97a7-9ac8159b9b19")
+		)
+		(pin "1"
+			(uuid "c033a2f2-1177-4e76-a1c3-5d85d4f6744f")
+		)
+		(pin "4"
+			(uuid "5b44fcaa-4646-495b-94f8-57d12ec1bca2")
+		)
+		(pin "3"
+			(uuid "ee60c135-eba4-4c56-9d02-d2493010283b")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "D99904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 73.66 20.32 0)
 		(unit 1)
@@ -5030,125 +5149,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
 					(reference "R905")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_KRGB")
-		(at 191.77 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e35ae1fc-64c4-4dec-8fbb-e9c26f74a481")
-		(property "Reference" "D99903"
-			(at 191.77 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_KRGB"
-			(at 191.77 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_Cree-PLCC4_2x2mm_CW"
-			(at 191.77 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVH-FKA.pdf"
-			(at 191.77 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RGB LED, cathode/red/green/blue"
-			(at 191.77 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Cree-LED/CLMVH-FKA-V3E27C3M2RMG6EB4B3?qs=vcFyY%252BOcAyjw5C6eEBWdHQ%3D%3D"
-			(at 191.77 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 191.77 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.007"
-			(at 191.77 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4410767-fa94-48fe-92d5-e05529d0eeb6")
-		)
-		(pin "3"
-			(uuid "ea07f3ec-93a4-4408-81c2-53546bb1c0b1")
-		)
-		(pin "2"
-			(uuid "b993b6af-e3be-4b8d-8ccc-0aee048d8873")
-		)
-		(pin "4"
-			(uuid "d8c028ed-b38c-4391-b06d-6398100dd4b2")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "D99903")
 					(unit 1)
 				)
 			)

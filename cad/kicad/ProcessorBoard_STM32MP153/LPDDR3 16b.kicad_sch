@@ -3606,7 +3606,7 @@
 		)
 		(uuid "d57829ef-e22e-4efc-86bb-f05b5d0c1681")
 	)
-	(text "NAND for persistent storage only; NOT bootable. \nis not powered on boot."
+	(text "NAND for persistent storage only; NOT bootable\ndue to powered sequence. possible but not implimented"
 		(exclude_from_sim no)
 		(at 68.58 188.214 0)
 		(effects
