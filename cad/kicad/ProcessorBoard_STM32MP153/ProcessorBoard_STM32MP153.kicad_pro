@@ -163,7 +163,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.12,
-        "min_through_hole_diameter": 0.15,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.09,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.3,
@@ -253,10 +253,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.25,
-          "drill": 0.15
         },
         {
           "diameter": 0.3,
@@ -800,6 +796,42 @@
           "label": "Field6",
           "name": "Field6",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "vendor",
+          "name": "vendor",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "unir x1",
+          "name": "unir x1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "unirt x10",
+          "name": "unirt x10",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "unit x25",
+          "name": "unit x25",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -867,6 +899,17 @@
       "sfp_power": [
         "sfp.3v3",
         "sfp.V_{io}"
+      ],
+      "spf_io": [
+        "SCL",
+        "SDA",
+        "led_{red}",
+        "led_{green}",
+        "led_{blue}",
+        "module.tx_fault",
+        "module.rx_loss",
+        "module.tx_disable",
+        "module.present"
       ]
     },
     "connection_grid_size": 50.0,
@@ -930,7 +973,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "SW201,SW99901,X201,X501,R201-204,R206-208,R402-403,R501-514,R601-602,R905-907,R1101-1102,R99901-99904,L501-503,L601,L1101-1105,L99901,#PWR204-205,#PWR211-212,#PWR402-404,#PWR501-518,#PWR601-602,#PWR1101,#PWR99901,C201,C218,C221,C223-233,C325,C401-404,C501-511,C601-604,C1101-1124,U401,U501-502,U601,RN201-204,RN99901,IC1101,J1101,NT1101-1104,D501-503,D99901-99904,Q501-509,Q99901-99902",
+    "used_designators": "SW201,SW99901,X201,X501,R201-204,R206-208,R402-403,R501-514,R601-602,R905-907,R1101-1102,R99901-99904,L501-503,L601,L1101-1105,L99901,#PWR204-205,#PWR211-212,#PWR402-404,#PWR501-521,#PWR601-602,#PWR1101,#PWR99901,C201,C218,C221-233,C325,C401-404,C501-513,C601-604,C1101-1124,U401,U501-502,U601,RN201-204,RN99901,IC1101,J1101,NT1101-1104,D501-503,D99901-99904,Q501-509,Q99901-99902",
     "variants": []
   },
   "sheets": [
