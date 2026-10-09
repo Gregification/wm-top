@@ -2524,7 +2524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04cd1b77-c111-4f6b-a539-41273dcf5f6f")
-		(property "Reference" "C906"
+		(property "Reference" "C99905"
 			(at 92.71 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2654,7 +2654,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C906")
+					(reference "C99905")
 					(unit 1)
 				)
 			)
@@ -2672,7 +2672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07d8d770-7947-4640-9039-be8e0a116b4b")
-		(property "Reference" "R99904"
+		(property "Reference" "R99909"
 			(at 87.63 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2791,7 +2791,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R99904")
+					(reference "R99909")
 					(unit 1)
 				)
 			)
@@ -2974,7 +2974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19692076-2fca-4fed-8684-74e90e17a14b")
-		(property "Reference" "R99901"
+		(property "Reference" "R99902"
 			(at 21.59 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3104,7 +3104,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R99901")
+					(reference "R99902")
 					(unit 1)
 				)
 			)
@@ -3122,7 +3122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fa23b23-f27e-4879-9501-85b379dee370")
-		(property "Reference" "R901"
+		(property "Reference" "R99906"
 			(at 55.88 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3252,7 +3252,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R901")
+					(reference "R99906")
 					(unit 1)
 				)
 			)
@@ -3270,7 +3270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b1011e6-8062-45dc-a913-94cacbb32a7d")
-		(property "Reference" "C904"
+		(property "Reference" "C99904"
 			(at 82.55 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3400,7 +3400,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C904")
+					(reference "C99904")
 					(unit 1)
 				)
 			)
@@ -3418,7 +3418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4de57398-5397-4513-ad56-48c9197323a9")
-		(property "Reference" "L901"
+		(property "Reference" "L99901"
 			(at 20.32 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,7 +3537,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "L901")
+					(reference "L99901")
 					(unit 1)
 				)
 			)
@@ -3703,7 +3703,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5941a075-2c32-4453-af44-d4b4b617bbdf")
-		(property "Reference" "C905"
+		(property "Reference" "C99906"
 			(at 102.87 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3833,7 +3833,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C905")
+					(reference "C99906")
 					(unit 1)
 				)
 			)
@@ -3851,7 +3851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79c011df-160a-4b55-ae1e-c5c15f4500a8")
-		(property "Reference" "D99904"
+		(property "Reference" "D99903"
 			(at 194.31 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3974,7 +3974,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "D99904")
+					(reference "D99903")
 					(unit 1)
 				)
 			)
@@ -3992,7 +3992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a58c3b0-5596-4452-a18d-92e9012a070c")
-		(property "Reference" "R906"
+		(property "Reference" "R99908"
 			(at 76.2 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4122,7 +4122,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R906")
+					(reference "R99908")
 					(unit 1)
 				)
 			)
@@ -4140,7 +4140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87bdfe1a-5da2-4101-8b1c-70d3482f6567")
-		(property "Reference" "C903"
+		(property "Reference" "C99902"
 			(at 34.29 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4270,7 +4270,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C903")
+					(reference "C99902")
 					(unit 1)
 				)
 			)
@@ -4288,7 +4288,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91f45573-de00-442c-a345-8f921bc885a9")
-		(property "Reference" "R904"
+		(property "Reference" "R99901"
 			(at 20.32 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4418,7 +4418,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R904")
+					(reference "R99901")
 					(unit 1)
 				)
 			)
@@ -4436,7 +4436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8337f37-281d-4de3-941f-ff61d47008d2")
-		(property "Reference" "C901"
+		(property "Reference" "C99901"
 			(at 21.59 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4566,7 +4566,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C901")
+					(reference "C99901")
 					(unit 1)
 				)
 			)
@@ -4584,7 +4584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5e3e629-1763-483d-8893-ea09046f047d")
-		(property "Reference" "R903"
+		(property "Reference" "R99907"
 			(at 66.04 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4714,7 +4714,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R903")
+					(reference "R99907")
 					(unit 1)
 				)
 			)
@@ -4732,7 +4732,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba087ed4-b564-4b70-ae32-ff8382aa97ea")
-		(property "Reference" "R99903"
+		(property "Reference" "R99905"
 			(at 44.45 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4862,7 +4862,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R99903")
+					(reference "R99905")
 					(unit 1)
 				)
 			)
@@ -4880,7 +4880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc100dc9-838a-4c80-becb-ed966b4dc035")
-		(property "Reference" "L99901"
+		(property "Reference" "L99902"
 			(at 29.21 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4999,7 +4999,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "L99901")
+					(reference "L99902")
 					(unit 1)
 				)
 			)
@@ -5480,7 +5480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d982f869-2300-4320-a655-12129c476bc9")
-		(property "Reference" "R905"
+		(property "Reference" "R99904"
 			(at 34.29 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5610,7 +5610,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R905")
+					(reference "R99904")
 					(unit 1)
 				)
 			)
@@ -5628,7 +5628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e646bc13-b7ab-4f7e-977f-cb2b859104b5")
-		(property "Reference" "R907"
+		(property "Reference" "R99910"
 			(at 100.33 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5747,7 +5747,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R907")
+					(reference "R99910")
 					(unit 1)
 				)
 			)
@@ -5765,7 +5765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1246565-0ab6-4687-b742-425717f0cd73")
-		(property "Reference" "R99902"
+		(property "Reference" "R99903"
 			(at 21.59 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5895,7 +5895,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "R99902")
+					(reference "R99903")
 					(unit 1)
 				)
 			)
@@ -5913,7 +5913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f129e052-9043-4f00-9819-22d4db5c1dfd")
-		(property "Reference" "C902"
+		(property "Reference" "C99903"
 			(at 71.12 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6043,7 +6043,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "C902")
+					(reference "C99903")
 					(unit 1)
 				)
 			)

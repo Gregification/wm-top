@@ -9576,7 +9576,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4f816254-1990-47fc-9cc2-72e70cbe7a3f")
-		(property "Reference" "R401"
+		(property "Reference" "R402"
 			(at 102.87 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9704,7 +9704,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
-					(reference "R401")
+					(reference "R402")
 					(unit 1)
 				)
 			)
@@ -10314,7 +10314,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96a19436-f415-466b-af37-1412e2fc3651")
-		(property "Reference" "R402"
+		(property "Reference" "R401"
 			(at 102.87 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10431,7 +10431,7 @@
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
-					(reference "R402")
+					(reference "R401")
 					(unit 1)
 				)
 			)
