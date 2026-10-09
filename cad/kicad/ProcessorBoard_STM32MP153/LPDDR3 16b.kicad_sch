@@ -3616,7 +3616,7 @@
 		)
 		(uuid "f78e033d-c143-481f-ae64-1e0bd8f550a4")
 	)
-	(text_box "design notes:\n	- 400MHz 512MB . ~$31 USD single 2026/9. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- the flash/ddr modules are cheaper than just ddr . \n	 but only chinese companies have them stocked, bruh"
+	(text_box "design notes:\n	- 400MHz 512MB x32. ~$31 USD single 2026/9. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- the flash/ddr modules are cheaper than just ddr . \n	 but only chinese companies have them stocked, bruh"
 		(exclude_from_sim no)
 		(at 215.9 111.76 0)
 		(size 67.31 29.21)

@@ -61,13 +61,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.15,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
-          "min_thickness": 0.15,
+          "min_thickness": 0.1,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.2
+          "thermal_relief_gap": 0.15,
+          "thermal_relief_spoke_width": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -217,6 +217,10 @@
       "track_widths": [
         0.0,
         0.09,
+        0.1064,
+        0.1135,
+        0.1201,
+        0.22,
         0.25,
         0.6,
         1.0,
@@ -554,6 +558,40 @@
         "via_diameter": 0.6858,
         "via_drill": 0.3302,
         "wire_width": 6
+      },
+      {
+        "name": "Z/L3/55",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1135,
+        "tuning_profile": ""
+      },
+      {
+        "diff_pair_gap": 0.13,
+        "diff_pair_width": 0.0902,
+        "name": "Z/L3/diff 100 NCP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "Z/L5/55",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1064,
+        "tuning_profile": ""
+      },
+      {
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.0922,
+        "name": "Z/L5/diff 100 NCP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -563,64 +601,12 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "d1"
+        "netclass": "Z/L3/diff 100 NCP",
+        "pattern": "/ddr.s*"
       },
       {
-        "netclass": "Default",
-        "pattern": "d2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d8"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d9"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d10"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d11"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d12"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d13"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d14"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "d15"
+        "netclass": "Z/L3/diff 100 NCP",
+        "pattern": "/ddr.CLK*"
       }
     ]
   },
@@ -629,7 +615,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "C:/Users/turtl/Downloads/price test/",
+      "plot": "../../../../../Users/turtl/Downloads/price test 8l/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -1027,6 +1013,55 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In3.Cu",
+            "delay": 6900000,
+            "diff_pair_gap": 0,
+            "signal_layer": "In2.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 113500
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 100000,
+            "diff_pair_gap": 0,
+            "signal_layer": "In4.Cu",
+            "top_reference_layer": "In3.Cu",
+            "width": 106400
+          }
+        ],
+        "profile_name": "ddr.data",
+        "target_impedance": 55.0,
+        "type": 0,
+        "via_overrides": [
+          {
+            "delay": 0,
+            "signal_layer_from": "F.Cu",
+            "signal_layer_to": "In2.Cu",
+            "via_layer_from": "F.Cu",
+            "via_layer_to": "B.Cu"
+          },
+          {
+            "delay": 0,
+            "signal_layer_from": "F.Cu",
+            "signal_layer_to": "In4.Cu",
+            "via_layer_from": "F.Cu",
+            "via_layer_to": "B.Cu"
+          },
+          {
+            "delay": 0,
+            "signal_layer_from": "In2.Cu",
+            "signal_layer_to": "In4.Cu",
+            "via_layer_from": "F.Cu",
+            "via_layer_to": "B.Cu"
+          }
+        ],
+        "via_prop_delay": 0
+      }
+    ]
   }
 }
