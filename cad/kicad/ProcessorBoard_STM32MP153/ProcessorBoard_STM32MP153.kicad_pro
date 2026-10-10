@@ -220,12 +220,7 @@
         0.1064,
         0.1135,
         0.1201,
-        0.22,
-        0.25,
-        0.6,
-        1.0,
-        3.0,
-        5.0
+        0.23
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -560,9 +555,18 @@
         "wire_width": 6
       },
       {
-        "name": "Z/L3/55",
+        "diff_pair_gap": 0.13,
+        "diff_pair_width": 0.0935,
+        "name": "Z/L1/diff 100 NCP",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "Z/L3/55",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1135,
         "tuning_profile": ""
@@ -572,14 +576,14 @@
         "diff_pair_width": 0.0902,
         "name": "Z/L3/diff 100 NCP",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "Z/L5/55",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1064,
         "tuning_profile": ""
@@ -589,7 +593,7 @@
         "diff_pair_width": 0.0922,
         "name": "Z/L5/diff 100 NCP",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       }
@@ -601,8 +605,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Z/L3/diff 100 NCP",
-        "pattern": "/ddr.s*"
+        "netclass": "Z/L1/diff 100 NCP",
+        "pattern": "/ddr.s?_*"
       },
       {
         "netclass": "Z/L3/diff 100 NCP",
@@ -959,7 +963,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "SW201,SW99901,X201,X501,R201-208,R301-302,R401-403,R501-514,R601-602,R905-907,R1101-1102,R99901-99910,L301-305,L501-503,L601,L1101-1105,L99901-99902,#PWR201-212,#PWR301,#PWR401-404,#PWR501-521,#PWR601-602,#PWR1101,#PWR99901,C201-233,C301-325,C401-404,C501-513,C601-604,C1101-1124,C99901-99906,U201,U401,U501-502,U601,RN201-204,RN99901,IC301,IC1101,J301,J501,J1101,NT301-304,NT1101-1104,D501-503,D99901-99904,Q501-509,Q99901-99902,H101-104,TP201",
+    "used_designators": "SW201,SW99901,X201,X501,R201-208,R301-302,R401-406,R501-514,R601-602,R905-907,R1101-1102,R99901-99910,L301-305,L501-503,L601,L1101-1105,L99901-99902,#PWR201-212,#PWR301,#PWR401-405,#PWR501-521,#PWR601-602,#PWR1101,#PWR99901,C201-233,C301-325,C401-404,C501-513,C601-604,C1101-1124,C99901-99906,U201,U401-402,U501-502,U601,RN201-204,RN99901,IC301,IC1101,J301,J501,J1101,NT301-304,NT1101-1104,D501-503,D99901-99904,Q501-509,Q99901-99902,H101-104,TP201",
     "variants": []
   },
   "sheets": [
