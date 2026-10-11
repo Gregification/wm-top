@@ -2662,7 +2662,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 85.09 20.32 0)
+		(at 87.63 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2673,7 +2673,7 @@
 		(fields_autoplaced yes)
 		(uuid "07d8d770-7947-4640-9039-be8e0a116b4b")
 		(property "Reference" "R99909"
-			(at 87.63 19.0499 0)
+			(at 90.17 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2684,7 +2684,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 87.63 21.5899 0)
+			(at 90.17 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2695,7 +2695,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2706,7 +2706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2717,7 +2717,7 @@
 			)
 		)
 		(property "Description" "330R, 100mW, 1%, 100ppm, 75V, +155c"
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2728,7 +2728,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0603-FX-3300ELF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RvQ3sBj9RG2Y%3D"
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2739,7 +2739,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2750,7 +2750,7 @@
 			)
 		)
 		(property "unit x10" "0.012"
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2761,7 +2761,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2772,7 +2772,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 85.09 20.32 0)
+			(at 87.63 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3408,7 +3408,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 19.05 123.19 0)
+		(at 16.51 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3419,7 +3419,7 @@
 		(fields_autoplaced yes)
 		(uuid "4de57398-5397-4513-ad56-48c9197323a9")
 		(property "Reference" "L99901"
-			(at 20.32 121.9199 0)
+			(at 17.78 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3430,7 +3430,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 20.32 124.4599 0)
+			(at 17.78 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3441,7 +3441,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3452,7 +3452,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3463,7 +3463,7 @@
 			)
 		)
 		(property "Description" "1uH, 20%, 42mR, 3.2A"
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3474,7 +3474,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/DFE252012P-1R0M%3DP2?qs=KuGPmAKtFKUHla8Odvjl9w%3D%3D&srsltid=AU7gw4WBiyjI1acyvRWA0HRDX_7KOVqHBtq9yMXKac_EFf2edWeXo4fy"
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3485,7 +3485,7 @@
 			)
 		)
 		(property "unit x1" "0.22"
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3496,7 +3496,7 @@
 			)
 		)
 		(property "unit x10" "0.182"
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3507,7 +3507,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3518,7 +3518,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 19.05 123.19 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3840,149 +3840,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_ABGR")
-		(at 194.31 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79c011df-160a-4b55-ae1e-c5c15f4500a8")
-		(property "Reference" "D99903"
-			(at 194.31 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_ABGR"
-			(at 194.31 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVH-FKA.pdf"
-			(at 194.31 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RGB LED, com-anode, red/green/blue"
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Cree-LED/CLMVH-FKA-V3E27C3M2RMG6EB4B3?qs=vcFyY%252BOcAyjw5C6eEBWdHQ%3D%3D"
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.007"
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 194.31 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "20521406-53e0-4400-97a7-9ac8159b9b19")
-		)
-		(pin "1"
-			(uuid "c033a2f2-1177-4e76-a1c3-5d85d4f6744f")
-		)
-		(pin "4"
-			(uuid "5b44fcaa-4646-495b-94f8-57d12ec1bca2")
-		)
-		(pin "3"
-			(uuid "ee60c135-eba4-4c56-9d02-d2493010283b")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
-					(reference "D99903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 73.66 20.32 0)
+		(at 76.2 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3993,7 +3852,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a58c3b0-5596-4452-a18d-92e9012a070c")
 		(property "Reference" "R99908"
-			(at 76.2 19.0499 0)
+			(at 78.74 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4004,7 +3863,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 76.2 21.5899 0)
+			(at 78.74 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4015,7 +3874,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4026,7 +3885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4037,7 +3896,7 @@
 			)
 		)
 		(property "Description" "1kR, 75V, 0.5%, 25ppm, +155c"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4048,7 +3907,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-102-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbI6pluMNMZ8s%3D"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4059,7 +3918,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4070,7 +3929,7 @@
 			)
 		)
 		(property "unit x10" "0.021"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4081,7 +3940,7 @@
 			)
 		)
 		(property "unit x100" "0.02"
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4092,7 +3951,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4103,7 +3962,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 73.66 20.32 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4277,6 +4136,147 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_ABGR")
+		(at 195.58 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e34e11b-3a86-481b-afe6-fd081dba56a6")
+		(property "Reference" "D99903"
+			(at 195.58 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_ABGR"
+			(at 195.58 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_ASMB-KTF0-0A306"
+			(at 195.58 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVH-FKA.pdf"
+			(at 195.58 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED, com-anode, red/green/blue"
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Cree-LED/CLMVH-FKA-V3E27C3M2RMG6EB4B3?qs=vcFyY%252BOcAyjw5C6eEBWdHQ%3D%3D"
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.007"
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 195.58 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5ff00571-9c9b-4664-a088-5efb9fedebdf")
+		)
+		(pin "1"
+			(uuid "c42adb75-effa-412f-9bbf-c7521cb6b660")
+		)
+		(pin "4"
+			(uuid "87551e1e-6ac5-4fcb-916e-0d8da4284f4b")
+		)
+		(pin "3"
+			(uuid "16e1c6ee-590a-4ac3-aec3-bb8098b5cd5a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "D99903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 17.78 69.85 0)
 		(unit 1)
@@ -4419,6 +4419,121 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
 					(reference "R99901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 26.67 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "999fb714-4f9b-4dd1-9ed0-ce9586143554")
+		(property "Reference" "L99903"
+			(at 27.94 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 27.94 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uH, 20%, 700mAsat, 100mR, 800mAmax, +125C, sheilded"
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TDK/MLZ2012M1R0HT000?qs=%2FPzWLGNeQ%252BgvLqMrL%252Bty7w%3D%3D"
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.079"
+			(at 26.67 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4f81c881-78ac-428e-b790-80f46610c0a2")
+		)
+		(pin "1"
+			(uuid "8c59d81e-56fc-4886-a5a3-eb65e42fe5cd")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "L99903")
 					(unit 1)
 				)
 			)
@@ -4574,7 +4689,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 63.5 20.32 0)
+		(at 64.77 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4585,7 +4700,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5e3e629-1763-483d-8893-ea09046f047d")
 		(property "Reference" "R99907"
-			(at 66.04 19.0499 0)
+			(at 67.31 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4596,7 +4711,7 @@
 			)
 		)
 		(property "Value" "1.2k"
-			(at 66.04 21.5899 0)
+			(at 67.31 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4607,7 +4722,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4618,7 +4733,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,7 +4744,7 @@
 			)
 		)
 		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4640,7 +4755,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4651,7 +4766,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4662,7 +4777,7 @@
 			)
 		)
 		(property "unit x10" "0.018"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4673,7 +4788,7 @@
 			)
 		)
 		(property "unit x100" "0.017"
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4684,7 +4799,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4695,7 +4810,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 63.5 20.32 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4870,7 +4985,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 27.94 123.19 0)
+		(at 36.83 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4881,7 +4996,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc100dc9-838a-4c80-becb-ed966b4dc035")
 		(property "Reference" "L99902"
-			(at 29.21 121.9199 0)
+			(at 38.1 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4892,7 +5007,7 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 29.21 124.4599 0)
+			(at 38.1 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4903,7 +5018,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Ferrocore_DLG-0302"
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4914,7 +5029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4925,7 +5040,7 @@
 			)
 		)
 		(property "Description" "2.2uH, %20, 29MHz, 60mR, 3A"
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4936,7 +5051,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/ABRACON/AOTA-N252010S-2R2MT?qs=4dK74SdgGtzQq9i9FaXoWg%3D%3D"
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4947,7 +5062,7 @@
 			)
 		)
 		(property "unit x1" "0.22"
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4958,7 +5073,7 @@
 			)
 		)
 		(property "unit x10" "0.182"
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4969,7 +5084,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4980,7 +5095,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 27.94 123.19 0)
+			(at 36.83 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5618,7 +5733,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 97.79 20.32 0)
+		(at 99.06 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5629,7 +5744,7 @@
 		(fields_autoplaced yes)
 		(uuid "e646bc13-b7ab-4f7e-977f-cb2b859104b5")
 		(property "Reference" "R99910"
-			(at 100.33 19.0499 0)
+			(at 101.6 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5640,7 +5755,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 100.33 21.5899 0)
+			(at 101.6 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5651,7 +5766,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5662,7 +5777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5673,7 +5788,7 @@
 			)
 		)
 		(property "Description" "100R, 0.1%, 100mW, 50V, 25ppm, +155C"
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5684,7 +5799,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RN73R1ETTP1000B25?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzT4mWegaFFwKpStSRySFyRg%3D%3D"
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5695,7 +5810,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5706,7 +5821,7 @@
 			)
 		)
 		(property "unit x10" "0.061"
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5717,7 +5832,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,7 +5843,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 97.79 20.32 0)
+			(at 99.06 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6044,6 +6159,214 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
 					(reference "C99903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f32bb7ea-0c2d-41e5-916f-3fe2bd470735")
+		(property "Reference" "R99911"
+			(at 67.31 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.49k"
+			(at 67.31 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.49k, 0.5%, 62.5mW, 75V, 25ppm, +125C"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RR0816P-2491-D-39H?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbVHtpqfbP2bM%3D"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.024"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d5720b10-0cb5-4970-92f4-3e581042c9a2")
+		)
+		(pin "1"
+			(uuid "9dc0317a-93ff-48f8-b586-fca1af11c8cd")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "R99911")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 30.48 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f367e4fd-bd57-48c7-9248-dca625afe540")
+		(property "Reference" "R99912"
+			(at 33.02 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 33.02 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 30.48 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "jumper"
+			(at 30.48 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b9ad3552-c472-4b06-924c-4bda80457989")
+		)
+		(pin "1"
+			(uuid "b34a271a-e681-41f2-8b46-56e590f16e6e")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "R99912")
 					(unit 1)
 				)
 			)

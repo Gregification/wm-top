@@ -159,6 +159,16 @@
 	)
 	(bus
 		(pts
+			(xy 92.71 85.09) (xy 116.84 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b476abd8-77bd-4b96-933c-3f0e7ccb339e")
+	)
+	(bus
+		(pts
 			(xy 154.94 88.9) (xy 177.8 88.9)
 		)
 		(stroke
@@ -216,6 +226,16 @@
 			(justify bottom)
 		)
 		(uuid "77ec996e-e9ac-4840-b7ff-a45df583f323")
+	)
+	(label "sfp{rgmii sfp_io}"
+		(at 104.14 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "83dbaa62-a5f6-4ba8-8144-f2334d44fb39")
 	)
 	(label "{flash_mem}"
 		(at 166.37 68.58 0)
@@ -829,6 +849,16 @@
 				(justify right)
 			)
 		)
+		(pin "SFP_BRIDGE" bidirectional
+			(at 116.84 85.09 180)
+			(uuid "51c43767-6089-42a6-84b4-e75f52a687e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -1011,6 +1041,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SFP_BRIDGE" bidirectional
+			(at 92.71 85.09 0)
+			(uuid "0b5c0c37-fcc1-4872-9910-331bae53dec2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPF_IO" bidirectional
+			(at 92.71 87.63 0)
+			(uuid "9000c357-59ca-4e78-8b37-4584cf5838e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPF_PWR" input
+			(at 92.71 90.17 0)
+			(uuid "40fc6385-b822-4a11-bf80-886910ee4c24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

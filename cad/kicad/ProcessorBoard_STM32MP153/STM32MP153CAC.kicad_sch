@@ -16342,6 +16342,16 @@
 		)
 		(uuid "f76f378e-91b2-491c-824b-e5549d16fae5")
 	)
+	(label "sfp{rgmii sfp_io}"
+		(at 533.4 245.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f901c547-16ae-4d12-accf-fbba3cd5eea1")
+	)
 	(label "ddr.d21"
 		(at 163.83 222.25 0)
 		(effects
@@ -16381,6 +16391,17 @@
 			(justify left bottom)
 		)
 		(uuid "fe03a11c-1275-4bd6-b448-8c0f97a9300d")
+	)
+	(hierarchical_label "SFP_BRIDGE"
+		(shape bidirectional)
+		(at 533.4 245.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1104c210-beb0-4c37-b93a-ab4140a7258d")
 	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
