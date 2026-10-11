@@ -7213,7 +7213,7 @@
 		(uuid "9e0a8f58-e958-4f8b-8f9b-0aaf5ca52c3b")
 	)
 	(label "ddr.d11"
-		(at 58.42 137.16 0)
+		(at 58.42 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7303,7 +7303,7 @@
 		(uuid "d1ae120e-e5a4-4f48-8155-a2e5b4125405")
 	)
 	(label "ddr.d12"
-		(at 58.42 132.08 0)
+		(at 58.42 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
