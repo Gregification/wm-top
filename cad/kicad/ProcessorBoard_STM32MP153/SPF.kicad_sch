@@ -2399,7 +2399,7 @@
 					)
 				)
 				(pin input line
-					(at -19.05 -72.39 0)
+					(at -19.05 -77.47 0)
 					(length 2.54)
 					(name "PHY_RSTB#"
 						(effects
@@ -2579,7 +2579,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -19.05 -52.07 0)
+					(at -19.05 -54.61 0)
 					(length 2.54)
 					(name "CFG_{mode2}"
 						(effects
@@ -2598,7 +2598,7 @@
 					(alternate "RXD3" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -19.05 -54.61 0)
+					(at -19.05 -57.15 0)
 					(length 2.54)
 					(name "CFG_{mode1}"
 						(effects
@@ -2617,7 +2617,7 @@
 					(alternate "RXD2" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -19.05 -57.15 0)
+					(at -19.05 -59.69 0)
 					(length 2.54)
 					(name "CFG_{mode0}"
 						(effects
@@ -2636,7 +2636,7 @@
 					(alternate "RXD1" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -19.05 -59.69 0)
+					(at -19.05 -62.23 0)
 					(length 2.54)
 					(name "RXDLY"
 						(effects
@@ -2655,7 +2655,7 @@
 					(alternate "RXD0" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -19.05 -63.5 0)
+					(at -19.05 -66.04 0)
 					(length 2.54)
 					(name "PHYAD_{2}"
 						(effects
@@ -2674,7 +2674,7 @@
 					(alternate "RXCTL" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -19.05 -66.04 0)
+					(at -19.05 -68.58 0)
 					(length 2.54)
 					(name "PHYAD_{1}"
 						(effects
@@ -2765,7 +2765,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -19.05 -83.82 0)
+					(at -19.05 -88.9 0)
 					(length 2.54)
 					(name "PTP_CLKIN/GPIO_{0}"
 						(effects
@@ -2784,7 +2784,7 @@
 					(alternate "NC" bidirectional line)
 				)
 				(pin output line
-					(at -19.05 -76.2 0)
+					(at -19.05 -81.28 0)
 					(length 2.54)
 					(name "INTB/PMEB"
 						(effects
@@ -2802,7 +2802,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -19.05 -68.58 0)
+					(at -19.05 -71.12 0)
 					(length 2.54)
 					(name "PHYAD_{0}"
 						(effects
@@ -2967,7 +2967,7 @@
 					)
 				)
 				(pin output line
-					(at -19.05 -80.01 0)
+					(at -19.05 -85.09 0)
 					(length 2.54)
 					(name "CLKOUT"
 						(effects
@@ -2985,7 +2985,7 @@
 					)
 				)
 				(pin input line
-					(at -19.05 -90.17 0)
+					(at -19.05 -95.25 0)
 					(length 2.54)
 					(name "XTAL_IN"
 						(effects
@@ -3003,7 +3003,7 @@
 					)
 				)
 				(pin output line
-					(at -19.05 -87.63 0)
+					(at -19.05 -92.71 0)
 					(length 2.54)
 					(name "XTAL_OUT"
 						(effects
@@ -3039,7 +3039,7 @@
 					)
 				)
 				(pin output line
-					(at -19.05 -93.98 0)
+					(at -19.05 -99.06 0)
 					(length 2.54)
 					(name "RSET"
 						(effects
@@ -3646,7 +3646,7 @@
 	)
 	(bezier
 		(pts
-			(xy 38.1 100.838) (xy 35.56 102.108) (xy 35.56 93.218) (xy 38.1 94.488)
+			(xy 34.29 103.378) (xy 31.75 104.648) (xy 31.75 95.758) (xy 34.29 97.028)
 		)
 		(stroke
 			(width 0)
@@ -3659,7 +3659,7 @@
 	)
 	(bezier
 		(pts
-			(xy 72.644 113.03) (xy 70.104 114.3) (xy 70.104 102.87) (xy 72.644 104.14)
+			(xy 34.544 115.57) (xy 32.004 116.84) (xy 32.004 105.41) (xy 34.544 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3685,7 +3685,7 @@
 	)
 	(bezier
 		(pts
-			(xy 53.34 107.95) (xy 0 109.22) (xy 34.29 156.21) (xy 62.23 189.23)
+			(xy 19.05 116.84) (xy 10.16 148.59) (xy 29.21 168.91) (xy 62.23 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3719,6 +3719,18 @@
 		)
 		(uuid "02566912-a5fd-45c8-ac94-1511579ccfb8")
 	)
+	(text "decoupling for DV_{dd}'s"
+		(exclude_from_sim no)
+		(at 146.05 34.036 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 201 255 251 1)
+			)
+			(justify left top)
+		)
+		(uuid "1845a3bb-490a-4ae1-ac47-fbb5a252c788")
+	)
 	(text "* SFP-MSA requires 3v3 I2C lines\n* internal 10k PU in i2c level shifter IC"
 		(exclude_from_sim no)
 		(at 237.998 87.884 0)
@@ -3743,7 +3755,7 @@
 	)
 	(text "TODO: interrupt PIN enable internal PU"
 		(exclude_from_sim no)
-		(at 55.88 57.404 0)
+		(at 54.356 22.098 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3754,7 +3766,7 @@
 	)
 	(text "RGMII <-> SERDES bridge"
 		(exclude_from_sim no)
-		(at 120.904 155.702 0)
+		(at 125.222 153.162 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3788,7 +3800,7 @@
 	)
 	(text "bridge mode:\nFIBER <-> RGMII\ndefault: 3'b000\nset: 3'b001"
 		(exclude_from_sim no)
-		(at 35.56 97.79 0)
+		(at 31.75 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3799,7 +3811,7 @@
 	)
 	(text "RSET resistor value not in public datasheet, \nbut NXP reference schematics online show it"
 		(exclude_from_sim no)
-		(at 62.738 145.542 0)
+		(at 87.884 162.814 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3821,7 +3833,7 @@
 	)
 	(text "MDIO addr [2:0]\ndefault: 3'b001\nset: 3'b001"
 		(exclude_from_sim no)
-		(at 69.85 109.22 0)
+		(at 31.75 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3887,7 +3899,7 @@
 	)
 	(text "see table 55(pg.66) for\n PTP_CLKIN selection"
 		(exclude_from_sim no)
-		(at 62.738 127 0)
+		(at 47.244 146.304 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4081,6 +4093,18 @@
 		(uuid "06bfcdbd-789e-4665-a21e-261a791014dc")
 	)
 	(junction
+		(at 163.83 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0944ed40-7ca1-4dc5-ac95-0c89e15161a3")
+	)
+	(junction
+		(at 85.09 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b6d7d0d-00ef-49c5-ac70-8f60ca5a4872")
+	)
+	(junction
 		(at 153.67 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4099,13 +4123,19 @@
 		(uuid "22b8f333-b6cf-49d9-9d88-dfb75ee6a899")
 	)
 	(junction
+		(at 140.97 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "238a6a3b-353f-4972-9de3-601a7f44c2ed")
+	)
+	(junction
 		(at 270.51 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "243fb3c5-6ef4-4792-b717-d654cc16c0f8")
 	)
 	(junction
-		(at 153.67 38.1)
+		(at 153.67 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "245bfa9c-94e1-4899-bfe4-3fdbc7759592")
@@ -4123,10 +4153,22 @@
 		(uuid "2bc5d180-f650-47f2-b22d-5177b7847ae5")
 	)
 	(junction
+		(at 140.97 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bd5e60a-4452-4d72-adeb-d241187e340e")
+	)
+	(junction
 		(at 146.05 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c0479e1-c584-4566-87a7-73f5b5db9065")
+	)
+	(junction
+		(at 74.93 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c5cd7a6-c255-4539-9752-94571118d897")
 	)
 	(junction
 		(at 153.67 73.66)
@@ -4135,22 +4177,16 @@
 		(uuid "322d4220-da62-44f8-914f-22dafb1eb04f")
 	)
 	(junction
-		(at 165.1 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35814208-7eaa-4c9f-88a5-a023d5647d8b")
-	)
-	(junction
 		(at 251.46 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35ec335d-6611-4c89-946f-7d6ce473597f")
 	)
 	(junction
-		(at 143.51 63.5)
+		(at 74.93 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3624ab2a-4fd5-4cc7-9360-dcbaeea536e3")
+		(uuid "3698e868-94ef-4b7e-a08f-9326c411860e")
 	)
 	(junction
 		(at 251.46 55.88)
@@ -4195,12 +4231,6 @@
 		(uuid "46906292-fb5e-43d9-b456-24349d3d4247")
 	)
 	(junction
-		(at 165.1 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a474e7e-e362-4f9e-a2d3-64c3445a1cee")
-	)
-	(junction
 		(at 25.4 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4213,7 +4243,7 @@
 		(uuid "52655e92-a657-4836-af05-c89e7e393060")
 	)
 	(junction
-		(at 163.83 38.1)
+		(at 163.83 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "535f0bdf-aa63-4896-bafe-b9189e342eb7")
@@ -4235,6 +4265,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e0ba44e-7a64-4e46-99d2-a14b692aa378")
+	)
+	(junction
+		(at 140.97 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "711703f8-a6fb-4920-9d32-f42433f9d270")
 	)
 	(junction
 		(at 165.1 81.28)
@@ -4261,13 +4297,7 @@
 		(uuid "7dc546dc-b002-479f-9f12-f56c50aaf8af")
 	)
 	(junction
-		(at 163.83 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "828c6deb-070d-444e-b996-643f7c01a12c")
-	)
-	(junction
-		(at 77.47 130.81)
+		(at 39.37 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "855f015c-6d95-4ee0-bd50-d13fd571e0c0")
@@ -4301,6 +4331,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a53da5bf-e1c3-49e3-bc14-983951e33b4f")
+	)
+	(junction
+		(at 64.77 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6c2eed3-b62c-4bfa-9814-89825f949bdd")
 	)
 	(junction
 		(at 240.03 55.88)
@@ -4357,16 +4393,16 @@
 		(uuid "c4e4a848-ffc3-4ba2-b1c7-4b6d26573095")
 	)
 	(junction
+		(at 64.77 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce1aa81e-eb08-47bb-8e26-a9fb03eea738")
+	)
+	(junction
 		(at 259.08 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cffc229a-1918-4d60-b434-bb0edd4f2e51")
-	)
-	(junction
-		(at 165.1 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1e1028f-c2a3-4455-a569-f65aa45af7ec")
 	)
 	(junction
 		(at 224.79 92.71)
@@ -4375,25 +4411,19 @@
 		(uuid "d27b0c5f-b45f-416d-8ab5-e04767ec9b4e")
 	)
 	(junction
-		(at 153.67 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d326bbd6-37e4-40ff-aca1-b438a663b309")
-	)
-	(junction
 		(at 106.68 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5663074-12c8-4307-b42e-2242282f9be2")
 	)
 	(junction
-		(at 77.47 100.33)
+		(at 153.67 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d6f2e5ea-5fd3-431c-af97-00223cdc2e4c")
+		(uuid "df21d62a-02bf-4c61-aef4-4c340503af50")
 	)
 	(junction
-		(at 140.97 58.42)
+		(at 140.97 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1a48e9b-65b7-4918-818b-31f40fdc21a8")
@@ -4403,6 +4433,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e66315e6-1d42-4899-8e3f-804ce4958fb9")
+	)
+	(junction
+		(at 143.51 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7dfe91b-ac83-4cf5-93c8-3e23b20b856f")
 	)
 	(junction
 		(at 328.93 128.27)
@@ -4475,7 +4511,7 @@
 		(uuid "ef54ae76-5316-4331-a80e-b17892305ed9")
 	)
 	(bus_entry
-		(at 74.93 77.47)
+		(at 36.83 77.47)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4484,7 +4520,7 @@
 		(uuid "0d3c28a5-7767-4797-8ec6-f81d3051a599")
 	)
 	(bus_entry
-		(at 74.93 92.71)
+		(at 36.83 95.25)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4502,7 +4538,7 @@
 		(uuid "21a7c633-aaa8-4be5-84e2-7786109a6570")
 	)
 	(bus_entry
-		(at 74.93 100.33)
+		(at 36.83 102.87)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4511,7 +4547,7 @@
 		(uuid "2daea6ae-850f-4589-a8c5-0e1623f33e14")
 	)
 	(bus_entry
-		(at 74.93 120.65)
+		(at 36.83 125.73)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4520,7 +4556,7 @@
 		(uuid "33ced3c1-9e6b-4fda-bcb1-aa4432b2de76")
 	)
 	(bus_entry
-		(at 74.93 71.12)
+		(at 36.83 71.12)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4529,7 +4565,7 @@
 		(uuid "43b67ab5-0864-43c2-b935-63e455f223d8")
 	)
 	(bus_entry
-		(at 74.93 68.58)
+		(at 36.83 68.58)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4556,7 +4592,7 @@
 		(uuid "5f87446d-7e82-4241-be7d-ec2dae106144")
 	)
 	(bus_entry
-		(at 74.93 113.03)
+		(at 36.83 118.11)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4565,7 +4601,7 @@
 		(uuid "72b94a42-e94e-4b20-8524-038eebced77e")
 	)
 	(bus_entry
-		(at 74.93 80.01)
+		(at 36.83 80.01)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4574,7 +4610,7 @@
 		(uuid "744e457a-4742-4912-b3df-d299a3b6db5d")
 	)
 	(bus_entry
-		(at 74.93 74.93)
+		(at 36.83 74.93)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4592,7 +4628,7 @@
 		(uuid "7f66565d-e3d8-46ea-be1b-37c6341beb1a")
 	)
 	(bus_entry
-		(at 74.93 88.9)
+		(at 36.83 88.9)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4601,7 +4637,7 @@
 		(uuid "82c4013b-6a58-4fa2-9e3e-197dcc21d016")
 	)
 	(bus_entry
-		(at 74.93 82.55)
+		(at 36.83 82.55)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4610,7 +4646,7 @@
 		(uuid "88089d5e-6cbf-4ff4-8169-5494efc8cbdd")
 	)
 	(bus_entry
-		(at 74.93 116.84)
+		(at 36.83 121.92)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4619,7 +4655,7 @@
 		(uuid "95d59138-1648-4e89-a1ed-ba0e47ad3092")
 	)
 	(bus_entry
-		(at 74.93 86.36)
+		(at 36.83 86.36)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4646,7 +4682,7 @@
 		(uuid "acdc8415-bdbe-4e32-ba2b-0da5b0125fdc")
 	)
 	(bus_entry
-		(at 74.93 106.68)
+		(at 36.83 109.22)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4664,7 +4700,7 @@
 		(uuid "b7c218ea-0485-4bc3-968e-7d3732a6b94c")
 	)
 	(bus_entry
-		(at 74.93 97.79)
+		(at 36.83 100.33)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4673,7 +4709,7 @@
 		(uuid "c9037312-f329-43ff-ba8a-449457863949")
 	)
 	(bus_entry
-		(at 74.93 95.25)
+		(at 36.83 97.79)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4682,7 +4718,7 @@
 		(uuid "cf2c9625-6be1-46e0-ae3f-5f5b05afbd30")
 	)
 	(bus_entry
-		(at 74.93 128.27)
+		(at 36.83 133.35)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4691,7 +4727,7 @@
 		(uuid "d0add726-d570-4331-a5f0-7014340feb3e")
 	)
 	(bus_entry
-		(at 74.93 104.14)
+		(at 36.83 106.68)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4727,15 +4763,15 @@
 		)
 		(uuid "015233bf-9d09-4c1c-9d9b-975e432ff783")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 74.93 68.58) (xy 74.93 128.27)
+			(xy 57.15 102.87) (xy 99.06 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "03e7e404-3dd3-41a1-88d6-a10426837eb2")
+		(uuid "023f273a-ccba-4e5d-8fdf-0c66179e71da")
 	)
 	(wire
 		(pts
@@ -4746,6 +4782,16 @@
 			(type default)
 		)
 		(uuid "06369354-9fde-48ac-aab0-213384c3f947")
+	)
+	(wire
+		(pts
+			(xy 93.98 85.09) (xy 99.06 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06c14613-7920-48c6-b6ef-606c258c6db3")
 	)
 	(bus
 		(pts
@@ -4879,6 +4925,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 100.33) (xy 99.06 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f93f9cc-d7c8-4622-9da0-97950c6c914e")
+	)
+	(wire
+		(pts
 			(xy 113.03 237.49) (xy 116.84 237.49)
 		)
 		(stroke
@@ -4919,7 +4975,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 97.79) (xy 99.06 97.79)
+			(xy 39.37 100.33) (xy 52.07 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4949,27 +5005,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 58.42) (xy 140.97 60.96)
+			(xy 153.67 48.26) (xy 163.83 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1743fa95-d12a-41ca-b0f6-1085c7947367")
+		(uuid "18cf1618-23b3-4a91-a581-a066aeee2b6f")
 	)
 	(wire
 		(pts
-			(xy 163.83 54.61) (xy 163.83 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18affaa5-58c9-4b8e-ac2a-8f85291f7bcb")
-	)
-	(wire
-		(pts
-			(xy 77.47 95.25) (xy 99.06 95.25)
+			(xy 39.37 97.79) (xy 52.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4986,6 +5032,16 @@
 			(type default)
 		)
 		(uuid "1c50ce85-2657-4b59-9dbc-24e835a4e631")
+	)
+	(wire
+		(pts
+			(xy 140.97 50.8) (xy 140.97 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d5831c8-6af0-4bc5-86b6-241d4ab1b9ac")
 	)
 	(bus
 		(pts
@@ -5039,7 +5095,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 73.66) (xy 99.06 73.66)
+			(xy 39.37 73.66) (xy 74.93 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5069,7 +5125,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 127) (xy 99.06 127)
+			(xy 93.98 128.27) (xy 99.06 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26dfeafa-39a2-4ec0-9da4-eebd1effa82c")
+	)
+	(wire
+		(pts
+			(xy 26.67 132.08) (xy 99.06 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5109,7 +5175,27 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 109.22) (xy 99.06 109.22)
+			(xy 93.98 82.55) (xy 99.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b78927-15e9-41eb-ab7b-5c5b3c86b7b7")
+	)
+	(wire
+		(pts
+			(xy 74.93 46.99) (xy 74.93 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab9dc10-9bad-442b-a73f-c780056a8195")
+	)
+	(wire
+		(pts
+			(xy 39.37 111.76) (xy 52.07 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5126,6 +5212,16 @@
 			(type default)
 		)
 		(uuid "2f567530-7bce-4d2d-a1d1-de0dc11538f9")
+	)
+	(wire
+		(pts
+			(xy 74.93 38.1) (xy 74.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff6f2cf-c94a-4e58-9d5a-ec1cc906c63d")
 	)
 	(wire
 		(pts
@@ -5189,7 +5285,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 88.9) (xy 99.06 88.9)
+			(xy 163.83 48.26) (xy 168.91 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36d1fe38-9c71-43dd-8bbe-86d8d90f9b41")
+	)
+	(wire
+		(pts
+			(xy 39.37 88.9) (xy 88.9 88.9)
 		)
 		(stroke
 			(width 0)
@@ -5269,13 +5375,23 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 147.32) (xy 88.9 146.05)
+			(xy 88.9 152.4) (xy 88.9 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3edde367-51f7-4b48-a5e3-9db6aa3be8b5")
+	)
+	(wire
+		(pts
+			(xy 57.15 71.12) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa55df7-01e3-4ef1-9488-57e856c07d1b")
 	)
 	(wire
 		(pts
@@ -5309,16 +5425,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 54.61) (xy 165.1 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43f4bfff-8901-408f-a90b-371f559f8588")
-	)
-	(wire
-		(pts
 			(xy 41.91 274.32) (xy 25.4 274.32)
 		)
 		(stroke
@@ -5329,13 +5435,13 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 63.5) (xy 165.1 67.31)
+			(xy 74.93 73.66) (xy 99.06 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "484b61da-2f03-4085-9e01-9a9f9ff61172")
+		(uuid "48b27ae6-7c23-4582-b374-ed388aa95484")
 	)
 	(wire
 		(pts
@@ -5389,16 +5495,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 100.33) (xy 49.53 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4db9c865-ace3-4c5d-96bb-9c541c67131b")
-	)
-	(wire
-		(pts
 			(xy 293.37 110.49) (xy 293.37 113.03)
 		)
 		(stroke
@@ -5409,7 +5505,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 85.09) (xy 99.06 85.09)
+			(xy 39.37 85.09) (xy 88.9 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5469,6 +5565,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 109.22) (xy 99.06 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e3359c-01b8-497f-8951-cf10ffc65d40")
+	)
+	(wire
+		(pts
 			(xy 318.77 102.87) (xy 317.5 102.87)
 		)
 		(stroke
@@ -5476,6 +5582,16 @@
 			(type default)
 		)
 		(uuid "5712ff07-edb4-4d34-bfb9-9dc29ab65f19")
+	)
+	(bus
+		(pts
+			(xy 36.83 100.33) (xy 36.83 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f751d8-9ba3-4bc6-a126-42ffac085583")
 	)
 	(wire
 		(pts
@@ -5489,13 +5605,33 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 63.5) (xy 165.1 63.5)
+			(xy 57.15 105.41) (xy 99.06 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5adc7924-a1b6-47fa-b492-3a4a6a533955")
+	)
+	(wire
+		(pts
+			(xy 138.43 63.5) (xy 140.97 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "60a67a80-df3d-4273-b417-4e6ade2c6300")
+	)
+	(wire
+		(pts
+			(xy 57.15 97.79) (xy 99.06 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a8edfb-4e60-4ce0-b968-7a86eae1035c")
 	)
 	(wire
 		(pts
@@ -5519,17 +5655,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 130.81) (xy 99.06 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63c3d10f-aa2f-436d-8082-e2a32836894c")
-	)
-	(wire
-		(pts
-			(xy 77.47 82.55) (xy 99.06 82.55)
+			(xy 39.37 82.55) (xy 88.9 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5559,6 +5685,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 38.1) (xy 85.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b813a5-5d36-474e-aa73-ad8b636a6dac")
+	)
+	(wire
+		(pts
 			(xy 251.46 55.88) (xy 251.46 57.15)
 		)
 		(stroke
@@ -5576,6 +5712,16 @@
 			(type default)
 		)
 		(uuid "675817fa-e110-41f0-8240-1b7429af9aaa")
+	)
+	(wire
+		(pts
+			(xy 64.77 71.12) (xy 99.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cdb6f1-2d3c-42b1-8a03-86102923b2f6")
 	)
 	(wire
 		(pts
@@ -5617,6 +5763,16 @@
 		)
 		(uuid "6f361e7f-a4c7-476e-8fe8-de81886f4261")
 	)
+	(wire
+		(pts
+			(xy 93.98 91.44) (xy 99.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7096ec73-8fb7-43e1-8e40-81ac3536edbe")
+	)
 	(bus
 		(pts
 			(xy 219.71 246.38) (xy 219.71 251.46)
@@ -5639,7 +5795,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 67.31) (xy 165.1 67.31)
+			(xy 138.43 67.31) (xy 140.97 67.31)
 		)
 		(stroke
 			(width 0)
@@ -5659,13 +5815,33 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 130.81) (xy 72.39 130.81)
+			(xy 39.37 135.89) (xy 34.29 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "749e28a2-dbc8-4031-a8e1-5b9080c052f7")
+	)
+	(wire
+		(pts
+			(xy 93.98 88.9) (xy 99.06 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7832510b-fdc7-44c2-8cdf-a8870a210755")
+	)
+	(bus
+		(pts
+			(xy 36.83 68.58) (xy 36.83 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "784385de-707d-4447-989a-5b94825fe357")
 	)
 	(wire
 		(pts
@@ -5686,6 +5862,16 @@
 			(type default)
 		)
 		(uuid "7a13f765-9ae3-4250-8dc7-01b693268a0b")
+	)
+	(wire
+		(pts
+			(xy 64.77 46.99) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a8dd049-2bcf-483f-b40b-f7492b29eec2")
 	)
 	(wire
 		(pts
@@ -5759,6 +5945,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 128.27) (xy 88.9 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eca7b83-dd23-46d2-87dd-e3054f7a2bdb")
+	)
+	(wire
+		(pts
 			(xy 106.68 254) (xy 106.68 251.46)
 		)
 		(stroke
@@ -5789,7 +5985,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 106.68) (xy 99.06 106.68)
+			(xy 39.37 109.22) (xy 52.07 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5799,7 +5995,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 137.16) (xy 88.9 137.16)
+			(xy 99.06 142.24) (xy 88.9 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5809,7 +6005,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 102.87) (xy 99.06 102.87)
+			(xy 39.37 105.41) (xy 52.07 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5826,6 +6022,16 @@
 			(type default)
 		)
 		(uuid "8928ab84-0e28-4d75-b54d-0a714baf83fb")
+	)
+	(wire
+		(pts
+			(xy 39.37 120.65) (xy 99.06 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ade2e2-8d6c-486b-a68d-8124e867b9ad")
 	)
 	(wire
 		(pts
@@ -5846,16 +6052,6 @@
 			(type default)
 		)
 		(uuid "8bfe29f7-b091-45e9-8339-b93035104154")
-	)
-	(wire
-		(pts
-			(xy 77.47 123.19) (xy 99.06 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c4219bf-b18d-4501-b658-e6339f47c6be")
 	)
 	(wire
 		(pts
@@ -5909,7 +6105,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 71.12) (xy 99.06 71.12)
+			(xy 39.37 71.12) (xy 52.07 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5929,13 +6125,23 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 58.42) (xy 165.1 63.5)
+			(xy 85.09 46.99) (xy 85.09 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ffcae01-b17a-4465-b383-5bea09fc241c")
+		(uuid "8f177fdc-6166-4aac-8518-cf3477927882")
+	)
+	(wire
+		(pts
+			(xy 140.97 67.31) (xy 143.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "919a43c7-e913-4798-9dd4-c3400991f179")
 	)
 	(bus
 		(pts
@@ -6019,6 +6225,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 135.89) (xy 99.06 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a097563-1af2-4211-96e7-7d4d55c231fb")
+	)
+	(wire
+		(pts
 			(xy 146.05 118.11) (xy 209.55 118.11)
 		)
 		(stroke
@@ -6039,13 +6255,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 100.33) (xy 99.06 100.33)
+			(xy 39.37 102.87) (xy 52.07 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9c00a435-56e5-4ef9-8adb-e6d6fb254311")
+	)
+	(wire
+		(pts
+			(xy 64.77 38.1) (xy 64.77 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5d489e-d61d-4c28-8d76-63352c3ebd64")
 	)
 	(wire
 		(pts
@@ -6056,16 +6282,6 @@
 			(type default)
 		)
 		(uuid "9c9915b0-e78f-47f5-a63f-b8ae74852ce2")
-	)
-	(wire
-		(pts
-			(xy 77.47 115.57) (xy 99.06 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cb6415d-252d-4f2d-885b-00b6bcdbb40a")
 	)
 	(wire
 		(pts
@@ -6089,7 +6305,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 54.61) (xy 165.1 54.61)
+			(xy 138.43 54.61) (xy 140.97 54.61)
 		)
 		(stroke
 			(width 0)
@@ -6139,6 +6355,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 43.18) (xy 153.67 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5748073-d5af-4e5c-bb0d-e7ef3f19939b")
+	)
+	(wire
+		(pts
 			(xy 198.12 92.71) (xy 198.12 93.98)
 		)
 		(stroke
@@ -6156,6 +6382,16 @@
 			(type default)
 		)
 		(uuid "ac2bf8aa-0c00-4652-9fdf-eccd02f5c85d")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.01) (xy 99.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac541021-0cc6-4d33-8a8e-df16866a709c")
 	)
 	(wire
 		(pts
@@ -6199,7 +6435,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 130.81) (xy 64.77 130.81)
+			(xy 29.21 135.89) (xy 26.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6229,7 +6465,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 91.44) (xy 99.06 91.44)
+			(xy 39.37 91.44) (xy 88.9 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6249,7 +6485,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 48.26) (xy 165.1 48.26)
+			(xy 138.43 48.26) (xy 153.67 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6339,7 +6575,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 38.1) (xy 168.91 38.1)
+			(xy 143.51 36.83) (xy 168.91 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6379,6 +6615,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 43.18) (xy 143.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fbc39d-982b-4914-bc93-4325d34c8ee7")
+	)
+	(wire
+		(pts
 			(xy 186.69 266.7) (xy 189.23 266.7)
 		)
 		(stroke
@@ -6386,6 +6632,16 @@
 			(type default)
 		)
 		(uuid "c3e44849-2ec1-44ac-91ab-a7783ada3bb3")
+	)
+	(wire
+		(pts
+			(xy 163.83 43.18) (xy 163.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51ce3f9-ff62-46b4-9eb1-11e23de54237")
 	)
 	(wire
 		(pts
@@ -6409,7 +6665,17 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 137.16) (xy 88.9 140.97)
+			(xy 57.15 111.76) (xy 99.06 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c93b8571-128d-4a5f-9178-13c28966c7d0")
+	)
+	(wire
+		(pts
+			(xy 88.9 142.24) (xy 88.9 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6429,16 +6695,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 63.5) (xy 143.51 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc6ac67c-9aea-4351-94ce-f6c1e9de6d4b")
-	)
-	(wire
-		(pts
 			(xy 45.72 274.32) (xy 41.91 274.32)
 		)
 		(stroke
@@ -6449,7 +6705,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 77.47) (xy 99.06 77.47)
+			(xy 39.37 77.47) (xy 88.9 77.47)
 		)
 		(stroke
 			(width 0)
@@ -6459,7 +6715,27 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 39.37) (xy 143.51 38.1)
+			(xy 93.98 77.47) (xy 99.06 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d010b0ef-f00f-47eb-97fb-94c9f8a88112")
+	)
+	(wire
+		(pts
+			(xy 64.77 38.1) (xy 85.09 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d119dcc2-ca5b-4db7-9bca-af4b77409dcd")
+	)
+	(wire
+		(pts
+			(xy 143.51 38.1) (xy 143.51 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6499,7 +6775,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 80.01) (xy 99.06 80.01)
+			(xy 39.37 80.01) (xy 88.9 80.01)
 		)
 		(stroke
 			(width 0)
@@ -6519,6 +6795,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 38.1) (xy 64.77 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f5ab07-8994-4895-98a9-a2c5657a444a")
+	)
+	(wire
+		(pts
 			(xy 240.03 43.18) (xy 240.03 44.45)
 		)
 		(stroke
@@ -6529,7 +6815,7 @@
 	)
 	(bus
 		(pts
-			(xy 73.66 68.58) (xy 74.93 68.58)
+			(xy 35.56 68.58) (xy 36.83 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6566,16 +6852,6 @@
 			(type default)
 		)
 		(uuid "da4540a7-d175-45a5-93b1-f58818cf9f69")
-	)
-	(wire
-		(pts
-			(xy 165.1 48.26) (xy 168.91 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da9f89fc-dd79-4d14-afef-f8570c279215")
 	)
 	(wire
 		(pts
@@ -6619,13 +6895,13 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 44.45) (xy 153.67 54.61)
+			(xy 143.51 67.31) (xy 165.1 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df6bf3de-79c1-46f6-b36f-424041de4fa7")
+		(uuid "de8ee89a-475b-4394-bcad-d63e30dc00ac")
 	)
 	(wire
 		(pts
@@ -6699,7 +6975,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 119.38) (xy 99.06 119.38)
+			(xy 140.97 58.42) (xy 140.97 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5005b14-6a2e-4435-9bac-65113dfb2d8f")
+	)
+	(wire
+		(pts
+			(xy 39.37 124.46) (xy 99.06 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6749,16 +7035,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 58.42) (xy 165.1 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea28e214-12bf-457f-b551-3b3d8f60d88f")
-	)
-	(wire
-		(pts
 			(xy 194.31 261.62) (xy 195.58 261.62)
 		)
 		(stroke
@@ -6766,16 +7042,6 @@
 			(type default)
 		)
 		(uuid "ea955e44-0ad8-4e6b-b5d5-0b9d5795d1e3")
-	)
-	(wire
-		(pts
-			(xy 54.61 100.33) (xy 77.47 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ead37679-62cd-4272-bbaf-af7cb0b70b58")
 	)
 	(wire
 		(pts
@@ -6819,7 +7085,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 39.37) (xy 163.83 38.1)
+			(xy 163.83 38.1) (xy 163.83 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6859,7 +7125,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 130.81) (xy 64.77 127)
+			(xy 26.67 132.08) (xy 26.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6876,6 +7142,16 @@
 			(type default)
 		)
 		(uuid "f3ac2471-7458-4604-a428-2d282411187a")
+	)
+	(wire
+		(pts
+			(xy 140.97 63.5) (xy 140.97 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3d271f6-d6f5-4d64-9b0f-d676e4afe888")
 	)
 	(wire
 		(pts
@@ -6939,7 +7215,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 38.1) (xy 153.67 39.37)
+			(xy 153.67 36.83) (xy 153.67 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11507,7 +11783,7 @@
 		(uuid "163ae772-414b-4406-a478-2f4578ac0fb2")
 	)
 	(label "sfp.phy.reset#"
-		(at 77.47 115.57 0)
+		(at 39.37 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11517,7 +11793,7 @@
 		(uuid "18d54a58-36ce-42fb-9446-35af4f02ed61")
 	)
 	(label "sfp.txd0"
-		(at 77.47 77.47 0)
+		(at 39.37 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11547,7 +11823,7 @@
 		(uuid "3369254f-0765-49ac-b30a-cf802af4eb6c")
 	)
 	(label "sfp.rxctl"
-		(at 77.47 106.68 0)
+		(at 39.37 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11577,7 +11853,7 @@
 		(uuid "3ac35b6a-8abb-4178-80e0-6d6d45900cbb")
 	)
 	(label "sfp.rxc"
-		(at 77.47 109.22 0)
+		(at 39.37 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11587,7 +11863,7 @@
 		(uuid "3edaadeb-321e-4bd3-a581-445508bce5da")
 	)
 	(label "sfp.txd2"
-		(at 77.47 82.55 0)
+		(at 39.37 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11617,7 +11893,7 @@
 		(uuid "4e8adf79-7f25-46a0-81ff-f63e84ead63c")
 	)
 	(label "sfp.txc"
-		(at 77.47 91.44 0)
+		(at 39.37 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11637,7 +11913,7 @@
 		(uuid "53534d7a-049c-4c3e-978a-97158eae464b")
 	)
 	(label "sfp.V_{io}"
-		(at 46.99 100.33 180)
+		(at 53.34 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11687,7 +11963,7 @@
 		(uuid "5f97c650-ca95-4d96-94ac-b990028906fa")
 	)
 	(label "sfp.phymac_frclk_125"
-		(at 77.47 123.19 0)
+		(at 39.37 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11697,7 +11973,7 @@
 		(uuid "600cf237-c9fc-45c0-8d20-b9998f75f389")
 	)
 	(label "sfp.rxd1"
-		(at 77.47 100.33 0)
+		(at 39.37 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11787,7 +12063,7 @@
 		(uuid "7f1a76a7-4e78-4507-8a1d-2c2b3d390027")
 	)
 	(label "sfp.rxd2"
-		(at 77.47 97.79 0)
+		(at 39.37 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11807,7 +12083,7 @@
 		(uuid "82a7bfdf-5146-4f2f-8492-74a5cb77fe0d")
 	)
 	(label "sfp.rxd0"
-		(at 77.47 102.87 0)
+		(at 39.37 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11827,7 +12103,7 @@
 		(uuid "85c715b5-6b6d-441e-8942-3ebffc7f0510")
 	)
 	(label "sfp.txd1"
-		(at 77.47 80.01 0)
+		(at 39.37 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11857,7 +12133,7 @@
 		(uuid "951fb838-4fd3-4e2e-b2bc-d981c7cb3a68")
 	)
 	(label "sfp.mdio"
-		(at 77.47 73.66 0)
+		(at 39.37 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11867,7 +12143,7 @@
 		(uuid "96892229-a858-4857-85d7-56d2d10b1627")
 	)
 	(label "sfp.mdc"
-		(at 77.47 71.12 0)
+		(at 39.37 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12017,7 +12293,7 @@
 		(uuid "c9ccbb1d-e5ac-4926-9edd-29f2afd79f3a")
 	)
 	(label "LED_{0}"
-		(at 99.06 111.76 180)
+		(at 99.06 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12067,7 +12343,7 @@
 		(uuid "e8af697b-0068-4b1a-8c30-fb19193b3a4d")
 	)
 	(label "sfp.txd3"
-		(at 77.47 85.09 0)
+		(at 39.37 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12097,7 +12373,7 @@
 		(uuid "f2e15d16-4a34-4fbc-8c69-15bef9ef0737")
 	)
 	(label "sfp.macphy_clk_25"
-		(at 77.47 130.81 0)
+		(at 39.37 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12117,7 +12393,7 @@
 		(uuid "f6296c57-98d5-4e77-a14e-e2633870158a")
 	)
 	(label "sfp.phy.int#"
-		(at 77.47 119.38 0)
+		(at 39.37 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12137,7 +12413,7 @@
 		(uuid "f9247e49-7658-473f-9c34-acd348e500f3")
 	)
 	(label "sfp.txctl"
-		(at 77.47 88.9 0)
+		(at 39.37 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12147,7 +12423,7 @@
 		(uuid "f95f987e-5d2a-425d-aed7-1f480c8a596e")
 	)
 	(label "sfp.rxd3"
-		(at 77.47 95.25 0)
+		(at 39.37 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12211,7 +12487,7 @@
 	)
 	(hierarchical_label "SFP_BRIDGE"
 		(shape bidirectional)
-		(at 73.66 68.58 180)
+		(at 35.56 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12547,7 +12823,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 69.85 130.81 90)
+		(at 31.75 135.89 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -12558,7 +12834,7 @@
 		(dnp yes)
 		(uuid "111b7d66-1c6f-49bd-bcda-c367dbe394fb")
 		(property "Reference" "R520"
-			(at 69.85 137.16 90)
+			(at 31.75 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12568,7 +12844,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 69.85 134.62 90)
+			(at 31.75 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12578,7 +12854,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 69.85 130.81 0)
+			(at 31.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12589,7 +12865,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 130.81 0)
+			(at 31.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12600,7 +12876,7 @@
 			)
 		)
 		(property "Description" "jumper"
-			(at 69.85 130.81 0)
+			(at 31.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13477,6 +13753,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 85.09 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1eb2ede0-7be5-4ac8-b8c4-940a5aaf8701")
+		(property "Reference" "R529"
+			(at 91.44 59.182 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "57ef0184-dbf8-4c84-9dfc-7171644ef769")
+		)
+		(pin "1"
+			(uuid "399e6ab7-1eff-4989-ba67-13728a71d197")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R529")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 146.05 85.09 0)
 		(unit 1)
@@ -13619,6 +14008,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29d4164e-4827-4267-b5db-5aa2642908a0")
+		(property "Reference" "R523"
+			(at 54.61 61.722 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "40eeff3a-7ea2-462a-9df3-39934d0866d6")
+		)
+		(pin "1"
+			(uuid "30af2754-a92b-445b-90b7-1e8fddc49080")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R523")
 					(unit 1)
 				)
 			)
@@ -13770,41 +14272,39 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 163.83 41.91 0)
+		(lib_id "Device:R_Small_US")
+		(at 54.61 109.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b96db99-690b-46ca-8ff4-afabff293959")
-		(property "Reference" "C518"
-			(at 166.37 40.6462 0)
+		(uuid "2b5ddae1-1e11-49df-bc72-a45997887457")
+		(property "Reference" "R524"
+			(at 54.61 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 166.37 43.1862 0)
+		(property "Value" "22"
+			(at 54.61 105.41 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 163.83 41.91 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13815,7 +14315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 41.91 0)
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13825,8 +14325,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 163.83 41.91 0)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13836,19 +14336,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 163.83 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 163.83 41.91 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13859,7 +14348,133 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 163.83 41.91 0)
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0651b816-02b0-45be-8de7-dbf5644776cf")
+		)
+		(pin "1"
+			(uuid "b27b44ef-9601-419d-baaf-fa70ad666caf")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 163.83 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b96db99-690b-46ca-8ff4-afabff293959")
+		(property "Reference" "C518"
+			(at 166.37 39.3762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 166.37 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 163.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 163.83 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13870,7 +14485,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 163.83 41.91 0)
+			(at 163.83 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13881,7 +14496,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 163.83 41.91 0)
+			(at 163.83 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13892,7 +14507,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 163.83 41.91 0)
+			(at 163.83 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14067,7 +14682,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 88.9 143.51 0)
+		(at 88.9 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14078,7 +14693,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e5d3d2b-b8c8-4e86-929d-d2bf92c6fad4")
 		(property "Reference" "R505"
-			(at 91.44 142.2399 0)
+			(at 91.44 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14089,7 +14704,7 @@
 			)
 		)
 		(property "Value" "2.49k"
-			(at 91.44 144.7799 0)
+			(at 91.44 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14100,7 +14715,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14111,7 +14726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14122,7 +14737,7 @@
 			)
 		)
 		(property "Description" "2.49k, 0.5%, 62.5mW, 75V, 25ppm, +125C"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14133,7 +14748,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RR0816P-2491-D-39H?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbVHtpqfbP2bM%3D"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14144,7 +14759,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14155,7 +14770,7 @@
 			)
 		)
 		(property "unit x10" "0.024"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14166,7 +14781,7 @@
 			)
 		)
 		(property "unit x100" "0.022"
-			(at 88.9 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14272,7 +14887,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 133.35 270)
+		(at 99.06 138.43 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14283,7 +14898,7 @@
 		(fields_autoplaced yes)
 		(uuid "36896062-1849-43b5-b416-6203f64d1da7")
 		(property "Reference" "#PWR0504"
-			(at 92.71 133.35 0)
+			(at 92.71 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14294,7 +14909,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 133.3499 90)
+			(at 95.25 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14305,7 +14920,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 133.35 0)
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14316,7 +14931,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 133.35 0)
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14327,7 +14942,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 133.35 0)
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14351,7 +14966,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 147.32 0)
+		(at 88.9 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14362,7 +14977,7 @@
 		(fields_autoplaced yes)
 		(uuid "38debea7-5858-42ba-ae18-ac301fcba249")
 		(property "Reference" "#PWR0506"
-			(at 88.9 153.67 0)
+			(at 88.9 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14373,7 +14988,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 152.4 0)
+			(at 88.9 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14383,7 +14998,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 147.32 0)
+			(at 88.9 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14394,7 +15009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 147.32 0)
+			(at 88.9 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14405,7 +15020,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 147.32 0)
+			(at 88.9 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14422,6 +15037,154 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0506")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 74.93 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39d5322c-b440-499d-9e7a-2431b78ab5eb")
+		(property "Reference" "R533"
+			(at 77.47 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.6k"
+			(at 77.47 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5.6k, 250mW, 150V, 1%, 100ppm"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RK73H2ATTD5601F?qs=sGAEpiMZZMvdGkrng054tz2hCf0K9MmAHiPVKAcdIq4%3D"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.021"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.017"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ddc61402-5cbe-46ea-b9ee-650f11e8d089")
+		)
+		(pin "1"
+			(uuid "cb039856-321c-4f52-a96b-3bee55f8f3da")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R533")
 					(unit 1)
 				)
 			)
@@ -14870,7 +15633,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 153.67 41.91 0)
+		(at 153.67 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14881,7 +15644,7 @@
 		(fields_autoplaced yes)
 		(uuid "444af391-c25c-4b05-91b4-8464ab43edd3")
 		(property "Reference" "C501"
-			(at 156.21 40.6462 0)
+			(at 156.21 39.3762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14892,7 +15655,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 156.21 43.1862 0)
+			(at 156.21 41.9162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14903,7 +15666,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14914,7 +15677,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14925,7 +15688,7 @@
 			)
 		)
 		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14936,7 +15699,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14947,7 +15710,7 @@
 			)
 		)
 		(property "unit x10" "0.11"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14958,7 +15721,7 @@
 			)
 		)
 		(property "unit x1" "0.047"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14969,7 +15732,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14980,7 +15743,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14991,7 +15754,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 153.67 41.91 0)
+			(at 153.67 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15461,6 +16224,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0515")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 82.55 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "58fc5f60-a8e9-4429-8120-c9fed0456f56")
+		(property "Reference" "R528"
+			(at 91.44 57.404 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "60837520-1343-40fb-82f7-f6bda93d8fc3")
+		)
+		(pin "1"
+			(uuid "01b4c38c-4d41-485a-84b2-aca028ad25ac")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R528")
 					(unit 1)
 				)
 			)
@@ -15989,41 +16865,39 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 143.51 41.91 0)
+		(lib_id "Device:R_Small_US")
+		(at 91.44 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ea8bdef-68cd-480e-9796-db6bcc66072d")
-		(property "Reference" "C519"
-			(at 146.05 40.6462 0)
+		(uuid "6dbf325a-6735-4312-a8f7-1f9c97b42473")
+		(property "Reference" "R530"
+			(at 91.44 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 146.05 43.1862 0)
+		(property "Value" "22"
+			(at 91.44 85.09 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 143.51 41.91 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16034,7 +16908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 41.91 0)
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16044,8 +16918,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 143.51 41.91 0)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16055,19 +16929,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 143.51 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 143.51 41.91 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16078,7 +16941,133 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 143.51 41.91 0)
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2496830-8262-40ba-9d52-9062c7d0aa9c")
+		)
+		(pin "1"
+			(uuid "ae7f8dfe-601f-4b92-8bc6-7ba86ed792ac")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R530")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 143.51 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ea8bdef-68cd-480e-9796-db6bcc66072d")
+		(property "Reference" "C519"
+			(at 146.05 39.3762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 146.05 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 143.51 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 143.51 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 143.51 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 143.51 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 143.51 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16089,7 +17078,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 143.51 41.91 0)
+			(at 143.51 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16100,7 +17089,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 143.51 41.91 0)
+			(at 143.51 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16111,7 +17100,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 143.51 41.91 0)
+			(at 143.51 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16431,6 +17420,231 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 91.44 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "76ed718f-1602-456a-8adb-61d491980d22")
+		(property "Reference" "R526"
+			(at 91.44 53.848 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 68.072 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0bf04339-1b2d-4689-94b5-79d2cd3dbaaa")
+		)
+		(pin "1"
+			(uuid "062637f9-ed2d-47b2-9a1b-94b2fb192f78")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R526")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7842e597-e6fe-4b0d-8347-8ae56ff1f15c")
+		(property "Reference" "R525"
+			(at 54.61 65.278 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f638cf5e-71d2-49be-9826-4a60b85b69e8")
+		)
+		(pin "1"
+			(uuid "2a432aa3-c273-4ec0-9811-15bee50d5bfe")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R525")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 259.08 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -16720,6 +17934,380 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 100.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85f04618-740e-4d67-8faf-11175ba02f4a")
+		(property "Reference" "R521"
+			(at 54.61 58.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ba8d3bf-c854-48ec-9dae-7d6b2747c24d")
+		)
+		(pin "1"
+			(uuid "dbe57f95-06fe-4b1f-bbcc-5117cbbc6db1")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R521")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "88235eb8-5d0e-4e2f-a41b-945734b4a82d")
+		(property "Reference" "R531"
+			(at 91.44 62.738 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b2ba8a02-4e61-4a53-92e5-b4f53c8d8e17")
+		)
+		(pin "1"
+			(uuid "1e81f868-703f-4e28-b23f-472f8c39014a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R531")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f325d99-cef6-45f9-953f-d1aa75e18b95")
+		(property "Reference" "R534"
+			(at 67.31 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.6k"
+			(at 67.31 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5.6k, 250mW, 150V, 1%, 100ppm"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RK73H2ATTD5601F?qs=sGAEpiMZZMvdGkrng054tz2hCf0K9MmAHiPVKAcdIq4%3D"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.021"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.017"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2e7061e6-c14d-4c4b-8a01-8a9dea801f14")
+		)
+		(pin "1"
+			(uuid "99c0655d-06af-4b9a-978c-a39bd81f172a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R534")
 					(unit 1)
 				)
 			)
@@ -17116,7 +18704,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c3")
 		(property "Reference" "U504"
 			(at 254 259.08 0)
 			(show_name no)
@@ -17208,46 +18796,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4ba")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7e")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974c")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c455")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3c")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264126")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d23")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbf")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13712")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb4")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f06")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccca")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3248")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce2")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -17269,7 +18857,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c4")
 		(property "Reference" "U504"
 			(at 254 246.38 0)
 			(show_name no)
@@ -17361,46 +18949,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4bb")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7f")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974d")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c456")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3d")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264127")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d24")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc0")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13713")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb5")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f07")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afcccb")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3249")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce3")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -17422,7 +19010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c5")
 		(property "Reference" "U504"
 			(at 254 184.15 0)
 			(show_name no)
@@ -17514,46 +19102,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4bc")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e80")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974e")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c457")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3e")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264128")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d25")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc1")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13714")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb6")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f08")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afcccc")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324a")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce4")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -17575,7 +19163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c6")
 		(property "Reference" "U504"
 			(at 173.99 266.7 0)
 			(show_name no)
@@ -17667,46 +19255,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4bd")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e81")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974f")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c458")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3f")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264129")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d26")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc2")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13715")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb7")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f09")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afcccd")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324b")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce5")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -17728,7 +19316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c7")
 		(property "Reference" "U504"
 			(at 173.99 254 0)
 			(show_name no)
@@ -17820,46 +19408,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4be")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e82")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559750")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c459")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f40")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412a")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d27")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc3")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13716")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb8")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0a")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccce")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324c")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce6")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -17881,7 +19469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9c9740-782d-4033-8139-4e495579a7c2")
+		(uuid "9e9c9740-782d-4033-8139-4e495579a7c8")
 		(property "Reference" "U504"
 			(at 173.99 241.3 0)
 			(show_name no)
@@ -17973,46 +19561,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4b9")
+			(uuid "1e7f91b1-063c-499c-aec0-00b6b30df4bf")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e83")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559751")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45a")
 		)
 		(pin "1"
-			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f3b")
+			(uuid "7ebeb459-07d7-4bdc-9ce3-27e6c9c78f41")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412b")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d28")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc4")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13717")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb9")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0b")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afcccf")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324d")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce7")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18208,43 +19796,43 @@
 			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e84")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559752")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45b")
 		)
 		(pin "1"
 			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412c")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d29")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc5")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13718")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acba")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0c")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd0")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324e")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce8")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18266,7 +19854,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d35")
 		(property "Reference" "U503"
 			(at 254 208.28 0)
 			(show_name no)
@@ -18358,46 +19946,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc2")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e85")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559753")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45c")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5d")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412d")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2a")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc6")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d13719")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acbb")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0d")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd1")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac324f")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce9")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18418,7 +20006,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d36")
 		(property "Reference" "U503"
 			(at 253.746 171.45 0)
 			(show_name no)
@@ -18510,46 +20098,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc3")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e86")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559754")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45d")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5e")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412e")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2b")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc7")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d1371a")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acbc")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0e")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd2")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3250")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8ccea")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18571,7 +20159,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d37")
 		(property "Reference" "U503"
 			(at 93.98 254 0)
 			(show_name no)
@@ -18663,46 +20251,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc4")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e87")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559755")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45e")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5f")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f4026412f")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2c")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc8")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d1371b")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acbd")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f0f")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd3")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3251")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cceb")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18724,7 +20312,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d38")
 		(property "Reference" "U503"
 			(at 93.98 269.24 0)
 			(show_name no)
@@ -18816,46 +20404,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc5")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e88")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559756")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c45f")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e60")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264130")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2d")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cc9")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d1371c")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acbe")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f10")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd4")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3252")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8ccec")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -18877,7 +20465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d39")
 		(property "Reference" "U503"
 			(at 93.98 219.71 0)
 			(show_name no)
@@ -18969,46 +20557,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc6")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e89")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559757")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c460")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e61")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264131")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2e")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cca")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d1371d")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acbf")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f11")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd5")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3253")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cced")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -19030,7 +20618,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a376e7a0-ebf8-407f-8834-151058e14d34")
+		(uuid "a376e7a0-ebf8-407f-8834-151058e14d3a")
 		(property "Reference" "U503"
 			(at 93.98 234.95 0)
 			(show_name no)
@@ -19122,46 +20710,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc1")
+			(uuid "b2335a73-127a-4e04-869d-628fbc93fbc7")
 		)
 		(pin "7"
-			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e7d")
+			(uuid "d0b5b0c6-705d-4834-b256-743868cc0e8a")
 		)
 		(pin "14"
-			(uuid "5d52fa4f-e32d-413e-9851-2a02d255974b")
+			(uuid "5d52fa4f-e32d-413e-9851-2a02d2559758")
 		)
 		(pin "3"
-			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c454")
+			(uuid "020e75b6-7f91-461e-80cf-0c4b54a8c461")
 		)
 		(pin "1"
-			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e5c")
+			(uuid "58a74c2b-b1e9-48d5-bd2e-d0140d971e62")
 		)
 		(pin "4"
-			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264125")
+			(uuid "e6814cd1-e60a-4645-83c1-fa6f40264132")
 		)
 		(pin "13"
-			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d22")
+			(uuid "de314b8e-f67a-4ab1-b011-b5be7e4d8d2f")
 		)
 		(pin "9"
-			(uuid "29467ca3-fa33-46c4-89d5-7041047c9cbe")
+			(uuid "29467ca3-fa33-46c4-89d5-7041047c9ccb")
 		)
 		(pin "5"
-			(uuid "b6336057-9511-420c-a09f-409710d13711")
+			(uuid "b6336057-9511-420c-a09f-409710d1371e")
 		)
 		(pin "11"
-			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acb3")
+			(uuid "9c092162-4f88-4fbe-8a4a-612b5df3acc0")
 		)
 		(pin "12"
-			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f05")
+			(uuid "cb905b6f-44c7-4e78-9390-4761ba930f12")
 		)
 		(pin "6"
-			(uuid "551fe870-da3b-4458-8b3f-a6c192afccc9")
+			(uuid "551fe870-da3b-4458-8b3f-a6c192afccd6")
 		)
 		(pin "8"
-			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3247")
+			(uuid "533167bc-ce5b-4a01-90ee-68c526ac3254")
 		)
 		(pin "10"
-			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8cce1")
+			(uuid "1a8312e8-15b2-4c39-8253-b3fa58a8ccee")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -19449,6 +21037,118 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C515")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad9025ac-a1a8-4339-8c29-80b28e6c8f1d")
+		(property "Reference" "R504"
+			(at 54.61 56.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 68.072 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f5cea56c-bb7c-4dbf-a8da-17f6a7c95aa8")
+		)
+		(pin "1"
+			(uuid "939c6d7d-92ad-44f9-a5a2-2de95ee145a5")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R504")
 					(unit 1)
 				)
 			)
@@ -20228,6 +21928,232 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cf164f3d-d6bd-4678-90b6-071b50394851")
+		(property "Reference" "R527"
+			(at 91.44 55.626 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3678671f-569e-4716-8000-28bd4c98ddae")
+		)
+		(pin "1"
+			(uuid "07afbbb6-3155-4d9a-900b-8eea1303c7be")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R527")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d17c077d-ad78-4c9e-bbba-dbe5a92d8191")
+		(property "Reference" "R535"
+			(at 91.44 65.278 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "595ebe8e-1aa9-40a8-89c6-3d6eb881f43f")
+		)
+		(pin "1"
+			(uuid "e2b5e61b-1835-4380-b4ca-6f1a36c44a07")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R535")
 					(unit 1)
 				)
 			)
@@ -21652,6 +23578,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ecda8656-162b-4676-a6b9-86d57ae25d5f")
+		(property "Reference" "R532"
+			(at 54.61 53.594 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 61.722 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9ec9ec56-9db7-43b2-a996-df3dbcc856b9")
+		)
+		(pin "1"
+			(uuid "4b8eb6a1-71d5-4dcb-8d9d-e66d4745e1af")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R532")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 251.46 40.64 0)
 		(unit 1)
@@ -21938,7 +23977,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 38.1 90)
+		(at 168.91 36.83 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21949,7 +23988,7 @@
 		(fields_autoplaced yes)
 		(uuid "f40c2932-11f5-49ba-b785-e65b53f4c07a")
 		(property "Reference" "#PWR0508"
-			(at 175.26 38.1 0)
+			(at 175.26 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21960,7 +23999,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 38.0999 90)
+			(at 172.72 36.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21971,7 +24010,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 38.1 0)
+			(at 168.91 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21982,7 +24021,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 38.1 0)
+			(at 168.91 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21993,7 +24032,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 38.1 0)
+			(at 168.91 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22151,7 +24190,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 52.07 100.33 270)
+		(at 85.09 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22162,27 +24201,29 @@
 		(fields_autoplaced yes)
 		(uuid "f5c2210d-5d32-4e76-956c-888a401a02f5")
 		(property "Reference" "R503"
-			(at 52.07 93.98 90)
+			(at 87.63 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "5.6k"
-			(at 52.07 96.52 90)
+			(at 87.63 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22193,7 +24234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22204,7 +24245,7 @@
 			)
 		)
 		(property "Description" "5.6k, 250mW, 150V, 1%, 100ppm"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22215,7 +24256,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RK73H2ATTD5601F?qs=sGAEpiMZZMvdGkrng054tz2hCf0K9MmAHiPVKAcdIq4%3D"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22226,7 +24267,7 @@
 			)
 		)
 		(property "unit x1" "0.1"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22237,7 +24278,7 @@
 			)
 		)
 		(property "unit x10" "0.021"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22248,7 +24289,7 @@
 			)
 		)
 		(property "unit x100" "0.017"
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22259,7 +24300,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22270,7 +24311,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 52.07 100.33 0)
+			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22442,5 +24483,130 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffac30f0-39b3-4503-bbd2-b0558ca02410")
+		(property "Reference" "R522"
+			(at 54.61 59.944 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "19c35617-013f-4d17-86f5-e39f691f5af4")
+		)
+		(pin "1"
+			(uuid "ce79ed47-6d58-4e0d-81fc-cc9b77095019")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R522")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(group ""
+		(uuid "9a7dde35-dc11-45a7-83c5-7508b5d6b599")
+		(members "6a50d9e5-3e61-48a3-8cc6-2d06cb64e22e" "79fa0856-ce3c-4e83-8ed8-ab3f119104b6")
+	)
+	(group ""
+		(uuid "b3b6b70c-1c28-4736-b044-30559489a5d2")
+		(members "568d9347-0b6e-48d7-8913-7abbb2655de9" "58af24f7-4b84-4ba8-9624-64b7eaa61766")
+	)
+	(group ""
+		(uuid "e3d0cafe-de07-4fb5-b7a3-583eec363af4")
+		(members "2178ac31-8f49-4153-9fb6-3cfe92105b6d" "3d04d595-cd73-466f-9b3b-4ed853e1da5b")
 	)
 )

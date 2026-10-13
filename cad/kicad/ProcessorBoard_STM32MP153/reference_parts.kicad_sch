@@ -3259,6 +3259,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 31.75 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3986d561-d138-43d0-b9ad-a0ed845534b6")
+		(property "Reference" "R99913"
+			(at 34.29 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22"
+			(at 34.29 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 31.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "13205589-831f-488f-9daf-7380124afdc9")
+		)
+		(pin "1"
+			(uuid "9abee59e-8ab7-48ea-be01-3cfc28039f0b")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "R99913")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 80.01 90.17 0)
 		(unit 1)
@@ -6292,7 +6407,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 30.48 69.85 0)
+		(at 44.45 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6303,7 +6418,7 @@
 		(fields_autoplaced yes)
 		(uuid "f367e4fd-bd57-48c7-9248-dca625afe540")
 		(property "Reference" "R99912"
-			(at 33.02 68.5799 0)
+			(at 46.99 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6314,7 +6429,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 33.02 71.1199 0)
+			(at 46.99 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6325,7 +6440,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 30.48 69.85 0)
+			(at 44.45 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6336,7 +6451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 69.85 0)
+			(at 44.45 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6462,7 @@
 			)
 		)
 		(property "Description" "jumper"
-			(at 30.48 69.85 0)
+			(at 44.45 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
