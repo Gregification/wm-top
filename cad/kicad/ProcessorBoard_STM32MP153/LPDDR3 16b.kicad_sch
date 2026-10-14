@@ -7044,7 +7044,7 @@
 		(uuid "3e088dfd-a88c-4449-bacb-619bb71fe66e")
 	)
 	(label "ddr.d8"
-		(at 58.42 121.92 0)
+		(at 58.42 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7204,7 +7204,7 @@
 		(uuid "92fef8dc-073c-4c1c-bb93-04ca6dcfac2a")
 	)
 	(label "ddr.d13"
-		(at 58.42 137.16 0)
+		(at 58.42 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7214,7 +7214,7 @@
 		(uuid "9e0a8f58-e958-4f8b-8f9b-0aaf5ca52c3b")
 	)
 	(label "ddr.d11"
-		(at 58.42 132.08 0)
+		(at 58.42 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7304,7 +7304,7 @@
 		(uuid "d1ae120e-e5a4-4f48-8155-a2e5b4125405")
 	)
 	(label "ddr.d12"
-		(at 58.42 129.54 0)
+		(at 58.42 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7324,7 +7324,7 @@
 		(uuid "d517a714-51a3-431e-9893-831acb7c4e0f")
 	)
 	(label "ddr.d14"
-		(at 58.42 134.62 0)
+		(at 58.42 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7374,7 +7374,7 @@
 		(uuid "e003b8ac-febe-4536-b55c-d074ca3dcb06")
 	)
 	(label "ddr.d15"
-		(at 58.42 127 0)
+		(at 58.42 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7404,7 +7404,7 @@
 		(uuid "f7661168-4491-412f-9cdb-7ff0f023c63c")
 	)
 	(label "ddr.d10"
-		(at 58.42 124.46 0)
+		(at 58.42 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
