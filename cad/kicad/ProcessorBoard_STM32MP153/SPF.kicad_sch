@@ -4506,10 +4506,6 @@
 		(at 99.06 60.96)
 		(uuid "eb2d9f8e-c807-46ac-8311-d1841665b1b3")
 	)
-	(no_connect
-		(at 227.33 133.35)
-		(uuid "ef54ae76-5316-4331-a80e-b17892305ed9")
-	)
 	(bus_entry
 		(at 36.83 77.47)
 		(size 2.54 2.54)
@@ -5005,6 +5001,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 135.89) (xy 251.46 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16db4e84-d4b1-4d5b-a1fe-847bcd08c79f")
+	)
+	(wire
+		(pts
 			(xy 153.67 48.26) (xy 163.83 48.26)
 		)
 		(stroke
@@ -5092,6 +5098,16 @@
 			(type default)
 		)
 		(uuid "20121752-0d29-4a6a-bf39-3ab704983b86")
+	)
+	(wire
+		(pts
+			(xy 246.38 135.89) (xy 242.57 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204003e5-ef28-48fc-8597-7b19d4f19cd7")
 	)
 	(wire
 		(pts
@@ -5735,6 +5751,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 135.89) (xy 227.33 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a838bae-27a6-4dcd-bcfa-c0cb7032c0f9")
+	)
+	(wire
+		(pts
 			(xy 106.68 266.7) (xy 80.01 266.7)
 		)
 		(stroke
@@ -6225,7 +6251,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 135.89) (xy 99.06 135.89)
+			(xy 39.37 135.89) (xy 52.0046 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6282,6 +6308,16 @@
 			(type default)
 		)
 		(uuid "9c9915b0-e78f-47f5-a63f-b8ae74852ce2")
+	)
+	(wire
+		(pts
+			(xy 227.33 133.35) (xy 227.33 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3ded31-f9ca-414c-b884-6096eedc3841")
 	)
 	(wire
 		(pts
@@ -6372,6 +6408,16 @@
 			(type default)
 		)
 		(uuid "a7981a69-85c0-4bb4-aa25-7e845621dec5")
+	)
+	(wire
+		(pts
+			(xy 57.0846 135.89) (xy 99.06 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2cd026-3525-4e24-9ab3-eb917c92ee3b")
 	)
 	(wire
 		(pts
@@ -14025,7 +14071,7 @@
 		(dnp no)
 		(uuid "29d4164e-4827-4267-b5db-5aa2642908a0")
 		(property "Reference" "R523"
-			(at 54.61 61.722 90)
+			(at 54.61 59.436 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14283,7 +14329,7 @@
 		(dnp no)
 		(uuid "2b5ddae1-1e11-49df-bc72-a45997887457")
 		(property "Reference" "R524"
-			(at 54.61 63.5 90)
+			(at 54.61 61.214 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16421,6 +16467,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.5446 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5cffdfd6-408f-43ff-a12a-b1ed354265af")
+		(property "Reference" "R537"
+			(at 54.61 65.532 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.5446 132.08 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 54.5446 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "db4e33bc-afd7-4d7a-a9bd-1f6967a0b5c3")
+		)
+		(pin "1"
+			(uuid "e608a39e-dd97-4bfb-a021-85f0804984d1")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R537")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 240.03 59.69 0)
 		(unit 1)
@@ -17542,7 +17701,7 @@
 		(dnp no)
 		(uuid "7842e597-e6fe-4b0d-8347-8ae56ff1f15c")
 		(property "Reference" "R525"
-			(at 54.61 65.278 90)
+			(at 54.61 62.992 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17951,7 +18110,7 @@
 		(dnp no)
 		(uuid "85f04618-740e-4d67-8faf-11175ba02f4a")
 		(property "Reference" "R521"
-			(at 54.61 58.166 90)
+			(at 54.61 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21054,7 +21213,7 @@
 		(dnp no)
 		(uuid "ad9025ac-a1a8-4339-8c29-80b28e6c8f1d")
 		(property "Reference" "R504"
-			(at 54.61 56.388 90)
+			(at 54.61 54.102 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22047,6 +22206,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 256.54 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfe0fd15-f276-4fc7-bba9-f3cd58d7f628")
+		(property "Reference" "#PWR0505"
+			(at 262.89 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 260.35 135.8899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78d3d2e5-22ea-482f-9e07-9c5001474da4")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "#PWR0505")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 91.44 128.27 90)
 		(unit 1)
@@ -22521,6 +22759,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 240.03 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "daa82b67-775e-4dde-ae19-60b9101b6766")
+		(property "Reference" "R536"
+			(at 240.03 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 240.03 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.018"
+			(at 240.03 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6401087d-82e2-40cd-a06b-754ba4a69633")
+		)
+		(pin "1"
+			(uuid "d10bb2d8-3b53-453f-95b9-41a99ab88559")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R536")
 					(unit 1)
 				)
 			)
@@ -23589,7 +23940,7 @@
 		(dnp no)
 		(uuid "ecda8656-162b-4676-a6b9-86d57ae25d5f")
 		(property "Reference" "R532"
-			(at 54.61 53.594 90)
+			(at 54.61 51.308 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24485,6 +24836,152 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 248.92 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f8d38f1a-cde5-4e0f-a228-36f036445956")
+		(property "Reference" "C520"
+			(at 248.9263 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Y"
+			(at 248.9263 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1nF, 5%, 16Vdc, 350MHz"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/CC0402JRX7R7BB102?qs=sGAEpiMZZMsh%252B1woXyUXj8PMfHfoZZHBOqipTWTgRe4%3D"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.035"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://yageogroup.com/products/Capacitors/part/CC0402JRX7R7BB102"
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 248.92 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fa4b4cf-7fac-4125-ae17-32cf91558e76")
+		)
+		(pin "2"
+			(uuid "bdf9de24-a59e-4683-af23-93b2f10d9894")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "C520")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 54.61 102.87 90)
 		(unit 1)
@@ -24496,7 +24993,7 @@
 		(dnp no)
 		(uuid "ffac30f0-39b3-4503-bbd2-b0558ca02410")
 		(property "Reference" "R522"
-			(at 54.61 59.944 90)
+			(at 54.61 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
