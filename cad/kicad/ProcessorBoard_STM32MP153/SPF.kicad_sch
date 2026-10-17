@@ -4285,6 +4285,18 @@
 		(uuid "74de3292-4aea-48cd-9bd2-4a3c5741d07b")
 	)
 	(junction
+		(at 179.07 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78150fae-68f6-45fd-8c18-20b8daafa485")
+	)
+	(junction
+		(at 179.07 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "798c68d8-0bf4-4f72-bd38-911fa55e970e")
+	)
+	(junction
 		(at 165.1 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4792,6 +4804,16 @@
 			(type default)
 		)
 		(uuid "023f273a-ccba-4e5d-8fdf-0c66179e71da")
+	)
+	(wire
+		(pts
+			(xy 179.07 44.45) (xy 179.07 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03da49fb-ef1c-4659-a52b-9576059bd945")
 	)
 	(wire
 		(pts
@@ -5695,7 +5717,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 36.83) (xy 189.23 36.83)
+			(xy 163.83 36.83) (xy 179.07 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5922,6 +5944,16 @@
 			(type default)
 		)
 		(uuid "749e28a2-dbc8-4031-a8e1-5b9080c052f7")
+	)
+	(wire
+		(pts
+			(xy 179.07 67.31) (xy 189.23 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77b59274-0520-44cd-a17d-1c7aa2a51475")
 	)
 	(wire
 		(pts
@@ -6345,7 +6377,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 67.31) (xy 189.23 67.31)
+			(xy 165.1 67.31) (xy 179.07 67.31)
 		)
 		(stroke
 			(width 0)
@@ -6612,6 +6644,16 @@
 			(type default)
 		)
 		(uuid "b0419191-840c-4926-9414-a535d6996e17")
+	)
+	(wire
+		(pts
+			(xy 179.07 36.83) (xy 189.23 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b067887d-0f2c-47c0-a5de-ae5c2a32ad4c")
 	)
 	(wire
 		(pts
@@ -7192,6 +7234,16 @@
 			(type default)
 		)
 		(uuid "e7b17c84-af6e-4899-b8ff-dae8c58b0c2b")
+	)
+	(wire
+		(pts
+			(xy 179.07 36.83) (xy 179.07 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7db39b2-1e47-4ede-9b21-5ddb23dcbeaf")
 	)
 	(wire
 		(pts
@@ -18974,6 +19026,154 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R530")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 179.07 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "878fb8ef-03df-41b9-a72f-08287ad738bc")
+		(property "Reference" "C519"
+			(at 181.61 40.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 181.61 43.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 179.07 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e55bc78-32aa-48e9-a9ee-cea3db58e217")
+		)
+		(pin "2"
+			(uuid "fee76a99-ee6b-46e9-aaec-e1b2a37b6b53")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "C519")
 					(unit 1)
 				)
 			)
