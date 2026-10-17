@@ -3719,18 +3719,6 @@
 		)
 		(uuid "02566912-a5fd-45c8-ac94-1511579ccfb8")
 	)
-	(text "decoupling for DV_{dd}'s"
-		(exclude_from_sim no)
-		(at 146.05 34.036 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 201 255 251 1)
-			)
-			(justify left top)
-		)
-		(uuid "1845a3bb-490a-4ae1-ac47-fbb5a252c788")
-	)
 	(text "* SFP-MSA requires 3v3 I2C lines\n* internal 10k PU in i2c level shifter IC"
 		(exclude_from_sim no)
 		(at 237.998 87.884 0)
@@ -4093,7 +4081,13 @@
 		(uuid "06bfcdbd-789e-4665-a21e-261a791014dc")
 	)
 	(junction
-		(at 163.83 48.26)
+		(at 199.39 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0704a27c-bfa8-4c2b-9f79-91cee314f4a4")
+	)
+	(junction
+		(at 153.67 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0944ed40-7ca1-4dc5-ac95-0c89e15161a3")
@@ -4133,12 +4127,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "243fb3c5-6ef4-4792-b717-d654cc16c0f8")
-	)
-	(junction
-		(at 153.67 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "245bfa9c-94e1-4899-bfe4-3fdbc7759592")
 	)
 	(junction
 		(at 234.95 191.77)
@@ -4201,6 +4189,12 @@
 		(uuid "3855bb54-77c2-4b4b-acb2-d6d06b4d89a3")
 	)
 	(junction
+		(at 165.1 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38d1818a-5c5f-4c61-98a0-e4ec45b9c908")
+	)
+	(junction
 		(at 41.91 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4231,22 +4225,28 @@
 		(uuid "46906292-fb5e-43d9-b456-24349d3d4247")
 	)
 	(junction
+		(at 199.39 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a3e13b1-c001-47f0-87cc-9d560ef48529")
+	)
+	(junction
 		(at 25.4 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d706edf-30f9-467f-8661-29d3171431c8")
 	)
 	(junction
+		(at 189.23 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fc6e93e-4048-48af-a677-ac85f18bd528")
+	)
+	(junction
 		(at 240.03 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52655e92-a657-4836-af05-c89e7e393060")
-	)
-	(junction
-		(at 163.83 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "535f0bdf-aa63-4896-bafe-b9189e342eb7")
 	)
 	(junction
 		(at 143.51 102.87)
@@ -4297,10 +4297,22 @@
 		(uuid "7dc546dc-b002-479f-9f12-f56c50aaf8af")
 	)
 	(junction
+		(at 153.67 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fea793d-be9b-46b7-b80c-e0e999c5b65c")
+	)
+	(junction
 		(at 39.37 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "855f015c-6d95-4ee0-bd50-d13fd571e0c0")
+	)
+	(junction
+		(at 189.23 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8735e49b-1f13-42bb-8b69-0c07a123f97b")
 	)
 	(junction
 		(at 269.24 120.65)
@@ -4357,6 +4369,12 @@
 		(uuid "b11c2657-42b4-47f9-99ac-0ae14f96f78f")
 	)
 	(junction
+		(at 143.51 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b300d617-a9f0-4166-8f2f-6ae76ca57623")
+	)
+	(junction
 		(at 285.75 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4393,6 +4411,12 @@
 		(uuid "c4e4a848-ffc3-4ba2-b1c7-4b6d26573095")
 	)
 	(junction
+		(at 163.83 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5bacf46-60d8-4331-81cd-21a673ce8fa5")
+	)
+	(junction
 		(at 64.77 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4417,7 +4441,7 @@
 		(uuid "d5663074-12c8-4307-b42e-2242282f9be2")
 	)
 	(junction
-		(at 153.67 48.26)
+		(at 143.51 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df21d62a-02bf-4c61-aef4-4c340503af50")
@@ -4429,16 +4453,16 @@
 		(uuid "e1a48e9b-65b7-4918-818b-31f40fdc21a8")
 	)
 	(junction
+		(at 163.83 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4ed3e3f-c2b0-4d9b-b668-e54ffa81c490")
+	)
+	(junction
 		(at 251.46 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e66315e6-1d42-4899-8e3f-804ce4958fb9")
-	)
-	(junction
-		(at 143.51 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7dfe91b-ac83-4cf5-93c8-3e23b20b856f")
 	)
 	(junction
 		(at 328.93 128.27)
@@ -4771,6 +4795,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 44.45) (xy 209.55 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04bd48a6-ccb2-409b-8e32-48ee61eb3af3")
+	)
+	(wire
+		(pts
 			(xy 222.25 135.89) (xy 224.79 135.89)
 		)
 		(stroke
@@ -5011,17 +5045,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 48.26) (xy 163.83 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18cf1618-23b3-4a91-a581-a066aeee2b6f")
-	)
-	(wire
-		(pts
-			(xy 39.37 97.79) (xy 52.07 97.79)
+			(xy 39.37 97.79) (xy 52.1753 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5301,16 +5325,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 48.26) (xy 168.91 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36d1fe38-9c71-43dd-8bbe-86d8d90f9b41")
-	)
-	(wire
-		(pts
 			(xy 39.37 88.9) (xy 88.9 88.9)
 		)
 		(stroke
@@ -5318,6 +5332,16 @@
 			(type default)
 		)
 		(uuid "37200bcb-9a9f-480a-b408-db7d2f38418d")
+	)
+	(wire
+		(pts
+			(xy 163.83 36.83) (xy 163.83 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37789de7-4cbf-4615-89eb-15d7116b5d25")
 	)
 	(wire
 		(pts
@@ -5338,6 +5362,16 @@
 			(type default)
 		)
 		(uuid "3afa4bd0-1861-4f0d-8d8d-3f63980e9e2d")
+	)
+	(wire
+		(pts
+			(xy 137.16 36.83) (xy 143.51 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c621473-8fb6-45ff-a576-15f15cc03531")
 	)
 	(wire
 		(pts
@@ -5438,6 +5472,16 @@
 			(type default)
 		)
 		(uuid "434f1992-7d18-4bb1-86ba-790956d298b4")
+	)
+	(wire
+		(pts
+			(xy 189.23 44.45) (xy 189.23 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "442a2679-9581-4ba4-b108-25bc7cfa3357")
 	)
 	(wire
 		(pts
@@ -5641,13 +5685,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 97.79) (xy 99.06 97.79)
+			(xy 143.51 36.83) (xy 163.83 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60a8edfb-4e60-4ce0-b968-7a86eae1035c")
+		(uuid "626a02f3-712a-4c72-ab17-f312fec689ea")
+	)
+	(wire
+		(pts
+			(xy 163.83 36.83) (xy 189.23 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6323c0a7-41af-4ffc-bd89-1b1353061d2e")
 	)
 	(wire
 		(pts
@@ -5688,6 +5742,16 @@
 			(type default)
 		)
 		(uuid "64c061de-8916-4a6e-ad32-b4e4c5a54ff5")
+	)
+	(wire
+		(pts
+			(xy 199.39 44.45) (xy 199.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65d1b04d-5920-4b07-8bf2-4a0798e3ed97")
 	)
 	(wire
 		(pts
@@ -5758,6 +5822,16 @@
 			(type default)
 		)
 		(uuid "6a838bae-27a6-4dcd-bcfa-c0cb7032c0f9")
+	)
+	(wire
+		(pts
+			(xy 209.55 67.31) (xy 199.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e66cb5c-1bdd-4bee-897a-f09b5103f6a0")
 	)
 	(wire
 		(pts
@@ -5938,6 +6012,16 @@
 			(type default)
 		)
 		(uuid "7c08e511-f4e1-4dce-a7fc-88df78e36cb9")
+	)
+	(wire
+		(pts
+			(xy 199.39 36.83) (xy 199.39 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca07513-5307-442c-ad04-6b6ab7e8aa07")
 	)
 	(wire
 		(pts
@@ -6161,7 +6245,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 67.31) (xy 143.51 67.31)
+			(xy 140.97 67.31) (xy 165.1 67.31)
 		)
 		(stroke
 			(width 0)
@@ -6221,6 +6305,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 48.26) (xy 170.18 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94cc3d17-ec84-420a-918c-ee3b47c554c4")
+	)
+	(wire
+		(pts
 			(xy 76.2 242.57) (xy 82.55 242.57)
 		)
 		(stroke
@@ -6251,7 +6345,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 135.89) (xy 52.0046 135.89)
+			(xy 165.1 67.31) (xy 189.23 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "987a5277-8162-4129-8b9e-8eee52fefc28")
+	)
+	(wire
+		(pts
+			(xy 39.37 135.89) (xy 52.07 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6381,6 +6485,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 36.83) (xy 209.55 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3c4f93b-fb10-4c0c-9bf5-f75c2261a10a")
+	)
+	(wire
+		(pts
 			(xy 153.67 81.28) (xy 176.53 81.28)
 		)
 		(stroke
@@ -6391,7 +6505,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 43.18) (xy 153.67 48.26)
+			(xy 143.51 44.45) (xy 143.51 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6411,13 +6525,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.0846 135.89) (xy 99.06 135.89)
+			(xy 199.39 36.83) (xy 209.55 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab2cd026-3525-4e24-9ab3-eb917c92ee3b")
+		(uuid "a9eb3842-8bca-4049-87aa-6cf798b59215")
 	)
 	(wire
 		(pts
@@ -6428,16 +6542,6 @@
 			(type default)
 		)
 		(uuid "ac2bf8aa-0c00-4652-9fdf-eccd02f5c85d")
-	)
-	(wire
-		(pts
-			(xy 93.98 80.01) (xy 99.06 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac541021-0cc6-4d33-8a8e-df16866a709c")
 	)
 	(wire
 		(pts
@@ -6491,6 +6595,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 80.01) (xy 99.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af4ff85f-d76b-403a-8f3e-9a46147100fb")
+	)
+	(wire
+		(pts
 			(xy 80.01 276.86) (xy 82.55 276.86)
 		)
 		(stroke
@@ -6531,7 +6645,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 48.26) (xy 153.67 48.26)
+			(xy 138.43 48.26) (xy 163.83 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6548,6 +6662,16 @@
 			(type default)
 		)
 		(uuid "b4c76be9-7714-42d9-94fb-78d27b11815a")
+	)
+	(wire
+		(pts
+			(xy 57.15 135.89) (xy 99.06 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7aeec99-0ec0-4c9a-af2c-44fb63eac6d6")
 	)
 	(wire
 		(pts
@@ -6621,16 +6745,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 36.83) (xy 168.91 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfe5d05e-9a13-42f8-a44d-04ed521a2288")
-	)
-	(wire
-		(pts
 			(xy 153.67 81.28) (xy 146.05 81.28)
 		)
 		(stroke
@@ -6661,16 +6775,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 43.18) (xy 143.51 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2fbc39d-982b-4914-bc93-4325d34c8ee7")
-	)
-	(wire
-		(pts
 			(xy 186.69 266.7) (xy 189.23 266.7)
 		)
 		(stroke
@@ -6681,7 +6785,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 43.18) (xy 163.83 48.26)
+			(xy 153.67 44.45) (xy 153.67 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6781,16 +6885,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 38.1) (xy 143.51 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1517a47-1e4d-4419-9752-55b80a6ed38a")
-	)
-	(wire
-		(pts
 			(xy 309.88 92.71) (xy 318.77 92.71)
 		)
 		(stroke
@@ -6821,16 +6915,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 80.01) (xy 88.9 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2fe71ae-4516-43e4-bf41-24f3c8fa7498")
-	)
-	(wire
-		(pts
 			(xy 274.32 55.88) (xy 270.51 55.88)
 		)
 		(stroke
@@ -6838,6 +6922,16 @@
 			(type default)
 		)
 		(uuid "d332fe73-3d14-446a-8e3d-ead0ddeefe08")
+	)
+	(wire
+		(pts
+			(xy 163.83 44.45) (xy 163.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d96e9f-7ddc-4365-9c67-e30b54fea5e5")
 	)
 	(wire
 		(pts
@@ -6891,6 +6985,26 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 36.83) (xy 189.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d761dea7-4a28-4436-a71e-afff4fbb104d")
+	)
+	(wire
+		(pts
+			(xy 199.39 67.31) (xy 189.23 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7b91b39-791c-4af4-a3d5-266f5e056d69")
+	)
+	(wire
+		(pts
 			(xy 207.01 92.71) (xy 224.79 92.71)
 		)
 		(stroke
@@ -6898,6 +7012,16 @@
 			(type default)
 		)
 		(uuid "da4540a7-d175-45a5-93b1-f58818cf9f69")
+	)
+	(wire
+		(pts
+			(xy 39.37 80.01) (xy 88.9 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da59a2f2-4263-4d29-a674-5ddd7e5bc9cf")
 	)
 	(wire
 		(pts
@@ -6938,16 +7062,6 @@
 			(type default)
 		)
 		(uuid "de23c171-b40d-46ca-81d0-8862338081d1")
-	)
-	(wire
-		(pts
-			(xy 143.51 67.31) (xy 165.1 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de8ee89a-475b-4394-bcad-d63e30dc00ac")
 	)
 	(wire
 		(pts
@@ -7018,6 +7132,16 @@
 			(type default)
 		)
 		(uuid "e3d4ef6d-0505-49bf-961d-3e546c1ecab7")
+	)
+	(wire
+		(pts
+			(xy 57.2553 97.79) (xy 99.06 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e484bb00-a207-42ac-9e29-12c957238c6f")
 	)
 	(wire
 		(pts
@@ -7131,7 +7255,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 38.1) (xy 163.83 36.83)
+			(xy 153.67 39.37) (xy 153.67 36.83)
 		)
 		(stroke
 			(width 0)
@@ -7261,7 +7385,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 36.83) (xy 153.67 38.1)
+			(xy 189.23 36.83) (xy 199.39 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f90c9940-2fa5-48c4-9f13-b298470a376d")
+	)
+	(wire
+		(pts
+			(xy 143.51 36.83) (xy 143.51 39.37)
 		)
 		(stroke
 			(width 0)
@@ -12269,7 +12403,7 @@
 		(uuid "a6de04a2-9efd-4fe3-b507-3b06914a90a5")
 	)
 	(label "3v3"
-		(at 168.91 48.26 0)
+		(at 170.18 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12563,6 +12697,267 @@
 			(justify right)
 		)
 		(uuid "e111265d-e349-40ce-9490-f17b93c13c56")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 209.55 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "062f9174-01fe-4bbe-9aad-cd4c7d841097")
+		(property "Reference" "C524"
+			(at 212.09 40.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 212.09 43.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 209.55 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2328f967-e8e0-4db8-b3db-aa5a94f7b34b")
+		)
+		(pin "2"
+			(uuid "3939862c-01f3-4ea0-aceb-180d6c99a874")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "C524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b71eef5-b609-46f3-a8d0-1e4c91a1a0cb")
+		(property "Reference" "R528"
+			(at 91.44 54.356 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 91.44 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "31ecf36f-b100-4e1c-9ab6-5819e14c7b88")
+		)
+		(pin "1"
+			(uuid "6dee187e-c1b2-43b2-bec8-fdcdedc5b56d")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R528")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -12869,16 +13264,128 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 31.75 135.89 90)
+		(at 91.44 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "14867edd-7905-4317-8467-b2a0deb77fa2")
+		(property "Reference" "R537"
+			(at 91.44 65.786 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 68.326 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 91.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f8f711b4-562a-496e-b49f-86c4934c746e")
+		)
+		(pin "1"
+			(uuid "425908b8-0227-4080-8f1f-447a5b08f72a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R537")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 31.75 135.89 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp yes)
-		(uuid "111b7d66-1c6f-49bd-bcda-c367dbe394fb")
+		(uuid "14bc68be-b2f1-4de8-bbe6-e6413ab92b52")
 		(property "Reference" "R520"
 			(at 31.75 142.24 90)
 			(show_name no)
@@ -12899,7 +13406,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 31.75 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -12933,10 +13440,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "b9f777d6-94d0-4810-bae7-04224da5bca1")
+			(uuid "394ce850-6ff7-41cc-899d-c5b23512c363")
 		)
 		(pin "1"
-			(uuid "12677480-4435-4ba8-8869-9fea2298f188")
+			(uuid "06eb22f6-839f-4fd9-b7ac-9f327cd33197")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -13799,39 +14306,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 91.44 85.09 90)
+		(lib_id "Device:C_Small")
+		(at 163.83 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1eb2ede0-7be5-4ac8-b8c4-940a5aaf8701")
-		(property "Reference" "R529"
-			(at 91.44 59.182 90)
+		(fields_autoplaced yes)
+		(uuid "259976cf-c67b-4ce3-ae69-f66e48a7892e")
+		(property "Reference" "C521"
+			(at 166.37 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "22"
-			(at 91.44 81.28 90)
-			(hide yes)
+		(property "Value" "100n"
+			(at 166.37 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 85.09 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13842,7 +14351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 85.09 0)
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13852,8 +14361,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 85.09 0)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13863,8 +14372,19 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 85.09 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 163.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13875,7 +14395,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 91.44 85.09 0)
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13885,8 +14405,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 91.44 85.09 0)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13896,16 +14416,38 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "57ef0184-dbf8-4c84-9dfc-7171644ef769")
+		(property "Arrow Part Number" ""
+			(at 163.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 163.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "399e6ab7-1eff-4989-ba67-13728a71d197")
+			(uuid "c8954d0f-a659-435e-bf08-de8e469a4133")
+		)
+		(pin "2"
+			(uuid "240c8fae-3718-4a0d-afc7-cef61d6d21be")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R529")
+					(reference "C521")
 					(unit 1)
 				)
 			)
@@ -14061,119 +14603,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 54.61 105.41 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "29d4164e-4827-4267-b5db-5aa2642908a0")
-		(property "Reference" "R523"
-			(at 54.61 59.436 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.61 101.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.61 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "40eeff3a-7ea2-462a-9df3-39934d0866d6")
-		)
-		(pin "1"
-			(uuid "30af2754-a92b-445b-90b7-1e8fddc49080")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R523")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 191.77 266.7 90)
 		(unit 1)
 		(body_style 1)
@@ -14318,121 +14747,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.61 109.22 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2b5ddae1-1e11-49df-bc72-a45997887457")
-		(property "Reference" "R524"
-			(at 54.61 61.214 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.61 105.41 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0651b816-02b0-45be-8de7-dbf5644776cf")
-		)
-		(pin "1"
-			(uuid "b27b44ef-9601-419d-baaf-fa70ad666caf")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R524")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
-		(at 163.83 40.64 0)
+		(at 153.67 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14443,7 +14759,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b96db99-690b-46ca-8ff4-afabff293959")
 		(property "Reference" "C518"
-			(at 166.37 39.3762 0)
+			(at 156.21 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14454,7 +14770,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 166.37 41.9162 0)
+			(at 156.21 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14465,7 +14781,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14476,7 +14792,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14487,7 +14803,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14498,7 +14814,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14509,7 +14825,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14520,7 +14836,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14531,7 +14847,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14542,7 +14858,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14553,7 +14869,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 163.83 40.64 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14853,6 +15169,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3369c1b3-7b26-4b8b-9abb-f7c19d459cbf")
+		(property "Reference" "R529"
+			(at 91.44 56.134 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 91.44 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ba232657-cfc2-4822-8ca8-2a1c8d426aa0")
+		)
+		(pin "1"
+			(uuid "c78ba10e-b48b-4bdb-b44f-0aae0a79e490")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R529")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 266.7 90)
 		(unit 1)
@@ -15005,6 +15434,267 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 143.51 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37666cac-9b19-4d43-8c1b-a7ef6171e331")
+		(property "Reference" "C501"
+			(at 146.05 40.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 146.05 43.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d634f34-cbd4-48de-ad74-d360db392034")
+		)
+		(pin "2"
+			(uuid "836131d8-b962-4dbf-808a-f4e17b54ad97")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "C501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "381696c9-12b3-4a28-ae1c-89306118d559")
+		(property "Reference" "R523"
+			(at 54.61 56.642 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 53.086 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 54.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "08ea0212-e1bd-4fba-a586-52348756224c")
+		)
+		(pin "1"
+			(uuid "060e3f77-eb16-4aa8-8db1-6590e09ab918")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R523")
 					(unit 1)
 				)
 			)
@@ -15678,154 +16368,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 153.67 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "444af391-c25c-4b05-91b4-8464ab43edd3")
-		(property "Reference" "C501"
-			(at 156.21 39.3762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 156.21 41.9162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.11"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.047"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 153.67 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc6c585e-ad8d-4c59-8cf4-bd2f1f7cb939")
-		)
-		(pin "2"
-			(uuid "a5fe89ce-21b1-4903-9277-99c1ea25139d")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "C501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 198.12 96.52 0)
 		(unit 1)
@@ -16277,17 +16819,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 91.44 82.55 90)
+		(at 91.44 91.44 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "58fc5f60-a8e9-4429-8120-c9fed0456f56")
-		(property "Reference" "R528"
-			(at 91.44 57.404 90)
+		(uuid "58ed9d9d-f0bb-4dc1-b206-6cde91530de3")
+		(property "Reference" "R535"
+			(at 91.44 63.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16297,7 +16839,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 91.44 78.74 90)
+			(at 91.44 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16307,8 +16849,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 82.55 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16319,7 +16861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 82.55 0)
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16329,8 +16871,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 82.55 0)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16340,8 +16882,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 82.55 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16352,7 +16894,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 91.44 82.55 0)
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16362,8 +16904,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 91.44 82.55 0)
+		(property "unit x10" "0.02"
+			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16374,15 +16916,128 @@
 			)
 		)
 		(pin "2"
-			(uuid "60837520-1343-40fb-82f7-f6bda93d8fc3")
+			(uuid "7e48c500-f5f3-4921-af5b-eeac8f765bce")
 		)
 		(pin "1"
-			(uuid "01b4c38c-4d41-485a-84b2-aca028ad25ac")
+			(uuid "3eb62667-f5fb-40c4-8261-20f889794b0c")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R528")
+					(reference "R535")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 109.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b487744-0da8-4001-a467-f670b07a5b66")
+		(property "Reference" "R525"
+			(at 54.61 60.198 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 59.436 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 54.61 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b6102c9a-6b6b-4805-ada5-6eed383d92cb")
+		)
+		(pin "1"
+			(uuid "2785908a-edbe-4ee5-8d0f-108d80fb7bc9")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R525")
 					(unit 1)
 				)
 			)
@@ -16461,119 +17116,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0519")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.5446 135.89 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5cffdfd6-408f-43ff-a12a-b1ed354265af")
-		(property "Reference" "R537"
-			(at 54.61 65.532 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.5446 132.08 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.5446 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "db4e33bc-afd7-4d7a-a9bd-1f6967a0b5c3")
-		)
-		(pin "1"
-			(uuid "e608a39e-dd97-4bfb-a021-85f0804984d1")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R537")
 					(unit 1)
 				)
 			)
@@ -17025,17 +17567,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 91.44 88.9 90)
+		(at 54.61 135.89 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6dbf325a-6735-4312-a8f7-1f9c97b42473")
-		(property "Reference" "R530"
-			(at 91.44 60.96 90)
+		(uuid "71267850-5e36-4b99-8fcc-14ef7e3b8fb6")
+		(property "Reference" "R527"
+			(at 54.61 64.516 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17045,8 +17587,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 91.44 85.09 90)
-			(hide yes)
+			(at 54.61 67.0561 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17055,123 +17596,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c2496830-8262-40ba-9d52-9062c7d0aa9c")
-		)
-		(pin "1"
-			(uuid "ae7f8dfe-601f-4b92-8bc6-7ba86ed792ac")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R530")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 143.51 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ea8bdef-68cd-480e-9796-db6bcc66072d")
-		(property "Reference" "C519"
-			(at 146.05 39.3762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 146.05 41.9162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 143.51 40.64 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17182,7 +17608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 40.64 0)
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17192,8 +17618,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 143.51 40.64 0)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17203,19 +17629,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 143.51 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 143.51 40.64 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17226,7 +17641,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 143.51 40.64 0)
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17236,8 +17651,8 @@
 				)
 			)
 		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 143.51 40.64 0)
+		(property "unit x10" "0.02"
+			(at 54.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17246,39 +17661,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Arrow Part Number" ""
-			(at 143.51 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 143.51 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1b6e2a7b-25e2-4395-b6f4-aa470cbd036e")
 		)
 		(pin "2"
-			(uuid "94d690dc-543b-468e-9094-12bbcdafece9")
+			(uuid "00f9020d-af08-48a5-9833-dc902ac1a48b")
+		)
+		(pin "1"
+			(uuid "6069315f-37e3-4617-925d-4852bd300a1f")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "C519")
+					(reference "R527")
 					(unit 1)
 				)
 			)
@@ -17424,6 +17817,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72faee20-443b-4a10-b734-847904eeff9e")
+		(property "Reference" "R526"
+			(at 54.61 61.976 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 61.976 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 54.61 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5bd9b9dc-bf04-44c5-bcd7-e278cf2b937c")
+		)
+		(pin "1"
+			(uuid "0a85c33b-a6a6-4a53-8a6c-f3356b6a6557")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R526")
 					(unit 1)
 				)
 			)
@@ -17579,17 +18085,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 91.44 77.47 90)
+		(at 54.61 71.12 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "76ed718f-1602-456a-8adb-61d491980d22")
-		(property "Reference" "R526"
-			(at 91.44 53.848 90)
+		(uuid "75235601-62ca-443d-997f-d6ba92b494bf")
+		(property "Reference" "R504"
+			(at 54.61 50.546 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17599,7 +18105,8 @@
 			)
 		)
 		(property "Value" "22"
-			(at 91.44 68.072 90)
+			(at 54.61 43.434 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17608,8 +18115,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 77.47 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17620,7 +18127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 77.47 0)
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17630,8 +18137,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 77.47 0)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17641,8 +18148,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 77.47 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17653,7 +18160,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 91.44 77.47 0)
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17663,8 +18170,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 91.44 77.47 0)
+		(property "unit x10" "0.02"
+			(at 54.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17675,15 +18182,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "0bf04339-1b2d-4689-94b5-79d2cd3dbaaa")
+			(uuid "7a0350d5-06d6-496c-9879-62513dc20413")
 		)
 		(pin "1"
-			(uuid "062637f9-ed2d-47b2-9a1b-94b2fb192f78")
+			(uuid "8ddbb103-55b3-4331-8ed6-fc2e160d40d4")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R526")
+					(reference "R504")
 					(unit 1)
 				)
 			)
@@ -17691,17 +18198,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 54.61 111.76 90)
+		(at 54.61 100.33 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7842e597-e6fe-4b0d-8347-8ae56ff1f15c")
-		(property "Reference" "R525"
-			(at 54.61 62.992 90)
+		(uuid "77f56daa-9e3d-474e-991f-191b1790dc3e")
+		(property "Reference" "R522"
+			(at 54.61 54.864 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17711,7 +18218,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 54.61 107.95 90)
+			(at 54.61 50.546 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17721,8 +18228,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 111.76 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17733,7 +18240,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 111.76 0)
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17743,8 +18250,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 111.76 0)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17754,8 +18261,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 111.76 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17766,7 +18273,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 54.61 111.76 0)
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17776,8 +18283,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 54.61 111.76 0)
+		(property "unit x10" "0.02"
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17788,15 +18295,128 @@
 			)
 		)
 		(pin "2"
-			(uuid "f638cf5e-71d2-49be-9826-4a60b85b69e8")
+			(uuid "0818e798-8e28-4afe-abd1-524228f9686c")
 		)
 		(pin "1"
-			(uuid "2a432aa3-c273-4ec0-9811-15bee50d5bfe")
+			(uuid "8c641941-c0c4-4928-a9a0-89505cecc12e")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R525")
+					(reference "R522")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 85.09 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c718580-d87b-447d-ae0f-2bbc817540b8")
+		(property "Reference" "R531"
+			(at 91.44 59.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c69d33ab-f249-4e6e-bc7a-baca3c7c6862")
+		)
+		(pin "1"
+			(uuid "74a57f4f-a67d-405e-9b6f-c7b846157e6c")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R531")
 					(unit 1)
 				)
 			)
@@ -18099,39 +18719,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.61 100.33 90)
+		(lib_id "Device:C_Small")
+		(at 199.39 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "85f04618-740e-4d67-8faf-11175ba02f4a")
-		(property "Reference" "R521"
-			(at 54.61 55.88 90)
+		(fields_autoplaced yes)
+		(uuid "826b5f76-9f27-48f1-9aa1-ebe6694a9509")
+		(property "Reference" "C523"
+			(at 201.93 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "22"
-			(at 54.61 96.52 90)
-			(hide yes)
+		(property "Value" "100n"
+			(at 201.93 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 100.33 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18142,7 +18764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 100.33 0)
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18152,8 +18774,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 100.33 0)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18163,8 +18785,19 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 100.33 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 199.39 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18175,7 +18808,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 54.61 100.33 0)
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18185,8 +18818,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 54.61 100.33 0)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 199.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18196,16 +18829,38 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "8ba8d3bf-c854-48ec-9dae-7d6b2747c24d")
+		(property "Arrow Part Number" ""
+			(at 199.39 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 199.39 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "dbe57f95-06fe-4b1f-bbcc-5117cbbc6db1")
+			(uuid "5e7d973c-1598-4ace-88f8-af079b202bb7")
+		)
+		(pin "2"
+			(uuid "cad2926d-7700-4243-86c9-d54223f2b217")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R521")
+					(reference "C523")
 					(unit 1)
 				)
 			)
@@ -18213,17 +18868,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 91.44 91.44 90)
+		(at 91.44 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "88235eb8-5d0e-4e2f-a41b-945734b4a82d")
-		(property "Reference" "R531"
-			(at 91.44 62.738 90)
+		(uuid "8690b1c9-4ec8-41d0-8c9b-e51dd14e853e")
+		(property "Reference" "R530"
+			(at 91.44 57.912 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18233,7 +18888,7 @@
 			)
 		)
 		(property "Value" "22"
-			(at 91.44 87.63 90)
+			(at 91.44 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18243,8 +18898,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 91.44 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18255,7 +18910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 91.44 0)
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18265,8 +18920,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 91.44 0)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18276,8 +18931,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 91.44 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18288,7 +18943,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 91.44 91.44 0)
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18298,8 +18953,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 91.44 91.44 0)
+		(property "unit x10" "0.02"
+			(at 91.44 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18310,15 +18965,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "b2ba8a02-4e61-4a53-92e5-b4f53c8d8e17")
+			(uuid "1449b1c9-5c2a-4a40-b37f-f0cc2cd9b407")
 		)
 		(pin "1"
-			(uuid "1e81f868-703f-4e28-b23f-472f8c39014a")
+			(uuid "73cdd4c3-fd9a-41b0-a5c2-402db94b5e62")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R531")
+					(reference "R530")
 					(unit 1)
 				)
 			)
@@ -18694,6 +19349,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.61 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c553edf-c688-4df4-990e-32b42e2a8af7")
+		(property "Reference" "R524"
+			(at 54.61 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.61 55.626 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 54.61 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "77c58d2d-21ed-461c-bcd7-3cbe58696605")
+		)
+		(pin "1"
+			(uuid "e6e2d6d3-b743-4e32-9f21-ff8613888d47")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R524")
 					(unit 1)
 				)
 			)
@@ -21202,118 +21970,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.61 97.79 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad9025ac-a1a8-4339-8c29-80b28e6c8f1d")
-		(property "Reference" "R504"
-			(at 54.61 54.102 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.61 68.072 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.61 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f5cea56c-bb7c-4dbf-a8da-17f6a7c95aa8")
-		)
-		(pin "1"
-			(uuid "939c6d7d-92ad-44f9-a5a2-2de95ee145a5")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R504")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "__WM_Local:DSC6101HL3B-025.0000")
 		(at 33.02 261.62 0)
 		(unit 1)
@@ -21449,6 +22105,119 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "U501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 54.7153 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0cf4b4a-5bf9-4d4d-8c02-7f6f1b200617")
+		(property "Reference" "R521"
+			(at 54.61 53.086 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 54.7153 48.1113 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 54.7153 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "497811af-4978-4054-a780-c9a098f86282")
+		)
+		(pin "1"
+			(uuid "e7c414f0-1159-489c-ad79-8a54aa3b3860")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R521")
 					(unit 1)
 				)
 			)
@@ -22093,39 +22862,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 91.44 80.01 90)
+		(lib_id "Device:C_Small")
+		(at 189.23 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cf164f3d-d6bd-4678-90b6-071b50394851")
-		(property "Reference" "R527"
-			(at 91.44 55.626 90)
+		(fields_autoplaced yes)
+		(uuid "c5839b7d-089e-47aa-828d-b61c3471c931")
+		(property "Reference" "C522"
+			(at 191.77 40.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "22"
-			(at 91.44 76.2 90)
-			(hide yes)
+		(property "Value" "100n"
+			(at 191.77 43.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 80.01 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 189.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22136,7 +22907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 80.01 0)
+			(at 189.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22146,8 +22917,8 @@
 				)
 			)
 		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 80.01 0)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 189.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22157,8 +22928,19 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 80.01 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 189.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 189.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22169,7 +22951,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 91.44 80.01 0)
+			(at 189.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22179,8 +22961,143 @@
 				)
 			)
 		)
-		(property "unit x10" "0.018"
-			(at 91.44 80.01 0)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 189.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 189.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 189.23 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fa8cc0e-69e7-4b0c-8551-e10fff606499")
+		)
+		(pin "2"
+			(uuid "975f9aff-2f91-4c43-8809-0d3b5444c5f2")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "C522")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 88.9 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c710c535-f5f7-4455-975e-2c7e8c6c8da5")
+		(property "Reference" "R532"
+			(at 91.44 61.468 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 91.44 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22R, 1%, 100mW, 100ppm, 75V, +155C"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Vishay/CRCW040222R0FKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGuyQ7ZYbf%2FtI4%3D"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.02"
+			(at 91.44 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22191,15 +23108,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "3678671f-569e-4716-8000-28bd4c98ddae")
+			(uuid "39e659aa-9d2f-4f13-9ede-a0bfb07b5b0d")
 		)
 		(pin "1"
-			(uuid "07afbbb6-3155-4d9a-900b-8eea1303c7be")
+			(uuid "7a90c336-45ff-4b48-b789-9472bf94cd9d")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R527")
+					(reference "R532")
 					(unit 1)
 				)
 			)
@@ -22279,119 +23196,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0505")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 91.44 128.27 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d17c077d-ad78-4c9e-bbba-dbe5a92d8191")
-		(property "Reference" "R535"
-			(at 91.44 65.278 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 91.44 124.46 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "595ebe8e-1aa9-40a8-89c6-3d6eb881f43f")
-		)
-		(pin "1"
-			(uuid "e2b5e61b-1835-4380-b4ca-6f1a36c44a07")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R535")
 					(unit 1)
 				)
 			)
@@ -23929,119 +24733,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.61 71.12 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecda8656-162b-4676-a6b9-86d57ae25d5f")
-		(property "Reference" "R532"
-			(at 54.61 51.308 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.61 61.722 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9ec9ec56-9db7-43b2-a996-df3dbcc856b9")
-		)
-		(pin "1"
-			(uuid "4b8eb6a1-71d5-4dcb-8d9d-e66d4745e1af")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R532")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 251.46 40.64 0)
 		(unit 1)
@@ -24328,7 +25019,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 36.83 90)
+		(at 137.16 36.83 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24339,7 +25030,7 @@
 		(fields_autoplaced yes)
 		(uuid "f40c2932-11f5-49ba-b785-e65b53f4c07a")
 		(property "Reference" "#PWR0508"
-			(at 175.26 36.83 0)
+			(at 130.81 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24350,18 +25041,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 36.8299 90)
+			(at 135.89 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 36.83 0)
+			(at 137.16 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24372,7 +25062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 36.83 0)
+			(at 137.16 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24383,7 +25073,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 36.83 0)
+			(at 137.16 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24976,119 +25666,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C520")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 54.61 102.87 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ffac30f0-39b3-4503-bbd2-b0558ca02410")
-		(property "Reference" "R522"
-			(at 54.61 57.658 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 54.61 99.06 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R, 0.5%, 50ppm, 100mW, 75V, +155C"
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603DRE0722RL?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4aVwvkunzeD8%3D"
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 54.61 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "19c35617-013f-4d17-86f5-e39f691f5af4")
-		)
-		(pin "1"
-			(uuid "ce79ed47-6d58-4e0d-81fc-cc9b77095019")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R522")
 					(unit 1)
 				)
 			)

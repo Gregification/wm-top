@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "Keep Zones away from NCP traces on L1 and L6"
+	(constraint clearance (min 0.5mm))
+	(condition "A.Type == 'Zone' && B.Type == 'Track' && B.NetClass == '*NCP*'")
+)
