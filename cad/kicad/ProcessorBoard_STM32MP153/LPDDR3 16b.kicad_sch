@@ -3261,7 +3261,7 @@
 		(uuid "38d1886e-58ae-41a2-9461-6ff97b36b03a")
 	)
 	(junction
-		(at 156.21 166.37)
+		(at 144.78 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a934657-6a3c-47b7-a97f-28f1df637c4b")
@@ -3279,7 +3279,13 @@
 		(uuid "48838ab8-52a4-4365-8fa1-9024541bb2ec")
 	)
 	(junction
-		(at 143.51 166.37)
+		(at 106.68 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f6dcd22-12d7-4ef0-a092-5a1ee42d7318")
+	)
+	(junction
+		(at 134.62 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d899603-989f-4ad1-bbcf-04bb04f3f4de")
@@ -3315,7 +3321,7 @@
 		(uuid "92dcaa82-672e-4518-a1ff-ef455622052e")
 	)
 	(junction
-		(at 156.21 171.45)
+		(at 144.78 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "934e8cf5-096d-44fc-8b0e-19485797bda2")
@@ -3339,6 +3345,12 @@
 		(uuid "c012c9f5-8001-40c1-bdc0-1e93b3b2c904")
 	)
 	(junction
+		(at 154.94 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8d72d4f-5b38-4591-ad6d-1f53e0058460")
+	)
+	(junction
 		(at 143.51 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3351,10 +3363,28 @@
 		(uuid "d3cc484b-487d-4d2c-bc7f-46e2c39369ea")
 	)
 	(junction
+		(at 106.68 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3e6ef4a-f82c-4d53-8b23-5b2240e10100")
+	)
+	(junction
+		(at 154.94 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5ba3873-68bf-4575-aba1-5fbe92f065aa")
+	)
+	(junction
 		(at 104.14 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d857bc28-b542-44a8-adb2-1c7c45b79a69")
+	)
+	(junction
+		(at 95.25 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6274596-d180-4eb1-a294-bcd2d84d1b0a")
 	)
 	(junction
 		(at 93.98 154.94)
@@ -3363,10 +3393,16 @@
 		(uuid "e99ae63e-58a8-44d5-9f02-f3ea92df4351")
 	)
 	(junction
-		(at 143.51 171.45)
+		(at 134.62 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f198f332-9bff-4711-8b64-7c834614f04d")
+	)
+	(junction
+		(at 95.25 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3413412-490f-4ce3-b3e1-23224c360155")
 	)
 	(junction
 		(at 83.82 154.94)
@@ -3745,6 +3781,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 166.37) (xy 165.1 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057e3889-0251-4747-95e1-50a0e5decfa4")
+	)
+	(wire
+		(pts
 			(xy 78.74 77.47) (xy 71.12 77.47)
 		)
 		(stroke
@@ -4005,7 +4051,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 171.45) (xy 143.51 171.45)
+			(xy 104.14 171.45) (xy 144.78 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4095,6 +4141,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 187.96) (xy 106.68 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60fd393f-d6a5-4201-9002-d0f35005c03c")
+	)
+	(wire
+		(pts
 			(xy 118.11 85.09) (xy 129.54 85.09)
 		)
 		(stroke
@@ -4175,16 +4231,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 166.37) (xy 156.21 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7649f8e5-a916-491b-8a6c-a8dfa9845c3e")
-	)
-	(wire
-		(pts
 			(xy 118.11 129.54) (xy 129.54 129.54)
 		)
 		(stroke
@@ -4195,7 +4241,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 166.37) (xy 143.51 166.37)
+			(xy 106.68 187.96) (xy 118.11 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d6acc56-3a9f-4664-bf1d-f4261ff5bc53")
+	)
+	(wire
+		(pts
+			(xy 104.14 166.37) (xy 144.78 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4212,6 +4268,16 @@
 			(type default)
 		)
 		(uuid "80d20565-ad7d-4cc6-9657-745988fe8352")
+	)
+	(wire
+		(pts
+			(xy 95.25 182.88) (xy 106.68 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824a262a-e3d4-433b-ab7f-6323b7abd06a")
 	)
 	(wire
 		(pts
@@ -4245,6 +4311,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 171.45) (xy 165.1 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b7032a-7c1b-49c0-8a42-f079528c6873")
+	)
+	(wire
+		(pts
 			(xy 83.82 182.88) (xy 95.25 182.88)
 		)
 		(stroke
@@ -4262,6 +4338,16 @@
 			(type default)
 		)
 		(uuid "8a5124fe-c7de-4c96-b012-5278fde2215f")
+	)
+	(wire
+		(pts
+			(xy 106.68 182.88) (xy 118.11 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b9c0130-993a-49ff-a102-9df70ab41bbb")
 	)
 	(wire
 		(pts
@@ -4455,7 +4541,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 166.37) (xy 166.37 166.37)
+			(xy 144.78 166.37) (xy 154.94 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4535,7 +4621,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 171.45) (xy 166.37 171.45)
+			(xy 144.78 171.45) (xy 154.94 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4622,16 +4708,6 @@
 			(type default)
 		)
 		(uuid "fa6074a3-c630-4df6-b451-004085062daf")
-	)
-	(wire
-		(pts
-			(xy 143.51 171.45) (xy 156.21 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb80fc3c-c45a-4ed6-9acd-b49f67a808dd")
 	)
 	(bus
 		(pts
@@ -7888,7 +7964,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 156.21 168.91 0)
+		(at 144.78 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7899,7 +7975,7 @@
 		(fields_autoplaced yes)
 		(uuid "1598dfcc-4a7f-440c-a835-742c59cc0cad")
 		(property "Reference" "C413"
-			(at 158.75 167.6462 0)
+			(at 147.32 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7910,7 +7986,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 158.75 170.1862 0)
+			(at 147.32 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7921,7 +7997,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7932,7 +8008,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7943,7 +8019,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7954,7 +8030,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7965,7 +8041,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7976,7 +8052,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7987,7 +8063,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7998,7 +8074,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8009,7 +8085,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 156.21 168.91 0)
+			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8466,6 +8542,154 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 106.68 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ea27fc2-dda5-45ef-815f-12631afce763")
+		(property "Reference" "C415"
+			(at 109.22 184.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 109.22 186.6962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 106.68 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4f76c6af-594c-42c2-ab86-6355df0a3262")
+		)
+		(pin "2"
+			(uuid "5223a827-450a-4a14-abbe-412f49a6b3d8")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C415")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 93.98 152.4 180)
 		(unit 1)
 		(body_style 1)
@@ -8685,6 +8909,154 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "#PWR0406")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 165.1 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5039383a-2600-479a-a7a5-09024cede555")
+		(property "Reference" "C416"
+			(at 167.64 167.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 167.64 170.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9f20548-104d-4920-bac2-acb9a850c88a")
+		)
+		(pin "2"
+			(uuid "83712ef4-b742-45da-8d45-0d9becc0d062")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C416")
 					(unit 1)
 				)
 			)
@@ -9713,7 +10085,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 143.51 168.91 0)
+		(at 134.62 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9724,7 +10096,7 @@
 		(fields_autoplaced yes)
 		(uuid "99ffb4ce-52e8-4b99-9f37-96639691ed18")
 		(property "Reference" "C414"
-			(at 146.05 167.6462 0)
+			(at 137.16 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9735,7 +10107,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 146.05 170.1862 0)
+			(at 137.16 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9746,7 +10118,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9757,7 +10129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9768,7 +10140,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9779,7 +10151,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9790,7 +10162,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9801,7 +10173,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9812,7 +10184,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9823,7 +10195,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9834,7 +10206,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 143.51 168.91 0)
+			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9933,6 +10305,154 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "#PWR0405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0ad4a2b-2473-4fcf-a591-0dd22ec172b2")
+		(property "Reference" "C417"
+			(at 120.65 184.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 120.65 186.6962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 118.11 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ea66fd5-a9e2-41a3-9a90-51d3a7805715")
+		)
+		(pin "2"
+			(uuid "6af18c30-0e31-485e-b1f8-b6ad1f0f48d8")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C417")
 					(unit 1)
 				)
 			)
@@ -10677,7 +11197,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 166.37 168.91 0)
+		(at 154.94 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10688,7 +11208,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0c4fd64-16b7-4f3f-b87d-57dc1728611c")
 		(property "Reference" "C411"
-			(at 168.91 167.6462 0)
+			(at 157.48 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10699,7 +11219,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 168.91 170.1862 0)
+			(at 157.48 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10710,7 +11230,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10721,7 +11241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10732,7 +11252,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10743,7 +11263,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10754,7 +11274,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10765,7 +11285,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10776,7 +11296,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10787,7 +11307,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10798,7 +11318,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 166.37 168.91 0)
+			(at 154.94 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
