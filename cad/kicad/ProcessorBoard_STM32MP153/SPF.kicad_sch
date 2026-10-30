@@ -3710,7 +3710,7 @@
 	)
 	(text "bridge IC datasheet"
 		(exclude_from_sim no)
-		(at 340.868 249.682 0)
+		(at 340.868 245.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3719,14 +3719,14 @@
 		)
 		(uuid "02566912-a5fd-45c8-ac94-1511579ccfb8")
 	)
-	(text "* SFP-MSA requires 3v3 I2C lines\n* internal 10k PU in i2c level shifter IC"
+	(text "* SFP-MSA requires 3v3 I2C lines\n* internal 10k PU in i2c level shifter IC\n* spec allows TX_DISABLE floating, but not all respect it"
 		(exclude_from_sim no)
-		(at 237.998 87.884 0)
+		(at 238.506 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify left bottom)
 		)
 		(uuid "1de5e44e-eacb-4a52-950c-3e6e55acaa3b")
 	)
@@ -3810,7 +3810,7 @@
 	)
 	(text "design guide of SOMEWHAT related Realtek IC"
 		(exclude_from_sim no)
-		(at 382.778 250.698 0)
+		(at 380.746 250.698 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3830,6 +3830,17 @@
 		)
 		(uuid "79fa0856-ce3c-4e83-8ed8-ab3f119104b6")
 	)
+	(text "SFP MSA standard"
+		(exclude_from_sim no)
+		(at 340.106 247.904 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://members.snia.org/document/dl/26184")
+		)
+		(uuid "7c2e77f4-253e-401c-b653-015ecb49e4ae")
+	)
 	(text "host supply filtering\n3v3 300mA"
 		(exclude_from_sim no)
 		(at 296.418 29.972 0)
@@ -3841,9 +3852,9 @@
 		)
 		(uuid "81cd7087-1584-40cc-8dbb-6c8f6037e795")
 	)
-	(text "design from NXP fourm"
+	(text "reference design from NXP fourm"
 		(exclude_from_sim no)
-		(at 355.6 246.634 0)
+		(at 374.904 247.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3852,9 +3863,9 @@
 		)
 		(uuid "991c8083-9b0e-4a48-9c99-def82cc3070a")
 	)
-	(text "JLC SFP design duide"
+	(text "JLC SFP design guide"
 		(exclude_from_sim no)
-		(at 384.81 247.65 0)
+		(at 369.062 245.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3865,7 +3876,7 @@
 	)
 	(text "pg.4 of bridge datasheet"
 		(exclude_from_sim no)
-		(at 367.03 223.52 0)
+		(at 367.03 218.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3970,7 +3981,7 @@
 	)
 	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby memory and MPU"
 		(exclude_from_sim no)
-		(at 327.914 232.41 0)
+		(at 327.66 228.6 0)
 		(size 80.01 11.43)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
@@ -3991,7 +4002,7 @@
 	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\n	"
 		(exclude_from_sim no)
 		(at 354.33 134.62 0)
-		(size 53.34 30.48)
+		(size 53.34 26.67)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4030,8 +4041,8 @@
 	)
 	(text_box "links"
 		(exclude_from_sim no)
-		(at 327.914 243.84 0)
-		(size 80.01 8.89)
+		(at 327.914 240.03 0)
+		(size 80.01 12.7)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4050,7 +4061,7 @@
 	)
 	(text_box "design notes:\n	- the bridge IC's are in low supply\n		- YT8521  : ~$5\n		- DP83869 : ~$10\n		- DP83869 (ext) : ~$19  <- stocked sometimes\n		- Marvell 88E1512 : ~$25 <- bruh\n		- RTL8211FS : ~$3 <- stocked by foreign vendors\n			- https://www.lcsc.com/product-detail/C2844012.html\n			- only \"RTL8211FS-VS-CG\" and \"RTL8211FSI-VS-CG\" support PTP, the I is for industrial grade\n	- max freq wires are the HS IO diff paris, 1.25GHz. ODT.\n	- targets SFP MSA standard"
 		(exclude_from_sim no)
-		(at 327.914 165.1 0)
+		(at 327.914 161.29 0)
 		(size 80.01 67.31)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
@@ -4705,7 +4716,7 @@
 		(uuid "a95b220c-3aa2-4464-b0c9-6f7f7724b253")
 	)
 	(bus_entry
-		(at 377.19 147.32)
+		(at 377.19 146.05)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4723,7 +4734,7 @@
 		(uuid "b2ea0b78-838c-4be8-8244-8df33c4df701")
 	)
 	(bus_entry
-		(at 377.19 144.78)
+		(at 377.19 143.51)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4847,7 +4858,7 @@
 	)
 	(bus
 		(pts
-			(xy 377.19 144.78) (xy 377.19 147.32)
+			(xy 377.19 143.51) (xy 377.19 146.05)
 		)
 		(stroke
 			(width 0)
@@ -5047,7 +5058,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 147.32) (xy 389.89 147.32)
+			(xy 379.73 146.05) (xy 389.89 146.05)
 		)
 		(stroke
 			(width 0)
@@ -7157,7 +7168,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 149.86) (xy 389.89 149.86)
+			(xy 379.73 148.59) (xy 389.89 148.59)
 		)
 		(stroke
 			(width 0)
@@ -8370,7 +8381,7 @@
 		)
 	)
 	(image
-		(at 367.792 209.55)
+		(at 367.792 204.47)
 		(uuid "5dd5ea9d-a842-4aad-bbb8-82c9e0757343")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAtIAAAEXCAYAAACAp6MwAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3Xlc1NX+x/HXDAzLsIOgCAIqEi4ouIuaS+K+ds1MS/G6Xu2maAne3LU0U8tuq1hRlmm55kZq"
@@ -11975,7 +11986,7 @@
 		(uuid "0927fed4-5bfc-4fde-b593-8362308ef6cd")
 	)
 	(label "3v3"
-		(at 389.89 147.32 0)
+		(at 389.89 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12005,7 +12016,7 @@
 		(uuid "12c816e9-e113-430b-882d-7e969827a970")
 	)
 	(label "sfp.V_{io}"
-		(at 379.73 149.86 0)
+		(at 379.73 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12075,7 +12086,7 @@
 		(uuid "37da9625-e16c-40e9-87ab-0b81f5caabf0")
 	)
 	(label "sfp{rgmii sfp_io}"
-		(at 377.19 156.21 0)
+		(at 377.19 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12105,7 +12116,7 @@
 		(uuid "401cb502-a79d-4fd0-bece-f513c9a258e5")
 	)
 	(label "V_{io}"
-		(at 389.89 149.86 0)
+		(at 389.89 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12255,7 +12266,7 @@
 		(uuid "74ef4ed2-9080-4cea-a0dd-d87c0bc728e2")
 	)
 	(label "{sfp_power}"
-		(at 377.19 144.78 0)
+		(at 377.19 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12445,7 +12456,7 @@
 		(uuid "a52642e5-40af-4e5e-98e0-fffd870858d4")
 	)
 	(label "sfp.3v3"
-		(at 379.73 147.32 0)
+		(at 379.73 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12697,7 +12708,7 @@
 	)
 	(hierarchical_label "SFP_BRIDGE"
 		(shape bidirectional)
-		(at 377.19 156.21 180)
+		(at 377.19 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12741,7 +12752,7 @@
 	)
 	(hierarchical_label "SPF_PWR"
 		(shape input)
-		(at 377.19 144.78 180)
+		(at 377.19 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)

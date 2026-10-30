@@ -1,10 +1,10 @@
 #MicroXplorer Configuration settings - do not modify
-BootLoader.IPs=DDR,RCC,TAMP,USB_OTG_HS
-BootROM.IPs=RCC,TAMP,USB_OTG_HS
+BootLoader.IPs=DDR,RCC,TAMP,USB_OTG_HS,SDMMC1
+BootROM.IPs=RCC,TAMP,USB_OTG_HS,SDMMC1
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-CortexA7NS.IPs=DDR,ETZPC,HSEM,IPCC,PWR,RCC,RTC,TAMP,GPIO,DMA,GIC,FDCAN1,CRC1,HDP,RNG1,USB_OTG_HS,DTS,ADC2,ADC1,ETH1
+CortexA7NS.IPs=DDR,ETZPC,HSEM,IPCC,PWR,RCC,RTC,TAMP,GPIO,DMA,GIC,FDCAN1,CRC1,HDP,RNG1,USB_OTG_HS,DTS,ADC2,ADC1,ETH1,SDMMC1
 CortexA7S.IPs=BSEC,DDR,ETZPC,HSEM,PWR,RCC,RNG1,RTC,TAMP,GIC\:I
 CortexM4.IPs=IPCC,ETZPC,FREERTOS,HSEM,PWR,RCC,SYS\:I,GPIO,DMA,NVIC\:I,FDCAN2,CRC2,OPENAMP,DEBUG,RESMGR_UTILITY
 DDR.ACIOCR=0x38400812
@@ -527,7 +527,7 @@ ProjectManager.ToolChainLocation=
 ProjectManager.UAScriptAfterPath=
 ProjectManager.UAScriptBeforePath=
 ProjectManager.UnderRoot=false
-ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,3-MX_ETZPC_Init-ETZPC-false-HAL-true,3-MX_GPIO_Init-GPIO-false-HAL-true
+ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_ETZPC_Init-ETZPC-false-HAL-true
 RCC.ADCFreq_Value=300000000
 RCC.AHB1234Freq_Value=208877929.6875
 RCC.APB1DIV=RCC_APB1_DIV2

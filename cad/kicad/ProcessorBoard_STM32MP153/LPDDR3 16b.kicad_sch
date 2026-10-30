@@ -3090,17 +3090,6 @@
 		)
 		(uuid "31de8dfb-8bfe-4699-90dd-e2667421b97b")
 	)
-	(text "TODO: decoupling caps. add during layout"
-		(exclude_from_sim no)
-		(at 249.428 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 22 1)
-			)
-		)
-		(uuid "6172c2e7-c871-450d-bb53-12f17f29f138")
-	)
 	(text "MPU B0"
 		(exclude_from_sim no)
 		(at 64.516 108.966 0)
@@ -3144,7 +3133,7 @@
 		)
 		(uuid "ff63ff94-a9d6-4ae9-b5a2-2af6d475f4ce")
 	)
-	(text_box "design notes:\n	- 400MHz 512MB x16. ~$26 USD single 2026/10. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- XTX (chines) has cheap & stocked flash/ddr MCP's , they only make x32 0.5mm pitch; will need >6-layers or HDI, bruh\n	- winnabon my beloved, precenting the fall of the american hobbiest market"
+	(text_box "design notes:\n	- 400MHz 512MB x16. ~$26 USD single 2026/10. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- XTX (chines) has cheap & stocked flash/ddr MCP's , they only make x32 0.5mm pitch; will need >6-layers or HDI, bruh\n	- winnabon my beloved, preventing the fall of the american hobbiest market"
 		(exclude_from_sim no)
 		(at 215.9 111.76 0)
 		(size 67.31 29.21)
@@ -3204,7 +3193,7 @@
 		)
 		(uuid "84c1ae10-cf5a-46f5-b8e6-a50d281db131")
 	)
-	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risk damaging nearby memory. hope and pray otherwise"
+	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risky and unforgiving. hope and pray otherwise"
 		(exclude_from_sim no)
 		(at 215.9 140.97 0)
 		(size 67.31 13.97)
@@ -3303,7 +3292,7 @@
 		(uuid "794362cd-2292-4d7d-8395-d3ea8c7f2737")
 	)
 	(junction
-		(at 143.51 149.86)
+		(at 144.78 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8257835b-0be0-4a9d-a1c4-c94e90795495")
@@ -3351,7 +3340,7 @@
 		(uuid "c8d72d4f-5b38-4591-ad6d-1f53e0058460")
 	)
 	(junction
-		(at 143.51 154.94)
+		(at 144.78 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1b7f183-fef8-43f1-a2dc-58334bf34abe")
@@ -4021,7 +4010,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 149.86) (xy 143.51 149.86)
+			(xy 104.14 149.86) (xy 165.1 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4088,16 +4077,6 @@
 			(type default)
 		)
 		(uuid "53174eeb-da67-4cba-ae0b-c0aeeb74e5cc")
-	)
-	(wire
-		(pts
-			(xy 143.51 154.94) (xy 154.94 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56e5aa8a-fba8-4ef6-8eea-2eb70def840d")
 	)
 	(wire
 		(pts
@@ -4171,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 154.94) (xy 143.51 154.94)
+			(xy 104.14 154.94) (xy 165.1 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4218,16 +4197,6 @@
 			(type default)
 		)
 		(uuid "73f3146b-377c-482a-ad44-5882ac624bd3")
-	)
-	(wire
-		(pts
-			(xy 154.94 149.86) (xy 166.37 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7573cca4-bede-4503-9422-bafa2465f4ec")
 	)
 	(wire
 		(pts
@@ -4408,16 +4377,6 @@
 			(type default)
 		)
 		(uuid "a40544b5-5a30-441e-b8ca-9edfff6c72ec")
-	)
-	(wire
-		(pts
-			(xy 154.94 154.94) (xy 166.37 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a446ec73-37ee-48e2-98e8-5aa3f456404f")
 	)
 	(wire
 		(pts
@@ -4648,16 +4607,6 @@
 			(type default)
 		)
 		(uuid "e5ed729f-9c0f-48ce-a629-e8fad090d88a")
-	)
-	(wire
-		(pts
-			(xy 143.51 149.86) (xy 154.94 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e68b7c51-8266-4402-a151-74c6fac600f9")
 	)
 	(wire
 		(pts
@@ -8112,7 +8061,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 143.51 152.4 0)
+		(at 144.78 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8123,7 +8072,7 @@
 		(fields_autoplaced yes)
 		(uuid "1be50962-5f1f-4b81-b94f-be3226244eb2")
 		(property "Reference" "C410"
-			(at 146.05 151.1362 0)
+			(at 147.32 151.1362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8134,7 +8083,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 146.05 153.6762 0)
+			(at 147.32 153.6762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8145,7 +8094,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8156,7 +8105,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8167,7 +8116,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8178,7 +8127,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8189,7 +8138,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8200,7 +8149,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8211,7 +8160,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8222,7 +8171,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8233,7 +8182,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 143.51 152.4 0)
+			(at 144.78 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11049,7 +10998,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 166.37 152.4 0)
+		(at 165.1 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11060,7 +11009,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9d3a10a-9691-4908-ae1d-62008ca30a22")
 		(property "Reference" "C408"
-			(at 168.91 151.1362 0)
+			(at 167.64 151.1362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11071,7 +11020,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 168.91 153.6762 0)
+			(at 167.64 153.6762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11082,7 +11031,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11093,7 +11042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11104,7 +11053,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11115,7 +11064,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11126,7 +11075,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11137,7 +11086,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11148,7 +11097,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11159,7 +11108,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11170,7 +11119,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 166.37 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
