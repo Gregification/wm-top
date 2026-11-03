@@ -540,10 +540,21 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "design notes:\n	- JTAG over Tag-Connect style connector\n	- 1v8 logic\n	- external 5V supply input to power board"
+	(text "tag-connect hardware"
+		(exclude_from_sim no)
+		(at 212.344 160.274 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.tag-connect.com/debugger-cable-selection-installation-instructions/st-link-v2")
+		)
+		(uuid "2cd2f2f1-0a23-4c6a-a29a-deed06cd9ecc")
+	)
+	(text_box "design notes:\n	- JTAG with Tag-Connect style connector\n	- 1v8 logic . NO ON BOARD LEVEL SHIFTER\n	- external ~5V supply input to power board\n		- POWER ONLY FROM ONE SOURCE. do not have both JTAG and IBC power connected at once, power rails are shorted -> PSUs will fight.\n		- pwr in ideal:		[4v5, 5v5] ~2A\n		- pwr in maybe:		[3v5, 6v]\n		- pwr in abs limit:	[-0v5, 6v5]\n	- suggested hardware\n		- ST-Link/V2\n		- Tag-Connect ARM2010 ARM 20 pin to TC2050 adaptor\n		- Tag-Connect pogo connector & cable : TC2050 IDC"
 		(exclude_from_sim no)
 		(at 199.39 114.3 0)
-		(size 83.82 49.53)
+		(size 83.82 36.83)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -559,6 +570,26 @@
 			(justify left top)
 		)
 		(uuid "2aebb159-0f53-4b88-b849-14e658447355")
+	)
+	(text_box "links"
+		(exclude_from_sim no)
+		(at 199.39 152.4 0)
+		(size 83.82 11.43)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "353ad9c7-ee74-4ba9-b980-e7699a819728")
 	)
 	(text_box "hierarchical nets\n\n\n\n\n"
 		(exclude_from_sim no)

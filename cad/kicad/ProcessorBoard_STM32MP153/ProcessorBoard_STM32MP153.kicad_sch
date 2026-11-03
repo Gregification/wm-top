@@ -109,6 +109,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO\n- jtag\n- sd card\n- uart console\n- usb\n- ibc\n- can bus\n- fmc"
+		(exclude_from_sim no)
+		(at 247.65 87.376 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 211 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "07454a57-a078-4c44-be13-ce32afb98cdf")
+	)
 	(text "replaced by keepout zone. to increase effective board space"
 		(exclude_from_sim no)
 		(at 44.958 179.07 0)

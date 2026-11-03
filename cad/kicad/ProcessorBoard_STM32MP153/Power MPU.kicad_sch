@@ -2206,12 +2206,6 @@
 		(uuid "156b4ce6-33f7-4cb0-9b75-ebf648baa356")
 	)
 	(junction
-		(at 107.95 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "20c39c54-874b-4305-b618-b4da4348a5e4")
-	)
-	(junction
 		(at 161.29 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3853,7 +3847,7 @@
 	)
 	(bus
 		(pts
-			(xy 107.95 16.51) (xy 207.01 16.51)
+			(xy 107.95 16.51) (xy 228.6 16.51)
 		)
 		(stroke
 			(width 0)
@@ -4020,16 +4014,6 @@
 			(type default)
 		)
 		(uuid "ccabb29d-baf8-4446-9593-1dfeb65c7124")
-	)
-	(bus
-		(pts
-			(xy 88.9 16.51) (xy 107.95 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd1128f3-a6b4-4527-a6da-8cb7b29f11c8")
 	)
 	(wire
 		(pts
@@ -5875,12 +5859,12 @@
 	)
 	(hierarchical_label "PROC_PWR"
 		(shape output)
-		(at 88.9 16.51 180)
+		(at 228.6 16.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "225abc30-1884-4e0b-ba9e-ec7b779b82ec")
 	)
