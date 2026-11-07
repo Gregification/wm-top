@@ -866,7 +866,6 @@
         "jtag_tc2050.TCK",
         "jtag_tc2050.5v",
         "jtag_tc2050.TDO",
-        "jtag_tc2050.RTCLK",
         "jtag_tc2050.TDI",
         "jtag_tc2050.nTRST",
         "jtag_tc2050.RESET"

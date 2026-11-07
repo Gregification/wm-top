@@ -36,7 +36,7 @@
 		(uuid "8d32820b-5222-4035-a51d-afb4e301d9ba")
 	)
 	(hierarchical_label "Vin_prim"
-		(shape input)
+		(shape output)
 		(at 247.65 120.65 0)
 		(effects
 			(font

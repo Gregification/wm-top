@@ -109,7 +109,20 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO\n- jtag\n- sd card\n- uart console\n- usb\n- ibc\n- can bus\n- fmc"
+	(bezier
+		(pts
+			(xy 128.27 90.17) (xy 128.27 90.17) (xy 142.24 80.01) (xy 142.24 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "31c4a36e-1a1b-4d13-9993-acf481a6e7c9")
+	)
+	(text "TODO\n- sd card\n- uart console\n- usb\n- ibc\n- can bus\n- fmc"
 		(exclude_from_sim no)
 		(at 247.65 87.376 0)
 		(effects
@@ -144,12 +157,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d407ef8b-87cc-46d9-bad5-56918621e83a")
-	)
-	(junction
-		(at 220.98 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6fbd55f-ab0d-4aa9-b721-8831d0fb1d9e")
 	)
 	(junction
 		(at 215.9 72.39)
@@ -242,16 +249,6 @@
 			(type default)
 		)
 		(uuid "7588a90e-e939-453c-b67c-3b7a26ac18f8")
-	)
-	(wire
-		(pts
-			(xy 220.98 133.35) (xy 210.82 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77882367-cbfa-4495-937e-92cbda1be62a")
 	)
 	(bus
 		(pts
@@ -392,16 +389,6 @@
 			(type default)
 		)
 		(uuid "f79a8e18-0754-409a-baf5-a0268baf27da")
-	)
-	(wire
-		(pts
-			(xy 220.98 115.57) (xy 220.98 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd1499f6-66d7-4d9c-b7ef-35d52db9dbdd")
 	)
 	(label "{jtag_tc2050}"
 		(at 166.37 135.89 0)
@@ -1075,7 +1062,7 @@
 				(justify left)
 			)
 		)
-		(pin "SPF_PWR" input
+		(pin "SPF_PWR" output
 			(at 116.84 90.17 180)
 			(uuid "5514a372-3799-4518-a996-b68e0169f6f6")
 			(effects
@@ -1085,7 +1072,7 @@
 				(justify left)
 			)
 		)
-		(pin "JTAG" input
+		(pin "JTAG" bidirectional
 			(at 154.94 135.89 0)
 			(uuid "5528f245-fbd2-4f7c-b170-1381843d399a")
 			(effects
@@ -1106,10 +1093,10 @@
 	(sheet
 		(at 59.69 101.6)
 		(size 33.02 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1233,7 +1220,7 @@
 				(justify left top)
 			)
 		)
-		(pin "JTAG" input
+		(pin "JTAG" bidirectional
 			(at 177.8 135.89 180)
 			(uuid "1897b8e7-cedb-46a2-aea8-7c90f3eed538")
 			(effects
@@ -1261,16 +1248,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "Vin_prim" input
-			(at 210.82 133.35 0)
-			(uuid "01e27044-f4cb-4227-99be-f48aa5b788df")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
@@ -1441,7 +1418,7 @@
 				(justify left)
 			)
 		)
-		(pin "Vin_prim" input
+		(pin "Vin_prim" output
 			(at 210.82 93.98 0)
 			(uuid "3d845e2a-29ab-4228-bd62-13364f9a9e82")
 			(effects

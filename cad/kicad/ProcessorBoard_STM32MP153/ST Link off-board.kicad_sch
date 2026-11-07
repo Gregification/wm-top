@@ -551,7 +551,18 @@
 		)
 		(uuid "2cd2f2f1-0a23-4c6a-a29a-deed06cd9ecc")
 	)
-	(text_box "design notes:\n	- JTAG with Tag-Connect style connector\n	- 1v8 logic . NO ON BOARD LEVEL SHIFTER\n	- external ~5V supply input to power board\n		- POWER ONLY FROM ONE SOURCE. do not have both JTAG and IBC power connected at once, power rails are shorted -> PSUs will fight.\n		- pwr in ideal:		[4v5, 5v5] ~2A\n		- pwr in maybe:		[3v5, 6v]\n		- pwr in abs limit:	[-0v5, 6v5]\n	- suggested hardware\n		- ST-Link/V2\n		- Tag-Connect ARM2010 ARM 20 pin to TC2050 adaptor\n		- Tag-Connect pogo connector & cable : TC2050 IDC"
+	(text "pinout diagram"
+		(exclude_from_sim no)
+		(at 234.95 156.972 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2021/02/TC2050-ARM2010-2021.pdf")
+		)
+		(uuid "6702c81e-c318-4b6e-914b-084052b892c3")
+	)
+	(text_box "design notes:\n	- JTAG with Tag-Connect style connector\n	- 1v8 logic . NO ON BOARD LEVEL SHIFTER . level shifting must be done by probe\n	- no power supplied to board\n	- suggested hardware\n		- ST-Link/V2\n		- Tag-Connect ARM2010 ARM 20 pin to TC2050 adaptor\n		- Tag-Connect pogo connector & cable : TC2050 IDC"
 		(exclude_from_sim no)
 		(at 199.39 114.3 0)
 		(size 83.82 36.83)
@@ -615,19 +626,13 @@
 		(at 99.06 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "11138c05-efc1-49c1-bc3c-443f5f7d7d79")
+		(uuid "2fbc3781-3b35-4456-90f5-74fd056f0ce0")
 	)
 	(junction
 		(at 153.67 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41ddd7b3-a804-439a-91a7-e2b407973b36")
-	)
-	(junction
-		(at 101.6 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93f44c68-bcef-4aaa-89eb-1c4b65783f97")
 	)
 	(junction
 		(at 101.6 99.06)
@@ -640,6 +645,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e29caedf-0a2e-4f86-8e6a-ca2c4fd63e6b")
+	)
+	(no_connect
+		(at 133.35 101.6)
+		(uuid "68ee511b-4b33-46fd-b0d1-7b370c693ebf")
+	)
+	(no_connect
+		(at 120.65 104.14)
+		(uuid "c33bcfcc-2f5a-4783-9aef-d6ffe3c78cf3")
 	)
 	(bus_entry
 		(at 156.21 93.98)
@@ -669,15 +682,6 @@
 		(uuid "1eb3dcae-93f3-4a51-8ad9-f60a0cc94b36")
 	)
 	(bus_entry
-		(at 99.06 101.6)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2716281d-869f-4183-a515-c228f4e54cb5")
-	)
-	(bus_entry
 		(at 99.06 91.44)
 		(size 2.54 2.54)
 		(stroke
@@ -694,15 +698,6 @@
 			(type default)
 		)
 		(uuid "45adb5ce-9ff6-4711-b6b8-0bafdeafc34a")
-	)
-	(bus_entry
-		(at 156.21 99.06)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48461a88-877f-4942-8a23-6d7ebfe144df")
 	)
 	(bus_entry
 		(at 156.21 91.44)
@@ -749,29 +744,19 @@
 		)
 		(uuid "fcfad2a2-0ec3-4b65-afdb-cc2637ab6abd")
 	)
-	(wire
-		(pts
-			(xy 86.36 104.14) (xy 101.6 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fcbe8e7-b603-4b3d-933e-9716fd292c3b")
-	)
-	(bus
-		(pts
-			(xy 99.06 78.74) (xy 99.06 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24113739-e1bc-4aba-8d60-b7531dcef3ee")
-	)
 	(bus
 		(pts
 			(xy 99.06 78.74) (xy 156.21 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "056fbe70-59c3-493d-912a-d1dfac536fa2")
+	)
+	(bus
+		(pts
+			(xy 81.28 78.74) (xy 99.06 78.74)
 		)
 		(stroke
 			(width 0)
@@ -788,16 +773,6 @@
 			(type default)
 		)
 		(uuid "34de5ac9-6020-4f9a-a31e-700079da911d")
-	)
-	(bus
-		(pts
-			(xy 81.28 78.74) (xy 99.06 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "487efc4c-8750-490d-a060-05e6571fe674")
 	)
 	(wire
 		(pts
@@ -881,16 +856,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 104.14) (xy 120.65 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98a297a0-5590-4386-8ec6-662b59028beb")
-	)
-	(wire
-		(pts
 			(xy 133.35 93.98) (xy 153.67 93.98)
 		)
 		(stroke
@@ -909,15 +874,15 @@
 		)
 		(uuid "9ba6de54-8ee0-4a74-b70e-1c74a2c09de7")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 133.35 101.6) (xy 153.67 101.6)
+			(xy 99.06 78.74) (xy 99.06 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "abed2751-124b-4326-9466-3941567abd8d")
+		(uuid "b9c38b6c-743c-4ad2-98d7-bd9ee715f40d")
 	)
 	(bus
 		(pts
@@ -969,16 +934,6 @@
 		)
 		(uuid "0643eacb-95b0-429e-93c8-c7122ccb22c7")
 	)
-	(label "jtag_tc2050.5v"
-		(at 120.65 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "12025f86-0e33-419d-9db2-d0db02ca808f")
-	)
 	(label "RSTn"
 		(at 167.64 93.98 180)
 		(effects
@@ -998,6 +953,16 @@
 			(justify right bottom)
 		)
 		(uuid "1c2f83bf-39fc-43bc-9840-7d6f431a50bb")
+	)
+	(label "RTCLK"
+		(at 133.35 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e7b0c03-3ff0-40f8-b631-7007f331c1ab")
 	)
 	(label "jtag_tc2050.TMS"
 		(at 120.65 96.52 180)
@@ -1049,15 +1014,15 @@
 		)
 		(uuid "47ad7aab-0e49-4efd-a69f-46bb932d398d")
 	)
-	(label "jtag_tc2050.RTCLK"
-		(at 133.35 101.6 0)
+	(label "PWR_NC"
+		(at 120.65 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "62c67fcc-3181-4b36-b7e5-350635ecb957")
+		(uuid "579405f6-f5b4-4275-a686-fae7ca8e7497")
 	)
 	(label "V_{dd_IO}"
 		(at 85.09 93.98 0)
@@ -1120,17 +1085,6 @@
 		)
 		(uuid "07c2cabe-5201-4222-82ed-f2daa760e8f9")
 	)
-	(hierarchical_label "Vin_prim"
-		(shape input)
-		(at 86.36 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "229694fa-c297-4a14-a3cf-24846b2af82a")
-	)
 	(hierarchical_label "PROC_PMIC_IO"
 		(shape bidirectional)
 		(at 247.65 105.41 0)
@@ -1154,7 +1108,7 @@
 		(uuid "3fca3d96-9180-4407-9dfb-dedd7f4c8157")
 	)
 	(hierarchical_label "JTAG"
-		(shape input)
+		(shape bidirectional)
 		(at 247.65 97.79 0)
 		(effects
 			(font
@@ -1176,7 +1130,7 @@
 		(uuid "8abacfa9-e9d0-45bd-955d-b6f79eacca8d")
 	)
 	(hierarchical_label "JTAG"
-		(shape input)
+		(shape bidirectional)
 		(at 81.28 78.74 180)
 		(effects
 			(font
@@ -1185,17 +1139,6 @@
 			(justify right)
 		)
 		(uuid "a6c0c922-79a2-47dd-87a9-cf7bcbc5280a")
-	)
-	(hierarchical_label "Vin_prim"
-		(shape input)
-		(at 247.65 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e36165b1-f190-47bc-8e58-187a8a20d863")
 	)
 	(symbol
 		(lib_id "Connector:TC2050")
@@ -1229,7 +1172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical"
+		(property "Footprint" "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical_with_bottom_clip"
 			(at 127 99.06 0)
 			(hide yes)
 			(show_name no)

@@ -19844,7 +19844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -19997,7 +19997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 262.89 0)
 			(hide yes)
 			(show_name no)
@@ -20150,7 +20150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -20303,7 +20303,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -20456,7 +20456,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 173.99 270.51 0)
 			(hide yes)
 			(show_name no)
@@ -20609,7 +20609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 173.99 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -20762,7 +20762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 173.99 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -20994,7 +20994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -21147,7 +21147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -21299,7 +21299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 254 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -21452,7 +21452,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 93.98 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -21605,7 +21605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 93.98 273.05 0)
 			(hide yes)
 			(show_name no)
@@ -21758,7 +21758,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 93.98 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -21911,7 +21911,7 @@
 				)
 			)
 		)
-		(property "Footprint" "__WM_Local:D0014A_M"
+		(property "Footprint" "__WM_Local:D0014A_L"
 			(at 93.98 238.76 0)
 			(hide yes)
 			(show_name no)
