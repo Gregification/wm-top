@@ -109,22 +109,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(bezier
-		(pts
-			(xy 128.27 90.17) (xy 128.27 90.17) (xy 142.24 80.01) (xy 142.24 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "31c4a36e-1a1b-4d13-9993-acf481a6e7c9")
-	)
-	(text "TODO\n- sd card\n- uart console\n- usb\n- ibc\n- can bus\n- fmc"
+	(text "TODO\n- ram (again)\n- sd card\n- uart console\n- usb\n- ibc\n- can bus\n- fmc"
 		(exclude_from_sim no)
-		(at 247.65 87.376 0)
+		(at 237.744 26.67 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -146,43 +133,59 @@
 		)
 		(uuid "e00aac10-2a04-4749-994b-88fe6e16371c")
 	)
-	(junction
-		(at 215.9 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c72333b3-b89d-4508-afea-d09dd1be2b4d")
+	(text_box "bring up check list\n	- confirm FW DDR timing\n	- confirm FW clock tree\n	- confirm IRQ\n	"
+		(exclude_from_sim no)
+		(at 207.01 129.5169 0)
+		(size 74.93 33.0431)
+		(margins 0.9398 0.9398 0.9398 0.9398)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7d869f58-76fe-43d9-9d47-f4962aa5966b")
 	)
 	(junction
-		(at 215.9 107.95)
+		(at 149.86 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d17197-40b4-4c4c-b375-4bef2cd1473f")
+	)
+	(junction
+		(at 113.03 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "802bb4f4-379e-48ee-8d0d-8a8dc498df04")
+	)
+	(junction
+		(at 193.04 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d407ef8b-87cc-46d9-bad5-56918621e83a")
 	)
 	(junction
-		(at 215.9 72.39)
+		(at 193.04 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7aea0b6-4ab5-474a-9783-6491617adc23")
 	)
 	(junction
-		(at 172.72 111.76)
+		(at 149.86 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f34dcff6-ee1d-4ba9-b996-9cd000adcf71")
 	)
 	(bus
 		(pts
-			(xy 154.94 78.74) (xy 215.9 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19b1b4cd-8688-4874-80b2-f7d5048c3a87")
-	)
-	(bus
-		(pts
-			(xy 215.9 78.74) (xy 215.9 129.54)
+			(xy 193.04 59.69) (xy 193.04 116.84)
 		)
 		(stroke
 			(width 0)
@@ -192,7 +195,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 72.39) (xy 215.9 55.88)
+			(xy 193.04 59.69) (xy 193.04 43.18)
 		)
 		(stroke
 			(width 0)
@@ -202,17 +205,7 @@
 	)
 	(bus
 		(pts
-			(xy 172.72 93.98) (xy 172.72 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3da27b58-34ee-4819-969e-1d5ce56111fe")
-	)
-	(bus
-		(pts
-			(xy 210.82 107.95) (xy 215.9 107.95)
+			(xy 187.96 95.25) (xy 193.04 95.25)
 		)
 		(stroke
 			(width 0)
@@ -222,17 +215,17 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 78.74) (xy 215.9 72.39)
+			(xy 113.03 43.18) (xy 193.04 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53c479e9-7838-4ff0-9e57-ba1983fc9355")
+		(uuid "5ee9f3cb-49e4-4644-a27d-df766268d568")
 	)
 	(bus
 		(pts
-			(xy 154.94 135.89) (xy 177.8 135.89)
+			(xy 132.08 123.19) (xy 154.94 123.19)
 		)
 		(stroke
 			(width 0)
@@ -242,7 +235,7 @@
 	)
 	(bus
 		(pts
-			(xy 154.94 66.04) (xy 177.8 66.04)
+			(xy 132.08 53.34) (xy 154.94 53.34)
 		)
 		(stroke
 			(width 0)
@@ -252,7 +245,7 @@
 	)
 	(bus
 		(pts
-			(xy 210.82 72.39) (xy 215.9 72.39)
+			(xy 187.96 59.69) (xy 193.04 59.69)
 		)
 		(stroke
 			(width 0)
@@ -262,7 +255,7 @@
 	)
 	(bus
 		(pts
-			(xy 172.72 129.54) (xy 172.72 111.76)
+			(xy 149.86 82.55) (xy 149.86 116.84)
 		)
 		(stroke
 			(width 0)
@@ -272,7 +265,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 93.98) (xy 172.72 93.98)
+			(xy 154.94 82.55) (xy 149.86 82.55)
 		)
 		(stroke
 			(width 0)
@@ -280,19 +273,9 @@
 		)
 		(uuid "8da879cd-7f15-4621-9de2-bf54d5219acc")
 	)
-	(bus
-		(pts
-			(xy 92.71 90.17) (xy 116.84 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9078fc82-4cab-4b0f-b382-58c7bd83144b")
-	)
 	(wire
 		(pts
-			(xy 210.82 93.98) (xy 220.98 93.98)
+			(xy 187.96 82.55) (xy 198.12 82.55)
 		)
 		(stroke
 			(width 0)
@@ -300,9 +283,19 @@
 		)
 		(uuid "a3cb3f41-3cd8-462e-b074-624c8507c329")
 	)
+	(bus
+		(pts
+			(xy 113.03 43.18) (xy 113.03 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac719651-5d6d-4bb3-bc06-9feb5be97649")
+	)
 	(wire
 		(pts
-			(xy 220.98 93.98) (xy 220.98 115.57)
+			(xy 198.12 82.55) (xy 198.12 99.06)
 		)
 		(stroke
 			(width 0)
@@ -312,7 +305,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 85.09) (xy 116.84 85.09)
+			(xy 69.85 74.93) (xy 93.98 74.93)
 		)
 		(stroke
 			(width 0)
@@ -322,7 +315,7 @@
 	)
 	(bus
 		(pts
-			(xy 154.94 111.76) (xy 177.8 111.76)
+			(xy 132.08 82.55) (xy 149.86 82.55)
 		)
 		(stroke
 			(width 0)
@@ -332,7 +325,7 @@
 	)
 	(bus
 		(pts
-			(xy 43.18 55.88) (xy 215.9 55.88)
+			(xy 20.32 43.18) (xy 113.03 43.18)
 		)
 		(stroke
 			(width 0)
@@ -342,7 +335,7 @@
 	)
 	(bus
 		(pts
-			(xy 210.82 129.54) (xy 215.9 129.54)
+			(xy 187.96 116.84) (xy 193.04 116.84)
 		)
 		(stroke
 			(width 0)
@@ -352,7 +345,7 @@
 	)
 	(bus
 		(pts
-			(xy 154.94 68.58) (xy 177.8 68.58)
+			(xy 132.08 55.88) (xy 154.94 55.88)
 		)
 		(stroke
 			(width 0)
@@ -362,7 +355,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 115.57) (xy 220.98 115.57)
+			(xy 187.96 99.06) (xy 198.12 99.06)
 		)
 		(stroke
 			(width 0)
@@ -372,7 +365,17 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 129.54) (xy 172.72 129.54)
+			(xy 36.83 96.52) (xy 20.32 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81e3eb2-5573-4415-b9d8-876ec210f56f")
+	)
+	(bus
+		(pts
+			(xy 154.94 116.84) (xy 149.86 116.84)
 		)
 		(stroke
 			(width 0)
@@ -382,7 +385,7 @@
 	)
 	(bus
 		(pts
-			(xy 43.18 55.88) (xy 43.18 124.46)
+			(xy 20.32 43.18) (xy 20.32 96.52)
 		)
 		(stroke
 			(width 0)
@@ -390,8 +393,18 @@
 		)
 		(uuid "f79a8e18-0754-409a-baf5-a0268baf27da")
 	)
+	(bus
+		(pts
+			(xy 149.86 95.25) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe89ae00-81b2-4187-8703-7ee141c74a54")
+	)
 	(label "{jtag_tc2050}"
-		(at 166.37 135.89 0)
+		(at 143.51 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -400,18 +413,8 @@
 		)
 		(uuid "2303bb3a-da1c-49e2-832e-6a7d3db0d733")
 	)
-	(label "{sfp_power}"
-		(at 104.14 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify bottom)
-		)
-		(uuid "543c0153-3ff8-46a6-85af-fbecd291e128")
-	)
 	(label "{mpu_power}"
-		(at 166.37 55.88 0)
+		(at 143.51 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -421,7 +424,7 @@
 		(uuid "761c830c-1a7f-48a6-924d-41c190d00eb6")
 	)
 	(label "ddr{mem_d_a_c}"
-		(at 166.37 66.04 0)
+		(at 143.51 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -431,7 +434,7 @@
 		(uuid "77ec996e-e9ac-4840-b7ff-a45df583f323")
 	)
 	(label "sfp{rgmii sfp_io}"
-		(at 104.14 85.09 0)
+		(at 81.28 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -441,7 +444,7 @@
 		(uuid "83dbaa62-a5f6-4ba8-8144-f2334d44fb39")
 	)
 	(label "{flash_mem}"
-		(at 166.37 68.58 0)
+		(at 143.51 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -451,7 +454,7 @@
 		(uuid "a5fea2f6-1152-4ce8-8a60-a99757b2180c")
 	)
 	(label "{mpu_pmic}"
-		(at 166.37 111.76 0)
+		(at 142.24 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -853,7 +856,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 105.41)
+		(at 154.94 92.71)
 		(size 33.02 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -869,7 +872,7 @@
 		)
 		(uuid "06ad9cc8-e1a1-474d-84d3-806ac75aa67c")
 		(property "Sheetname" "Power MPU"
-			(at 177.8 104.6984 0)
+			(at 154.94 91.9984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -880,7 +883,7 @@
 			)
 		)
 		(property "Sheetfile" "Power MPU.kicad_sch"
-			(at 177.8 119.9646 0)
+			(at 154.94 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -891,7 +894,7 @@
 			)
 		)
 		(pin "PROC_PMIC_IO" bidirectional
-			(at 177.8 111.76 180)
+			(at 154.94 95.25 180)
 			(uuid "9ffbd52a-3950-4efc-ae0f-3d0a6efffb53")
 			(effects
 				(font
@@ -901,7 +904,7 @@
 			)
 		)
 		(pin "PROC_PWR" output
-			(at 210.82 107.95 0)
+			(at 187.96 95.25 0)
 			(uuid "05c0e9a2-872e-464c-b65a-70a6cc9cc150")
 			(effects
 				(font
@@ -911,7 +914,7 @@
 			)
 		)
 		(pin "Vin_prim" input
-			(at 210.82 115.57 0)
+			(at 187.96 99.06 0)
 			(uuid "fd26f5e3-fe41-4cde-a54e-71f162dff3f8")
 			(effects
 				(font
@@ -975,7 +978,7 @@
 		)
 	)
 	(sheet
-		(at 116.84 63.5)
+		(at 93.98 50.8)
 		(size 38.1 76.2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -991,7 +994,7 @@
 		)
 		(uuid "4528db64-a2fa-4a5e-a759-f2845964b2e6")
 		(property "Sheetname" "MPU"
-			(at 116.84 62.7884 0)
+			(at 93.98 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1002,7 +1005,7 @@
 			)
 		)
 		(property "Sheetfile" "STM32MP153CAC.kicad_sch"
-			(at 116.84 140.2846 0)
+			(at 93.98 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1013,7 +1016,7 @@
 			)
 		)
 		(pin "PROC_PWR" input
-			(at 154.94 78.74 0)
+			(at 113.03 50.8 90)
 			(uuid "358f77d6-fde8-496d-bce5-3bc00a66675f")
 			(effects
 				(font
@@ -1023,7 +1026,7 @@
 			)
 		)
 		(pin "PROC_PMIC_IO" bidirectional
-			(at 154.94 111.76 0)
+			(at 132.08 82.55 0)
 			(uuid "3612429c-975f-4642-8b68-e156a909b92f")
 			(effects
 				(font
@@ -1033,7 +1036,7 @@
 			)
 		)
 		(pin "MEM_D_A_C" bidirectional
-			(at 154.94 66.04 0)
+			(at 132.08 53.34 0)
 			(uuid "bc3ec81a-cb5f-40b7-8bb1-8e0eed78a2fa")
 			(effects
 				(font
@@ -1043,7 +1046,7 @@
 			)
 		)
 		(pin "FLASH" bidirectional
-			(at 154.94 68.58 0)
+			(at 132.08 55.88 0)
 			(uuid "fdaceeab-809a-4322-9ed7-512394eb5472")
 			(effects
 				(font
@@ -1053,7 +1056,7 @@
 			)
 		)
 		(pin "SFP_BRIDGE" bidirectional
-			(at 116.84 85.09 180)
+			(at 93.98 74.93 180)
 			(uuid "51c43767-6089-42a6-84b4-e75f52a687e0")
 			(effects
 				(font
@@ -1062,18 +1065,8 @@
 				(justify left)
 			)
 		)
-		(pin "SPF_PWR" output
-			(at 116.84 90.17 180)
-			(uuid "5514a372-3799-4518-a996-b68e0169f6f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "JTAG" bidirectional
-			(at 154.94 135.89 0)
+			(at 132.08 123.19 0)
 			(uuid "5528f245-fbd2-4f7c-b170-1381843d399a")
 			(effects
 				(font
@@ -1091,53 +1084,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 101.6)
-		(size 33.02 12.7)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "7d60e16f-578c-49ab-b255-51c1eae4d64b")
-		(property "Sheetname" "Power SPF"
-			(at 59.69 100.8884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Power SPF.kicad_sch"
-			(at 59.69 114.8846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 59.69 63.5)
+		(at 36.83 50.8)
 		(size 33.02 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1153,7 +1100,7 @@
 		)
 		(uuid "81050333-713e-43ae-813a-57b604ffaa46")
 		(property "Sheetname" "SD Card"
-			(at 59.69 62.7884 0)
+			(at 36.83 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1164,7 +1111,7 @@
 			)
 		)
 		(property "Sheetfile" "sd card.kicad_sch"
-			(at 59.69 78.0546 0)
+			(at 36.83 65.3546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1183,7 +1130,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 127)
+		(at 154.94 114.3)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1199,7 +1146,7 @@
 		)
 		(uuid "996f6555-ca68-4e04-b150-7bd19df70858")
 		(property "Sheetname" "ST Link"
-			(at 177.8 126.2884 0)
+			(at 154.94 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1210,7 +1157,7 @@
 			)
 		)
 		(property "Sheetfile" "ST Link off-board.kicad_sch"
-			(at 177.8 140.2846 0)
+			(at 154.94 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1221,7 +1168,7 @@
 			)
 		)
 		(pin "JTAG" bidirectional
-			(at 177.8 135.89 180)
+			(at 154.94 123.19 180)
 			(uuid "1897b8e7-cedb-46a2-aea8-7c90f3eed538")
 			(effects
 				(font
@@ -1231,7 +1178,7 @@
 			)
 		)
 		(pin "PROC_PWR" input
-			(at 210.82 129.54 0)
+			(at 187.96 116.84 0)
 			(uuid "ad6966d4-caa7-430b-8c28-1b3dde672d21")
 			(effects
 				(font
@@ -1241,7 +1188,7 @@
 			)
 		)
 		(pin "PROC_PMIC_IO" bidirectional
-			(at 177.8 129.54 180)
+			(at 154.94 116.84 180)
 			(uuid "d8ada65a-4c3e-45ab-9a19-79c34dcecb09")
 			(effects
 				(font
@@ -1259,7 +1206,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 82.55)
+		(at 36.83 72.39)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1275,7 +1222,7 @@
 		)
 		(uuid "9bbfbe68-2804-40ed-9d5f-0570a6a580b2")
 		(property "Sheetname" "SPF"
-			(at 59.69 81.8384 0)
+			(at 36.83 71.6784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1286,7 +1233,7 @@
 			)
 		)
 		(property "Sheetfile" "SPF.kicad_sch"
-			(at 59.69 95.8346 0)
+			(at 36.83 85.6746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1297,18 +1244,8 @@
 			)
 		)
 		(pin "SFP_BRIDGE" bidirectional
-			(at 92.71 85.09 0)
+			(at 69.85 74.93 0)
 			(uuid "0b5c0c37-fcc1-4872-9910-331bae53dec2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SPF_PWR" input
-			(at 92.71 90.17 0)
-			(uuid "40fc6385-b822-4a11-bf80-886910ee4c24")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,7 +1262,7 @@
 		)
 	)
 	(sheet
-		(at 59.69 120.65)
+		(at 36.83 92.71)
 		(size 33.02 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1341,7 +1278,7 @@
 		)
 		(uuid "c8478d41-8ee5-4c8a-a48d-a17f4988cf95")
 		(property "Sheetname" "USB host"
-			(at 59.69 119.9384 0)
+			(at 36.83 91.9984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1352,7 +1289,7 @@
 			)
 		)
 		(property "Sheetfile" "USB Host.kicad_sch"
-			(at 59.69 133.9346 0)
+			(at 36.83 105.9946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1360,6 +1297,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "PROC_PWR" bidirectional
+			(at 36.83 96.52 180)
+			(uuid "2cb6e7db-b030-40a3-8508-23d6daadf3ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1371,7 +1318,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 83.82)
+		(at 154.94 71.12)
 		(size 33.02 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1387,7 +1334,7 @@
 		)
 		(uuid "dfab2919-31d5-4d51-9ea2-7132696568f9")
 		(property "Sheetname" "IBC"
-			(at 177.8 83.1084 0)
+			(at 154.94 70.4084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1398,7 +1345,7 @@
 			)
 		)
 		(property "Sheetfile" "Inter-Board Connect.kicad_sch"
-			(at 177.8 98.3746 0)
+			(at 154.94 85.6746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1409,7 +1356,7 @@
 			)
 		)
 		(pin "PROC_PMIC_IO" bidirectional
-			(at 177.8 93.98 180)
+			(at 154.94 82.55 180)
 			(uuid "f381a182-bf49-4e35-8f61-b86ed4ae8d88")
 			(effects
 				(font
@@ -1419,7 +1366,7 @@
 			)
 		)
 		(pin "Vin_prim" output
-			(at 210.82 93.98 0)
+			(at 187.96 82.55 0)
 			(uuid "3d845e2a-29ab-4228-bd62-13364f9a9e82")
 			(effects
 				(font
@@ -1437,7 +1384,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 63.5)
+		(at 154.94 50.8)
 		(size 33.02 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1453,7 +1400,7 @@
 		)
 		(uuid "fb747675-6d29-4589-92ae-6726c227ffd0")
 		(property "Sheetname" "LPDDR2 16b"
-			(at 177.8 62.7884 0)
+			(at 154.94 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1464,7 +1411,7 @@
 			)
 		)
 		(property "Sheetfile" "LPDDR3 16b.kicad_sch"
-			(at 177.8 75.5146 0)
+			(at 154.94 62.8146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1475,7 +1422,7 @@
 			)
 		)
 		(pin "PROC_PWR" input
-			(at 210.82 72.39 0)
+			(at 187.96 59.69 0)
 			(uuid "a5b5bd53-9e18-48f0-b387-f2e6d1eb22c3")
 			(effects
 				(font
@@ -1485,7 +1432,7 @@
 			)
 		)
 		(pin "D_A_C" bidirectional
-			(at 177.8 66.04 180)
+			(at 154.94 53.34 180)
 			(uuid "98003fda-8be7-4350-8527-a38163a71ad2")
 			(effects
 				(font
@@ -1495,7 +1442,7 @@
 			)
 		)
 		(pin "FLASH" bidirectional
-			(at 177.8 68.58 180)
+			(at 154.94 55.88 180)
 			(uuid "1ed3f043-943e-4edc-a821-97ee666621a7")
 			(effects
 				(font

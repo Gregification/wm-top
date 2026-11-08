@@ -2842,7 +2842,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 87.63 20.32 0)
+		(at 87.63 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2853,7 +2853,7 @@
 		(fields_autoplaced yes)
 		(uuid "07d8d770-7947-4640-9039-be8e0a116b4b")
 		(property "Reference" "R99909"
-			(at 90.17 19.0499 0)
+			(at 90.17 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2864,7 +2864,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 90.17 21.5899 0)
+			(at 90.17 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2875,7 +2875,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2886,7 +2886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2897,7 +2897,7 @@
 			)
 		)
 		(property "Description" "330R, 100mW, 1%, 100ppm, 75V, +155c"
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2908,7 +2908,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0603-FX-3300ELF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RvQ3sBj9RG2Y%3D"
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2919,7 +2919,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,7 +2930,7 @@
 			)
 		)
 		(property "unit x10" "0.012"
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2941,7 +2941,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2952,7 +2952,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 87.63 20.32 0)
+			(at 87.63 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3144,7 +3144,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 19.05 20.32 0)
+		(at 19.05 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3155,7 +3155,7 @@
 		(fields_autoplaced yes)
 		(uuid "19692076-2fca-4fed-8684-74e90e17a14b")
 		(property "Reference" "R99902"
-			(at 21.59 19.0499 0)
+			(at 21.59 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3166,7 +3166,7 @@
 			)
 		)
 		(property "Value" "45.3k"
-			(at 21.59 21.5899 0)
+			(at 21.59 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3177,7 +3177,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3188,7 +3188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3199,7 +3199,7 @@
 			)
 		)
 		(property "Description" "45.3kR, 0.1%, 100mW, 25ppm, 75V, +155C"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3210,7 +3210,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603BRD0745K3L?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4K0WmzVPNprg%3D"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3221,7 +3221,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3232,7 +3232,7 @@
 			)
 		)
 		(property "unit x10" "0.06"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3243,7 +3243,7 @@
 			)
 		)
 		(property "unit x100" "0.056"
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3254,7 +3254,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3265,7 +3265,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 19.05 20.32 0)
+			(at 19.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3291,8 +3291,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 53.34 20.32 0)
+		(lib_id "Device:C_Small")
+		(at 80.01 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3301,9 +3301,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2fa23b23-f27e-4879-9501-85b379dee370")
-		(property "Reference" "R99906"
-			(at 55.88 19.0499 0)
+		(uuid "1fba44b2-1ee7-47a9-a71f-ebb6343a8606")
+		(property "Reference" "C99909"
+			(at 82.55 97.7962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3313,8 +3313,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3090"
-			(at 55.88 21.5899 0)
+		(property "Value" "22p"
+			(at 82.55 100.3362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3324,8 +3324,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 53.34 20.32 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 80.01 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3336,7 +3336,122 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 20.32 0)
+			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22pF, 10%, 25Vdc, 1.5GHz"
+			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0603C220K3HACTU?qs=sGAEpiMZZMsh%252B1woXyUXj2Bz7Q4aUyX%2FuKkEK3ShM84%3D"
+			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.042"
+			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d66d9ea0-0e1f-4b77-b54a-d677c4288fd4")
+		)
+		(pin "2"
+			(uuid "e9ed1434-50d4-40d2-b2ff-f6c2ea1997fc")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "C99909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 53.34 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fa23b23-f27e-4879-9501-85b379dee370")
+		(property "Reference" "R99906"
+			(at 55.88 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3090"
+			(at 55.88 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 53.34 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3347,7 +3462,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3358,7 +3473,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3369,7 +3484,7 @@
 			)
 		)
 		(property "unit x1" "0.1"
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3380,7 +3495,7 @@
 			)
 		)
 		(property "unit x10" "0.08"
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3391,7 +3506,7 @@
 			)
 		)
 		(property "unit x100" "0.60"
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3402,7 +3517,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3413,7 +3528,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 53.34 20.32 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3433,6 +3548,121 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
 					(reference "R99906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 68.58 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31736967-3e40-44fe-a8a3-a50cca453e35")
+		(property "Reference" "C99908"
+			(at 71.12 97.7962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5n"
+			(at 71.12 100.3362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1.5nF, 5%, 50Vdc, 10%"
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM15AR71H152KM?qs=Jm2GQyTW%2FbjlQ0CmQPk9aw%3D%3D"
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.06"
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 68.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2f5de52-19cc-4ef8-b2db-56590bc1c55d")
+		)
+		(pin "2"
+			(uuid "0c802ca2-5fcc-4243-aaf5-d3e839a8356e")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "C99908")
 					(unit 1)
 				)
 			)
@@ -4136,7 +4366,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 76.2 20.32 0)
+		(at 76.2 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4147,7 +4377,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a58c3b0-5596-4452-a18d-92e9012a070c")
 		(property "Reference" "R99908"
-			(at 78.74 19.0499 0)
+			(at 78.74 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4158,7 +4388,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 78.74 21.5899 0)
+			(at 78.74 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4169,7 +4399,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4180,7 +4410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4190,8 +4420,8 @@
 				)
 			)
 		)
-		(property "Description" "1kR, 75V, 0.5%, 25ppm, +155c"
-			(at 76.2 20.32 0)
+		(property "Description" "1kR, 75V, 0.5%, 25ppm, +155c, 62.5mW"
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4202,7 +4432,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-102-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbI6pluMNMZ8s%3D"
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4213,7 +4443,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4224,7 +4454,7 @@
 			)
 		)
 		(property "unit x10" "0.021"
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4235,7 +4465,7 @@
 			)
 		)
 		(property "unit x100" "0.02"
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4246,7 +4476,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,7 +4487,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 76.2 20.32 0)
+			(at 76.2 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4305,7 +4535,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "2.2u"
 			(at 34.29 90.1762 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4338,7 +4568,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF, 6.3Vdc, 20%, 4MHz"
+		(property "Description" "2.2uF, 6.3Vdc, 10%, 7MHz"
 			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4349,7 +4579,7 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R60J475ME47J?qs=hNud%2FORuBR1o1%2F4Jg%2F%2FSnQ%3D%3D&srsltid=AU7gw4Xa6q2PLsvpnK6qcDhvS62mgMLyQXdMzXB2DHlvS5Pd_XhfAXxY"
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSASJ105SB5225KFNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpj21lW%2Fi4TL7Y%3D"
 			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4360,7 +4590,7 @@
 				)
 			)
 		)
-		(property "unit x10" "0.11"
+		(property "unit x10" "0.048"
 			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4371,7 +4601,7 @@
 				)
 			)
 		)
-		(property "unit x1" "0.047"
+		(property "unit x1" "0.1"
 			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4382,29 +4612,7 @@
 				)
 			)
 		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R60J475ME47%22%5D&oripartnumbers=%5B%22GRM155R60J475ME47J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 31.75 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 31.75 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
+		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSASJ105SB5225KFNA01&u=M"
 			(at 31.75 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5005,7 +5213,7 @@
 				)
 			)
 		)
-		(property "Description" "6.3VDC, 20%, medical, +85C, 1.8MHz"
+		(property "Description" "22uF, 4Vdc, 1.5MHz, %20, -55C, +85C"
 			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5016,7 +5224,7 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/TAIYO-YUDEN/MLASJ168BB5226MTNA01?qs=sGAEpiMZZMsh%252B1woXyUXj3XUfju0vRpjetlJTHUhUyk%3D"
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM188R60G226MEA0D?qs=sGAEpiMZZMsh%252B1woXyUXj6LIRXSbp%252BH%252BJsSN9Myv6HM%3D"
 			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5027,7 +5235,7 @@
 				)
 			)
 		)
-		(property "unit x10" "0.112"
+		(property "unit x1" "0.20"
 			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5038,40 +5246,7 @@
 				)
 			)
 		)
-		(property "character" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASJ168BB5226MTNA01&u=M"
-			(at 19.05 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.27"
-			(at 19.05 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 19.05 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
+		(property "unit x10" ".111"
 			(at 19.05 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5099,7 +5274,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 64.77 20.32 0)
+		(at 19.05 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5108,9 +5283,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b5e3e629-1763-483d-8893-ea09046f047d")
-		(property "Reference" "R99907"
-			(at 67.31 19.0499 0)
+		(uuid "ad838723-f316-4909-a236-91db7081f18e")
+		(property "Reference" "R99914"
+			(at 21.59 17.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5120,8 +5295,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.2k"
-			(at 67.31 21.5899 0)
+		(property "Value" "1M"
+			(at 21.59 20.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5131,8 +5306,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 64.77 20.32 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 19.05 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5143,7 +5318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 20.32 0)
+			(at 19.05 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5153,8 +5328,8 @@
 				)
 			)
 		)
-		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
-			(at 64.77 20.32 0)
+		(property "Description" "1MR, 1%, 125mW, 100ppm, 150V, -55C, +125C"
+			(at 19.05 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5164,8 +5339,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
-			(at 64.77 20.32 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGCQ0805F1M0?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzLxQzcrvfNJqDrwtoq%252BuCPA%3D%3D"
+			(at 19.05 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5176,7 +5351,133 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 64.77 20.32 0)
+			(at 19.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.028"
+			(at 19.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.024"
+			(at 19.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "354b329a-7472-47bf-b8d1-1704c02ad5f2")
+		)
+		(pin "1"
+			(uuid "76168abb-cac7-4ffd-89b1-aabfd627ad64")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/157228c5-c462-4e2c-89a8-acc0a1fe94b2"
+					(reference "R99914")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5e3e629-1763-483d-8893-ea09046f047d")
+		(property "Reference" "R99907"
+			(at 67.31 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.2k"
+			(at 67.31 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5187,7 +5488,7 @@
 			)
 		)
 		(property "unit x10" "0.018"
-			(at 64.77 20.32 0)
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5198,7 +5499,7 @@
 			)
 		)
 		(property "unit x100" "0.017"
-			(at 64.77 20.32 0)
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5209,7 +5510,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 64.77 20.32 0)
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5220,7 +5521,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 64.77 20.32 0)
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5247,7 +5548,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 41.91 20.32 0)
+		(at 41.91 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5258,7 +5559,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba087ed4-b564-4b70-ae32-ff8382aa97ea")
 		(property "Reference" "R99905"
-			(at 44.45 19.0499 0)
+			(at 44.45 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5269,7 +5570,7 @@
 			)
 		)
 		(property "Value" "5.6k"
-			(at 44.45 21.5899 0)
+			(at 44.45 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5280,7 +5581,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5291,7 +5592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5603,7 @@
 			)
 		)
 		(property "Description" "5.6k, 250mW, 150V, 1%, 100ppm"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5313,7 +5614,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RK73H2ATTD5601F?qs=sGAEpiMZZMvdGkrng054tz2hCf0K9MmAHiPVKAcdIq4%3D"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5324,7 +5625,7 @@
 			)
 		)
 		(property "unit x1" "0.1"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5335,7 +5636,7 @@
 			)
 		)
 		(property "unit x10" "0.021"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5346,7 +5647,7 @@
 			)
 		)
 		(property "unit x100" "0.017"
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5357,7 +5658,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5368,7 +5669,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 41.91 20.32 0)
+			(at 41.91 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5995,7 +6296,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 31.75 20.32 0)
+		(at 31.75 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6006,7 +6307,7 @@
 		(fields_autoplaced yes)
 		(uuid "d982f869-2300-4320-a655-12129c476bc9")
 		(property "Reference" "R99904"
-			(at 34.29 19.0499 0)
+			(at 34.29 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6017,7 +6318,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 34.29 21.5899 0)
+			(at 34.29 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6028,7 +6329,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6039,7 +6340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6050,7 +6351,7 @@
 			)
 		)
 		(property "Description" "10kR, 100mW, 75Vdc, 0.1%, 25ppm, +155c"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6061,7 +6362,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/SEI-Stackpole/RNCF0603BTE10K0?qs=sGAEpiMZZMvdGkrng054t2cqbZCzJY7NKyrLU8aYXDErcCrjgif2eA%3D%3D"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6072,7 +6373,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6083,7 +6384,7 @@
 			)
 		)
 		(property "unit x10" "0.071"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6094,7 +6395,7 @@
 			)
 		)
 		(property "unit x100" "0.067"
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6105,7 +6406,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6116,7 +6417,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 31.75 20.32 0)
+			(at 31.75 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6143,7 +6444,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 99.06 20.32 0)
+		(at 99.06 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6154,7 +6455,7 @@
 		(fields_autoplaced yes)
 		(uuid "e646bc13-b7ab-4f7e-977f-cb2b859104b5")
 		(property "Reference" "R99910"
-			(at 101.6 19.0499 0)
+			(at 101.6 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6165,7 +6466,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 101.6 21.5899 0)
+			(at 101.6 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6176,7 +6477,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6187,7 +6488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6499,7 @@
 			)
 		)
 		(property "Description" "100R, 0.1%, 100mW, 50V, 25ppm, +155C"
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6209,7 +6510,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RN73R1ETTP1000B25?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzT4mWegaFFwKpStSRySFyRg%3D%3D"
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6220,7 +6521,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6231,7 +6532,7 @@
 			)
 		)
 		(property "unit x10" "0.061"
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6242,7 +6543,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6253,7 +6554,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 99.06 20.32 0)
+			(at 99.06 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6280,7 +6581,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 19.05 29.21 0)
+		(at 19.05 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6291,7 +6592,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1246565-0ab6-4687-b742-425717f0cd73")
 		(property "Reference" "R99903"
-			(at 21.59 27.9399 0)
+			(at 21.59 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6302,7 +6603,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 21.59 30.4799 0)
+			(at 21.59 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6313,7 +6614,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6324,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6335,7 +6636,7 @@
 			)
 		)
 		(property "Description" "10R, 62.5mW, 50V, 1%, 100ppm, +125c"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6346,7 +6647,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0402-FX-10R0GLF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RK%2FvyTkAqydw%3D"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6357,7 +6658,7 @@
 			)
 		)
 		(property "unit x1" "0.1"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6368,7 +6669,7 @@
 			)
 		)
 		(property "unit x10" "0.009"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6379,7 +6680,7 @@
 			)
 		)
 		(property "unit x100" "0.007"
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6390,7 +6691,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6401,7 +6702,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 19.05 29.21 0)
+			(at 19.05 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6576,7 +6877,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 64.77 27.94 0)
+		(at 64.77 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6587,7 +6888,7 @@
 		(fields_autoplaced yes)
 		(uuid "f32bb7ea-0c2d-41e5-916f-3fe2bd470735")
 		(property "Reference" "R99911"
-			(at 67.31 26.6699 0)
+			(at 67.31 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6598,7 +6899,7 @@
 			)
 		)
 		(property "Value" "2.49k"
-			(at 67.31 29.2099 0)
+			(at 67.31 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6609,7 +6910,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6620,7 +6921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6631,7 +6932,7 @@
 			)
 		)
 		(property "Description" "2.49k, 0.5%, 62.5mW, 75V, 25ppm, +125C"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6642,7 +6943,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RR0816P-2491-D-39H?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbVHtpqfbP2bM%3D"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6653,7 +6954,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6664,7 +6965,7 @@
 			)
 		)
 		(property "unit x10" "0.024"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6675,7 +6976,7 @@
 			)
 		)
 		(property "unit x100" "0.022"
-			(at 64.77 27.94 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

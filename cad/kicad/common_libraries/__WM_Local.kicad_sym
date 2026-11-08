@@ -5351,7 +5351,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv62585.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5362,7 +5362,7 @@
 				)
 			)
 		)
-		(property "Description" "2.5V-5.5V input, 3-A buck pol"
+		(property "Description" "2.5V-5.5V input, 3-A buck pol, 1.5Mhz"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5373,7 +5373,7 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/TLV62585DRLR?qs=sGAEpiMZZMsMIqGZiACxIY79W%2FZ1FL4F%252BaTzeMdIjvbY4abIYg7AUA%3D%3D"
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/TLV62585PDRLR?qs=F5EMLAvA7IAawbFXKnw9fA%3D%3D"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5384,7 +5384,7 @@
 				)
 			)
 		)
-		(property "unit x1" "0.38"
+		(property "unit x1" "0.44"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5395,7 +5395,7 @@
 				)
 			)
 		)
-		(property "unit x10" "0.267"
+		(property "unit x10" "0.307"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5409,7 +5409,7 @@
 		(symbol "TLV62585DRLR_0_1"
 			(rectangle
 				(start -5.08 -1.27)
-				(end 5.08 -15.24)
+				(end 5.08 -20.32)
 				(stroke
 					(width 0)
 					(type default)
@@ -5421,7 +5421,7 @@
 		)
 		(symbol "TLV62585DRLR_1_1"
 			(pin power_in line
-				(at -7.62 -13.97 0)
+				(at -7.62 -19.05 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -5439,7 +5439,7 @@
 				)
 			)
 			(pin power_out line
-				(at 7.62 -3.81 180)
+				(at 7.62 -11.43 180)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -5457,7 +5457,7 @@
 				)
 			)
 			(pin power_in line
-				(at -7.62 -3.81 0)
+				(at -7.62 -11.43 0)
 				(length 2.54)
 				(name "V_{in}"
 					(effects
@@ -5475,7 +5475,7 @@
 				)
 			)
 			(pin input line
-				(at -7.62 -7.62 0)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -5493,7 +5493,7 @@
 				)
 			)
 			(pin input line
-				(at 7.62 -11.43 180)
+				(at 7.62 -19.05 180)
 				(length 2.54)
 				(name "FB"
 					(effects
@@ -5510,29 +5510,9 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -7.62 -20.32 0)
+			(pin output line
+				(at 7.62 -3.81 180)
 				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 7.62 -20.32 180)
-				(length 2.54)
-				(hide yes)
 				(name "PG"
 					(effects
 						(font
@@ -5540,7 +5520,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)

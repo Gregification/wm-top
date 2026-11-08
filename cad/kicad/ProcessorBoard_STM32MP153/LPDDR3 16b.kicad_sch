@@ -3068,6 +3068,17 @@
 		)
 		(uuid "c67d6775-5b98-4518-bcfe-7486014583f1")
 	)
+	(text "issi datasheet"
+		(exclude_from_sim no)
+		(at 234.696 163.322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.issi.com/WW/pdf/43-46LD16320A-32160A.pdf")
+		)
+		(uuid "02c998f1-5c94-4bea-a6ee-7e67333053a4")
+	)
 	(text "Boundary Scan Enable\n"
 		(exclude_from_sim no)
 		(at 119.888 70.104 0)
@@ -3101,9 +3112,9 @@
 		)
 		(uuid "b784be12-489d-42c0-a7c8-7e7bdaeb9ea5")
 	)
-	(text "datasheet"
+	(text "winnabon datasheet"
 		(exclude_from_sim no)
-		(at 222.758 160.782 0)
+		(at 227.076 159.512 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3133,10 +3144,10 @@
 		)
 		(uuid "ff63ff94-a9d6-4ae9-b5a2-2af6d475f4ce")
 	)
-	(text_box "design notes:\n	- 400MHz 512MB x16. ~$26 USD single 2026/10. \n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- XTX (chines) has cheap & stocked flash/ddr MCP's , they only make x32 0.5mm pitch; will need >6-layers or HDI, bruh\n	- winnabon my beloved, preventing the fall of the american hobbiest market"
+	(text_box "design notes:\n	- 400MHz 512M x16. ~$26 USD single 2026/10. winnabon \n	- 533MHz 128M x16. ~$40 USD single 2026/11. issi\n	- 533MHz 2Gb DRAM, 4Gb FLASH . ~$20 USD single 2026/10. XTX (0.5mm pitch)\n	- HSUL_12 (\"U\"nterminated)\n		- no external termination ; except 100R for the CLK\n		- no V_{tt} biasing\n	- XTX (chines) has cheap & stocked flash/ddr MCP's , they only make x32 0.5mm pitch; will need >6-layers or HDI, bruh\n	- winnabon my beloved, preventing the fall of the american hobbiest market\n	- issi comming in clutch with stocked pin compatiable ones too"
 		(exclude_from_sim no)
-		(at 215.9 111.76 0)
-		(size 67.31 29.21)
+		(at 208.28 107.95 0)
+		(size 74.93 33.0431)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -3155,8 +3166,8 @@
 	)
 	(text_box "links"
 		(exclude_from_sim no)
-		(at 215.9 154.94 0)
-		(size 67.31 10.16)
+		(at 208.28 154.94 0)
+		(size 74.93 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3173,7 +3184,7 @@
 		)
 		(uuid "6e94a250-d57d-4e4d-a017-bdaf21a94cb9")
 	)
-	(text_box "hierarchical nets\n\n\n\n\n"
+	(text_box "hierarchical nets\n\n\n\n\n\n\n\n\"FLASH\" is unused. XTX has pin compatiable FLASH/DRAM SIPs as a alterantive part"
 		(exclude_from_sim no)
 		(at 240.03 81.28 0)
 		(size 43.18 26.67)
@@ -3195,8 +3206,8 @@
 	)
 	(text_box "Assembly & care notes:\n	- use assembly services your pcb manufactuer offers. could be done by hand but risky and unforgiving. hope and pray otherwise"
 		(exclude_from_sim no)
-		(at 215.9 140.97 0)
-		(size 67.31 13.97)
+		(at 208.28 140.97 0)
+		(size 74.93 13.97)
 		(margins 0.9398 0.9398 0.9398 0.9398)
 		(stroke
 			(width 0)
@@ -3256,6 +3267,12 @@
 		(uuid "3a934657-6a3c-47b7-a97f-28f1df637c4b")
 	)
 	(junction
+		(at 78.74 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bff6fb6-8708-4fe3-85be-c46125acfa90")
+	)
+	(junction
 		(at 77.47 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3286,12 +3303,6 @@
 		(uuid "73689e91-9ae8-4f7a-82d0-d8d9eb4d4a4d")
 	)
 	(junction
-		(at 78.74 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "794362cd-2292-4d7d-8395-d3ea8c7f2737")
-	)
-	(junction
 		(at 144.78 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3302,12 +3313,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86e7e55b-ba9e-43e2-b01a-dd33d1e9e1c4")
-	)
-	(junction
-		(at 78.74 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92dcaa82-672e-4518-a1ff-ef455622052e")
 	)
 	(junction
 		(at 144.78 171.45)
@@ -3394,6 +3399,12 @@
 		(uuid "f3413412-490f-4ce3-b3e1-23224c360155")
 	)
 	(junction
+		(at 78.74 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbdadf0d-f94e-4467-bbbd-b9ec15342b6e")
+	)
+	(junction
 		(at 83.82 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3416,6 +3427,10 @@
 	(no_connect
 		(at 118.11 69.85)
 		(uuid "6264b5ae-8ee5-45df-aa20-96241cff50b3")
+	)
+	(no_connect
+		(at 257.81 93.98)
+		(uuid "985690df-3e30-4611-ab3c-6389518e4861")
 	)
 	(bus_entry
 		(at 69.85 133.35)
@@ -3571,15 +3586,6 @@
 		(uuid "5e7a9880-6c23-473e-9b81-88cd9182df43")
 	)
 	(bus_entry
-		(at 68.58 82.55)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c062603-8120-4410-b808-9215398d244a")
-	)
-	(bus_entry
 		(at 132.08 121.92)
 		(size -2.54 2.54)
 		(stroke
@@ -3607,6 +3613,15 @@
 		(uuid "7f390375-fabe-41d6-acbf-9eabb9e82f74")
 	)
 	(bus_entry
+		(at 60.96 72.39)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b2399f-d1ae-4165-921b-9e6c5c9fb5e0")
+	)
+	(bus_entry
 		(at 132.08 91.44)
 		(size -2.54 2.54)
 		(stroke
@@ -3616,13 +3631,13 @@
 		(uuid "8af83ab0-9a63-487d-ad4b-4faf43466216")
 	)
 	(bus_entry
-		(at 68.58 74.93)
+		(at 60.96 82.55)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d6e1858-65e4-444e-b7a8-0ec2b25920bb")
+		(uuid "8aff2ae8-ff0b-49f5-ab9d-2196db0393ed")
 	)
 	(bus_entry
 		(at 69.85 97.79)
@@ -3688,15 +3703,6 @@
 		(uuid "d9071428-2292-4bdd-9a8b-2e4fa986b203")
 	)
 	(bus_entry
-		(at 68.58 72.39)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de7ba7af-c478-4ac4-bcf6-e58f74394931")
-	)
-	(bus_entry
 		(at 69.85 113.03)
 		(size 2.54 2.54)
 		(stroke
@@ -3731,6 +3737,15 @@
 			(type default)
 		)
 		(uuid "e266fa3a-327c-4e58-bfe9-69b2abd8847e")
+	)
+	(bus_entry
+		(at 60.96 74.93)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e46bdea2-8ecb-4b55-8aa5-c2a96c45d41f")
 	)
 	(bus_entry
 		(at 69.85 105.41)
@@ -3777,16 +3792,6 @@
 			(type default)
 		)
 		(uuid "057e3889-0251-4747-95e1-50a0e5decfa4")
-	)
-	(wire
-		(pts
-			(xy 78.74 77.47) (xy 71.12 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a0d05d2-c25a-4923-a394-d441fc2ea3c6")
 	)
 	(wire
 		(pts
@@ -3980,7 +3985,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 74.93) (xy 80.01 74.93)
+			(xy 63.5 74.93) (xy 80.01 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4047,6 +4052,16 @@
 			(type default)
 		)
 		(uuid "4e4c1323-adb2-41d3-8332-44aa4036ff82")
+	)
+	(bus
+		(pts
+			(xy 255.27 93.98) (xy 260.35 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f0b2d34-1931-48d3-8504-3034ef8d01ab")
 	)
 	(wire
 		(pts
@@ -4117,6 +4132,16 @@
 			(type default)
 		)
 		(uuid "5edb5dce-91a6-4122-ac8c-5f7d57aae931")
+	)
+	(wire
+		(pts
+			(xy 63.5 85.09) (xy 78.74 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f1aa4d2-0dd8-4bf0-9d06-94ff1fbaf3da")
 	)
 	(wire
 		(pts
@@ -4370,16 +4395,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 85.09) (xy 71.12 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a40544b5-5a30-441e-b8ca-9edfff6c72ec")
-	)
-	(wire
-		(pts
 			(xy 118.11 124.46) (xy 129.54 124.46)
 		)
 		(stroke
@@ -4427,6 +4442,16 @@
 			(type default)
 		)
 		(uuid "b484f931-ab4d-4e68-abb2-148304454a74")
+	)
+	(wire
+		(pts
+			(xy 63.5 77.47) (xy 78.74 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5df9537-3ccf-47b0-b889-4e94d4df3452")
 	)
 	(wire
 		(pts
@@ -4590,7 +4615,7 @@
 	)
 	(bus
 		(pts
-			(xy 68.58 72.39) (xy 68.58 82.55)
+			(xy 60.96 72.39) (xy 60.96 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4630,7 +4655,7 @@
 	)
 	(bus
 		(pts
-			(xy 67.31 72.39) (xy 68.58 72.39)
+			(xy 59.69 72.39) (xy 60.96 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7356,15 +7381,15 @@
 		)
 		(uuid "314003d2-56a5-43b0-9f78-20923a0ae693")
 	)
-	(label "V_{dd_DDRQ}"
-		(at 71.12 77.47 0)
+	(label "V_{dd_DDR1}_1v8"
+		(at 63.5 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "3990986e-2935-40ef-bb1e-b2dc71fe059a")
+		(uuid "3a1c7a4a-98db-4c54-b542-2da8f2106754")
 	)
 	(label "V_{dd_DDRQ}"
 		(at 83.82 166.37 180)
@@ -7396,15 +7421,15 @@
 		)
 		(uuid "5326593b-4fb7-4ecf-8ee8-f092fd6d8f8d")
 	)
-	(label "V_{DDR_ref}"
-		(at 71.12 85.09 0)
+	(label "V_{dd_DDRQ}_1v2"
+		(at 63.5 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "607dadf0-249f-497c-ab14-d7e21be2b248")
+		(uuid "5e3e4096-2348-4f1e-8cda-3a8355595f87")
 	)
 	(label "ddr.m1"
 		(at 129.54 106.68 180)
@@ -7527,7 +7552,7 @@
 		(uuid "8e7822bd-cae1-4cd2-80c4-89f4dfa9dc49")
 	)
 	(label "{flash_mem}"
-		(at 257.81 93.98 0)
+		(at 260.35 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7575,16 +7600,6 @@
 			(justify left bottom)
 		)
 		(uuid "a35cc9d5-202c-40bc-b865-fb9aa6af8e85")
-	)
-	(label "V_{dd_DDR1}"
-		(at 71.12 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8eaf450-13cb-4e42-b458-6c0b7ea7e66c")
 	)
 	(label "ddr.d3"
 		(at 72.39 107.95 0)
@@ -7706,6 +7721,16 @@
 		)
 		(uuid "db0c5824-2257-4375-96e9-1b3e7c4f3f02")
 	)
+	(label "V_{DDR_ref}"
+		(at 63.5 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dbedfb51-f641-415f-b97f-57c693ba5725")
+	)
 	(label "ddr.a5"
 		(at 129.54 124.46 180)
 		(effects
@@ -7801,7 +7826,7 @@
 	)
 	(hierarchical_label "FLASH"
 		(shape bidirectional)
-		(at 257.81 93.98 180)
+		(at 255.27 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7812,7 +7837,7 @@
 	)
 	(hierarchical_label "PROC_PWR"
 		(shape input)
-		(at 67.31 72.39 180)
+		(at 59.69 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9236,6 +9261,17 @@
 			)
 		)
 		(property "unit x1" "26.56"
+			(at 97.79 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "vendor1" "https://www.mouser.com/en/ProductDetail/ISSI/IS46LD16128C-18BLA2-TR?qs=%252BICfH0Hx1eSIw0DN081MsQ%3D%3D"
 			(at 97.79 62.23 0)
 			(hide yes)
 			(show_name no)
