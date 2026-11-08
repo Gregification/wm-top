@@ -562,7 +562,7 @@
 		)
 		(uuid "6702c81e-c318-4b6e-914b-084052b892c3")
 	)
-	(text_box "design notes:\n	- JTAG with Tag-Connect style connector\n	- 1v8 logic . NO ON BOARD LEVEL SHIFTER . level shifting must be done by probe\n	- no power supplied to board\n	- suggested hardware\n		- ST-Link/V2\n		- Tag-Connect ARM2010 ARM 20 pin to TC2050 adaptor\n		- Tag-Connect pogo connector & cable : TC2050 IDC"
+	(text_box "design notes:\n	- JTAG with Tag-Connect style connector\n	- 3v3 logic . NO ON BOARD LEVEL SHIFTER\n	- power not supplied by TC\n	- suggested hardware\n		- ST-Link/V2\n		- Tag-Connect ARM2010 ARM 20 pin to TC2050 adaptor\n		- Tag-Connect pogo connector & cable : TC2050 IDC"
 		(exclude_from_sim no)
 		(at 199.39 114.3 0)
 		(size 83.82 36.83)
@@ -629,12 +629,6 @@
 		(uuid "2fbc3781-3b35-4456-90f5-74fd056f0ce0")
 	)
 	(junction
-		(at 153.67 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "41ddd7b3-a804-439a-91a7-e2b407973b36")
-	)
-	(junction
 		(at 101.6 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -645,6 +639,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e29caedf-0a2e-4f86-8e6a-ca2c4fd63e6b")
+	)
+	(junction
+		(at 153.67 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb6b80c9-332e-46cc-bb29-cefff95a6163")
 	)
 	(no_connect
 		(at 133.35 101.6)
@@ -662,15 +662,6 @@
 			(type default)
 		)
 		(uuid "0d711523-2b9f-45a4-97a3-5ef39e263759")
-	)
-	(bus_entry
-		(at 170.18 91.44)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11dc87a9-3d99-4cfc-ad40-969854fc8fdc")
 	)
 	(bus_entry
 		(at 156.21 96.52)
@@ -706,7 +697,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5b73b26f-1c0b-4f4b-bfc8-cdcb3d3ecd53")
+		(uuid "4fd76b7e-1f59-450e-abc5-d36e48d2916c")
 	)
 	(bus_entry
 		(at 156.21 101.6)
@@ -716,6 +707,15 @@
 			(type default)
 		)
 		(uuid "ae7c42d0-b74c-45f4-a5ae-a44b47792c7c")
+	)
+	(bus_entry
+		(at 170.18 91.44)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4c9996c-34fe-492d-a02e-2bc22c5617e6")
 	)
 	(bus_entry
 		(at 99.06 96.52)
@@ -836,7 +836,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 93.98) (xy 167.64 93.98)
+			(xy 133.35 93.98) (xy 153.67 93.98)
 		)
 		(stroke
 			(width 0)
@@ -854,16 +854,6 @@
 		)
 		(uuid "934adcad-688b-4dc0-8dcb-f5eebf96251a")
 	)
-	(wire
-		(pts
-			(xy 133.35 93.98) (xy 153.67 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98bf153c-ddf2-4b02-8592-035a132ed832")
-	)
 	(bus
 		(pts
 			(xy 82.55 91.44) (xy 81.28 91.44)
@@ -873,6 +863,16 @@
 			(type default)
 		)
 		(uuid "9ba6de54-8ee0-4a74-b70e-1c74a2c09de7")
+	)
+	(wire
+		(pts
+			(xy 153.67 93.98) (xy 167.64 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b30e47af-4fd1-472b-9ba3-189524483968")
 	)
 	(bus
 		(pts
@@ -886,7 +886,7 @@
 	)
 	(bus
 		(pts
-			(xy 171.45 90.17) (xy 170.18 90.17)
+			(xy 171.45 91.44) (xy 170.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -904,16 +904,6 @@
 		)
 		(uuid "c48aadee-e427-4cd5-ab02-81c2b96c25b3")
 	)
-	(bus
-		(pts
-			(xy 170.18 90.17) (xy 170.18 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6c243bb-3215-4b5f-9ab8-76753523ea9f")
-	)
 	(wire
 		(pts
 			(xy 101.6 93.98) (xy 120.65 93.98)
@@ -924,7 +914,7 @@
 		)
 		(uuid "cbe576dc-374a-4fbc-a672-c889373e5827")
 	)
-	(label "jtag_tc2050.RESET"
+	(label "jtag_tc2050.nSRST"
 		(at 133.35 93.98 0)
 		(effects
 			(font
@@ -932,17 +922,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0643eacb-95b0-429e-93c8-c7122ccb22c7")
-	)
-	(label "RSTn"
-		(at 167.64 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "170a6b7d-7c5e-4243-adc0-a1ba223ce1a5")
+		(uuid "17d82339-5674-401e-aa3f-8e665e7ab1fb")
 	)
 	(label "jtag_tc2050.GND"
 		(at 120.65 99.06 180)
@@ -1054,16 +1034,6 @@
 		)
 		(uuid "bd2200d9-ad3a-4a21-9e05-c177211404dd")
 	)
-	(label "{mpu_pmic}"
-		(at 247.65 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c5e4efb4-84fb-44e6-9340-a7acdc8f4f11")
-	)
 	(label "{jtag_tc2050}"
 		(at 247.65 97.79 180)
 		(effects
@@ -1074,8 +1044,18 @@
 		)
 		(uuid "c64c3df8-1d8f-4871-8b5d-f661559e3f20")
 	)
+	(label "nRST"
+		(at 167.64 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e820be5b-6a12-4d3f-b74f-bf3f02c6e40b")
+	)
 	(hierarchical_label "PROC_PWR"
-		(shape input)
+		(shape bidirectional)
 		(at 247.65 101.6 0)
 		(effects
 			(font
@@ -1085,19 +1065,8 @@
 		)
 		(uuid "07c2cabe-5201-4222-82ed-f2daa760e8f9")
 	)
-	(hierarchical_label "PROC_PMIC_IO"
-		(shape bidirectional)
-		(at 247.65 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "253f97fc-813a-4858-9aff-49f9178b1ea4")
-	)
 	(hierarchical_label "PROC_PWR"
-		(shape input)
+		(shape bidirectional)
 		(at 81.28 91.44 180)
 		(effects
 			(font
@@ -1118,17 +1087,6 @@
 		)
 		(uuid "4733f376-42d5-4f4e-b65f-3949df6f90ad")
 	)
-	(hierarchical_label "PROC_PMIC_IO"
-		(shape bidirectional)
-		(at 171.45 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8abacfa9-e9d0-45bd-955d-b6f79eacca8d")
-	)
 	(hierarchical_label "JTAG"
 		(shape bidirectional)
 		(at 81.28 78.74 180)
@@ -1139,6 +1097,17 @@
 			(justify right)
 		)
 		(uuid "a6c0c922-79a2-47dd-87a9-cf7bcbc5280a")
+	)
+	(hierarchical_label "PROC_PWR"
+		(shape bidirectional)
+		(at 171.45 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba4b0bb6-a9cd-41a3-91ff-2aa56f422474")
 	)
 	(symbol
 		(lib_id "Connector:TC2050")

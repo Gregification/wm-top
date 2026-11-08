@@ -25,16 +25,6 @@
 		)
 		(uuid "a7d0822b-7b84-407e-9c1b-8b0f65218e75")
 	)
-	(label "{mpu_pmic}"
-		(at 247.65 132.08 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8d32820b-5222-4035-a51d-afb4e301d9ba")
-	)
 	(hierarchical_label "Vin_prim"
 		(shape output)
 		(at 247.65 120.65 0)
@@ -45,16 +35,5 @@
 			(justify left)
 		)
 		(uuid "4fb9c3c7-eebe-4c46-af8e-48083e7d34c0")
-	)
-	(hierarchical_label "PROC_PMIC_IO"
-		(shape bidirectional)
-		(at 247.65 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e88a913d-4430-435f-907d-0db5bc872d7a")
 	)
 )

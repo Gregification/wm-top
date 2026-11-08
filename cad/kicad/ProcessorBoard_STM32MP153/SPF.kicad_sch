@@ -3279,7 +3279,7 @@
 		)
 		(uuid "fe1316d6-eb9c-44f3-816d-17fc05a9d60a")
 	)
-	(text_box "oscillator\n- clock supplied by MCU"
+	(text_box "oscillator\n- clock supplied by MPU"
 		(exclude_from_sim no)
 		(at 13.97 241.3 0)
 		(size 45.72 40.64)
@@ -3319,7 +3319,7 @@
 		)
 		(uuid "138c069b-e3e2-4d55-a4d3-a73b5a454bbe")
 	)
-	(text_box "host supply filtering : 3v3 300mA\n- mainly for inrush limiting to <30mA, \n- some modules short V_{ccR} and V_{ccT} internally anyways"
+	(text_box "host supply filtering : 3v3 300mA\n- inrush limiting to <30mA, \n- some modules short V_{ccR} and V_{ccT} internally anyways"
 		(exclude_from_sim no)
 		(at 271.78 16.51 0)
 		(size 82.55 58.42)
@@ -3772,12 +3772,6 @@
 		(uuid "b9123176-699d-46d7-8f19-1b8977d80273")
 	)
 	(junction
-		(at 184.15 276.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba17571d-1f38-455c-a78e-ab16783abad1")
-	)
-	(junction
 		(at 266.7 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3800,12 +3794,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5bacf46-60d8-4331-81cd-21a673ce8fa5")
-	)
-	(junction
-		(at 189.23 276.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8fc743d-e9f9-4f24-a5c8-7f5067306fad")
 	)
 	(junction
 		(at 269.24 86.36)
@@ -3927,7 +3915,7 @@
 		(uuid "11ce207f-987c-4f17-abc1-b385aea212b0")
 	)
 	(bus_entry
-		(at 161.29 242.57)
+		(at 161.29 226.06)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -3990,7 +3978,7 @@
 		(uuid "5c6ec82d-1046-4726-836f-9853af3f636e")
 	)
 	(bus_entry
-		(at 161.29 254)
+		(at 161.29 231.14)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4143,7 +4131,7 @@
 		(uuid "d249ed22-1893-4c04-9b31-62e04500d5b2")
 	)
 	(bus_entry
-		(at 161.29 265.43)
+		(at 161.29 236.22)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4233,7 +4221,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 267.97) (xy 186.69 267.97)
+			(xy 163.83 238.76) (xy 182.88 238.76)
 		)
 		(stroke
 			(width 0)
@@ -4250,16 +4238,6 @@
 			(type default)
 		)
 		(uuid "077ce196-f58c-4a55-aa0b-cf38e9e4608b")
-	)
-	(bus
-		(pts
-			(xy 161.29 242.57) (xy 161.29 265.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07af479e-fbe3-4fd1-ae13-cb162c74b31d")
 	)
 	(wire
 		(pts
@@ -4553,16 +4531,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 250.19) (xy 184.15 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fe342e1-65c6-48d3-b866-86a6fabc5ee4")
-	)
-	(wire
-		(pts
 			(xy 74.93 38.1) (xy 74.93 41.91)
 		)
 		(stroke
@@ -4570,16 +4538,6 @@
 			(type default)
 		)
 		(uuid "2ff6f2cf-c94a-4e58-9d5a-ec1cc906c63d")
-	)
-	(wire
-		(pts
-			(xy 194.31 276.86) (xy 194.31 273.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "304e7ba1-efb9-477a-b31a-4743c86647b4")
 	)
 	(wire
 		(pts
@@ -4651,6 +4609,16 @@
 		)
 		(uuid "391c6d99-80bc-4ebc-9a35-603087f2997a")
 	)
+	(bus
+		(pts
+			(xy 161.29 226.06) (xy 161.29 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39261944-95a0-40e5-b1e6-b6b6a407fca2")
+	)
 	(wire
 		(pts
 			(xy 153.67 80.01) (xy 153.67 81.28)
@@ -4693,26 +4661,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 262.89) (xy 194.31 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c85ab76-f09e-4fc8-8168-53f3335856ee")
-	)
-	(wire
-		(pts
-			(xy 184.15 276.86) (xy 189.23 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3daf7ab5-f66e-40a6-a506-f364806c0692")
-	)
-	(wire
-		(pts
 			(xy 158.75 81.28) (xy 177.8 81.28)
 		)
 		(stroke
@@ -4743,7 +4691,7 @@
 	)
 	(bus
 		(pts
-			(xy 321.31 104.14) (xy 320.04 104.14)
+			(xy 321.31 105.41) (xy 320.04 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5033,7 +4981,7 @@
 	)
 	(bus
 		(pts
-			(xy 320.04 104.14) (xy 320.04 107.95)
+			(xy 320.04 105.41) (xy 320.04 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5343,16 +5291,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 233.68) (xy 184.15 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7eb4fdc2-980c-4de0-95d7-414457eeee7b")
-	)
-	(wire
-		(pts
 			(xy 39.37 128.27) (xy 88.9 128.27)
 		)
 		(stroke
@@ -5463,16 +5401,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 233.68) (xy 184.15 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ebd29df-b090-4d80-a909-1df2bce52dba")
-	)
-	(wire
-		(pts
 			(xy 85.09 46.99) (xy 85.09 102.87)
 		)
 		(stroke
@@ -5513,7 +5441,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 245.11) (xy 176.53 245.11)
+			(xy 163.83 228.6) (xy 182.88 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5570,16 +5498,6 @@
 			(type default)
 		)
 		(uuid "987a5277-8162-4129-8b9e-8eee52fefc28")
-	)
-	(wire
-		(pts
-			(xy 181.61 276.86) (xy 184.15 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "995fe9a2-e1b7-408f-bb8f-d9508046e025")
 	)
 	(wire
 		(pts
@@ -5683,7 +5601,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 256.54) (xy 181.61 256.54)
+			(xy 163.83 233.68) (xy 182.88 233.68)
 		)
 		(stroke
 			(width 0)
@@ -5793,7 +5711,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 228.6) (xy 166.37 228.6)
+			(xy 187.96 233.68) (xy 189.23 233.68)
 		)
 		(stroke
 			(width 0)
@@ -5820,16 +5738,6 @@
 			(type default)
 		)
 		(uuid "ae52b062-14b6-4320-9f4e-61789d4c18c3")
-	)
-	(wire
-		(pts
-			(xy 172.72 228.6) (xy 189.23 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae89e96c-255a-42d5-b15c-d814cd3607d0")
 	)
 	(wire
 		(pts
@@ -5883,16 +5791,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 276.86) (xy 194.31 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3dbafe4-eb3d-4fed-b3ed-63934bb920e0")
-	)
-	(wire
-		(pts
 			(xy 138.43 48.26) (xy 163.83 48.26)
 		)
 		(stroke
@@ -5930,16 +5828,6 @@
 			(type default)
 		)
 		(uuid "b90e8e56-e761-40fd-ad6e-0c7ed2df2e79")
-	)
-	(wire
-		(pts
-			(xy 189.23 261.62) (xy 189.23 276.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b93cc247-36bf-4962-a4a0-4cd08316f2c6")
 	)
 	(wire
 		(pts
@@ -6100,16 +5988,6 @@
 			(type default)
 		)
 		(uuid "d4abb305-5493-4157-a372-290cb6055b31")
-	)
-	(wire
-		(pts
-			(xy 189.23 228.6) (xy 189.23 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4b21866-f11c-4cb7-b3c4-4fc8dee8c443")
 	)
 	(bus
 		(pts
@@ -6303,7 +6181,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 223.52) (xy 166.37 223.52)
+			(xy 187.96 228.6) (xy 189.23 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6393,7 +6271,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 233.68) (xy 166.37 233.68)
+			(xy 187.96 238.76) (xy 189.23 238.76)
 		)
 		(stroke
 			(width 0)
@@ -6403,7 +6281,7 @@
 	)
 	(bus
 		(pts
-			(xy 160.02 242.57) (xy 161.29 242.57)
+			(xy 160.02 226.06) (xy 161.29 226.06)
 		)
 		(stroke
 			(width 0)
@@ -6500,16 +6378,6 @@
 			(type default)
 		)
 		(uuid "f832fd80-a4cf-41d1-85c3-197351eb675a")
-	)
-	(wire
-		(pts
-			(xy 194.31 223.52) (xy 172.72 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f890dbb0-3168-4536-88a6-6714d227d0d7")
 	)
 	(wire
 		(pts
@@ -11071,12 +10939,12 @@
 		(uuid "1c27ff64-3543-4e1e-9309-55b5a65f1826")
 	)
 	(label "3v3"
-		(at 156.21 228.6 180)
+		(at 199.39 233.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "25c86bc2-2b42-46f5-b810-98ae419e5fad")
 	)
@@ -11101,7 +10969,7 @@
 		(uuid "323db511-7d50-466a-81c8-17df14cbc19a")
 	)
 	(label "sfp.led_{red}"
-		(at 163.83 245.11 0)
+		(at 163.83 228.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11341,7 +11209,7 @@
 		(uuid "98a6e112-e900-48f9-84d1-d59b7afc286e")
 	)
 	(label "sfp.led_{green}"
-		(at 163.83 256.54 0)
+		(at 163.83 233.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11421,7 +11289,7 @@
 		(uuid "c18099a4-9bdd-412a-bba7-2a06418a5d39")
 	)
 	(label "sfp.led_{blue}"
-		(at 163.83 267.97 0)
+		(at 163.83 238.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11572,7 +11440,7 @@
 	)
 	(hierarchical_label "SFP_BRIDGE"
 		(shape bidirectional)
-		(at 321.31 104.14 0)
+		(at 321.31 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11582,7 +11450,7 @@
 		(uuid "28217178-e94d-4ad0-b8e1-2494715c64d0")
 	)
 	(hierarchical_label "PROC_PWR"
-		(shape output)
+		(shape input)
 		(at 379.73 129.54 180)
 		(effects
 			(font
@@ -11593,7 +11461,7 @@
 		(uuid "29771fe1-c27b-4a7e-8449-bd7c02abdb6f")
 	)
 	(hierarchical_label "PROC_PWR"
-		(shape output)
+		(shape input)
 		(at 378.46 137.16 180)
 		(effects
 			(font
@@ -11616,7 +11484,7 @@
 	)
 	(hierarchical_label "SFP_BRIDGE"
 		(shape bidirectional)
-		(at 160.02 242.57 180)
+		(at 160.02 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12634,154 +12502,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 88.9 273.05 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18e1c3b6-a1dc-4c1e-a03f-6ec544ebcea4")
-		(property "Reference" "R519"
-			(at 91.44 271.7799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5.6k"
-			(at 91.44 274.3199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "5.6k, 250mW, 150V, 1%, 100ppm"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RK73H2ATTD5601F?qs=sGAEpiMZZMvdGkrng054tz2hCf0K9MmAHiPVKAcdIq4%3D"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.021"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.017"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "13d304c9-6c56-49f7-a542-1fd1f436a872")
-		)
-		(pin "1"
-			(uuid "dd540f13-77f1-4ee9-a6c2-1796686fcd2b")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R519")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 295.91 44.45 0)
 		(unit 1)
@@ -12940,8 +12660,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 170.18 223.52 270)
-		(mirror x)
+		(at 185.42 228.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12951,7 +12670,7 @@
 		(dnp no)
 		(uuid "1fcd3bce-7766-4dc8-ab22-f6e25092eceb")
 		(property "Reference" "R506"
-			(at 170.18 214.122 90)
+			(at 185.42 219.202 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12961,7 +12680,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 170.18 221.234 90)
+			(at 185.42 226.314 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12971,7 +12690,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12982,7 +12701,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12993,7 +12712,7 @@
 			)
 		)
 		(property "Description" "330R, 100mW, 1%, 100ppm, 75V, +155c"
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13004,7 +12723,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0603-FX-3300ELF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RvQ3sBj9RG2Y%3D"
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13015,7 +12734,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13026,7 +12745,7 @@
 			)
 		)
 		(property "unit x10" "0.012"
-			(at 170.18 223.52 0)
+			(at 185.42 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13037,7 +12756,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 170.18 223.52 90)
+			(at 185.42 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13048,7 +12767,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 170.18 223.52 90)
+			(at 185.42 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13364,170 +13083,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C521")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MMBT5551L")
-		(at 186.69 256.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "277e849e-ba5f-4aca-ab48-8da2b77c3d6a")
-		(property "Reference" "Q505"
-			(at 197.104 257.556 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBT5551L"
-			(at 197.104 255.016 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 191.77 258.445 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Diotec-Semiconductor/MMBT5551?qs=OlC7AqGiEDmBtxqj%252BHM0NA%3D%3D"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.15"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.094"
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 186.69 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1523b81-0bcc-4264-a577-df400d2bf5d5")
-		)
-		(pin "3"
-			(uuid "1e564844-683b-4541-87aa-66b8e6124442")
-		)
-		(pin "2"
-			(uuid "891c9f01-58d8-496d-a5cf-ab56f28963d8")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "Q505")
 					(unit 1)
 				)
 			)
@@ -15697,8 +15252,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 170.18 228.6 270)
-		(mirror x)
+		(at 185.42 233.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15708,7 +15262,7 @@
 		(dnp no)
 		(uuid "5f266d3b-2540-491a-8532-73f9894b43b3")
 		(property "Reference" "R507"
-			(at 170.18 216.154 90)
+			(at 185.42 221.234 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15718,7 +15272,7 @@
 			)
 		)
 		(property "Value" "240"
-			(at 170.18 226.314 90)
+			(at 185.42 231.394 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15728,7 +15282,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15739,7 +15293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15750,7 +15304,7 @@
 			)
 		)
 		(property "Description" "240R, 0.5%, 25Vdc, 62.5mW, 25ppm, +125C"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15761,7 +15315,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RR0510P-241-D?qs=sGAEpiMZZMvdGkrng054t%2FXDkuzyg5Mc7Y5IJ1%252B0M7s%3D"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15772,7 +15326,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15783,7 +15337,7 @@
 			)
 		)
 		(property "unit x10" "0.023"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15794,7 +15348,7 @@
 			)
 		)
 		(property "unit x100" "0.022"
-			(at 170.18 228.6 0)
+			(at 185.42 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15805,7 +15359,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 170.18 228.6 90)
+			(at 185.42 233.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15816,7 +15370,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 170.18 228.6 90)
+			(at 185.42 233.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16752,170 +16306,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT5551L")
-		(at 191.77 267.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73630b4e-9695-4045-8e0f-a88a25cb7c81")
-		(property "Reference" "Q506"
-			(at 196.85 269.2401 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBT5551L"
-			(at 196.85 266.7001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 196.85 269.875 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Diotec-Semiconductor/MMBT5551?qs=OlC7AqGiEDmBtxqj%252BHM0NA%3D%3D"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.15"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.094"
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 191.77 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cce23547-3c73-400e-b41e-b362815b71ad")
-		)
-		(pin "3"
-			(uuid "06951fbe-d6ef-4265-9e95-d83607534784")
-		)
-		(pin "2"
-			(uuid "4eb7edfd-de20-47f7-af5b-eb2340d5c3c1")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "Q506")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 54.61 71.12 90)
 		(unit 1)
@@ -17136,85 +16526,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R522")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 181.61 276.86 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a88de6e-f7c5-4307-8c9e-94987851a8e5")
-		(property "Reference" "#PWR0510"
-			(at 175.26 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 276.8599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "10c8869c-b0b7-449a-b679-be3691ee3b0c")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "#PWR0510")
 					(unit 1)
 				)
 			)
@@ -18182,8 +17493,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_ABGR")
-		(at 161.29 228.6 0)
-		(mirror y)
+		(at 194.31 233.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18193,7 +17503,7 @@
 		(dnp no)
 		(uuid "99dac6ce-6906-407a-b882-ad4c8890cbf6")
 		(property "Reference" "D501"
-			(at 161.29 215.138 0)
+			(at 194.31 220.218 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18203,7 +17513,7 @@
 			)
 		)
 		(property "Value" "LED_ABGR"
-			(at 161.29 217.678 0)
+			(at 194.31 222.758 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18213,7 +17523,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_ASMB-KTF0-0A306"
-			(at 161.29 229.87 0)
+			(at 194.31 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18224,7 +17534,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVH-FKA.pdf"
-			(at 161.29 229.87 0)
+			(at 194.31 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18235,7 +17545,7 @@
 			)
 		)
 		(property "Description" "RGB LED, com-anode, red/green/blue"
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18246,7 +17556,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Cree-LED/CLMVH-FKA-V3E27C3M2RMG6EB4B3?qs=vcFyY%252BOcAyjw5C6eEBWdHQ%3D%3D"
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18257,7 +17567,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18268,7 +17578,7 @@
 			)
 		)
 		(property "unit x10" "0.007"
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18279,7 +17589,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18290,7 +17600,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 161.29 228.6 0)
+			(at 194.31 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19587,6 +18897,154 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 88.9 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bef1e0c1-b47e-420e-8ff9-78ccad6b3a0a")
+		(property "Reference" "R513"
+			(at 91.44 271.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3090"
+			(at 91.44 274.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.08"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.60"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a92eb5ef-4cee-4bdf-8499-3093c5d8f714")
+		)
+		(pin "1"
+			(uuid "df134335-c354-400c-bea2-0bf02c7a7a62")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 189.23 41.91 0)
 		(unit 1)
@@ -19849,8 +19307,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 170.18 233.68 270)
-		(mirror x)
+		(at 185.42 238.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19860,7 +19317,7 @@
 		(dnp no)
 		(uuid "c72258ef-3d60-45f6-a0d2-050cef0495ae")
 		(property "Reference" "R508"
-			(at 170.18 218.186 90)
+			(at 185.42 223.266 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19870,7 +19327,7 @@
 			)
 		)
 		(property "Value" "240"
-			(at 170.18 231.648 90)
+			(at 185.42 236.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19880,7 +19337,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19891,7 +19348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19902,7 +19359,7 @@
 			)
 		)
 		(property "Description" "240R, 0.5%, 25Vdc, 62.5mW, 25ppm, +125C"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19913,7 +19370,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RR0510P-241-D?qs=sGAEpiMZZMvdGkrng054t%2FXDkuzyg5Mc7Y5IJ1%252B0M7s%3D"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19924,7 +19381,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19935,7 +19392,7 @@
 			)
 		)
 		(property "unit x10" "0.023"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19946,7 +19403,7 @@
 			)
 		)
 		(property "unit x100" "0.022"
-			(at 170.18 233.68 0)
+			(at 185.42 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19957,7 +19414,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 170.18 233.68 90)
+			(at 185.42 238.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19968,7 +19425,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 170.18 233.68 90)
+			(at 185.42 238.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20145,170 +19602,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0518")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MMBT5551L")
-		(at 181.61 245.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d57183bf-4439-42eb-8248-45a830163a7a")
-		(property "Reference" "Q504"
-			(at 197.104 246.6339 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBT5551L"
-			(at 197.104 244.0939 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 186.69 247.015 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Diotec-Semiconductor/MMBT5551?qs=OlC7AqGiEDmBtxqj%252BHM0NA%3D%3D"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.15"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.094"
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 181.61 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "443abb37-e74b-4486-a54d-7b19312cb7fd")
-		)
-		(pin "3"
-			(uuid "141d9868-6736-43af-a25a-0d6b2c5cd124")
-		)
-		(pin "2"
-			(uuid "1b4f03b1-9b64-4cc1-964d-dae7cce77e4a")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "Q504")
 					(unit 1)
 				)
 			)
