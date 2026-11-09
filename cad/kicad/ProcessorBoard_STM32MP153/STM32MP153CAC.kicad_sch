@@ -9192,8 +9192,8 @@
 		)
 	)
 	(rectangle
-		(start 21.59 146.05)
-		(end 120.65 237.49)
+		(start 17.78 146.05)
+		(end 119.38 237.49)
 		(stroke
 			(width 0)
 			(type default)
@@ -10794,6 +10794,15 @@
 		(uuid "8a2aa9d0-61f0-49dd-b61f-70064ed0bfa2")
 	)
 	(bus_entry
+		(at 527.05 22.86)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c24287a-580f-4c8b-810e-ec1ef91a493e")
+	)
+	(bus_entry
 		(at 161.29 184.15)
 		(size 2.54 2.54)
 		(stroke
@@ -11080,15 +11089,6 @@
 			(type default)
 		)
 		(uuid "da710cf7-3fae-4454-9801-aca28b313119")
-	)
-	(bus_entry
-		(at 527.05 22.86)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db32c6b5-2c00-4846-9ebf-f3963b09fecf")
 	)
 	(bus_entry
 		(at 368.3 316.23)
@@ -16205,6 +16205,16 @@
 		)
 		(uuid "3400f35d-1535-4ee5-b299-9379ca9abd7e")
 	)
+	(label "V_{dd_IO}_3v3"
+		(at 529.59 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "340cfa35-0589-453c-ad99-0ea80c867679")
+	)
 	(label "{jtag_tc2050}"
 		(at 543.56 165.1 180)
 		(effects
@@ -16324,16 +16334,6 @@
 			(justify left bottom)
 		)
 		(uuid "52080bc0-87fe-437f-ba9f-7e9dbf04c94f")
-	)
-	(label "V_{dd_DDRQ}"
-		(at 34.29 203.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "53e29612-686d-4f9a-8058-99eb1585e78c")
 	)
 	(label "sfp.mdio"
 		(at 367.03 52.07 180)
@@ -16685,6 +16685,16 @@
 		)
 		(uuid "985b0e8e-8357-4cae-b573-893236815431")
 	)
+	(label "V_{dd_IO}_3v3"
+		(at 34.29 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "990622d1-1c4d-4c99-8438-0b05d789a738")
+	)
 	(label "ddr.a2"
 		(at 163.83 92.71 0)
 		(effects
@@ -16865,6 +16875,16 @@
 		)
 		(uuid "b659c59d-90ae-459c-8652-de4c159cf7c7")
 	)
+	(label "V_{dd_DDRQ}_1v2"
+		(at 34.29 203.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b69d7f94-c3f2-42c6-9e63-b23de6aab214")
+	)
 	(label "ddr.CLK_P"
 		(at 163.83 260.35 0)
 		(effects
@@ -16884,16 +16904,6 @@
 			(justify right bottom)
 		)
 		(uuid "b6ed947f-c88e-4c78-ae65-2a01714c04a1")
-	)
-	(label "V_{dd_IO}"
-		(at 529.59 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba87521c-c408-40ff-af28-a5e6cf845477")
 	)
 	(label "ddr.ODT"
 		(at 163.83 270.51 0)
@@ -16935,6 +16945,16 @@
 		)
 		(uuid "c36fdfaf-a028-44ee-beae-7b0fb9172e86")
 	)
+	(label "V_{dd_core}_1v2"
+		(at 34.29 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c39cd874-2ebc-4ffa-a128-fa3e1e3a0674")
+	)
 	(label "ddr{mem_d_a_c}"
 		(at 544.83 156.21 0)
 		(effects
@@ -16975,6 +16995,16 @@
 		)
 		(uuid "c94168f6-46c2-45db-aa47-9fcfc0638346")
 	)
+	(label "V_{dd_DDRQ}_1v2"
+		(at 34.29 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c95ba0b0-f74d-46a7-9afb-c21fc1fd7087")
+	)
 	(label "jtag_tc2050.TMS"
 		(at 153.67 295.91 0)
 		(effects
@@ -16984,16 +17014,6 @@
 			(justify left bottom)
 		)
 		(uuid "c9ea2f38-b3af-4001-a722-ca4b7d66fdcf")
-	)
-	(label "V_{dd_IO}"
-		(at 34.29 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cbdeebc1-a409-4bda-b4e0-594817a9252d")
 	)
 	(label "ddr.d4"
 		(at 163.83 179.07 0)
@@ -17104,26 +17124,6 @@
 			(justify left bottom)
 		)
 		(uuid "e7bd1a18-3ab5-4969-a99a-2bad80593709")
-	)
-	(label "V_{dd_DDRQ}"
-		(at 34.29 189.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e8bdc6a2-4f01-4755-ad69-e433bd45bcee")
-	)
-	(label "V_{dd_core}"
-		(at 34.29 156.21 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e912c38e-633f-45e0-a96d-c684bfea60da")
 	)
 	(label "ddr.b2"
 		(at 163.83 82.55 0)
@@ -21082,6 +21082,152 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 548.64 25.4 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68c6aa6b-ea27-44a6-b276-610e65d7f5d2")
+		(property "Reference" "R208"
+			(at 548.64 19.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 548.64 21.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1kR, 75V, 0.5%, 25ppm, +155c, 62.5mW"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-102-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbI6pluMNMZ8s%3D"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.021"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.02"
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 548.64 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "afa44e74-a46b-470d-92ae-91950ca08cb0")
+		)
+		(pin "1"
+			(uuid "77548569-5ba3-44f6-bf0c-b69b53f668ba")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "R208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 54.61 158.75 180)
 		(unit 1)
@@ -21528,152 +21674,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "#PWR0211")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 548.64 25.4 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7489eb0e-26c5-4bde-99b7-b5359d2a4d64")
-		(property "Reference" "R208"
-			(at 548.64 19.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.2k"
-			(at 548.64 21.59 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1.2kR, 50V, 200mW, 1%, 10ppm, +155C"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/TE-Connectivity-Holsworthy/CRGH0603F1K2?qs=sGAEpiMZZMvdGkrng054t7e9%2F3Fc9aBDlcsltOkE2D4XwjPTbCZD0Q%3D%3D"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.018"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.017"
-			(at 548.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 548.64 25.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 548.64 25.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "810f70e5-afc3-47de-8160-bb073d642aa9")
-		)
-		(pin "1"
-			(uuid "12dcf2d2-5cbc-4249-9849-e1285b4a1146")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "R208")
 					(unit 1)
 				)
 			)

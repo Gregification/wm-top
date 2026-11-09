@@ -4601,6 +4601,16 @@
 			"hDVVfsENsXQgJZ0gCIIgCIIgagzy7kIQBEEQBEEQNcb/B5WmfY2E1sGEAAAAAElFTkSuQmCC"
 		)
 	)
+	(label "offboard5v"
+		(at 245.11 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "008a96b7-5456-4615-ab2c-a7414f941172")
+	)
 	(label "V_{ddA_ADC}"
 		(at 273.05 31.75 0)
 		(effects
@@ -4780,16 +4790,6 @@
 			(justify right bottom)
 		)
 		(uuid "b3bc33c7-cef2-4009-b316-805745af88a6")
-	)
-	(label "vin[3v9 , 5v5]. 5v suggested"
-		(at 245.11 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d5a03fba-1090-468c-b63b-3de36790e3b9")
 	)
 	(label "V_{dd_board}_3v3"
 		(at 250.19 90.17 0)

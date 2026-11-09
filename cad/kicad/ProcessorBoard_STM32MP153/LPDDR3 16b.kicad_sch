@@ -7391,16 +7391,6 @@
 		)
 		(uuid "3a1c7a4a-98db-4c54-b542-2da8f2106754")
 	)
-	(label "V_{dd_DDRQ}"
-		(at 83.82 166.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3c971ef4-a5e3-4922-8639-31efd699aeb9")
-	)
 	(label "ddr.d7"
 		(at 72.39 118.11 0)
 		(effects
@@ -7410,6 +7400,16 @@
 			(justify left bottom)
 		)
 		(uuid "3e088dfd-a88c-4449-bacb-619bb71fe66e")
+	)
+	(label "V_{dd_DDRQ}_1v2"
+		(at 83.82 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "42e0b2d0-65a8-48d4-b26b-58bde2e6aa57")
 	)
 	(label "ddr.d8"
 		(at 72.39 125.73 0)
@@ -7470,6 +7470,16 @@
 			(justify left bottom)
 		)
 		(uuid "6ceb2727-973b-4398-827f-2a265be61012")
+	)
+	(label "V_{dd_DDR1}_1v8"
+		(at 83.82 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7154b9b9-6dce-4d76-9518-1dc09ffe3c01")
 	)
 	(label "ddr.a9"
 		(at 129.54 134.62 180)
@@ -7580,16 +7590,6 @@
 			(justify left bottom)
 		)
 		(uuid "9e0a8f58-e958-4f8b-8f9b-0aaf5ca52c3b")
-	)
-	(label "V_{dd_DDR1}"
-		(at 83.82 149.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9e9a43ad-55a2-4aca-83fa-32ab334c1729")
 	)
 	(label "ddr.d11"
 		(at 72.39 135.89 0)

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.2,
-          "height": 3.2,
-          "width": 3.2
+          "drill": 0.0,
+          "height": 0.6,
+          "width": 1.325
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -65,9 +65,9 @@
           "min_island_area": 10.0,
           "min_thickness": 0.2,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.2
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -226,8 +226,10 @@
         0.15,
         0.1509,
         0.2,
+        0.25,
         0.3,
-        0.5
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -620,8 +622,8 @@
         "pattern": "/ddr.CLK*"
       },
       {
-        "netclass": "Z/L3/diff 100 NCP",
-        "pattern": "/SPF/SERDES*"
+        "netclass": "Z/L5/diff 100 NCP",
+        "pattern": "/SFP/SERDES*"
       }
     ]
   },
@@ -1024,7 +1026,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "SW201,SW99901,X201,X501,R201-211,R301-320,R401-406,R501-538,R601-602,R905-907,R1001,R1101-1102,R99901-99914,L301-308,L501-503,L601,L1101-1105,L99901-99903,#PWR201-214,#PWR301-314,#PWR401-406,#PWR501-521,#PWR601-602,#PWR701-702,#PWR801,#PWR1001-1003,#PWR1101,#PWR99901,C201-233,C301-340,C401-417,C501-524,C601-604,C801-802,C1101-1124,C99901-99909,U201,U301-307,U401-402,U501-504,U601,U801,U1001,RN201-204,RN301,RN99901,IC301,IC1101,J201,J301,J501,J701-702,J1001,J1101,NT301-304,NT1101-1104,D201,D301-303,D501-503,D99901-99904,Q301-303,Q501-509,Q99901-99902,H101-104,TP201,TP301,TP501",
+    "used_designators": "SW201,SW99901,X201,X501,R201-211,R301-320,R401-406,R501-538,R601-602,R905-907,R1001,R1101-1102,R99901-99914,L301-308,L501-503,L601,L1101-1105,L99901-99903,#PWR201-214,#PWR301-314,#PWR401-406,#PWR501-521,#PWR601-602,#PWR701-702,#PWR801-802,#PWR901,#PWR1001-1003,#PWR1101,#PWR99901,C201-233,C301-340,C401-417,C501-524,C601-604,C801-802,C1101-1124,C99901-99909,U201,U301-307,U401-402,U501-504,U601,U801,U1001,RN201-204,RN301,RN99901,IC301,IC1101,J201,J301,J501,J701-702,J801-802,J901,J1001-1002,J1101,NT301-304,NT1101-1104,D201,D301-303,D501-503,D99901-99904,Q301-303,Q501-509,Q99901-99902,H101-104,TP201,TP301,TP501",
     "variants": []
   },
   "sheets": [

@@ -1055,7 +1055,7 @@
 		(uuid "e820be5b-6a12-4d3f-b74f-bf3f02c6e40b")
 	)
 	(hierarchical_label "PROC_PWR"
-		(shape bidirectional)
+		(shape input)
 		(at 247.65 101.6 0)
 		(effects
 			(font
@@ -1066,7 +1066,7 @@
 		(uuid "07c2cabe-5201-4222-82ed-f2daa760e8f9")
 	)
 	(hierarchical_label "PROC_PWR"
-		(shape bidirectional)
+		(shape input)
 		(at 81.28 91.44 180)
 		(effects
 			(font
@@ -1099,7 +1099,7 @@
 		(uuid "a6c0c922-79a2-47dd-87a9-cf7bcbc5280a")
 	)
 	(hierarchical_label "PROC_PWR"
-		(shape bidirectional)
+		(shape input)
 		(at 171.45 91.44 0)
 		(effects
 			(font
