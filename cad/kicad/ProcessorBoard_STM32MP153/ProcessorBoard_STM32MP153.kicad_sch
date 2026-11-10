@@ -178,16 +178,38 @@
 		(uuid "6cac1086-66e7-4b6f-a82d-6b2b34881ac4")
 	)
 	(junction
+		(at 135.89 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bcbe485-d8b0-44ec-bc85-6e9a59a21799")
+	)
+	(junction
 		(at 26.67 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b763c0c2-2d75-4bfb-b671-34c46f58a09c")
 	)
 	(junction
+		(at 198.12 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c56bd6fd-0dfd-4a2d-8cc6-1b43c94c4238")
+	)
+	(junction
 		(at 26.67 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f078e24e-0189-429a-9792-c2048ab45255")
+	)
+	(bus
+		(pts
+			(xy 132.08 53.34) (xy 135.89 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b70d8e-5e3e-4e29-8f77-bdf2ecbbf0fb")
 	)
 	(bus
 		(pts
@@ -198,6 +220,16 @@
 			(type default)
 		)
 		(uuid "0455d61d-167d-49da-b8a2-bfa78f5a5308")
+	)
+	(bus
+		(pts
+			(xy 132.08 120.65) (xy 154.94 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33500cc8-2c2a-4a48-b65e-2032c60b35f5")
 	)
 	(bus
 		(pts
@@ -229,6 +261,16 @@
 		)
 		(uuid "4f15e0d4-d1b7-428d-9e60-0b00ab62014f")
 	)
+	(wire
+		(pts
+			(xy 198.12 123.19) (xy 198.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dae408-cf78-44be-ae2c-e1581070b1d8")
+	)
 	(bus
 		(pts
 			(xy 26.67 116.84) (xy 36.83 116.84)
@@ -248,6 +290,16 @@
 			(type default)
 		)
 		(uuid "68c1e1f8-7dfb-4201-b590-eedd4f9bde3a")
+	)
+	(bus
+		(pts
+			(xy 135.89 53.34) (xy 135.89 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4659fc-4bb6-43e8-b856-93cceb83064b")
 	)
 	(wire
 		(pts
@@ -291,13 +343,13 @@
 	)
 	(bus
 		(pts
-			(xy 132.08 116.84) (xy 193.04 116.84)
+			(xy 135.89 43.18) (xy 193.04 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "840214b4-bc0f-42b2-8cc2-ddb2187b672e")
+		(uuid "855b4bb2-b63f-4fab-8a78-28cdfc02af47")
 	)
 	(bus
 		(pts
@@ -381,6 +433,26 @@
 	)
 	(bus
 		(pts
+			(xy 187.96 116.84) (xy 193.04 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c6562c-0f30-4604-bcd0-6623fbfecfb0")
+	)
+	(wire
+		(pts
+			(xy 187.96 123.19) (xy 198.12 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c17bdf15-66b0-4d65-b84b-2810f4ae51d2")
+	)
+	(bus
+		(pts
 			(xy 26.67 53.34) (xy 36.83 53.34)
 		)
 		(stroke
@@ -391,7 +463,7 @@
 	)
 	(bus
 		(pts
-			(xy 26.67 43.18) (xy 193.04 43.18)
+			(xy 26.67 43.18) (xy 135.89 43.18)
 		)
 		(stroke
 			(width 0)
@@ -431,6 +503,16 @@
 	)
 	(bus
 		(pts
+			(xy 132.08 116.84) (xy 154.94 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f7478c-47c6-4a42-9537-a9c919204814")
+	)
+	(bus
+		(pts
 			(xy 187.96 53.34) (xy 193.04 53.34)
 		)
 		(stroke
@@ -438,6 +520,26 @@
 			(type default)
 		)
 		(uuid "faa229bb-31f8-42df-846d-d8141009fc2f")
+	)
+	(label "offboard5v"
+		(at 198.12 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07f0abb1-9aea-4f08-a2c3-f4b9f4cd7ff5")
+	)
+	(label "CAN2{can_d}"
+		(at 143.51 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "1e756db8-c0eb-4391-9a9a-3857288f5f1e")
 	)
 	(label "{jtag_tc2050}"
 		(at 81.28 116.84 0)
@@ -458,6 +560,16 @@
 			(justify bottom)
 		)
 		(uuid "2e31ef0f-80a3-4f04-a364-fa5406e06096")
+	)
+	(label "CAN1{can_d}"
+		(at 143.51 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "4b29c371-db3b-4f46-a8bb-82595ef05bc4")
 	)
 	(label "{mpu_power}"
 		(at 143.51 43.18 0)
@@ -1042,7 +1154,7 @@
 			)
 		)
 		(pin "PROC_PWR" input
-			(at 132.08 116.84 0)
+			(at 132.08 53.34 0)
 			(uuid "358f77d6-fde8-496d-bce5-3bc00a66675f")
 			(effects
 				(font
@@ -1099,6 +1211,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "CAN_1" bidirectional
+			(at 132.08 116.84 0)
+			(uuid "346e974f-6074-4332-95d4-b4ec4ccfaee8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_2" bidirectional
+			(at 132.08 120.65 0)
+			(uuid "8247c916-4de3-448b-9459-1206ac289ace")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1369,6 +1501,92 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 114.3)
+		(size 33.02 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "deac4711-4750-45cc-beb0-115f9982025e")
+		(property "Sheetname" "CAN"
+			(at 154.94 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CAN interface.kicad_sch"
+			(at 154.94 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PROC_PWR" input
+			(at 187.96 116.84 0)
+			(uuid "a3ed7dfc-b7d1-4042-b8b9-77c5512b456b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vin_prim" input
+			(at 187.96 123.19 0)
+			(uuid "0009a422-a980-44d3-bfc7-e59713d2afe0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_1" bidirectional
+			(at 154.94 116.84 180)
+			(uuid "8e25b6f4-d3e0-4075-95d2-03fd815cc3a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_2" bidirectional
+			(at 154.94 120.65 180)
+			(uuid "26ac4c5e-c10e-442a-a031-955273c4e3de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "6")
 				)
 			)
 		)

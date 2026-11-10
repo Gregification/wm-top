@@ -1175,34 +1175,34 @@
 			)
 		)
 		(pin "3"
-			(uuid "78e894c7-5799-4712-a4d3-b0d5b77debbd")
+			(uuid "6e265328-f1bd-4786-8f85-a4d7f3fada26")
 		)
 		(pin "4"
-			(uuid "10d3f341-c88e-4709-b8dd-7aaa13335ed0")
+			(uuid "f63550a1-3edd-47bd-839a-9c63b9ee666d")
 		)
 		(pin "6"
-			(uuid "438cd677-6468-4b42-b862-25b7a930b730")
+			(uuid "8c976936-28d9-4c01-a232-c79e955ef965")
 		)
 		(pin "8"
-			(uuid "76074121-8db1-470e-903d-602384ff6375")
+			(uuid "3045acdb-785c-4d45-88ca-79b01e617213")
 		)
 		(pin "5"
-			(uuid "fed7468d-07fc-4be4-a2b5-201572b04713")
+			(uuid "999b64dd-9e9b-4ef5-99de-2c94795ee557")
 		)
 		(pin "10"
-			(uuid "83e45339-3cc6-47ac-953d-fa0e6509bda3")
+			(uuid "bff41250-b7e1-4076-8274-7bbe8f68b0da")
 		)
 		(pin "9"
-			(uuid "b8e6cc5a-7b33-40d1-bb4b-c540725753f7")
+			(uuid "432b9817-2403-4d5e-9ea0-8325ebf5fe1f")
 		)
 		(pin "2"
-			(uuid "c3b367d4-b5a5-47b9-9c70-12c1f2a357f6")
+			(uuid "a328a430-9267-457c-9dde-b265f7650060")
 		)
 		(pin "1"
-			(uuid "b84ac165-2fc2-40bf-a01e-3e9832f0e26c")
+			(uuid "80fec7da-4fcf-41af-b4e8-5912cd45c255")
 		)
 		(pin "7"
-			(uuid "8d285db6-9944-4e65-835b-f30129f20629")
+			(uuid "138be1b7-db88-4935-b531-235ae80d2b97")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -1281,7 +1281,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "46912c7a-4494-4aa9-abd6-acde6b088093")
+			(uuid "dbb8484b-1683-439a-a049-05d328d40a2a")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"

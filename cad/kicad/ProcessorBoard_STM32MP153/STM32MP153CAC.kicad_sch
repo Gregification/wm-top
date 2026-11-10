@@ -16865,6 +16865,16 @@
 		)
 		(uuid "b2776671-67bc-4ac0-bb47-73a04671fa0a")
 	)
+	(label "CAN2{can_d}"
+		(at 544.83 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b3b7a7b8-5717-4527-830a-b61eff0ed11f")
+	)
 	(label "Boot[0..2]"
 		(at 524.51 30.48 180)
 		(effects
@@ -16904,6 +16914,16 @@
 			(justify right bottom)
 		)
 		(uuid "b6ed947f-c88e-4c78-ae65-2a01714c04a1")
+	)
+	(label "CAN1{can_d}"
+		(at 544.83 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bac6a46e-e06b-452a-a0db-8fda649fe446")
 	)
 	(label "ddr.ODT"
 		(at 163.83 270.51 0)
@@ -17362,6 +17382,17 @@
 		)
 		(uuid "5e8d5955-ddd1-4535-98cf-d607ee77fd8b")
 	)
+	(hierarchical_label "CAN_1"
+		(shape bidirectional)
+		(at 544.83 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60276da9-0d5f-4fd4-b234-6cd159d93c4e")
+	)
 	(hierarchical_label "MEM_D_A_C"
 		(shape bidirectional)
 		(at 160.02 250.19 180)
@@ -17372,6 +17403,17 @@
 			(justify right)
 		)
 		(uuid "79e8893b-b20e-42a3-a401-f1e2c66a76a6")
+	)
+	(hierarchical_label "CAN_2"
+		(shape bidirectional)
+		(at 544.83 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "857fe61b-6761-4188-8c9c-001a69890ce4")
 	)
 	(hierarchical_label "PROC_PWR"
 		(shape input)

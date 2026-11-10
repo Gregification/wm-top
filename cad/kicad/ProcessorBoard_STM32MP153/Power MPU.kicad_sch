@@ -4601,16 +4601,6 @@
 			"hDVVfsENsXQgJZ0gCIIgCIIgagzy7kIQBEEQBEEQNcb/B5WmfY2E1sGEAAAAAElFTkSuQmCC"
 		)
 	)
-	(label "offboard5v"
-		(at 245.11 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "008a96b7-5456-4615-ab2c-a7414f941172")
-	)
 	(label "V_{ddA_ADC}"
 		(at 273.05 31.75 0)
 		(effects
