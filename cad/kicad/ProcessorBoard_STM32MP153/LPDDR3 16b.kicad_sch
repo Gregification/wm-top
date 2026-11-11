@@ -3101,6 +3101,16 @@
 		)
 		(uuid "31de8dfb-8bfe-4699-90dd-e2667421b97b")
 	)
+	(text "maybe overkill on the caps? trying to \ncompensate for sub par power plane"
+		(exclude_from_sim no)
+		(at 62.992 174.498 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9c1c58ae-ab74-4dc6-a640-a71c221ba4cd")
+	)
 	(text "MPU B0"
 		(exclude_from_sim no)
 		(at 64.516 108.966 0)
@@ -3225,16 +3235,34 @@
 		(uuid "ac8d5f45-b308-43de-a0ff-f0e87e25963d")
 	)
 	(junction
-		(at 154.94 154.94)
+		(at 71.12 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02cb0271-6e99-4dd3-b6ed-29dc0e4e3423")
+	)
+	(junction
+		(at 147.32 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "078ed652-9d52-4872-93a5-e4a5e45e7d75")
 	)
 	(junction
-		(at 104.14 149.86)
+		(at 71.12 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dd2a5bf-b228-4da5-a441-c18a833a0c40")
+	)
+	(junction
+		(at 60.96 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11590d76-2a89-4a55-890d-059492ac54dc")
+	)
+	(junction
+		(at 111.76 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16dd0175-41d5-49d8-8733-9f223cb76300")
 	)
 	(junction
 		(at 129.54 77.47)
@@ -3249,19 +3277,25 @@
 		(uuid "20c33917-c028-4ba6-811c-49adec84eec8")
 	)
 	(junction
-		(at 83.82 171.45)
+		(at 81.28 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "242677c0-a55c-4eae-b6a9-4f3064a6cfee")
+	)
+	(junction
+		(at 40.64 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24bece68-6dcb-4107-8051-17483b13b4cc")
 	)
 	(junction
-		(at 93.98 166.37)
+		(at 50.8 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38d1886e-58ae-41a2-9461-6ff97b36b03a")
 	)
 	(junction
-		(at 144.78 166.37)
+		(at 137.16 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a934657-6a3c-47b7-a97f-28f1df637c4b")
@@ -3279,22 +3313,28 @@
 		(uuid "425e8329-6511-47ce-8a89-fa38d192ef73")
 	)
 	(junction
-		(at 104.14 171.45)
+		(at 60.96 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48838ab8-52a4-4365-8fa1-9024541bb2ec")
 	)
 	(junction
-		(at 106.68 182.88)
+		(at 63.5 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f6dcd22-12d7-4ef0-a092-5a1ee42d7318")
 	)
 	(junction
-		(at 134.62 166.37)
+		(at 127 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d899603-989f-4ad1-bbcf-04bb04f3f4de")
+	)
+	(junction
+		(at 101.6 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e0d895e-9a0f-4f1f-a47a-04d531e5ae84")
 	)
 	(junction
 		(at 129.54 87.63)
@@ -3303,100 +3343,124 @@
 		(uuid "73689e91-9ae8-4f7a-82d0-d8d9eb4d4a4d")
 	)
 	(junction
-		(at 144.78 149.86)
+		(at 137.16 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8257835b-0be0-4a9d-a1c4-c94e90795495")
 	)
 	(junction
-		(at 93.98 171.45)
+		(at 50.8 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86e7e55b-ba9e-43e2-b01a-dd33d1e9e1c4")
 	)
 	(junction
-		(at 144.78 171.45)
+		(at 137.16 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "934e8cf5-096d-44fc-8b0e-19485797bda2")
 	)
 	(junction
-		(at 83.82 187.96)
+		(at 101.6 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93cac2fe-ba7f-47f5-9454-41bec6fb77f2")
+	)
+	(junction
+		(at 40.64 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "960f42df-fdc7-4623-b6fb-dd0cea302bb6")
 	)
 	(junction
-		(at 154.94 149.86)
+		(at 81.28 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0ee8f1f-5988-47f7-a0f4-67ad78224784")
+	)
+	(junction
+		(at 147.32 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b72fd4fa-2602-4ae1-ae80-0ebe51adedfc")
 	)
 	(junction
-		(at 93.98 149.86)
+		(at 50.8 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c012c9f5-8001-40c1-bdc0-1e93b3b2c904")
 	)
 	(junction
-		(at 154.94 166.37)
+		(at 147.32 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8d72d4f-5b38-4591-ad6d-1f53e0058460")
 	)
 	(junction
-		(at 144.78 154.94)
+		(at 137.16 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1b7f183-fef8-43f1-a2dc-58334bf34abe")
 	)
 	(junction
-		(at 104.14 154.94)
+		(at 60.96 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3cc484b-487d-4d2c-bc7f-46e2c39369ea")
 	)
 	(junction
-		(at 106.68 187.96)
+		(at 63.5 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3e6ef4a-f82c-4d53-8b23-5b2240e10100")
 	)
 	(junction
-		(at 154.94 171.45)
+		(at 147.32 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5ba3873-68bf-4575-aba1-5fbe92f065aa")
 	)
 	(junction
-		(at 104.14 166.37)
+		(at 60.96 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d857bc28-b542-44a8-adb2-1c7c45b79a69")
 	)
 	(junction
-		(at 95.25 187.96)
+		(at 52.07 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6274596-d180-4eb1-a294-bcd2d84d1b0a")
 	)
 	(junction
-		(at 93.98 154.94)
+		(at 50.8 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e99ae63e-58a8-44d5-9f02-f3ea92df4351")
 	)
 	(junction
-		(at 134.62 171.45)
+		(at 127 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f198f332-9bff-4711-8b64-7c834614f04d")
 	)
 	(junction
-		(at 95.25 182.88)
+		(at 52.07 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3413412-490f-4ce3-b3e1-23224c360155")
+	)
+	(junction
+		(at 91.44 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f435219a-d37b-47da-9256-c9cc9585fdfd")
+	)
+	(junction
+		(at 111.76 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f486b2f0-7c21-4e17-a05d-67259295fd6d")
 	)
 	(junction
 		(at 78.74 77.47)
@@ -3405,7 +3469,7 @@
 		(uuid "fbdadf0d-f94e-4467-bbbd-b9ec15342b6e")
 	)
 	(junction
-		(at 83.82 154.94)
+		(at 40.64 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc247806-2d4d-4adf-bbae-752695ecd4cf")
@@ -3415,6 +3479,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe8cb477-9d30-4d55-bc45-a56deac08226")
+	)
+	(junction
+		(at 91.44 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffb0a4ae-2068-46de-b085-3694146068b4")
 	)
 	(no_connect
 		(at 80.01 67.31)
@@ -3785,13 +3855,23 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 166.37) (xy 165.1 166.37)
+			(xy 147.32 166.37) (xy 157.48 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "057e3889-0251-4747-95e1-50a0e5decfa4")
+	)
+	(wire
+		(pts
+			(xy 111.76 171.45) (xy 137.16 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a9b33fc-f378-477c-b542-cc816da4c2ba")
 	)
 	(wire
 		(pts
@@ -3815,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 187.96) (xy 95.25 187.96)
+			(xy 40.64 187.96) (xy 52.07 187.96)
 		)
 		(stroke
 			(width 0)
@@ -3832,6 +3912,16 @@
 			(type default)
 		)
 		(uuid "15b53316-11b6-40bc-8479-8d616878b0f6")
+	)
+	(wire
+		(pts
+			(xy 101.6 171.45) (xy 111.76 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1711d013-16b2-494b-8d3d-6eef8e37cd5d")
 	)
 	(wire
 		(pts
@@ -3882,6 +3972,16 @@
 			(type default)
 		)
 		(uuid "221dcd1b-1a10-4270-8389-f6ab89490e21")
+	)
+	(wire
+		(pts
+			(xy 101.6 166.37) (xy 111.76 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25c15990-c360-45b3-bfc3-d0100602eb72")
 	)
 	(wire
 		(pts
@@ -3985,6 +4085,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 166.37) (xy 137.16 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa8e1ba-e29b-446f-a499-a73c4823fe78")
+	)
+	(wire
+		(pts
 			(xy 63.5 74.93) (xy 80.01 74.93)
 		)
 		(stroke
@@ -4005,7 +4115,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 154.94) (xy 93.98 154.94)
+			(xy 40.64 154.94) (xy 50.8 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4015,7 +4125,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 149.86) (xy 165.1 149.86)
+			(xy 60.96 149.86) (xy 157.48 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4045,7 +4155,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 171.45) (xy 144.78 171.45)
+			(xy 60.96 171.45) (xy 71.12 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4065,7 +4175,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 149.86) (xy 93.98 149.86)
+			(xy 40.64 149.86) (xy 50.8 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4105,7 +4215,17 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 171.45) (xy 104.14 171.45)
+			(xy 91.44 166.37) (xy 101.6 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e0c34f-43f2-4711-87ca-5a7d0b8b3622")
+	)
+	(wire
+		(pts
+			(xy 50.8 171.45) (xy 60.96 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4145,7 +4265,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 187.96) (xy 106.68 187.96)
+			(xy 52.07 187.96) (xy 63.5 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4175,7 +4295,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 154.94) (xy 165.1 154.94)
+			(xy 60.96 154.94) (xy 157.48 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4195,7 +4315,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 154.94) (xy 104.14 154.94)
+			(xy 50.8 154.94) (xy 60.96 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4215,7 +4335,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 166.37) (xy 104.14 166.37)
+			(xy 50.8 166.37) (xy 60.96 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4235,7 +4355,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 187.96) (xy 118.11 187.96)
+			(xy 63.5 187.96) (xy 74.93 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4245,7 +4365,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 166.37) (xy 144.78 166.37)
+			(xy 60.96 166.37) (xy 71.12 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4265,7 +4385,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 182.88) (xy 106.68 182.88)
+			(xy 52.07 182.88) (xy 63.5 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4305,7 +4425,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 171.45) (xy 165.1 171.45)
+			(xy 147.32 171.45) (xy 157.48 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4315,7 +4435,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 182.88) (xy 95.25 182.88)
+			(xy 40.64 182.88) (xy 52.07 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4335,7 +4455,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 182.88) (xy 118.11 182.88)
+			(xy 91.44 171.45) (xy 101.6 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b31c957-a010-4736-ba9d-dacbc7e2ef4d")
+	)
+	(wire
+		(pts
+			(xy 63.5 182.88) (xy 74.93 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4382,6 +4512,16 @@
 			(type default)
 		)
 		(uuid "8f50014d-afca-4e3e-b834-b83d9ede791b")
+	)
+	(wire
+		(pts
+			(xy 81.28 171.45) (xy 91.44 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9292283d-0457-44fd-b55e-9ac43c954a8a")
 	)
 	(wire
 		(pts
@@ -4475,6 +4615,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 171.45) (xy 81.28 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2141e3c-a6a8-456d-813c-827ad5af7a3c")
+	)
+	(wire
+		(pts
 			(xy 142.24 87.63) (xy 143.51 87.63)
 		)
 		(stroke
@@ -4485,7 +4635,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 171.45) (xy 93.98 171.45)
+			(xy 40.64 171.45) (xy 50.8 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4525,7 +4675,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 166.37) (xy 154.94 166.37)
+			(xy 137.16 166.37) (xy 147.32 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4555,7 +4705,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 149.86) (xy 104.14 149.86)
+			(xy 50.8 149.86) (xy 60.96 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4575,7 +4725,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 166.37) (xy 93.98 166.37)
+			(xy 40.64 166.37) (xy 50.8 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4605,7 +4755,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 171.45) (xy 154.94 171.45)
+			(xy 137.16 171.45) (xy 147.32 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4625,6 +4775,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 166.37) (xy 81.28 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d96001-7c0a-4b2b-a198-c538f64eedeb")
+	)
+	(wire
+		(pts
 			(xy 80.01 87.63) (xy 78.74 87.63)
 		)
 		(stroke
@@ -4632,6 +4792,16 @@
 			(type default)
 		)
 		(uuid "e5ed729f-9c0f-48ce-a629-e8fad090d88a")
+	)
+	(wire
+		(pts
+			(xy 81.28 166.37) (xy 91.44 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb67f123-d943-4a6f-a203-a4702414aa78")
 	)
 	(wire
 		(pts
@@ -7402,7 +7572,7 @@
 		(uuid "3e088dfd-a88c-4449-bacb-619bb71fe66e")
 	)
 	(label "V_{dd_DDRQ}_1v2"
-		(at 83.82 166.37 180)
+		(at 40.64 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7472,7 +7642,7 @@
 		(uuid "6ceb2727-973b-4398-827f-2a265be61012")
 	)
 	(label "V_{dd_DDR1}_1v8"
-		(at 83.82 149.86 180)
+		(at 40.64 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7510,6 +7680,16 @@
 			(justify right bottom)
 		)
 		(uuid "7594c162-1ceb-48cd-91fe-fdf1b5328cff")
+	)
+	(label "V_{DDR_ref}"
+		(at 99.06 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7aa31a8a-9003-4fc4-b214-a453c41bb675")
 	)
 	(label "ddr.d0"
 		(at 72.39 100.33 0)
@@ -7652,7 +7832,7 @@
 		(uuid "c697fc2f-698e-462f-84bb-daf202669984")
 	)
 	(label "V_{DDR_ref}"
-		(at 83.82 182.88 180)
+		(at 40.64 182.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7660,6 +7840,16 @@
 			(justify right bottom)
 		)
 		(uuid "c7b0bc32-cfba-40f3-925d-a980badaa78c")
+	)
+	(label "V_{DDR_ref}"
+		(at 104.14 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ccb7bbf4-42d3-43c5-80d1-0612aa4f05a3")
 	)
 	(label "ddr.d1"
 		(at 72.39 102.87 0)
@@ -7938,7 +8128,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 144.78 168.91 0)
+		(at 137.16 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7949,7 +8139,7 @@
 		(fields_autoplaced yes)
 		(uuid "1598dfcc-4a7f-440c-a835-742c59cc0cad")
 		(property "Reference" "C413"
-			(at 147.32 167.6462 0)
+			(at 139.7 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7960,7 +8150,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 147.32 170.1862 0)
+			(at 139.7 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7971,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7982,7 +8172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7993,7 +8183,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,7 +8194,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8015,7 +8205,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8026,7 +8216,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8037,7 +8227,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8048,7 +8238,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8059,7 +8249,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 144.78 168.91 0)
+			(at 137.16 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8086,7 +8276,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 144.78 152.4 0)
+		(at 137.16 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8097,7 +8287,7 @@
 		(fields_autoplaced yes)
 		(uuid "1be50962-5f1f-4b81-b94f-be3226244eb2")
 		(property "Reference" "C410"
-			(at 147.32 151.1362 0)
+			(at 139.7 151.1362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8108,7 +8298,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 147.32 153.6762 0)
+			(at 139.7 153.6762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8119,7 +8309,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8130,7 +8320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8141,7 +8331,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +8342,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8163,7 +8353,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8174,7 +8364,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8185,7 +8375,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8196,7 +8386,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8207,7 +8397,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 144.78 152.4 0)
+			(at 137.16 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8234,7 +8424,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 168.91 180)
+		(at 50.8 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8245,7 +8435,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c9b83ec-f682-4791-b1a8-1966dc39c657")
 		(property "Reference" "C406"
-			(at 96.52 167.6335 0)
+			(at 53.34 167.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8256,7 +8446,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 96.52 170.1735 0)
+			(at 53.34 170.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8267,7 +8457,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8278,7 +8468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8289,7 +8479,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8300,7 +8490,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8311,7 +8501,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8322,7 +8512,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8333,7 +8523,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8344,7 +8534,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8355,7 +8545,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 93.98 168.91 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8516,7 +8706,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 106.68 185.42 0)
+		(at 71.12 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8525,31 +8715,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3ea27fc2-dda5-45ef-815f-12631afce763")
-		(property "Reference" "C415"
-			(at 109.22 184.1562 0)
+		(uuid "39f4fb71-9f1d-45ef-aab7-43e5092b7beb")
+		(property "Reference" "C418"
+			(at 73.66 167.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100n"
-			(at 109.22 186.6962 0)
+		(property "Value" "1u"
+			(at 73.66 170.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 106.68 185.42 0)
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8560,7 +8750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 185.42 0)
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8570,8 +8760,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 106.68 185.42 0)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8581,8 +8771,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 106.68 185.42 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8592,8 +8782,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.048"
-			(at 106.68 185.42 0)
+		(property "unit x10" "0.04"
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8603,8 +8793,8 @@
 				)
 			)
 		)
-		(property "unit x1" "0.10"
-			(at 106.68 185.42 0)
+		(property "unit x1" "0.11"
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8614,8 +8804,8 @@
 				)
 			)
 		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 106.68 185.42 0)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8626,7 +8816,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 106.68 185.42 0)
+			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8637,7 +8827,155 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 106.68 185.42 0)
+			(at 71.12 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "198c8732-2aa1-4793-8cd2-e2a907296bb2")
+		)
+		(pin "2"
+			(uuid "0d08c6b2-9360-4ca5-ae13-c680972c5678")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C418")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 63.5 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ea27fc2-dda5-45ef-815f-12631afce763")
+		(property "Reference" "C415"
+			(at 66.04 184.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 66.04 186.6962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 63.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 63.5 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8664,7 +9002,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 152.4 180)
+		(at 50.8 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8675,7 +9013,7 @@
 		(fields_autoplaced yes)
 		(uuid "4370059a-ae65-4549-aa06-2ce80bcbbbf4")
 		(property "Reference" "C402"
-			(at 96.52 151.1235 0)
+			(at 53.34 151.1235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8686,7 +9024,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 96.52 153.6635 0)
+			(at 53.34 153.6635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8697,7 +9035,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8708,7 +9046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8719,7 +9057,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8730,7 +9068,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8741,7 +9079,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8752,7 +9090,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8763,7 +9101,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8774,7 +9112,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8785,7 +9123,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 93.98 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8812,7 +9150,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 83.82 154.94 0)
+		(at 40.64 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8823,7 +9161,7 @@
 		(fields_autoplaced yes)
 		(uuid "487134b5-d57f-4860-80a9-64917ec1ceac")
 		(property "Reference" "#PWR0406"
-			(at 83.82 161.29 0)
+			(at 40.64 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8834,7 +9172,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 160.02 0)
+			(at 40.64 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8844,7 +9182,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 154.94 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8855,7 +9193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 154.94 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8866,7 +9204,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 154.94 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8890,7 +9228,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 165.1 168.91 0)
+		(at 157.48 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8901,7 +9239,7 @@
 		(fields_autoplaced yes)
 		(uuid "5039383a-2600-479a-a7a5-09024cede555")
 		(property "Reference" "C416"
-			(at 167.64 167.6462 0)
+			(at 160.02 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8912,7 +9250,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 167.64 170.1862 0)
+			(at 160.02 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8923,7 +9261,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8934,7 +9272,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8945,7 +9283,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8956,7 +9294,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8967,7 +9305,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8978,7 +9316,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8989,7 +9327,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9000,7 +9338,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9011,7 +9349,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 165.1 168.91 0)
+			(at 157.48 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9038,7 +9376,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 154.94 152.4 0)
+		(at 81.28 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9047,31 +9385,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "59ed2ec0-151f-4a48-9dac-38d8d75d954a")
-		(property "Reference" "C409"
-			(at 157.48 151.1362 0)
+		(uuid "5626efb7-0bf6-4309-a6ca-77eb99f7ef5b")
+		(property "Reference" "C419"
+			(at 83.82 167.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100n"
-			(at 157.48 153.6762 0)
+		(property "Value" "1u"
+			(at 83.82 170.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 154.94 152.4 0)
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9082,7 +9420,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 152.4 0)
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9092,8 +9430,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 154.94 152.4 0)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9103,8 +9441,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 154.94 152.4 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9114,8 +9452,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.048"
-			(at 154.94 152.4 0)
+		(property "unit x10" "0.04"
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9125,8 +9463,8 @@
 				)
 			)
 		)
-		(property "unit x1" "0.10"
-			(at 154.94 152.4 0)
+		(property "unit x1" "0.11"
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9136,8 +9474,8 @@
 				)
 			)
 		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 154.94 152.4 0)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9148,7 +9486,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 154.94 152.4 0)
+			(at 81.28 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9159,7 +9497,155 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 154.94 152.4 0)
+			(at 81.28 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19484e1b-5f4d-4d54-b1a8-bf8d0f161f40")
+		)
+		(pin "2"
+			(uuid "a172f7a4-d559-4727-a232-5b141fe7e2f0")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C419")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 147.32 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59ed2ec0-151f-4a48-9dac-38d8d75d954a")
+		(property "Reference" "C409"
+			(at 149.86 151.1362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 149.86 153.6762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 147.32 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9774,7 +10260,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 95.25 185.42 0)
+		(at 111.76 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9783,31 +10269,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6db93617-9952-4555-811b-a3efb5509e58")
-		(property "Reference" "C407"
-			(at 97.79 184.1562 0)
+		(uuid "5e2e2a2f-9ecb-4b1f-9948-b5e925f172f4")
+		(property "Reference" "C422"
+			(at 114.3 167.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100n"
-			(at 97.79 186.6962 0)
+		(property "Value" "1u"
+			(at 114.3 170.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 95.25 185.42 0)
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9818,7 +10304,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 185.42 0)
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9828,8 +10314,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 95.25 185.42 0)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9839,8 +10325,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 95.25 185.42 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9850,8 +10336,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.048"
-			(at 95.25 185.42 0)
+		(property "unit x10" "0.04"
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9861,8 +10347,8 @@
 				)
 			)
 		)
-		(property "unit x1" "0.10"
-			(at 95.25 185.42 0)
+		(property "unit x1" "0.11"
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9872,8 +10358,8 @@
 				)
 			)
 		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 95.25 185.42 0)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9884,7 +10370,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 95.25 185.42 0)
+			(at 111.76 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9895,7 +10381,303 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 95.25 185.42 0)
+			(at 111.76 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c33e3a9-9beb-44a0-ad21-c4a323c48b14")
+		)
+		(pin "2"
+			(uuid "b82b9139-6676-40fe-9036-5f47c76ea091")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C422")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 101.6 168.91 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cc1ab97-e545-4cfa-8eb6-e2443727a0c1")
+		(property "Reference" "C421"
+			(at 104.14 167.6335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 104.14 170.1735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.04"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.11"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47f6c1c8-61df-4213-b461-ed1eaf2be27e")
+		)
+		(pin "2"
+			(uuid "4ce4362c-fe79-489d-bfdf-bfba0d04b0f5")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C421")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 52.07 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6db93617-9952-4555-811b-a3efb5509e58")
+		(property "Reference" "C407"
+			(at 54.61 184.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 54.61 186.6962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.048"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 52.07 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 52.07 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9922,7 +10704,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 83.82 185.42 0)
+		(at 40.64 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9933,7 +10715,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a746322-aea5-489b-8464-592177110d7a")
 		(property "Reference" "C403"
-			(at 86.36 184.1562 0)
+			(at 43.18 184.1562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9944,7 +10726,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 86.36 186.6962 0)
+			(at 43.18 186.6962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9955,7 +10737,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9966,7 +10748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9977,7 +10759,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9988,7 +10770,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9999,7 +10781,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10010,7 +10792,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10021,7 +10803,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10032,7 +10814,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10043,7 +10825,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 83.82 185.42 0)
+			(at 40.64 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10070,7 +10852,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 134.62 168.91 0)
+		(at 127 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10081,7 +10863,7 @@
 		(fields_autoplaced yes)
 		(uuid "99ffb4ce-52e8-4b99-9f37-96639691ed18")
 		(property "Reference" "C414"
-			(at 137.16 167.6462 0)
+			(at 129.54 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10092,7 +10874,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 137.16 170.1862 0)
+			(at 129.54 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10103,7 +10885,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10114,7 +10896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10125,7 +10907,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10136,7 +10918,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10147,7 +10929,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10158,7 +10940,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10169,7 +10951,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10180,7 +10962,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10191,7 +10973,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 134.62 168.91 0)
+			(at 127 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10297,7 +11079,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 118.11 185.42 0)
+		(at 74.93 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10308,7 +11090,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0ad4a2b-2473-4fcf-a591-0dd22ec172b2")
 		(property "Reference" "C417"
-			(at 120.65 184.1562 0)
+			(at 77.47 184.1562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10319,7 +11101,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 120.65 186.6962 0)
+			(at 77.47 186.6962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10330,7 +11112,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10341,7 +11123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10352,7 +11134,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10363,7 +11145,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10374,7 +11156,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10385,7 +11167,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10396,7 +11178,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10407,7 +11189,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10418,7 +11200,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 118.11 185.42 0)
+			(at 74.93 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10445,7 +11227,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 104.14 152.4 180)
+		(at 60.96 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10456,7 +11238,7 @@
 		(fields_autoplaced yes)
 		(uuid "a485f2c2-a711-4835-b7e2-ba51e00d85fd")
 		(property "Reference" "C404"
-			(at 106.68 151.1235 0)
+			(at 63.5 151.1235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10467,7 +11249,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 106.68 153.6635 0)
+			(at 63.5 153.6635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10478,7 +11260,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10489,7 +11271,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10500,7 +11282,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10511,7 +11293,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10522,7 +11304,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10533,7 +11315,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10544,7 +11326,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10555,7 +11337,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10566,7 +11348,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 104.14 152.4 0)
+			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10592,41 +11374,39 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 83.82 168.91 180)
+		(lib_id "Device:R_Small_US")
+		(at 101.6 182.88 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab36afb1-e47f-437d-bcb7-22cbd509234f")
-		(property "Reference" "C405"
-			(at 86.36 167.6335 0)
+		(uuid "a6345e46-f69a-492b-94f7-4bf75e5fac26")
+		(property "Reference" "R401"
+			(at 101.6 176.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "1u"
-			(at 86.36 170.1735 0)
+		(property "Value" "JMPR"
+			(at 101.6 179.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.82 168.91 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 101.6 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10637,7 +11417,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 168.91 0)
+			(at 101.6 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "jumper"
+			(at 101.6 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2ba0e75a-e46f-4ee8-a263-6c8e6dc3a21f")
+		)
+		(pin "1"
+			(uuid "d782e5b5-7762-44cd-90ea-87324501276b")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "R401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 168.91 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab36afb1-e47f-437d-bcb7-22cbd509234f")
+		(property "Reference" "C405"
+			(at 43.18 167.6335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 43.18 170.1735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 40.64 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10648,7 +11510,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10659,7 +11521,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10670,7 +11532,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10681,7 +11543,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10692,7 +11554,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10703,7 +11565,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10714,7 +11576,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 83.82 168.91 0)
+			(at 40.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10734,6 +11596,154 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "C405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 91.44 168.91 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b15f3919-a62a-430a-a2af-7a20ec70cdbe")
+		(property "Reference" "C420"
+			(at 93.98 167.6335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 93.98 170.1735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.04"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.11"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 91.44 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "773ff11b-6a20-44a8-b10d-906ea98943cb")
+		)
+		(pin "2"
+			(uuid "278d356e-180e-482c-aae3-46d160953678")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "C420")
 					(unit 1)
 				)
 			)
@@ -10886,7 +11896,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 104.14 168.91 180)
+		(at 60.96 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10897,7 +11907,7 @@
 		(fields_autoplaced yes)
 		(uuid "c26af94a-7403-495f-a457-71e4544a6c5d")
 		(property "Reference" "C412"
-			(at 106.68 167.6335 0)
+			(at 63.5 167.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10908,7 +11918,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 106.68 170.1735 0)
+			(at 63.5 170.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10919,7 +11929,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10930,7 +11940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10941,7 +11951,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10952,7 +11962,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10963,7 +11973,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10974,7 +11984,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10985,7 +11995,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10996,7 +12006,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11007,7 +12017,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 104.14 168.91 0)
+			(at 60.96 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11034,7 +12044,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 165.1 152.4 0)
+		(at 157.48 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11045,7 +12055,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9d3a10a-9691-4908-ae1d-62008ca30a22")
 		(property "Reference" "C408"
-			(at 167.64 151.1362 0)
+			(at 160.02 151.1362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11056,7 +12066,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 167.64 153.6762 0)
+			(at 160.02 153.6762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11067,7 +12077,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11078,7 +12088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11089,7 +12099,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11100,7 +12110,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11111,7 +12121,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11122,7 +12132,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11133,7 +12143,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11144,7 +12154,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11155,7 +12165,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 165.1 152.4 0)
+			(at 157.48 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11182,7 +12192,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 154.94 168.91 0)
+		(at 147.32 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11193,7 +12203,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0c4fd64-16b7-4f3f-b87d-57dc1728611c")
 		(property "Reference" "C411"
-			(at 157.48 167.6462 0)
+			(at 149.86 167.6462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11204,7 +12214,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 157.48 170.1862 0)
+			(at 149.86 170.1862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11215,7 +12225,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11226,7 +12236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11237,7 +12247,7 @@
 			)
 		)
 		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11248,7 +12258,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11259,7 +12269,7 @@
 			)
 		)
 		(property "unit x10" "0.048"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11270,7 +12280,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11281,7 +12291,7 @@
 			)
 		)
 		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11292,7 +12302,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11303,7 +12313,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 154.94 168.91 0)
+			(at 147.32 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11330,7 +12340,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 83.82 171.45 0)
+		(at 40.64 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11341,7 +12351,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8440870-ea7e-40e2-97d8-00916a135294")
 		(property "Reference" "#PWR0403"
-			(at 83.82 177.8 0)
+			(at 40.64 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11352,7 +12362,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 176.53 0)
+			(at 40.64 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11362,7 +12372,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 171.45 0)
+			(at 40.64 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11373,7 +12383,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 171.45 0)
+			(at 40.64 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11384,7 +12394,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 171.45 0)
+			(at 40.64 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11408,7 +12418,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 83.82 152.4 180)
+		(at 40.64 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11419,7 +12429,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5e771f1-81e1-4e7d-ac3c-8d1a7b4a9aed")
 		(property "Reference" "C401"
-			(at 86.36 151.1235 0)
+			(at 43.18 151.1235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11430,7 +12440,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 86.36 153.6635 0)
+			(at 43.18 153.6635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11441,7 +12451,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11452,7 +12462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11463,7 +12473,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11474,7 +12484,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11485,7 +12495,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11496,7 +12506,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11507,7 +12517,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11518,7 +12528,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11529,7 +12539,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 83.82 152.4 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11556,7 +12566,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 83.82 187.96 0)
+		(at 40.64 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11567,7 +12577,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd258ca8-2c59-4f8a-819e-c8bb3afc9f74")
 		(property "Reference" "#PWR0402"
-			(at 83.82 194.31 0)
+			(at 40.64 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11578,7 +12588,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 193.04 0)
+			(at 40.64 193.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11588,7 +12598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 187.96 0)
+			(at 40.64 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11599,7 +12609,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 187.96 0)
+			(at 40.64 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11610,7 +12620,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 187.96 0)
+			(at 40.64 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

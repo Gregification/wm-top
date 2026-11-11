@@ -5,6 +5,187 @@
 	(uuid "c5cbceee-47a7-4cd0-b573-5cfb9af38159")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1618,6 +1799,12 @@
 		(uuid "27349783-055c-4e7a-bdd6-53103ae1c54a")
 	)
 	(junction
+		(at 170.18 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c563d29-350b-4823-815f-97f63e0789f5")
+	)
+	(junction
 		(at 85.09 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1628,6 +1815,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "771340c7-1c2c-48d2-b238-fac6fa3bfba7")
+	)
+	(junction
+		(at 172.72 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac55e6b2-f88a-4804-8e57-f1ac0a2213d0")
 	)
 	(junction
 		(at 116.84 82.55)
@@ -1688,7 +1881,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 83.82) (xy 173.99 91.44)
+			(xy 170.18 83.82) (xy 170.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1725,6 +1918,16 @@
 			(type default)
 		)
 		(uuid "0ba1912f-cdda-4114-8530-76fc371e7a6c")
+	)
+	(wire
+		(pts
+			(xy 179.07 80.01) (xy 179.07 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9e68ee-ceb3-44e4-bfe8-7b091b32398b")
 	)
 	(wire
 		(pts
@@ -1765,6 +1968,16 @@
 			(type default)
 		)
 		(uuid "1b3a41e5-7e79-4a16-83c3-1683d68e8473")
+	)
+	(wire
+		(pts
+			(xy 179.07 83.82) (xy 179.07 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c993396-8a3a-4426-b408-570746225448")
 	)
 	(wire
 		(pts
@@ -1838,7 +2051,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 91.44) (xy 176.53 78.74)
+			(xy 172.72 91.44) (xy 172.72 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1865,6 +2078,16 @@
 			(type default)
 		)
 		(uuid "5c6ce497-d129-45dd-a370-ae86096941e6")
+	)
+	(wire
+		(pts
+			(xy 181.61 80.01) (xy 179.07 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e72c384-18c2-4cde-b230-77fab7faabef")
 	)
 	(wire
 		(pts
@@ -2018,7 +2241,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 83.82) (xy 173.99 83.82)
+			(xy 165.1 83.82) (xy 179.07 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2028,13 +2251,23 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 78.74) (xy 165.1 78.74)
+			(xy 165.1 78.74) (xy 179.07 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b14e3030-4d89-4acd-aa38-2e3b6619cb05")
+	)
+	(wire
+		(pts
+			(xy 179.07 82.55) (xy 181.61 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb2270e8-4a93-4723-89b8-7ed6e4e7161d")
 	)
 	(wire
 		(pts
@@ -2434,6 +2667,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 186.69 80.01 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c7ed2bc-23bd-41b1-9f7b-38d5b29f71da")
+		(property "Reference" "J601"
+			(at 187.96 81.2801 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 186.055 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 186.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 186.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58fff970-2a37-4efe-8de7-7046b4a5d35f")
+		)
+		(pin "2"
+			(uuid "f52780c3-8d89-4e0c-bfe4-ac8bf620f178")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/deac4711-4750-45cc-beb0-115f9982025e"
+					(reference "J601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 116.84 106.68 180)
 		(unit 1)
@@ -2741,7 +3056,7 @@
 	)
 	(symbol
 		(lib_id "zzLocalLibrary:ESD2CAN36DBZRQ1")
-		(at 175.26 96.52 90)
+		(at 171.45 96.52 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2752,7 +3067,7 @@
 		(dnp no)
 		(uuid "ed51be4c-801d-4193-92bf-fbfb10a2d6e0")
 		(property "Reference" "CR601"
-			(at 180.34 96.52 0)
+			(at 176.53 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2762,7 +3077,7 @@
 			)
 		)
 		(property "Value" "ESD2CAN36DBZRQ1"
-			(at 172.212 102.616 0)
+			(at 168.402 102.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2774,7 +3089,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2786,7 +3101,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/esd2can36-q1"
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2798,7 +3113,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2809,7 +3124,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/ProductDetail/Texas-Instruments/ESD2CAN36DBZRQ1?qs=ZcfC38r4Povu2Q%2FJ6usAvA%3D%3D"
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2820,7 +3135,7 @@
 			)
 		)
 		(property "unit x1" "0.75"
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2831,7 +3146,7 @@
 			)
 		)
 		(property "unit x10" "0.338"
-			(at 175.26 96.52 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2861,7 +3176,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 101.6 0)
+		(at 171.45 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2872,7 +3187,7 @@
 		(fields_autoplaced yes)
 		(uuid "f838e0c8-cdab-4164-a378-d021428e853f")
 		(property "Reference" "#PWR0602"
-			(at 175.26 107.95 0)
+			(at 171.45 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2883,7 +3198,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 106.68 0)
+			(at 171.45 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2893,7 +3208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 101.6 0)
+			(at 171.45 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2904,7 +3219,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 101.6 0)
+			(at 171.45 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,7 +3230,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 101.6 0)
+			(at 171.45 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
