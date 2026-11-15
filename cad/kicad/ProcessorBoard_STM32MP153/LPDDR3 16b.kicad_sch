@@ -3253,12 +3253,6 @@
 		(uuid "0dd2a5bf-b228-4da5-a441-c18a833a0c40")
 	)
 	(junction
-		(at 60.96 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11590d76-2a89-4a55-890d-059492ac54dc")
-	)
-	(junction
 		(at 111.76 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3401,12 +3395,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1b7f183-fef8-43f1-a2dc-58334bf34abe")
-	)
-	(junction
-		(at 60.96 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3cc484b-487d-4d2c-bc7f-46e2c39369ea")
 	)
 	(junction
 		(at 63.5 187.96)
@@ -4125,7 +4113,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 149.86) (xy 157.48 149.86)
+			(xy 50.8 149.86) (xy 157.48 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4295,7 +4283,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 154.94) (xy 157.48 154.94)
+			(xy 50.8 154.94) (xy 157.48 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4312,16 +4300,6 @@
 			(type default)
 		)
 		(uuid "686c4df3-225c-4150-98db-381f3ed543b1")
-	)
-	(wire
-		(pts
-			(xy 50.8 154.94) (xy 60.96 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "689b5c1a-5c2a-45ea-8954-4466ef7e1ef8")
 	)
 	(bus
 		(pts
@@ -4702,16 +4680,6 @@
 			(type default)
 		)
 		(uuid "d6f1d5e7-6774-43d7-a426-a1c73b490596")
-	)
-	(wire
-		(pts
-			(xy 50.8 149.86) (xy 60.96 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d72f853d-f920-476f-82a9-08b4ad309e50")
 	)
 	(wire
 		(pts
@@ -7681,16 +7649,6 @@
 		)
 		(uuid "7594c162-1ceb-48cd-91fe-fdf1b5328cff")
 	)
-	(label "V_{DDR_ref}"
-		(at 99.06 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7aa31a8a-9003-4fc4-b214-a453c41bb675")
-	)
 	(label "ddr.d0"
 		(at 72.39 100.33 0)
 		(effects
@@ -7840,16 +7798,6 @@
 			(justify right bottom)
 		)
 		(uuid "c7b0bc32-cfba-40f3-925d-a980badaa78c")
-	)
-	(label "V_{DDR_ref}"
-		(at 104.14 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ccb7bbf4-42d3-43c5-80d1-0612aa4f05a3")
 	)
 	(label "ddr.d1"
 		(at 72.39 102.87 0)
@@ -8995,154 +8943,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "C415")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 50.8 152.4 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4370059a-ae65-4549-aa06-2ce80bcbbbf4")
-		(property "Reference" "C402"
-			(at 53.34 151.1235 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 53.34 153.6635 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.04"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.11"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 50.8 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ff131d70-b825-4104-9ba4-9966f8c2a942")
-		)
-		(pin "2"
-			(uuid "fcd7dfc8-988a-4395-93b6-f53884d7bed4")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
-					(reference "C402")
 					(unit 1)
 				)
 			)
@@ -11227,7 +11027,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 60.96 152.4 180)
+		(at 50.8 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11238,7 +11038,7 @@
 		(fields_autoplaced yes)
 		(uuid "a485f2c2-a711-4835-b7e2-ba51e00d85fd")
 		(property "Reference" "C404"
-			(at 63.5 151.1235 0)
+			(at 53.34 151.1235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11249,7 +11049,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 63.5 153.6635 0)
+			(at 53.34 153.6635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11260,7 +11060,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11271,7 +11071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11282,7 +11082,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11293,7 +11093,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11304,7 +11104,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11315,7 +11115,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11326,7 +11126,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11337,7 +11137,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11348,7 +11148,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 60.96 152.4 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11368,86 +11168,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "C404")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 101.6 182.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6345e46-f69a-492b-94f7-4bf75e5fac26")
-		(property "Reference" "R401"
-			(at 101.6 176.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "JMPR"
-			(at 101.6 179.07 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 101.6 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "jumper"
-			(at 101.6 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2ba0e75a-e46f-4ee8-a263-6c8e6dc3a21f")
-		)
-		(pin "1"
-			(uuid "d782e5b5-7762-44cd-90ea-87324501276b")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
-					(reference "R401")
 					(unit 1)
 				)
 			)
@@ -11744,151 +11464,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "C420")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 146.05 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bcab476d-c8d2-4d5a-b8cd-10618eebb984")
-		(property "Reference" "R405"
-			(at 146.05 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 146.05 74.93 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10kR, 100mW, 75Vdc, 0.1%, 25ppm, +155c"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/SEI-Stackpole/RNCF0603BTE10K0?qs=sGAEpiMZZMvdGkrng054t2cqbZCzJY7NKyrLU8aYXDErcCrjgif2eA%3D%3D"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.071"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.067"
-			(at 146.05 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 146.05 77.47 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 146.05 77.47 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "988bda78-4692-4d75-90de-71c999f78944")
-		)
-		(pin "1"
-			(uuid "ef39f61a-6117-4399-a1fe-41c33e0cd86a")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
-					(reference "R405")
 					(unit 1)
 				)
 			)
@@ -12411,6 +11986,130 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
 					(reference "#PWR0403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 146.05 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee0c953d-0ba9-403a-8efa-0f3ed0924c77")
+		(property "Reference" "R401"
+			(at 146.05 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 146.05 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kR, 1%, 50ppm, 62.5mW, 25V, -55C, +125C"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CRT0402-FZ-1002GLF?qs=sGAEpiMZZMvdGkrng054t8ML7OW17L6%2F%2FdJuN6oyCQk%3D"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.025"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.024"
+			(at 146.05 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2fb1b6cb-8a14-476f-8c59-c5c61ba7e746")
+		)
+		(pin "1"
+			(uuid "357b1071-3de3-4acf-b5f6-a836f8965a2a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fb747675-6d29-4589-92ae-6726c227ffd0"
+					(reference "R401")
 					(unit 1)
 				)
 			)

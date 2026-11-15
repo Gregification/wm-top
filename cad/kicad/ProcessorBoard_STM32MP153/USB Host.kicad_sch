@@ -815,12 +815,6 @@
 		(uuid "e9cbdcdc-e8e3-435f-9798-b738d26696c8")
 	)
 	(junction
-		(at 67.31 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e62012d-dee0-4ab6-a9b7-4e409d85ad96")
-	)
-	(junction
 		(at 57.15 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -831,12 +825,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ee3c77f-c51c-4762-90e6-4431aa2d475c")
-	)
-	(junction
-		(at 57.15 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdccce6b-893e-4ddd-a6ee-90578e27eecf")
 	)
 	(bus_entry
 		(at 254 100.33)
@@ -858,16 +846,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 31.75) (xy 73.66 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c39f90a-3555-453e-8d23-9ac5686cadd8")
-	)
-	(wire
-		(pts
 			(xy 36.83 34.29) (xy 38.1 34.29)
 		)
 		(stroke
@@ -878,43 +856,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 43.18) (xy 67.31 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1669af77-61b8-45fd-b3b2-b986e55b242b")
-	)
-	(wire
-		(pts
-			(xy 67.31 43.18) (xy 67.31 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20d3ffb1-0aaa-47e8-8ce2-157901470f9c")
-	)
-	(wire
-		(pts
-			(xy 53.34 31.75) (xy 67.31 31.75)
+			(xy 53.34 31.75) (xy 73.66 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c5917c5-06c3-46d3-9667-82160bf6553e")
-	)
-	(wire
-		(pts
-			(xy 67.31 34.29) (xy 67.31 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f17ea36-0767-4262-a3fb-b56019541e85")
 	)
 	(wire
 		(pts
@@ -1596,154 +1544,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
 					(reference "U801")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 67.31 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4f69e8e-d4e7-4e24-be1c-dcbb26ecca8a")
-		(property "Reference" "C802"
-			(at 69.85 35.5662 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 69.85 38.1062 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.04"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.11"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 67.31 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "119a23fa-ea5d-4612-a3b6-004dd7152849")
-		)
-		(pin "2"
-			(uuid "9ff4fa4a-4c21-4014-8d49-244b3ad2f219")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
-					(reference "C802")
 					(unit 1)
 				)
 			)

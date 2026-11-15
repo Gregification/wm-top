@@ -9236,6 +9236,17 @@
 		)
 		(uuid "831db68a-019d-44e2-9656-7f9103eb2c9c")
 	)
+	(text "PD should be ~500k, \ndatasheet dosent say why, \npiggy-back the R's"
+		(exclude_from_sim no)
+		(at 112.014 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e47a3f1b-3f11-4be2-ad3d-c2455163e930")
+	)
 	(text "STLink/V2 tag connect info"
 		(exclude_from_sim no)
 		(at 556.514 366.268 0)
@@ -9492,12 +9503,6 @@
 		(uuid "186a2676-2879-426c-997b-0a3df3ed131e")
 	)
 	(junction
-		(at 74.93 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29958bf8-d048-4465-8374-6a83f405bf21")
-	)
-	(junction
 		(at 34.29 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9514,12 +9519,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ed1637f-e0f8-490f-88a1-a2b0dc8cdc70")
-	)
-	(junction
-		(at 74.93 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3064f176-1d91-4db5-91fb-bba68b6a3477")
 	)
 	(junction
 		(at 304.8 36.83)
@@ -9652,12 +9651,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f6f9416-b1ed-4c6a-95c3-27966cf83c88")
-	)
-	(junction
-		(at 85.09 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80a74ec0-cd17-49df-992f-dd47ecc5d0a8")
 	)
 	(junction
 		(at 198.12 36.83)
@@ -9844,12 +9837,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5ec1693-06f5-4b2d-8d43-32a274f4754c")
-	)
-	(junction
-		(at 85.09 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d81701d1-9db9-474e-a11a-e7d9525b8b4a")
 	)
 	(junction
 		(at 115.57 80.01)
@@ -10082,6 +10069,10 @@
 		(uuid "69d7505f-59f8-427f-888a-d26f4e7f1de9")
 	)
 	(no_connect
+		(at 340.36 85.09)
+		(uuid "6fb3fd1f-98d6-4909-8413-06307ab35dde")
+	)
+	(no_connect
 		(at 220.98 36.83)
 		(uuid "756c5239-3295-4883-9529-ae9fb178c9bd")
 	)
@@ -10212,6 +10203,10 @@
 	(no_connect
 		(at 163.83 247.65)
 		(uuid "d44f0e03-a8f1-455c-bfd7-a728c24e266b")
+	)
+	(no_connect
+		(at 340.36 229.87)
+		(uuid "d750ac4d-def2-48db-950e-415fb85b7fbc")
 	)
 	(no_connect
 		(at 172.72 234.95)
@@ -11373,16 +11368,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 208.28) (xy 85.09 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e9b2540-fa2e-493d-892a-f95e3a73eb37")
-	)
-	(wire
-		(pts
 			(xy 294.64 36.83) (xy 297.18 36.83)
 		)
 		(stroke
@@ -11580,16 +11565,6 @@
 			(type default)
 		)
 		(uuid "1f8eeff7-2521-44b4-8cc2-e908bab6bfca")
-	)
-	(wire
-		(pts
-			(xy 85.09 203.2) (xy 95.25 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21c50bfe-ba17-4c70-90c9-707394070b33")
 	)
 	(bus
 		(pts
@@ -12290,16 +12265,6 @@
 			(type default)
 		)
 		(uuid "60baa839-5bee-4867-b5fb-701e5c8ccc86")
-	)
-	(wire
-		(pts
-			(xy 74.93 203.2) (xy 85.09 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "610bed00-728c-43c8-8975-521198ce8a5b")
 	)
 	(wire
 		(pts
@@ -13330,16 +13295,6 @@
 			(type default)
 		)
 		(uuid "d1c58f7f-5b08-4f25-ab64-4969f90fe606")
-	)
-	(wire
-		(pts
-			(xy 85.09 208.28) (xy 95.25 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2b385ab-0c73-47f0-aaf4-8f5375a693ab")
 	)
 	(wire
 		(pts
@@ -16615,16 +16570,6 @@
 		)
 		(uuid "8bbd7122-c8f2-4d33-a624-2c8239c41527")
 	)
-	(label "V_{DDR_ref}"
-		(at 34.29 220.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8bf89e1f-d383-4689-81ff-75bfc37db8fb")
-	)
 	(label "ddr.d7"
 		(at 163.83 186.69 0)
 		(effects
@@ -17835,154 +17780,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "#PWR0201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 34.29 223.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07b38aec-86ae-4a61-b674-7bbc4d8a435f")
-		(property "Reference" "C224"
-			(at 36.83 222.2562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 36.83 224.7962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF, 10%, 16Vdc, 34MHz"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KEMET/C0402C104K4PAC7411?qs=sSYV1F9c5cGYoSNLRebUBQ%3D%3D"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.048"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.10"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "http://ksim.kemet.com/?pn=C0402C104K4PAC7411&disty=mouser"
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 34.29 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0244ff1c-e2a1-44cb-a18d-b13fc56322fc")
-		)
-		(pin "2"
-			(uuid "39423a63-0945-441b-b036-ef6d38213938")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C224")
 					(unit 1)
 				)
 			)
@@ -20760,8 +20557,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f4f9ab1-f37b-4f22-b38d-60d829b00ab5")
@@ -21567,84 +21364,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 226.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f028e55-785b-4db2-8338-1f7a8f422657")
-		(property "Reference" "#PWR0205"
-			(at 34.29 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 231.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "543557aa-d289-46bd-9fac-a7751109ff08")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 534.67 50.8 0)
 		(unit 1)
 		(body_style 1)
@@ -21716,154 +21435,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "#PWR0211")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 95.25 205.74 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "838f240a-44bd-43ae-bd0a-c1b8a7584d23")
-		(property "Reference" "C222"
-			(at 97.79 204.4635 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 97.79 207.0035 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.04"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.11"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 95.25 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95ba1d58-eaa1-4dd9-9a77-da8481a7e65f")
-		)
-		(pin "2"
-			(uuid "2dfe79e1-c427-4567-b98d-ba43eec7d63a")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C222")
 					(unit 1)
 				)
 			)
@@ -26081,154 +25652,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "C219")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 85.09 205.74 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fecae5ff-43db-4e51-a2c6-5c1f0815e898")
-		(property "Reference" "C220"
-			(at 87.63 204.4635 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 87.63 207.0035 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.04"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.11"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 85.09 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0fb97be-1f8d-4f2a-989a-7785e083fea4")
-		)
-		(pin "2"
-			(uuid "33fbfab2-f20a-464e-97f4-f0265d2b44b4")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
-					(reference "C220")
 					(unit 1)
 				)
 			)
