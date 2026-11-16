@@ -5,7 +5,7 @@
 	(uuid "7e2b9075-69f2-4454-b14e-6652ad59f07b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -16,7 +16,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,7 +25,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
+			(property "Value" "Conn_01x03_Pin"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -57,7 +57,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -100,7 +100,18 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
@@ -121,6 +132,18 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -148,7 +171,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -166,7 +189,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -183,12 +206,33 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_PMOS_GSD"
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -196,8 +240,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -207,8 +251,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_PMOS_GSD"
-				(at 5.08 0 0)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -219,7 +263,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 2.54 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -240,7 +284,7 @@
 					)
 				)
 			)
-			(property "Description" "P-MOSFET transistor, gate/source/drain"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -251,7 +295,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -262,178 +306,46 @@
 					)
 				)
 			)
-			(symbol "Q_PMOS_GSD_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 -0.381) (xy 3.683 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "Q_PMOS_GSD_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -449,9 +361,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -466,10 +378,169 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 5.08 270)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "__WM_Local:LM66200DRLR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "LM66200DRLR"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "__WM_Local:SOT-5X3_DRL_TEX-M"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/lm66200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" "ideal diode oring 1v6-5v5 40mA-2.5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/LM66200DRLR?qs=sGAEpiMZZMvYc73DDAmzVkSR2uvgI3V1deDZNi9Qa41Dn4G5EEg50g%3D%3D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x1" "0.66"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x10" "0.471"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LM66200DRLR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT-5X3_DRL_TEX SOT-5X3_DRL_TEX-M SOT-5X3_DRL_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM66200DRLR_0_1"
+				(pin power_out line
+					(at -10.16 -16.51 0)
 					(length 2.54)
-					(name "D"
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "VIN1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -477,6 +548,111 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -10.16 -16.51 0)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "VIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(hide yes)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -11.43 180)
+					(length 2.54)
+					(name "ST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM66200DRLR_1_1"
+				(rectangle
+					(start -7.62 1.27)
+					(end 7.62 -17.78)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "ON#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -623,209 +799,243 @@
 		)
 		(uuid "a7d0822b-7b84-407e-9c1b-8b0f65218e75")
 	)
+	(text_box "design notes:\n	- 5V ~1.5A"
+		(exclude_from_sim no)
+		(at 214.63 138.43 0)
+		(size 67.31 18.2353)
+		(margins 0.9398 0.9398 0.9398 0.9398)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "dcc9650f-6c40-4c25-bee7-5a35715616dc")
+	)
 	(junction
-		(at 123.19 109.22)
+		(at 95.25 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20c08757-4c60-4f7d-a358-72cbe7eb0203")
+		(uuid "3e8cb0df-8c30-43a6-a7eb-d552a6e85d67")
 	)
 	(junction
-		(at 113.03 97.79)
+		(at 107.95 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "48b1e8b0-ff7a-4857-b9c2-2dc4fd1c6a9e")
+		(uuid "57408788-aac5-46da-a076-3f0fd59a1454")
 	)
 	(junction
-		(at 130.81 97.79)
+		(at 132.08 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4e737ac3-3bed-44d4-9caa-cd5171de1d5e")
-	)
-	(junction
-		(at 115.57 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d624e33f-5d32-429a-8e69-d8c4499f0728")
+		(uuid "7e6cd436-0e15-416c-89ba-33942ea405a0")
 	)
 	(wire
 		(pts
-			(xy 128.27 97.79) (xy 130.81 97.79)
+			(xy 86.36 100.33) (xy 100.33 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15a3ad03-9901-4f7b-82f9-437f660a12dc")
+		(uuid "0b4cb544-6aee-42e4-8325-e67b692de43b")
 	)
 	(wire
 		(pts
-			(xy 92.71 97.79) (xy 113.03 97.79)
+			(xy 86.36 95.25) (xy 101.6 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "18698f91-ff43-45c2-87db-b4009977065b")
+		(uuid "2ceb6495-d3d8-448c-b4bd-50eb175b2233")
 	)
 	(wire
 		(pts
-			(xy 113.03 80.01) (xy 118.11 80.01)
+			(xy 107.95 110.49) (xy 109.22 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2987a90c-b7bf-49fe-8340-10f2bd8a44d6")
+		(uuid "322d643c-386c-42a5-8ecf-5ab26e391c86")
 	)
 	(wire
 		(pts
-			(xy 92.71 100.33) (xy 95.25 100.33)
+			(xy 86.36 97.79) (xy 95.25 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33b26ffc-9af6-4069-88d0-e7efa8bda464")
+		(uuid "3b5ef338-0bb8-4b63-b06b-e5b9cee611d5")
 	)
 	(wire
 		(pts
-			(xy 147.32 100.33) (xy 151.13 100.33)
+			(xy 105.41 99.06) (xy 101.6 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35e75e10-2683-4e9d-b096-d5a8e65491ac")
+		(uuid "4552d577-6b39-472e-8135-5d9e49b18d78")
 	)
 	(wire
 		(pts
-			(xy 95.25 100.33) (xy 95.25 109.22)
+			(xy 132.08 105.41) (xy 132.08 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "48824260-1121-4500-946a-03d3acb4ec7e")
+		(uuid "46e7a345-817c-4666-af62-744a73ac751d")
 	)
 	(wire
 		(pts
-			(xy 130.81 80.01) (xy 130.81 97.79)
+			(xy 132.08 97.79) (xy 132.08 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5502f263-f1b3-417b-b51e-202a9ac4d916")
+		(uuid "4d76f702-3cf2-4a3c-82f1-51a5de51479e")
 	)
 	(wire
 		(pts
-			(xy 130.81 97.79) (xy 151.13 97.79)
+			(xy 107.95 105.41) (xy 107.95 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d55e8ae-e336-4d98-85ae-4d9b6063ea80")
+		(uuid "55805880-6df8-42e8-9aa8-d345846a0591")
 	)
 	(wire
 		(pts
-			(xy 147.32 109.22) (xy 147.32 100.33)
+			(xy 129.54 105.41) (xy 132.08 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e5b25a3-3301-4447-94d9-c5298454fe2e")
+		(uuid "5869ec5b-b09f-45eb-803f-5b2542743145")
 	)
 	(wire
 		(pts
-			(xy 123.19 87.63) (xy 115.57 87.63)
+			(xy 107.95 110.49) (xy 95.25 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8918161c-2b56-43b5-bd3b-4b88bdd3fc4d")
+		(uuid "63edb425-60b3-4908-a2b8-747b281bd067")
 	)
 	(wire
 		(pts
-			(xy 95.25 109.22) (xy 115.57 109.22)
+			(xy 100.33 100.33) (xy 105.41 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8927b5e9-b058-4b82-842c-c026d9d25647")
+		(uuid "7668d867-76e6-4882-9879-236b0698f777")
 	)
 	(wire
 		(pts
-			(xy 123.19 109.22) (xy 147.32 109.22)
+			(xy 132.08 95.25) (xy 151.13 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9439841f-f208-4223-bfc2-67882b80767a")
+		(uuid "7ab1c2e7-e4e9-457d-9523-d53950c18ea9")
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 113.03 80.01)
+			(xy 105.41 95.25) (xy 109.22 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9609061a-7a2e-4196-b293-e3a8f093ecb0")
+		(uuid "a559e258-cbd3-4925-9965-042424318418")
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 123.19 109.22)
+			(xy 132.08 95.25) (xy 129.54 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be4ad385-df87-46c5-be38-278af80e3f96")
+		(uuid "d3a2cc50-befe-406e-a737-c960cfd10ec4")
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 118.11 97.79)
+			(xy 95.25 110.49) (xy 95.25 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dfec458a-62a2-484e-b28d-c8f3d860bcaa")
+		(uuid "d5332c8d-ee65-441b-b52e-f213b56ecae5")
 	)
 	(wire
 		(pts
-			(xy 115.57 109.22) (xy 123.19 109.22)
+			(xy 95.25 97.79) (xy 95.25 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e62290d1-95d6-489c-8304-4405c189cbd7")
+		(uuid "ffbac63f-9d18-4b9a-8d9b-dacb49a8d8e4")
 	)
 	(wire
 		(pts
-			(xy 115.57 87.63) (xy 115.57 109.22)
+			(xy 105.41 99.06) (xy 109.22 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec010531-8466-47ec-9a76-786cea92d744")
+		(uuid "ffbf333e-a912-4aab-9f11-21e1a325a67a")
 	)
 	(wire
 		(pts
-			(xy 128.27 80.01) (xy 130.81 80.01)
+			(xy 109.22 105.41) (xy 107.95 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fe8626c1-e538-46cf-a571-7e03e5cbffea")
+		(uuid "ffe33cf6-b0a5-4bd6-b483-d5ea4b7377f2")
+	)
+	(label "5V_{src2}"
+		(at 86.36 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "16ae3e0c-25ba-4406-8c14-e2ff13197e83")
+	)
+	(label "5V_{src1}"
+		(at 86.36 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9311f85b-73d8-484c-95f3-255d71d34b48")
 	)
 	(hierarchical_label "Vin_prim"
 		(shape output)
@@ -840,7 +1050,7 @@
 	)
 	(hierarchical_label "Vin_prim"
 		(shape output)
-		(at 151.13 97.79 0)
+		(at 151.13 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -850,8 +1060,8 @@
 		(uuid "bca0130a-8290-4b86-a0c6-a355ef72e836")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 151.13 100.33 90)
+		(lib_id "Device:R_Small_US")
+		(at 132.08 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -860,31 +1070,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "21f00c3f-0705-4721-95af-626944feed70")
-		(property "Reference" "#PWR0901"
-			(at 157.48 100.33 0)
-			(hide yes)
+		(uuid "239c71c5-30ea-4573-add9-c505d6c30d6f")
+		(property "Reference" "R901"
+			(at 134.62 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 154.94 100.3299 90)
+		(property "Value" "45.3k"
+			(at 134.62 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 151.13 100.33 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 132.08 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -895,7 +1105,240 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 100.33 0)
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "45.3kR, 0.1%, 100mW, 25ppm, 75V, +155C"
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/YAGEO/RT0603BRD0745K3L?qs=sGAEpiMZZMvdGkrng054t98Xz4DA4UW4K0WmzVPNprg%3D"
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.06"
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.056"
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 132.08 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "48ec855b-c631-4628-b4b1-ea4b4a79689d")
+		)
+		(pin "1"
+			(uuid "78fa2e8d-f662-4538-83e8-cbab1fabd893")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/dfab2919-31d5-4d51-9ea2-7132696568f9"
+					(reference "R901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 81.28 97.79 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bd6df7a-2ef9-47e0-bd63-e0e8330010cb")
+		(property "Reference" "J901"
+			(at 80.01 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 80.01 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 81.28 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8794abb7-7e23-460c-b592-ffb9d3e2f854")
+		)
+		(pin "3"
+			(uuid "2819e0f5-8e4a-414a-a070-72fe0cd63845")
+		)
+		(pin "1"
+			(uuid "f44b7177-cb60-48bc-a70c-03dd2f0e0f9a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/dfab2919-31d5-4d51-9ea2-7132696568f9"
+					(reference "J901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5539f13a-b17f-4414-92fb-4cddd5db2d83")
+		(property "Reference" "#PWR0901"
+			(at 95.25 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -906,7 +1349,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 100.33 0)
+			(at 95.25 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -917,7 +1360,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "91633b5a-a3c3-4e80-925a-75a973ab38e9")
+			(uuid "f05569d7-8859-44b7-bd4b-9aae480cbfc4")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -929,8 +1372,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_PMOS_GSD")
-		(at 123.19 100.33 90)
+		(lib_id "__WM_Local:LM66200DRLR")
+		(at 119.38 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -938,29 +1381,54 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3be64676-e7de-4873-87a5-8198c64a8640")
-		(property "Reference" "Q901"
-			(at 123.19 91.44 90)
+		(fields_autoplaced yes)
+		(uuid "65149168-611e-4c10-aa31-4a4ae36009b6")
+		(property "Reference" "U901"
+			(at 119.38 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "LM66200DRLR"
+			(at 119.38 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "__WM_Local:SOT-5X3_DRL_TEX-M"
+			(at 119.38 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 			)
 		)
-		(property "Value" "Q_PMOS_GSD"
-			(at 123.19 93.98 90)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lm66200"
+			(at 119.38 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 120.65 95.25 0)
+		(property "Description" "ideal diode oring 1v6-5v5 40mA-2.5A"
+			(at 119.38 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -970,8 +1438,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 123.19 100.33 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/LM66200DRLR?qs=sGAEpiMZZMvYc73DDAmzVkSR2uvgI3V1deDZNi9Qa41Dn4G5EEg50g%3D%3D"
+			(at 119.38 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -981,8 +1449,8 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
-			(at 123.19 100.33 0)
+		(property "unit x1" "0.66"
+			(at 119.38 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -992,30 +1460,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Diotec-Semiconductor/MMFTP3401?qs=OlC7AqGiEDm4awuFJShdIQ%3D%3D"
-			(at 123.19 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.31"
-			(at 123.19 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.137"
-			(at 123.19 100.33 0)
+		(property "unit x10" "0.471"
+			(at 119.38 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1026,215 +1472,33 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b15a466-6b37-4034-a433-b2ccff18bd2e")
+			(uuid "4a9830aa-c4d2-4a4f-b513-409a06eb6e1e")
 		)
 		(pin "2"
-			(uuid "7d06f7e7-8963-4c62-9cdf-1dc32230e509")
+			(uuid "bcd9fc67-2a7a-48e4-bbea-ef288db6a65f")
+		)
+		(pin "4"
+			(uuid "76b06584-5990-4026-9ff0-498c723e250d")
+		)
+		(pin "6"
+			(uuid "2243c1b2-e458-4529-b909-0f45d53baec5")
+		)
+		(pin "7"
+			(uuid "eb061600-6b6d-47dd-b648-f5216e345271")
 		)
 		(pin "3"
-			(uuid "f6f86b6b-f71e-48fc-b44e-02f94a2c58c1")
+			(uuid "c59b8314-1f23-4030-ae9f-51945e29d582")
+		)
+		(pin "5"
+			(uuid "4a7b769a-3906-4ffa-834b-e088ff68a628")
+		)
+		(pin "8"
+			(uuid "09bf206d-761c-43ab-9f85-2552527e2839")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/dfab2919-31d5-4d51-9ea2-7132696568f9"
-					(reference "Q901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_PMOS_GSD")
-		(at 123.19 82.55 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da1b2357-58f8-4c6b-87ab-76273d2cede6")
-		(property "Reference" "Q902"
-			(at 123.19 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_PMOS_GSD"
-			(at 123.19 76.2 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 120.65 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
-			(at 123.19 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Diotec-Semiconductor/MMFTP3401?qs=OlC7AqGiEDm4awuFJShdIQ%3D%3D"
-			(at 123.19 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.31"
-			(at 123.19 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.137"
-			(at 123.19 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d5400a4d-9b2b-46d3-86c6-03054e315a27")
-		)
-		(pin "2"
-			(uuid "668d551b-5342-43d8-9868-f5185e47b59e")
-		)
-		(pin "3"
-			(uuid "18e13e6e-9bfd-43d5-a5e5-064eeff8873d")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/dfab2919-31d5-4d51-9ea2-7132696568f9"
-					(reference "Q902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 87.63 100.33 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ff39e828-4adc-46a6-a89d-834762c5865a")
-		(property "Reference" "J901"
-			(at 86.36 99.0599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 88.265 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 87.63 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 87.63 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9353ab0b-86bc-40a4-a3b1-f3cfd2f1ac5f")
-		)
-		(pin "2"
-			(uuid "9c6b461f-941a-43df-bbd0-b31c7c77015f")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/dfab2919-31d5-4d51-9ea2-7132696568f9"
-					(reference "J901")
+					(reference "U901")
 					(unit 1)
 				)
 			)

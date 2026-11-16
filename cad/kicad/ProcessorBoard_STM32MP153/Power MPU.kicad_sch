@@ -1950,7 +1950,7 @@
 		)
 		(uuid "1c3cf2da-7335-405e-a8ee-dbd7535b0fa8")
 	)
-	(text_box "V_{dd}Board3v3 : 3v318 3A\nSFP.module : 300mA\nSFP.bridge : 150mA\nSDCard : 250mA"
+	(text_box "V_{dd}Board3v3 : 3v318 3A\nSFP.module : 300mA\nSFP.bridge : 150mA\nSDCard : 250mA\nCAN transceiver (V_{IO}) : 2mA"
 		(exclude_from_sim no)
 		(at 13.97 143.51 0)
 		(size 151.13 52.07)
