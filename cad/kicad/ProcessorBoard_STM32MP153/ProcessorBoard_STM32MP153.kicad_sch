@@ -109,9 +109,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO\n- layout sdcard\n- usb\n- layout everything so far\n- fmc\n- ibc\n- can bus\n- uart console"
+	(text "design TODO\n- layout sdcard\n- usb\n- layout everything so far\n- fmc\n- ibc\n- can bus\n- uart console"
 		(exclude_from_sim no)
-		(at 237.744 26.67 0)
+		(at 216.662 30.734 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -120,6 +120,18 @@
 			(justify left top)
 		)
 		(uuid "07454a57-a078-4c44-be13-ce32afb98cdf")
+	)
+	(text "bring up TODO\n- confirm sram timing config\n- "
+		(exclude_from_sim no)
+		(at 213.868 81.28 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 211 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "45bb7255-e1e9-498d-8b07-bf4044c66926")
 	)
 	(text "replaced by keepout zone. to increase effective board space"
 		(exclude_from_sim no)

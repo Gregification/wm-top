@@ -5,6 +5,187 @@
 	(uuid "4c688c81-bc49-4ca3-a281-957cc8b713c0")
 	(paper "A2")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -9258,6 +9439,26 @@
 		)
 		(uuid "f54cf305-d54c-418c-b42e-25414f1bbabd")
 	)
+	(text_box "Console, 8N1 115200\n- pins PB2 (RX) and PG11 (TX) are used by both BootROM and the linux console"
+		(exclude_from_sim no)
+		(at 463.55 52.07 0)
+		(size 46.99 36.83)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "07c8fbde-3d8f-43bc-8e6a-422122fc381c")
+	)
 	(text_box "links"
 		(exclude_from_sim no)
 		(at 495.3 361.95 0)
@@ -10321,15 +10522,6 @@
 		(uuid "13c80f1f-079a-420c-941f-91c609081a0a")
 	)
 	(bus_entry
-		(at 368.3 331.47)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15514290-d22e-42bf-87b3-433cdd4dd091")
-	)
-	(bus_entry
 		(at 161.29 151.13)
 		(size 2.54 2.54)
 		(stroke
@@ -10661,6 +10853,15 @@
 			(type default)
 		)
 		(uuid "63653c80-ce81-40c7-8049-c8fd60d919f1")
+	)
+	(bus_entry
+		(at 368.3 115.57)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64fe2d53-306d-4a77-896a-ed13325c5297")
 	)
 	(bus_entry
 		(at 161.29 148.59)
@@ -11425,16 +11626,6 @@
 			(type default)
 		)
 		(uuid "1446e8e5-128d-466f-aea8-60b4f795d33a")
-	)
-	(bus
-		(pts
-			(xy 368.3 313.69) (xy 368.3 331.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14d5b2ea-b8eb-4106-9ef6-0d57de052dfb")
 	)
 	(wire
 		(pts
@@ -12888,6 +13079,16 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 118.11) (xy 365.76 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d2bb9c-a828-47ec-af58-e1c482187b78")
+	)
+	(wire
+		(pts
 			(xy 261.62 36.83) (xy 264.16 36.83)
 		)
 		(stroke
@@ -12965,6 +13166,16 @@
 			(type default)
 		)
 		(uuid "acb1eebb-434b-488d-920f-a31bfde54400")
+	)
+	(bus
+		(pts
+			(xy 368.3 100.33) (xy 368.3 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae311ea7-7b31-458e-bf1d-83482b80bf0d")
 	)
 	(wire
 		(pts
@@ -13518,16 +13729,6 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 334.01) (xy 365.76 334.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4874d03-186d-4823-a191-9851e298c2e4")
-	)
-	(wire
-		(pts
 			(xy 208.28 36.83) (xy 210.82 36.83)
 		)
 		(stroke
@@ -13738,7 +13939,7 @@
 	)
 	(bus
 		(pts
-			(xy 368.3 331.47) (xy 368.3 339.09)
+			(xy 368.3 313.69) (xy 368.3 339.09)
 		)
 		(stroke
 			(width 0)
@@ -16080,6 +16281,16 @@
 		)
 		(uuid "17f1bdf6-540f-4ba9-bab0-b9c339a52a85")
 	)
+	(label "UART_{4}_TX"
+		(at 488.95 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b4614cf-af40-4eb6-9bad-f088274f8cd4")
+	)
 	(label "{mpu_power}"
 		(at 544.83 152.4 0)
 		(effects
@@ -16089,6 +16300,16 @@
 			(justify left)
 		)
 		(uuid "2337d6ef-c7a1-418f-a3c7-cac7079d591a")
+	)
+	(label "UART_{4}_TX"
+		(at 340.36 334.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23c04474-0c1b-4075-9f10-c73dff0f89d8")
 	)
 	(label "ddr.m3"
 		(at 163.83 140.97 0)
@@ -16179,16 +16400,6 @@
 			(justify right)
 		)
 		(uuid "351697d9-0e60-47fc-8edc-a2278532bcc2")
-	)
-	(label "sfp.txctl"
-		(at 365.76 334.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3a57e13e-3cb7-4e7a-8617-39cd301fced7")
 	)
 	(label "sfp.txd1"
 		(at 365.76 341.63 180)
@@ -16379,6 +16590,16 @@
 			(justify left bottom)
 		)
 		(uuid "66a9d77d-83c7-4dce-ab6b-2b37047b2c60")
+	)
+	(label "UART_{4}_RX"
+		(at 340.36 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66d6082c-9820-4724-8e98-39278a9708fc")
 	)
 	(label "V_{ddA_ADC}"
 		(at 182.88 26.67 0)
@@ -16689,6 +16910,16 @@
 			(justify left bottom)
 		)
 		(uuid "9fca2eac-7052-4673-b1f7-964112505ebc")
+	)
+	(label "sfp.txctl"
+		(at 365.76 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1ba380f-ec92-4810-a605-627df2146821")
 	)
 	(label "ddr.d1"
 		(at 163.83 171.45 0)
@@ -17009,6 +17240,16 @@
 			(justify right bottom)
 		)
 		(uuid "d1d6ec1f-48be-4622-948b-556b3532aa30")
+	)
+	(label "UART_{4}_RX"
+		(at 488.95 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d564a38c-ba58-4991-8875-025ebfd7c23c")
 	)
 	(label "ddr.a9"
 		(at 163.83 110.49 0)
@@ -18972,6 +19213,7 @@
 		)
 		(pin "Y16"
 			(uuid "21a7082d-a33a-4d92-b1a9-601c28da6d2e")
+			(alternate "UART4_RX")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
@@ -24883,6 +25125,88 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
 					(reference "C212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 494.03 68.58 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4ae37a3-dcf7-4919-a382-414344b93ff7")
+		(property "Reference" "J201"
+			(at 495.3 69.8501 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 493.395 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 494.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 494.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 494.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2aed6cea-7d18-4924-af7f-520aa60ec9c0")
+		)
+		(pin "2"
+			(uuid "317296fe-200c-4aaa-9306-fbfc2c0d2336")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4528db64-a2fa-4a5e-a759-f2845964b2e6"
+					(reference "J201")
 					(unit 1)
 				)
 			)
