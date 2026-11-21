@@ -10788,12 +10788,12 @@
 		(uuid "70b491bb-c8ab-47c5-a8bc-1da997ffec98")
 	)
 	(no_connect
-		(at 220.98 36.83)
-		(uuid "756c5239-3295-4883-9529-ae9fb178c9bd")
+		(at 172.72 316.23)
+		(uuid "7554b73c-ce48-4bc5-a657-8674909c1b29")
 	)
 	(no_connect
-		(at 172.72 316.23)
-		(uuid "7878b160-052c-4583-b193-b3221594ccd1")
+		(at 220.98 36.83)
+		(uuid "756c5239-3295-4883-9529-ae9fb178c9bd")
 	)
 	(no_connect
 		(at 172.72 118.11)
@@ -10882,10 +10882,6 @@
 	(no_connect
 		(at 163.83 275.59)
 		(uuid "be9d0947-9a09-463d-bfdf-dcd227907477")
-	)
-	(no_connect
-		(at 172.72 303.53)
-		(uuid "bee01ac8-a147-4146-b7ce-40393ed19189")
 	)
 	(no_connect
 		(at 172.72 161.29)
@@ -11669,6 +11665,15 @@
 		(uuid "a53ffc0e-9fc5-4c45-884a-5dcef0548f8f")
 	)
 	(bus_entry
+		(at 151.13 300.99)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a77b5762-8c77-44a3-bc06-02f2d97987b3")
+	)
+	(bus_entry
 		(at 368.3 339.09)
 		(size -2.54 2.54)
 		(stroke
@@ -12216,6 +12221,16 @@
 			(type default)
 		)
 		(uuid "08f228e4-7cdc-425e-95ff-4fbbf559db65")
+	)
+	(wire
+		(pts
+			(xy 153.67 303.53) (xy 172.72 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09784d08-046c-46d7-bee4-098844d93578")
 	)
 	(wire
 		(pts
@@ -13029,7 +13044,7 @@
 	)
 	(bus
 		(pts
-			(xy 149.86 306.07) (xy 151.13 306.07)
+			(xy 149.86 300.99) (xy 151.13 300.99)
 		)
 		(stroke
 			(width 0)
@@ -13279,7 +13294,7 @@
 	)
 	(bus
 		(pts
-			(xy 151.13 306.07) (xy 151.13 308.61)
+			(xy 151.13 300.99) (xy 151.13 308.61)
 		)
 		(stroke
 			(width 0)
@@ -18151,7 +18166,7 @@
 		)
 		(uuid "9b35adb1-03a4-4368-9b3d-a0a794ebb4a6")
 	)
-	(label "USB_2{usb_b}"
+	(label "USB_2{usbD_2}"
 		(at 544.83 177.8 0)
 		(effects
 			(font
@@ -18651,6 +18666,16 @@
 		)
 		(uuid "d6fa40a4-6def-45b3-a4f1-342057d4bfdb")
 	)
+	(label "USB_2.vbus"
+		(at 153.67 303.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dafb417e-52b7-4a43-86ba-b4d894d09053")
+	)
 	(label "I2C_2.SDA"
 		(at 386.08 361.95 180)
 		(effects
@@ -18949,7 +18974,7 @@
 	)
 	(hierarchical_label "USB_device"
 		(shape bidirectional)
-		(at 149.86 306.07 180)
+		(at 149.86 300.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22799,10 +22824,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "60c86e0c-5c8b-44f5-9b8b-3e27e96126c2")
 		(property "Reference" "TP201"
 			(at 169.418 67.818 90)

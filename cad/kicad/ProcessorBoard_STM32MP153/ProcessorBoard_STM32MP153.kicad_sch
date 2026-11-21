@@ -196,6 +196,12 @@
 		(uuid "b763c0c2-2d75-4bfb-b671-34c46f58a09c")
 	)
 	(junction
+		(at 198.12 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c06221e8-58d7-4bb6-bef7-1aff6bae2d8d")
+	)
+	(junction
 		(at 198.12 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -276,6 +282,16 @@
 			(type default)
 		)
 		(uuid "59dae408-cf78-44be-ae2c-e1581070b1d8")
+	)
+	(wire
+		(pts
+			(xy 198.12 60.96) (xy 187.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b307c18-4087-40fa-9a61-05f8948a91aa")
 	)
 	(bus
 		(pts
@@ -497,6 +513,16 @@
 		)
 		(uuid "d81e3eb2-5573-4415-b9d8-876ec210f56f")
 	)
+	(wire
+		(pts
+			(xy 198.12 60.96) (xy 198.12 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed31189a-ca64-45c7-8d66-c6ac0dca0a1e")
+	)
 	(bus
 		(pts
 			(xy 69.85 97.79) (xy 93.98 97.79)
@@ -538,7 +564,7 @@
 		(uuid "faa229bb-31f8-42df-846d-d8141009fc2f")
 	)
 	(label "offboard5v"
-		(at 198.12 82.55 0)
+		(at 198.12 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -617,7 +643,7 @@
 		)
 		(uuid "83dbaa62-a5f6-4ba8-8144-f2334d44fb39")
 	)
-	(label "USB_2{usb_b}"
+	(label "USB_2{usbD_2}"
 		(at 143.51 57.15 0)
 		(effects
 			(font
@@ -1591,6 +1617,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "Vin_prim" input
+			(at 187.96 60.96 0)
+			(uuid "00fe663d-7551-4d9b-9be6-812b3537e574")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

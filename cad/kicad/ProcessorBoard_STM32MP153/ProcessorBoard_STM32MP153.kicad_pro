@@ -61,13 +61,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.2,
-          "min_island_area": 10.0,
-          "min_thickness": 0.2,
-          "pad_connection": 2,
+          "min_clearance": 0.5,
+          "min_island_area": 0.0013161349,
+          "min_thickness": 0.15,
+          "pad_connection": 1,
           "remove_islands": 0,
           "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.25
+          "thermal_relief_spoke_width": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -77,7 +77,36 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "items_not_allowed|140498587|73649999|6d1d7053-f0c5-4edb-9379-19d904f00c8e|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|141224000|77074000|4614a03f-dfce-4c80-a236-58e45b003b1f|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|142750000|73650000|a25af15a-7c25-4ae1-95e7-8888194acef0|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|168945796|101799999|fef3b41c-9b17-4f85-9c42-15d1995cec4a|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|168992178|73599999|0b7482e4-4845-4a6f-9bf2-cb1e57bd44c3|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|169418000|105268000|2f79f509-e0a8-416f-af38-eea0baaf598b|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ],
+        [
+          "items_not_allowed|169418000|77074000|5a324839-5434-4c62-a527-4a34c4fc3e08|00000000-0000-0000-0000-000000000000",
+          "item supposed to be here. keepout dosent filter "
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -632,7 +661,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../../../../Users/turtl/Downloads/price test 8l/",
+      "plot": "../../../../../Users/turtl/Downloads/price test 11.21.2026/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -969,6 +998,11 @@
         "module.rx_loss",
         "module.tx_disable",
         "module.present"
+      ],
+      "usbD_2": [
+        "D-",
+        "D+",
+        "vbus"
       ],
       "usb_b": [
         "D-",
