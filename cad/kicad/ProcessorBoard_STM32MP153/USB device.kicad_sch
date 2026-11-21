@@ -854,6 +854,16 @@
 		)
 		(uuid "1125d36b-ce50-4b6e-ba73-908622132733")
 	)
+	(bus
+		(pts
+			(xy 59.69 68.58) (xy 60.96 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32e56f8e-8885-4335-842b-11a48899f1f9")
+	)
 	(wire
 		(pts
 			(xy 53.34 31.75) (xy 73.66 31.75)
@@ -934,6 +944,16 @@
 		)
 		(uuid "af8af653-4dd4-48ce-9055-8c12a4cb1e70")
 	)
+	(bus
+		(pts
+			(xy 60.96 68.58) (xy 60.96 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4849aea-52c1-4a3d-8b47-fce3f4511acc")
+	)
 	(wire
 		(pts
 			(xy 57.15 43.18) (xy 57.15 39.37)
@@ -984,6 +1004,16 @@
 		)
 		(uuid "ed6e5bd2-80aa-49e5-89fd-8457ae4a72c5")
 	)
+	(label "USB_2{usb_b}"
+		(at 254 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0b96f0a1-9d8c-4ac8-a923-cb8d69590cc8")
+	)
 	(label "V_{dd_USB}_3v3"
 		(at 73.66 31.75 0)
 		(effects
@@ -1005,7 +1035,7 @@
 		(uuid "37d642e4-cada-44ea-87af-d4ffe5c08a68")
 	)
 	(label "VBUS"
-		(at 110.49 88.9 180)
+		(at 113.03 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1035,7 +1065,7 @@
 		(uuid "924c4067-d64a-46db-b843-ab519b57ccc1")
 	)
 	(label "D+"
-		(at 110.49 93.98 180)
+		(at 113.03 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1056,7 +1086,7 @@
 		(uuid "cd48954a-711c-41ca-974a-496aa610c782")
 	)
 	(label "D-"
-		(at 110.49 96.52 180)
+		(at 113.03 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1066,16 +1096,16 @@
 		)
 		(uuid "e4d66364-7749-460d-98b0-6f13c93622ee")
 	)
-	(hierarchical_label "Vin_prim"
-		(shape input)
-		(at 254 88.9 180)
+	(hierarchical_label "USB"
+		(shape bidirectional)
+		(at 59.69 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "06b9a83f-ee63-4678-ba13-06dc95a7c6a2")
+		(uuid "10f3060b-935b-4e3d-b363-cc1e157ada13")
 	)
 	(hierarchical_label "Vin_prim"
 		(shape input)
@@ -1109,6 +1139,17 @@
 			(justify right)
 		)
 		(uuid "9b854181-6deb-4250-9f42-08b67434195f")
+	)
+	(hierarchical_label "USB"
+		(shape bidirectional)
+		(at 254 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8fe1a67-8967-4732-a4bc-d5e98010d7d0")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -1260,7 +1301,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 115.57 91.44 0)
+		(at 118.11 67.31 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1272,7 +1313,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c40cac4-df43-4f39-9242-73da62208119")
 		(property "Reference" "J802"
-			(at 116.84 91.4399 0)
+			(at 119.38 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1283,7 +1324,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 116.84 93.9799 0)
+			(at 119.38 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1294,7 +1335,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 115.57 91.44 0)
+			(at 118.11 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1305,7 +1346,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 91.44 0)
+			(at 118.11 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1316,7 +1357,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 115.57 91.44 0)
+			(at 118.11 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1551,7 +1592,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 91.44 270)
+		(at 113.03 67.31 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1562,7 +1603,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7027c6e-da0e-4f8f-b3bd-72a947f76cd1")
 		(property "Reference" "#PWR0802"
-			(at 104.14 91.44 0)
+			(at 106.68 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1573,7 +1614,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 91.4399 90)
+			(at 109.22 67.3099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1584,7 +1625,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 91.44 0)
+			(at 113.03 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1595,7 +1636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 91.44 0)
+			(at 113.03 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1606,7 +1647,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 91.44 0)
+			(at 113.03 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
