@@ -161,6 +161,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED_ABGR"
 			(pin_names
 				(offset 0)
@@ -3179,7 +3380,7 @@
 		)
 		(uuid "603e783b-a5e2-4aeb-9d89-02bf8c782c83")
 	)
-	(text "MDIO addr [2:0]\ndefault: 3'b001\nset: 3'b001"
+	(text "MDIO addr [2:0]\ndefault: 3'b001\nset: 3'b000"
 		(exclude_from_sim no)
 		(at 31.75 111.76 0)
 		(effects
@@ -3200,6 +3401,17 @@
 			(href "https://members.snia.org/document/dl/26184")
 		)
 		(uuid "7c2e77f4-253e-401c-b653-015ecb49e4ae")
+	)
+	(text "ran out of room during layout. rgb not necessary"
+		(exclude_from_sim no)
+		(at 186.69 246.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 201 255 251 1)
+			)
+		)
+		(uuid "7db8f541-d76a-4651-ac9f-30fd76b942e1")
 	)
 	(text "reference design from NXP fourm"
 		(exclude_from_sim no)
@@ -3299,7 +3511,7 @@
 		)
 		(uuid "0a7864c6-0442-4568-a95f-dcb4e27cc6a6")
 	)
-	(text_box "SFP receptacle LED indicator, left : link/activity\nLED_{0} logic high	=> 10Mbs\nLED_{1} logic high	=> 100Mbs\nLED_{2} logic high	=> 1000Mbs\n\n- LED pins [0:1] control IO voltage -> 2'b00 : 3v3\n	active logic level is dynamically determined as opposite of boot bias. see fig.10 on bridge datasheet. ex: \"biased high on boot -> active low\".\n- BJT buffers since public datasheet literally dosent LED pins current limits"
+	(text_box "SFP receptacle LED indicator, left : link/activity\nLED_{0} logic high	=> 10Mbs\nLED_{1} logic high	=> 100Mbs\nLED_{2} logic high	=> 1000Mbs\n\n- LED pins [0:1] control IO voltage -> 2'b00 : 3v3\n	active logic level is dynamically determined as opposite of boot bias. see fig.10 on bridge datasheet. ex: \"biased high on boot -> active low\".\n- explicit biases for simplicity\n- BJT buffers since public datasheet literally dosent list LED pins current limits\n"
 		(exclude_from_sim no)
 		(at 62.23 189.23 0)
 		(size 76.2 92.71)
@@ -3568,7 +3780,7 @@
 		(uuid "39e06614-0ead-45a3-b97d-f223a29d133a")
 	)
 	(junction
-		(at 88.9 256.54)
+		(at 87.63 256.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ac1a982-a583-4d29-bed6-1f77212c6686")
@@ -3622,16 +3834,16 @@
 		(uuid "52655e92-a657-4836-af05-c89e7e393060")
 	)
 	(junction
-		(at 143.51 102.87)
+		(at 175.26 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5c135ef8-49ee-4ec3-b73a-b381b087837f")
+		(uuid "650a6029-c5dd-4d4d-8ec8-921b6fdd6282")
 	)
 	(junction
-		(at 143.51 107.95)
+		(at 78.74 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5f464fb7-3950-4835-9eea-3ffe667083df")
+		(uuid "6afb2074-06d4-4919-ad82-5b63bbafb25d")
 	)
 	(junction
 		(at 45.72 266.7)
@@ -3694,6 +3906,12 @@
 		(uuid "8735e49b-1f13-42bb-8b69-0c07a123f97b")
 	)
 	(junction
+		(at 96.52 276.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91ba5253-a64d-48ce-86cd-44de61b73cee")
+	)
+	(junction
 		(at 290.83 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3748,6 +3966,12 @@
 		(uuid "b11c2657-42b4-47f9-99ac-0ae14f96f78f")
 	)
 	(junction
+		(at 96.52 267.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1f1be8a-09e7-497f-a267-32d777359eb6")
+	)
+	(junction
 		(at 143.51 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3796,7 +4020,7 @@
 		(uuid "ce1aa81e-eb08-47bb-8e26-a9fb03eea738")
 	)
 	(junction
-		(at 88.9 276.86)
+		(at 87.63 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6f5a8ed-2db4-4893-9b2a-9fe43893b59f")
@@ -3824,6 +4048,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e66315e6-1d42-4899-8e3f-804ce4958fb9")
+	)
+	(junction
+		(at 78.74 245.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9b10f56-e074-4c6f-91de-09e816ad7038")
 	)
 	(no_connect
 		(at 99.06 63.5)
@@ -4143,16 +4373,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 256.54) (xy 102.87 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03360de0-444c-429d-a89a-31f245ab786b")
-	)
-	(wire
-		(pts
 			(xy 179.07 44.45) (xy 179.07 67.31)
 		)
 		(stroke
@@ -4183,7 +4403,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 275.59) (xy 88.9 276.86)
+			(xy 87.63 275.59) (xy 87.63 276.86)
 		)
 		(stroke
 			(width 0)
@@ -4223,7 +4443,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 107.95) (xy 151.13 107.95)
+			(xy 138.43 107.95) (xy 151.13 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4353,13 +4573,23 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 256.54) (xy 88.9 256.54)
+			(xy 76.2 256.54) (xy 95.25 256.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2009a889-62c6-4d79-89db-a99968e0efb7")
+	)
+	(wire
+		(pts
+			(xy 78.74 245.11) (xy 91.44 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d45a8b-1966-43e2-8592-d956fe80172d")
 	)
 	(wire
 		(pts
@@ -4393,7 +4623,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 102.87) (xy 143.51 102.87)
+			(xy 138.43 102.87) (xy 154.94 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4493,6 +4723,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 256.54) (xy 102.87 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30947db9-a21b-4cd2-b20f-3124bc8cb066")
+	)
+	(wire
+		(pts
 			(xy 115.57 262.89) (xy 115.57 224.79)
 		)
 		(stroke
@@ -4503,13 +4743,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 107.95) (xy 143.51 107.95)
+			(xy 175.26 209.55) (xy 184.15 209.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31e88637-513c-4b20-8ed6-2d15e9bc6fda")
+		(uuid "32d6db2b-4d8d-4af6-9276-a59a7651c5e5")
 	)
 	(wire
 		(pts
@@ -4723,6 +4963,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 209.55) (xy 198.12 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4972d9c7-c377-4b2f-a5c4-0fc81782df6a")
+	)
+	(wire
+		(pts
 			(xy 138.43 81.28) (xy 147.32 81.28)
 		)
 		(stroke
@@ -4823,6 +5073,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 245.11) (xy 97.79 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575ed097-6da0-453b-97ae-7640e7ea77ea")
+	)
+	(wire
+		(pts
 			(xy 300.99 140.97) (xy 302.26 140.97)
 		)
 		(stroke
@@ -4850,6 +5110,16 @@
 			(type default)
 		)
 		(uuid "594415e9-1ca9-4bac-995b-714e1de54c62")
+	)
+	(wire
+		(pts
+			(xy 104.14 267.97) (xy 107.95 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59961ea7-24ec-463b-8739-2f99baf19da7")
 	)
 	(wire
 		(pts
@@ -5053,7 +5323,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 276.86) (xy 105.41 276.86)
+			(xy 76.2 276.86) (xy 78.74 276.86)
 		)
 		(stroke
 			(width 0)
@@ -5083,7 +5353,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 267.97) (xy 107.95 267.97)
+			(xy 76.2 267.97) (xy 99.06 267.97)
 		)
 		(stroke
 			(width 0)
@@ -5243,6 +5513,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 275.59) (xy 96.52 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80a5f7a2-b571-47f7-b399-6605215678a5")
+	)
+	(wire
+		(pts
 			(xy 39.37 109.22) (xy 52.07 109.22)
 		)
 		(stroke
@@ -5280,6 +5560,16 @@
 			(type default)
 		)
 		(uuid "87c90a97-2197-4d2a-81c8-209780c41f0b")
+	)
+	(wire
+		(pts
+			(xy 78.74 275.59) (xy 78.74 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88d9da6e-fe55-4297-b770-45646c09820b")
 	)
 	(wire
 		(pts
@@ -5373,7 +5663,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 228.6) (xy 182.88 228.6)
+			(xy 163.83 228.6) (xy 175.26 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5493,6 +5783,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 245.11) (xy 78.74 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a017bbe3-42e3-45c4-8dbc-23283849b3e2")
+	)
+	(wire
+		(pts
 			(xy 138.43 54.61) (xy 140.97 54.61)
 		)
 		(stroke
@@ -5523,7 +5823,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 270.51) (xy 88.9 256.54)
+			(xy 87.63 270.51) (xy 87.63 256.54)
 		)
 		(stroke
 			(width 0)
@@ -5763,6 +6063,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 228.6) (xy 175.26 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba7348df-20a7-4fdf-ad71-57066504287a")
+	)
+	(wire
+		(pts
 			(xy 279.4 110.49) (xy 317.5 110.49)
 		)
 		(stroke
@@ -5790,6 +6100,16 @@
 			(type default)
 		)
 		(uuid "bfeae049-35d6-480e-9ea5-93de3da0387b")
+	)
+	(wire
+		(pts
+			(xy 78.74 276.86) (xy 105.41 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c225a3ff-f86a-440b-bc23-7cc9440086a0")
 	)
 	(wire
 		(pts
@@ -5993,6 +6313,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 267.97) (xy 96.52 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df192159-6f03-4cce-9c6b-04285fec9bde")
+	)
+	(wire
+		(pts
 			(xy 294.64 135.89) (xy 294.64 140.97)
 		)
 		(stroke
@@ -6133,16 +6463,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 102.87) (xy 154.94 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8e820f9-2d4b-4360-86fc-6822cf992588")
-	)
-	(wire
-		(pts
 			(xy 138.43 60.96) (xy 140.97 60.96)
 		)
 		(stroke
@@ -6243,7 +6563,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 245.11) (xy 97.79 245.11)
+			(xy 76.2 245.11) (xy 78.74 245.11)
 		)
 		(stroke
 			(width 0)
@@ -6270,6 +6590,16 @@
 			(type default)
 		)
 		(uuid "f4698d40-1e0e-4a1f-a13e-6eb3c2b4e837")
+	)
+	(wire
+		(pts
+			(xy 175.26 228.6) (xy 182.88 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f64ec895-eaa1-4cc8-8fb0-38b43a23dea3")
 	)
 	(wire
 		(pts
@@ -10840,6 +11170,16 @@
 		)
 		(uuid "0927fed4-5bfc-4fde-b593-8362308ef6cd")
 	)
+	(label "V_{dd_board}_3v3"
+		(at 198.12 209.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12f350ba-fcc0-4f82-abfb-1f603d42595a")
+	)
 	(label "I2C_4.SCL"
 		(at 317.5 110.49 180)
 		(effects
@@ -11460,6 +11800,132 @@
 		(uuid "ef199afa-b2cd-482f-ba1c-a14535ca10c3")
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 78.74 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02e4e92a-19e5-40ad-ae6e-79a045679a63")
+		(property "Reference" "R534"
+			(at 81.28 271.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 81.28 274.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 78.74 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1c4c4e6e-879f-4f8b-b772-04a1f6e48636")
+		)
+		(pin "1"
+			(uuid "dc1bf82e-6109-4243-bacd-3ea5dc883baa")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R534")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 209.55 41.91 0)
 		(unit 1)
@@ -11602,154 +12068,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C524")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 74.93 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a31e2af-f1e0-45d8-be79-9aeac645ea12")
-		(property "Reference" "R533"
-			(at 77.47 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3090"
-			(at 77.47 45.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 74.93 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ea5fb741-dc22-421b-83a4-5c976d984258")
-		)
-		(pin "1"
-			(uuid "2dd87098-af33-4491-9d88-b9b970171470")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R533")
 					(unit 1)
 				)
 			)
@@ -12009,6 +12327,152 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 187.96 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11595de6-f7e4-433d-954f-d870bda5fa23")
+		(property "Reference" "D503"
+			(at 186.3725 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "red"
+			(at 186.3725 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 187.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "631nm, 20mA, 2.4Vf, 180mcd, 62.5mW, +85c"
+			(at 187.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 187.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/LITEON/LTST-C190KRKT?qs=kAD5fFa1n5VY3YYNWPC1Fg%3D%3D"
+			(at 187.96 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.14"
+			(at 187.96 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.098"
+			(at 187.96 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 187.96 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 187.96 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "682c392c-3502-418e-bb4b-82a98a53bb27")
+		)
+		(pin "2"
+			(uuid "fc4f6925-102f-44d3-b510-a0d0d9fb213a")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "D503")
 					(unit 1)
 				)
 			)
@@ -12524,6 +12988,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 93.98 245.11 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19fd0567-eb24-4586-b12e-077ee7f8f7c9")
+		(property "Reference" "R501"
+			(at 93.98 238.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 93.98 241.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kR, 1%, 50ppm, 62.5mW, 25V, -55C, +125C"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CRT0402-FZ-1002GLF?qs=sGAEpiMZZMvdGkrng054t8ML7OW17L6%2F%2FdJuN6oyCQk%3D"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.025"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.024"
+			(at 93.98 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e6b55036-5749-41a1-a2a8-96884d4cf7f4")
+		)
+		(pin "1"
+			(uuid "07f48b60-0cf4-4ff3-b4ee-75f94bafa2ca")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 264.16 135.89 270)
 		(unit 1)
@@ -12608,10 +13196,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "1fcd3bce-7766-4dc8-ab22-f6e25092eceb")
 		(property "Reference" "R506"
 			(at 185.42 219.202 90)
@@ -12731,154 +13319,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R506")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 85.09 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22a3cff4-41b0-4c52-b14f-cad1b23f0cbc")
-		(property "Reference" "R534"
-			(at 87.63 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3090"
-			(at 87.63 45.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 85.09 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4f9cc455-2ffa-4d88-87c0-d2577253c3e9")
-		)
-		(pin "1"
-			(uuid "15812cf7-ed1e-40af-befb-fd12a37b8d10")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R534")
 					(unit 1)
 				)
 			)
@@ -14765,6 +15205,256 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 97.79 256.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59a88e04-b160-48f5-903c-bbc164fc4fc9")
+		(property "Reference" "R518"
+			(at 97.79 250.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 97.79 252.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kR, 1%, 50ppm, 62.5mW, 25V, -55C, +125C"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CRT0402-FZ-1002GLF?qs=sGAEpiMZZMvdGkrng054t8ML7OW17L6%2F%2FdJuN6oyCQk%3D"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.025"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.024"
+			(at 97.79 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a5be940-55b4-445e-bf2e-e5e875d9aefb")
+		)
+		(pin "1"
+			(uuid "fe660367-4e1b-4f6b-bc27-284470f2ae61")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 85.09 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5af43205-8817-47ae-aabe-653728085fc9")
+		(property "Reference" "R514"
+			(at 87.63 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 87.63 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 85.09 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bf297e7c-3c17-4cdf-b789-7dc4095d1624")
+		)
+		(pin "1"
+			(uuid "6eec009b-519a-4777-ad0a-4e1ecdd11c31")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R514")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 54.61 109.22 90)
 		(unit 1)
 		(body_style 1)
@@ -14878,7 +15568,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 185.42 233.68 90)
+		(at 101.6 267.97 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14886,6 +15576,130 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d8b9d74-ef39-497a-b94e-d0c0142c0e01")
+		(property "Reference" "R519"
+			(at 101.6 261.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 101.6 264.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10kR, 1%, 50ppm, 62.5mW, 25V, -55C, +125C"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CRT0402-FZ-1002GLF?qs=sGAEpiMZZMvdGkrng054t8ML7OW17L6%2F%2FdJuN6oyCQk%3D"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.10"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.025"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.024"
+			(at 101.6 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8843e0cd-7a37-4208-994b-5c53aa9b0865")
+		)
+		(pin "1"
+			(uuid "d9f23963-7980-427a-b62c-66ab1c83741f")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R519")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 185.42 233.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "5f266d3b-2540-491a-8532-73f9894b43b3")
 		(property "Reference" "R507"
 			(at 185.42 221.234 90)
@@ -15778,6 +16592,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R526")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73a36bc0-d4b6-42d2-ad9b-ea379ab61524")
+		(property "Reference" "R503"
+			(at 67.31 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 67.31 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 64.77 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "daacccfd-6839-455b-b818-028f558eb8d3")
+		)
+		(pin "1"
+			(uuid "58eb7d8f-5957-4463-9298-d75aa2a473cf")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -16970,6 +17910,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 96.52 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8adcb795-05c4-4c2b-993c-6c570e713f54")
+		(property "Reference" "R533"
+			(at 99.06 271.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 99.06 274.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 96.52 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "37412f6d-bab9-48c3-883a-1be9eeaa4fa0")
+		)
+		(pin "1"
+			(uuid "8f72008a-2fec-4281-aeb9-6ca2382362aa")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R533")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 153.67 77.47 0)
 		(unit 1)
@@ -17101,10 +18167,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "99dac6ce-6906-407a-b882-ad4c8890cbf6")
 		(property "Reference" "D501"
 			(at 194.31 220.218 0)
@@ -17469,154 +18535,6 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "C512")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 64.77 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a77dd2cd-3023-4762-9523-439243576c21")
-		(property "Reference" "R503"
-			(at 67.31 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3090"
-			(at 67.31 45.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 64.77 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1b694d33-6de7-4d4f-ae32-447a16b4e3dc")
-		)
-		(pin "1"
-			(uuid "20e21052-e1cf-4e73-8f3f-6354669f1566")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -18501,154 +19419,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 88.9 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bef1e0c1-b47e-420e-8ff9-78ccad6b3a0a")
-		(property "Reference" "R513"
-			(at 91.44 271.7799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3090"
-			(at 91.44 274.3199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/Walsin/WR06X392-JTL?qs=sGAEpiMZZMvdGkrng054t3TZKQOO49yd42XQAddvG8Q%3D"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x1" "0.1"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x10" "0.08"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "unit x100" "0.60"
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 88.9 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a92eb5ef-4cee-4bdf-8499-3093c5d8f714")
-		)
-		(pin "1"
-			(uuid "df134335-c354-400c-bea2-0bf02c7a7a62")
-		)
-		(instances
-			(project "ProcessorBoard_STM32MP153"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R513")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 189.23 41.91 0)
 		(unit 1)
@@ -18915,10 +19685,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "c72258ef-3d60-45f6-a0d2-050cef0495ae")
 		(property "Reference" "R508"
 			(at 185.42 223.266 90)
@@ -19206,6 +19976,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "#PWR0518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 74.93 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4c0a8b3-97f8-48eb-8499-d7fdca95ce3c")
+		(property "Reference" "R512"
+			(at 77.47 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 77.47 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 74.93 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ddd6ab68-6385-4749-812c-8490a7bd63f3")
+		)
+		(pin "1"
+			(uuid "edb70081-e2b6-41ab-bbf9-02a8ea64af63")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R512")
 					(unit 1)
 				)
 			)
@@ -20161,7 +21057,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 143.51 105.41 180)
+		(at 194.31 209.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20170,31 +21066,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f36e022c-bf6a-490f-b7a6-e4b8f928a181")
-		(property "Reference" "R501"
-			(at 146.05 104.1399 0)
+		(uuid "f0550af0-6d62-4d77-9b28-24ca145c0c7a")
+		(property "Reference" "R511"
+			(at 194.31 203.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "100"
-			(at 146.05 106.6799 0)
+		(property "Value" "330"
+			(at 194.31 205.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 143.51 105.41 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20205,7 +21099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 105.41 0)
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20215,8 +21109,8 @@
 				)
 			)
 		)
-		(property "Description" "100R, 0.1%, 100mW, 50V, 25ppm, +155C"
-			(at 143.51 105.41 0)
+		(property "Description" "330R, 100mW, 1%, 100ppm, 75V, +155c"
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20226,8 +21120,8 @@
 				)
 			)
 		)
-		(property "mouser" "https://www.mouser.com/en/ProductDetail/KOA-Speer/RN73R1ETTP1000B25?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzT4mWegaFFwKpStSRySFyRg%3D%3D"
-			(at 143.51 105.41 0)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Bourns/CR0603-FX-3300ELF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958RvQ3sBj9RG2Y%3D"
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20238,7 +21132,7 @@
 			)
 		)
 		(property "unit x1" "0.10"
-			(at 143.51 105.41 0)
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20248,8 +21142,8 @@
 				)
 			)
 		)
-		(property "unit x10" "0.061"
-			(at 143.51 105.41 0)
+		(property "unit x10" "0.012"
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20260,7 +21154,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 143.51 105.41 0)
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20271,7 +21165,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 143.51 105.41 0)
+			(at 194.31 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20282,15 +21176,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "60b6e8d4-bd18-4ecd-b546-e364df7b6603")
+			(uuid "a63422b1-97a0-48fa-bc23-65d20ce87ee7")
 		)
 		(pin "1"
-			(uuid "368fd8d1-713a-4d49-bdec-9ff56c2487ca")
+			(uuid "38841e1b-3908-4e28-a7b3-06a63bf1d16f")
 		)
 		(instances
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
-					(reference "R501")
+					(reference "R511")
 					(unit 1)
 				)
 			)
@@ -20504,6 +21398,132 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
 					(reference "R515")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 87.63 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f47dce54-4ddd-4cc1-a18d-5f256126bdbd")
+		(property "Reference" "R513"
+			(at 90.17 271.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3k"
+			(at 90.17 274.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3k, 0.5%, 62.5mW, 25ppm, 75V, -55C, 155C"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Susumu/RG1005P-302-D-T10?qs=sGAEpiMZZMvdGkrng054t0uOsFOTJMhbgRaL%2FsV%2F%2F4E%3D"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.1"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.023"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x100" "0.022"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d7271a7f-4e3a-469e-b4ef-a338372c4dd9")
+		)
+		(pin "1"
+			(uuid "1145725c-4544-4762-be45-70d72e465311")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/9bbfbe68-2804-40ed-9d5f-0570a6a580b2"
+					(reference "R513")
 					(unit 1)
 				)
 			)

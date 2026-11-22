@@ -1004,16 +1004,6 @@
 		)
 		(uuid "579405f6-f5b4-4275-a686-fae7ca8e7497")
 	)
-	(label "V_{dd_IO}"
-		(at 85.09 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "85bc1641-b193-4838-8c98-d79f2076bf2a")
-	)
 	(label "{mpu_power}"
 		(at 247.65 101.6 180)
 		(effects
@@ -1043,6 +1033,16 @@
 			(justify right)
 		)
 		(uuid "c64c3df8-1d8f-4871-8b5d-f661559e3f20")
+	)
+	(label "V_{dd_IO}_3v3"
+		(at 85.09 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2862fcc-bc64-43b4-a6eb-446640b440d9")
 	)
 	(label "nRST"
 		(at 167.64 93.98 180)

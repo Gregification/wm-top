@@ -618,6 +618,176 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "__WM_Local:ESD321DYAR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CR"
+				(at 13.97 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "ESD321DYAR"
+				(at 13.97 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "__WM_Local:SOT5x3_DYA_TEX-M"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/esd321"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/ESD321DYAR?qs=rQFj71Wb1eXoYwRMra0IYA%3D%3D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x1" "0.76"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "unit x10" "0.345"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ESD321DYAR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT5x3_DYA_TEX SOT5x3_DYA_TEX-M SOT5x3_DYA_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ESD321DYAR_0_1"
+				(rectangle
+					(start 7.62 2.54)
+					(end 20.32 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_out line
+					(at 5.08 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 0 180)
+					(length 2.54)
+					(name "I/O"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -734,13 +904,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "would be useful to have Vbus connected but no routing room,\nmay need driver to poll instead"
+	(text "note: due to routing constraints, these exceptions have been made\n	- Vbus detection not used\n	- very poor D+- routing, usb FS only"
 		(exclude_from_sim no)
-		(at 102.87 81.28 0)
+		(at 15.494 77.216 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left top)
 		)
 		(uuid "59a63a0f-0111-4558-8ada-fee0b9e0de00")
 	)
@@ -825,24 +996,44 @@
 		(uuid "e9cbdcdc-e8e3-435f-9798-b738d26696c8")
 	)
 	(junction
-		(at 57.15 31.75)
+		(at 64.77 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "103a4608-e997-4a6b-b92e-918c8ed71f8d")
 	)
 	(junction
-		(at 45.72 43.18)
+		(at 53.34 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ee3c77f-c51c-4762-90e6-4431aa2d475c")
 	)
-	(no_connect
-		(at 85.09 67.31)
-		(uuid "4dd4f515-89de-4915-a38c-2329553b426c")
+	(junction
+		(at 39.37 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa5995da-0d80-4466-8a29-8d8551ad1814")
+	)
+	(junction
+		(at 39.37 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e166f578-77e0-4ff5-b671-f27a60976536")
+	)
+	(junction
+		(at 109.22 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec662d38-5c61-4455-bb6c-52ecc11c3ad7")
+	)
+	(junction
+		(at 100.33 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecebfec2-6459-453c-b80a-b19aff8fbfe0")
 	)
 	(no_connect
-		(at 113.03 67.31)
-		(uuid "b3c7dd80-e2b1-4af8-8b6a-01245df0030c")
+		(at 85.09 72.39)
+		(uuid "72674a0b-a4a9-4a4a-b375-2d0f5f02a4c9")
 	)
 	(bus_entry
 		(at 82.55 67.31)
@@ -891,7 +1082,27 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 34.29) (xy 38.1 34.29)
+			(xy 100.33 69.85) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0201865f-2080-49fb-8c88-bfc7ce62ba50")
+	)
+	(wire
+		(pts
+			(xy 39.37 31.75) (xy 45.72 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c21dac-37a2-49f6-b88d-2768810ebe3c")
+	)
+	(wire
+		(pts
+			(xy 35.56 34.29) (xy 45.72 34.29)
 		)
 		(stroke
 			(width 0)
@@ -911,7 +1122,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 69.85) (xy 113.03 69.85)
+			(xy 39.37 35.56) (xy 39.37 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341cf9dd-cf29-471d-9975-77afb10bd912")
+	)
+	(wire
+		(pts
+			(xy 85.09 69.85) (xy 100.33 69.85)
 		)
 		(stroke
 			(width 0)
@@ -921,7 +1142,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 31.75) (xy 73.66 31.75)
+			(xy 60.96 31.75) (xy 73.66 31.75)
 		)
 		(stroke
 			(width 0)
@@ -931,17 +1152,27 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 72.39) (xy 113.03 72.39)
+			(xy 39.37 43.18) (xy 39.37 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "447c4e00-b25d-485f-aee1-8075e59e43f9")
+		(uuid "601d48db-5754-48b0-ba58-672a5584792b")
 	)
 	(wire
 		(pts
-			(xy 45.72 41.91) (xy 45.72 43.18)
+			(xy 109.22 67.31) (xy 113.03 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6706479c-a0b4-447c-a6f9-69f918fa1cea")
+	)
+	(wire
+		(pts
+			(xy 53.34 41.91) (xy 53.34 43.18)
 		)
 		(stroke
 			(width 0)
@@ -951,7 +1182,17 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 43.18) (xy 45.72 43.18)
+			(xy 109.22 67.31) (xy 109.22 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7712277d-c38f-4eba-b118-6077665a0ffd")
+	)
+	(wire
+		(pts
+			(xy 33.02 43.18) (xy 39.37 43.18)
 		)
 		(stroke
 			(width 0)
@@ -961,7 +1202,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 38.1) (xy 36.83 34.29)
+			(xy 35.56 38.1) (xy 35.56 34.29)
 		)
 		(stroke
 			(width 0)
@@ -971,7 +1212,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 43.18) (xy 57.15 43.18)
+			(xy 53.34 43.18) (xy 64.77 43.18)
 		)
 		(stroke
 			(width 0)
@@ -981,7 +1222,17 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 31.75) (xy 38.1 31.75)
+			(xy 39.37 43.18) (xy 53.34 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91729e33-aef6-44b7-b0af-0bae205a8206")
+	)
+	(wire
+		(pts
+			(xy 31.75 31.75) (xy 39.37 31.75)
 		)
 		(stroke
 			(width 0)
@@ -991,7 +1242,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 34.29) (xy 57.15 31.75)
+			(xy 64.77 34.29) (xy 64.77 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1009,6 +1260,16 @@
 		)
 		(uuid "af8af653-4dd4-48ce-9055-8c12a4cb1e70")
 	)
+	(wire
+		(pts
+			(xy 85.09 67.31) (xy 109.22 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b477e98f-3d47-487d-836b-c7b4d60de70a")
+	)
 	(bus
 		(pts
 			(xy 82.55 64.77) (xy 82.55 69.85)
@@ -1021,13 +1282,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 43.18) (xy 57.15 39.37)
+			(xy 64.77 43.18) (xy 64.77 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bb9bb9d7-3f68-46f5-838f-82868d2b0229")
+	)
+	(wire
+		(pts
+			(xy 100.33 69.85) (xy 113.03 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6fcd9d0-c58c-4def-a76b-66b1fde28e0e")
 	)
 	(bus
 		(pts
@@ -1061,7 +1332,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 38.1) (xy 36.83 38.1)
+			(xy 31.75 38.1) (xy 35.56 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1120,7 +1391,7 @@
 		(uuid "924c4067-d64a-46db-b843-ab519b57ccc1")
 	)
 	(label "USB_2.vbus"
-		(at 85.09 67.31 0)
+		(at 85.09 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1140,7 +1411,7 @@
 		(uuid "cd48954a-711c-41ca-974a-496aa610c782")
 	)
 	(label "USB_2.D+"
-		(at 85.09 69.85 0)
+		(at 85.09 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1150,7 +1421,7 @@
 		(uuid "dc5f44dd-c2be-48e3-bc94-d57b55d8c502")
 	)
 	(label "USB_2.D-"
-		(at 85.09 72.39 0)
+		(at 85.09 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1226,8 +1497,124 @@
 		(uuid "e8fe1a67-8967-4732-a4bc-d5e98010d7d0")
 	)
 	(symbol
+		(lib_id "__WM_Local:ESD321DYAR")
+		(at 109.22 106.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17afc9d4-6547-48ad-9bc3-21254479a1f4")
+		(property "Reference" "CR802"
+			(at 112.522 91.186 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD321DYAR"
+			(at 112.522 93.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "__WM_Local:SOT5x3_DYA_TEX-M"
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/esd321"
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/ESD321DYAR?qs=rQFj71Wb1eXoYwRMra0IYA%3D%3D"
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.76"
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.345"
+			(at 109.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d7495cd-eff1-42e4-bce7-d6bec1712a67")
+		)
+		(pin "2"
+			(uuid "7cbd8a6e-7f64-42e4-a686-aa004e4bad67")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
+					(reference "CR802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 57.15 36.83 0)
+		(at 64.77 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1238,7 +1625,7 @@
 		(fields_autoplaced yes)
 		(uuid "19def993-130a-4c61-b5d4-6a8a133875c1")
 		(property "Reference" "C801"
-			(at 59.69 35.5662 0)
+			(at 67.31 35.5662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1249,7 +1636,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 59.69 38.1062 0)
+			(at 67.31 38.1062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1260,7 +1647,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1271,7 +1658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1282,7 +1669,7 @@
 			)
 		)
 		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1293,7 +1680,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1304,7 +1691,7 @@
 			)
 		)
 		(property "unit x10" "0.04"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1315,7 +1702,7 @@
 			)
 		)
 		(property "unit x1" "0.11"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1326,7 +1713,7 @@
 			)
 		)
 		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1337,7 +1724,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1348,7 +1735,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 57.15 36.83 0)
+			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1368,6 +1755,232 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
 					(reference "C801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d40dd44-4f99-40bf-9185-81b8bb2f2b16")
+		(property "Reference" "C802"
+			(at 41.91 36.8362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 41.91 39.3762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF, 50Vdc, 10%, 10MHz"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Murata-Electronics/GRM155R61H105KE05J?qs=d0WKAl%252BL4KZilUxqJ3m7lA%3D%3D"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.04"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.11"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "character" "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R61H105KE05%22%5D&oripartnumbers=%5B%22GRM155R61H105KE05J%22%5D&rgear=suaykx&rgearinfo=com"
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 39.37 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "092d9db7-1dca-4559-97c1-8f0ae5306a2e")
+		)
+		(pin "2"
+			(uuid "f0c29fb3-76bb-4019-8972-0f65041cf2a5")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
+					(reference "C802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68766363-5561-4111-8bfe-68af544c4421")
+		(property "Reference" "#PWR0804"
+			(at 109.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb3e5cf3-9b08-4f67-8330-f79c435772f0")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
+					(reference "#PWR0804")
 					(unit 1)
 				)
 			)
@@ -1464,6 +2077,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 100.33 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d0263f3-cd27-42ef-8b37-608160f29f23")
+		(property "Reference" "#PWR0803"
+			(at 100.33 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c22de6fb-c58e-48cb-b90c-0c97ca0eaa52")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
+					(reference "#PWR0803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 33.02 43.18 270)
 		(unit 1)
 		(body_style 1)
@@ -1543,7 +2234,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:TLV70233_SOT23-5")
-		(at 45.72 34.29 0)
+		(at 53.34 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1554,7 +2245,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f82216c-e827-45f7-bb8c-375642e445c3")
 		(property "Reference" "U801"
-			(at 45.72 25.4 0)
+			(at 53.34 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1564,7 +2255,7 @@
 			)
 		)
 		(property "Value" "TLV77333"
-			(at 45.72 27.94 0)
+			(at 53.34 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1574,7 +2265,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 45.72 26.035 0)
+			(at 53.34 26.035 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1586,7 +2277,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv773.pdf"
-			(at 45.72 33.02 0)
+			(at 53.34 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1597,7 +2288,7 @@
 			)
 		)
 		(property "Description" "300mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
-			(at 45.72 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1608,7 +2299,7 @@
 			)
 		)
 		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/TLV77333PDBVR?qs=sGAEpiMZZMug9GoBKXZ758Nd195yFbCg7OgSEyCMPt1WcYMjq0883A%3D%3D"
-			(at 45.72 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1619,7 +2310,7 @@
 			)
 		)
 		(property "unit x1" "0.14"
-			(at 45.72 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1630,7 +2321,7 @@
 			)
 		)
 		(property "unit x10" "0.096"
-			(at 45.72 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1659,6 +2350,123 @@
 			(project "ProcessorBoard_STM32MP153"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
 					(reference "U801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "__WM_Local:ESD321DYAR")
+		(at 100.33 106.68 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2d8dd52-2095-4d01-9c24-2acecef87ed1")
+		(property "Reference" "CR801"
+			(at 97.028 91.186 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD321DYAR"
+			(at 97.028 93.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "__WM_Local:SOT5x3_DYA_TEX-M"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/esd321"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "mouser" "https://www.mouser.com/en/ProductDetail/Texas-Instruments/ESD321DYAR?qs=rQFj71Wb1eXoYwRMra0IYA%3D%3D"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x1" "0.76"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "unit x10" "0.345"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b594e51d-605a-4c64-b1c7-94ebb3bb8828")
+		)
+		(pin "2"
+			(uuid "d3f0d77d-31b9-4e66-bfa1-3be5befc2c64")
+		)
+		(instances
+			(project "ProcessorBoard_STM32MP153"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/c8478d41-8ee5-4c8a-a48d-a17f4988cf95"
+					(reference "CR801")
 					(unit 1)
 				)
 			)
